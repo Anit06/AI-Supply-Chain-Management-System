@@ -1,5 +1,5 @@
-import Sidebar from "../components/common/Sidebar";
-import Header from "../components/common/Header";
+import Sidebar from "../../common/Sidebar";
+import Header from "../../common/Header";
 
 function Products() {
   return (

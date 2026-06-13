@@ -1,7 +1,7 @@
 import Sidebar from "../../common/Sidebar";
 import Header from "../../common/Header";
 
-function Reports() {
+function Settings() {
   return (
     <div className="dashboard-layout">
 
@@ -11,7 +11,7 @@ function Reports() {
 
         <Header />
 
-        <h1>Reports Page</h1>
+        <h1>Settings Page</h1>
 
       </div>
 
@@ -19,4 +19,4 @@ function Reports() {
   );
 }
 
-export default Reports;
+export default Settings;

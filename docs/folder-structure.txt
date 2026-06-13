@@ -27,21 +27,30 @@ AI-Supply-Chain-Management-System/
 
                 icons/
 
-                styles/
-
                 css/
 
                     global.css
                     layout.css
                     responsive.css
 
+                    auth.css
+
                     sidebar.css
+                    shopkeeperSidebar.css
                     header.css
+
                     dashboard.css
+                    adminHome.css
+                    shopkeeper.css
+
                     cards.css
                     charts.css
                     table.css
-                    auth.css
+
+            layouts/
+
+                AdminLayout.jsx
+                ShopkeeperLayout.jsx
 
             components/
 
@@ -49,27 +58,36 @@ AI-Supply-Chain-Management-System/
 
                     Navbar.jsx
                     Sidebar.jsx
+                    ShopkeeperSidebar.jsx
                     Header.jsx
                     SearchBar.jsx
                     Footer.jsx
                     Loader.jsx
-                    Table.jsx
                     Button.jsx
+                    Table.jsx
                     Modal.jsx
                     ProtectedRoute.jsx
 
-                dashboard/
+                cards/
 
-                    StatsCards.jsx
+                    StatsCard.jsx
+
+                charts/
+
                     SalesChart.jsx
                     InventoryChart.jsx
-                    DemandTable.jsx
+
+                tables/
+
+                    RecentOrders.jsx
+                    PredictionTable.jsx
                     WarehouseTable.jsx
 
                 admin/
 
                     Dashboard/
 
+                        AdminHome.jsx
                         Dashboard.jsx
                         SalesChart.jsx
                         DemandChart.jsx
@@ -77,13 +95,16 @@ AI-Supply-Chain-Management-System/
 
                     Products/
 
+			Products.jsx
                         ProductList.jsx
+                        ProductCard.jsx
                         AddProduct.jsx
                         EditProduct.jsx
-                        ProductCard.jsx
+			Inventory.jsx
 
                     Warehouses/
 
+			Warehouses.jsx
                         WarehouseList.jsx
                         AddWarehouse.jsx
                         InventoryView.jsx
@@ -91,9 +112,18 @@ AI-Supply-Chain-Management-System/
 
                     Orders/
 
+			Suppliers.jsx
+			Orders.jsx
                         OrderList.jsx
                         OrderDetails.jsx
                         OrderStatus.jsx
+
+		    Others/
+
+			Logout.jsx
+			Notification.jsx
+			Settings.jsx
+			Support.jsx
 
                     Reports/
 
@@ -103,6 +133,7 @@ AI-Supply-Chain-Management-System/
 
                     AI/
 
+			AIPrediction.jsx
                         DemandPrediction.jsx
                         TrendAnalysis.jsx
                         RecommendationPanel.jsx
@@ -111,7 +142,7 @@ AI-Supply-Chain-Management-System/
 
                     Dashboard/
 
-                        ShopDashboard.jsx
+                        ShopkeeperHome.jsx
 
                     Products/
 
@@ -119,10 +150,11 @@ AI-Supply-Chain-Management-System/
                         ProductDetails.jsx
                         SearchProducts.jsx
 
-                    Cart/
-
-                        Cart.jsx
-                        Checkout.jsx
+		   Profile/
+			
+			Profile.jsx
+			Address.jsx
+			PaymentMethod.jsx
 
                     Orders/
 
@@ -130,21 +162,27 @@ AI-Supply-Chain-Management-System/
                         OrderHistory.jsx
                         TrackOrder.jsx
 
-            pages/
+		    Others/
 
-                Dashboard.jsx
-                Products.jsx
-                Warehouses.jsx
-                Orders.jsx
-                Inventory.jsx
-                AIPrediction.jsx
-                Reports.jsx
-                Users.jsx
-                Suppliers.jsx
-                Settings.jsx
+			Logout.jsx
+			Notification.jsx
+			Settings.jsx
+			Support.jsx
+
+                    Cart/
+
+                        Cart.jsx
+                        Checkout.jsx
+
+            pages/
+		
+		Dashboard.jsx
 
                 Login.jsx
                 Register.jsx
+
+                Users.jsx
+
                 Unauthorized.jsx
                 NotFound.jsx
 
