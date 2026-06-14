@@ -2,14 +2,23 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+//Register
+
 const register = async (req, res) => {
   try {
-    const { name, email, password, role } = req.body;
+
+    const {
+      name,
+      email,
+      password,
+      phone
+    } = req.body;
 
     const existingUser = await User.findOne({ email });
 
     if (existingUser) {
       return res.status(400).json({
+        success: false,
         message: "User already exists"
       });
     }
@@ -20,22 +29,27 @@ const register = async (req, res) => {
       name,
       email,
       password: hashedPassword,
-      role
+      phone,
+      role: "user"
     });
 
     res.status(201).json({
       success: true,
+      message: "Registration Successful",
       user
     });
 
   } catch (error) {
 
     res.status(500).json({
+      success: false,
       message: error.message
     });
 
   }
 };
+
+//Login
 
 const login = async (req, res) => {
   try {
@@ -46,6 +60,7 @@ const login = async (req, res) => {
 
     if (!user) {
       return res.status(404).json({
+        success: false,
         message: "User not found"
       });
     }
@@ -57,6 +72,7 @@ const login = async (req, res) => {
 
     if (!match) {
       return res.status(401).json({
+        success: false,
         message: "Invalid Password"
       });
     }
@@ -66,7 +82,7 @@ const login = async (req, res) => {
         id: user._id,
         role: user.role
       },
-      "cdac-secret-key",
+      process.env.JWT_SECRET || "cdac-secret-key",
       {
         expiresIn: "1d"
       }
@@ -75,13 +91,18 @@ const login = async (req, res) => {
     res.status(200).json({
       success: true,
       token,
-      role: user.role,
-      name: user.name
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role
+      }
     });
 
   } catch (error) {
 
     res.status(500).json({
+      success: false,
       message: error.message
     });
 

@@ -8,9 +8,12 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    setLoading(true);
 
     try {
       const response = await fetch(
@@ -31,23 +34,47 @@ function Login() {
 
       if (!response.ok) {
         alert(data.message);
+        setLoading(false);
         return;
       }
 
       localStorage.setItem("token", data.token);
-      localStorage.setItem("role", data.role);
-      localStorage.setItem("name", data.name);
 
-      if (data.role === "admin") {
+      localStorage.setItem(
+        "user",
+        JSON.stringify(data.user)
+      );
+
+      localStorage.setItem(
+        "role",
+        data.user.role
+      );
+
+      localStorage.setItem(
+        "name",
+        data.user.name
+      );
+
+      if (
+        data.user.role === "admin" ||
+        data.user.role === "administrative_user"
+      ) {
         navigate("/admin");
-      } else {
+      }
+      else if (data.user.role === "user") {
         navigate("/shopkeeper");
+      }
+      else {
+        alert("Invalid User Role");
       }
 
     } catch (error) {
-      console.log(error);
+      console.error(error);
+
       alert("Login Failed");
     }
+
+    setLoading(false);
   };
 
   return (
@@ -63,7 +90,9 @@ function Login() {
             type="email"
             placeholder="Enter Email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) =>
+              setEmail(e.target.value)
+            }
             required
           />
 
@@ -71,12 +100,17 @@ function Login() {
             type="password"
             placeholder="Enter Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) =>
+              setPassword(e.target.value)
+            }
             required
           />
 
-          <button type="submit">
-            Sign In
+          <button
+            type="submit"
+            disabled={loading}
+          >
+            {loading ? "Signing In..." : "Sign In"}
           </button>
 
         </form>
@@ -87,7 +121,6 @@ function Login() {
           <Link to="/register">
             <span> Sign Up</span>
           </Link>
-
         </p>
 
       </div>

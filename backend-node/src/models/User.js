@@ -4,13 +4,16 @@ const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true
+      required: true,
+      trim: true
     },
 
     email: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
+      trim: true,
+      lowercase: true
     },
 
     password: {
@@ -18,19 +21,15 @@ const userSchema = new mongoose.Schema(
       required: true
     },
 
-    role: {
+    phone: {
       type: String,
-      enum: ["admin", "shopkeeper"],
-      default: "shopkeeper"
+      required: true
     },
 
-    phone: String,
-
-    marketName: String,
-
-    status: {
+    role: {
       type: String,
-      default: "active"
+      enum: ["admin", "administrative_user", "user"],
+      default: "user"
     }
   },
   {
