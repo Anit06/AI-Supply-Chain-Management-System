@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import "../../assets/css/shopkeeperSidebar.css";
 
@@ -20,6 +20,19 @@ import {
 } from "react-icons/fa";
 
 function ShopkeeperSidebar() {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+
+    localStorage.removeItem("token");
+    localStorage.removeItem("role");
+    localStorage.removeItem("name");
+
+    navigate("/");
+
+  };
+
   return (
     <div className="shopkeeper-sidebar">
 
@@ -146,21 +159,17 @@ function ShopkeeperSidebar() {
           <span>Settings</span>
         </NavLink>
 
-      </div>
-
-      {/* Logout */}
-
-      <div className="sidebar-bottom">
-
-        <NavLink
-          to="/"
+        <button
           className="shopkeeper-link logout-link"
+          onClick={handleLogout}
         >
           <FaSignOutAlt />
           <span>Logout</span>
-        </NavLink>
+        </button>
 
       </div>
+
+
 
     </div>
   );

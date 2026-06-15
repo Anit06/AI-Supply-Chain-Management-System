@@ -11,7 +11,8 @@ import {
   FaFileAlt,
   FaUsers,
   FaTruck,
-  FaCog
+  FaCog,
+  FaSignOutAlt
 } from "react-icons/fa";
 
 function Sidebar() {
@@ -38,8 +39,8 @@ function Sidebar() {
       {/* Menu */}
       <ul className="sidebar-menu">
 
-        <Link to="/" className="sidebar-link">
-          <li className={location.pathname === "/" ? "active" : ""}>
+        <Link to="/admin/dashboard" className="sidebar-link">
+          <li className={location.pathname === "/admin/dashboard" ? "active" : ""}>
             <FaTachometerAlt className="menu-icon" />
             Dashboard
           </li>
@@ -87,8 +88,8 @@ function Sidebar() {
           </li>
         </Link>
 
-        <Link to="/users" className="sidebar-link">
-          <li className={location.pathname === "/users" ? "active" : ""}>
+        <Link to="/admin/users" className="sidebar-link">
+          <li className={location.pathname === "/admin/users" ? "active" : ""}>
             <FaUsers className="menu-icon" />
             Users
           </li>
@@ -108,6 +109,12 @@ function Sidebar() {
           </li>
         </Link>
 
+        <Link to="/logout" className="sidebar-link">
+          <li>
+            <FaSignOutAlt className="menu-icon" />
+            <span>Logout</span>
+          </li>
+        </Link>
       </ul>
 
       {/* Profile */}

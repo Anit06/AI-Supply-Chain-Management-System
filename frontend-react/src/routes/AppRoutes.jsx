@@ -5,6 +5,7 @@ import ShopkeeperLayout from "../layouts/ShopkeeperLayout";
 
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Logout from "../pages/Logout";
 
 import AdminHome from "../components/admin/Dashboard/AdminHome";
 import ShopkeeperHome from "../components/shopkeeper/Dashboard/ShopkeeperHome";
@@ -39,8 +40,8 @@ function AppRoutes() {
       {/* Public Routes */}
 
       <Route path="/" element={<Login />} />
-
       <Route path="/register" element={<Register />} />
+      <Route path="/logout" element={<Logout />} />
 
       {/* ================= ADMIN ROUTES ================= */}
 
@@ -62,7 +63,7 @@ function AppRoutes() {
 
         <Route path="reports" element={<Reports />} />
 
-        <Route path="users" element={<Users />} />
+        <Route path="/admin/users" element={<Users />} />
 
         <Route path="suppliers" element={<Suppliers />} />
 

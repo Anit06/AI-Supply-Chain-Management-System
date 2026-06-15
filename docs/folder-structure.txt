@@ -29,6 +29,7 @@ AI-Supply-Chain-Management-System/
 
                 css/
 
+                    users.css
                     global.css
                     layout.css
                     responsive.css
@@ -95,16 +96,16 @@ AI-Supply-Chain-Management-System/
 
                     Products/
 
-			Products.jsx
+			            Products.jsx
                         ProductList.jsx
                         ProductCard.jsx
                         AddProduct.jsx
                         EditProduct.jsx
-			Inventory.jsx
+			            Inventory.jsx
 
                     Warehouses/
 
-			Warehouses.jsx
+			            Warehouses.jsx
                         WarehouseList.jsx
                         AddWarehouse.jsx
                         InventoryView.jsx
@@ -112,18 +113,17 @@ AI-Supply-Chain-Management-System/
 
                     Orders/
 
-			Suppliers.jsx
-			Orders.jsx
+			            Suppliers.jsx
+			            Orders.jsx
                         OrderList.jsx
                         OrderDetails.jsx
                         OrderStatus.jsx
 
-		    Others/
+		            Others/
 
-			Logout.jsx
-			Notification.jsx
-			Settings.jsx
-			Support.jsx
+                        Notification.jsx
+                        Settings.jsx
+                        Support.jsx
 
                     Reports/
 
@@ -133,7 +133,7 @@ AI-Supply-Chain-Management-System/
 
                     AI/
 
-			AIPrediction.jsx
+			            AIPrediction.jsx
                         DemandPrediction.jsx
                         TrendAnalysis.jsx
                         RecommendationPanel.jsx
@@ -150,11 +150,11 @@ AI-Supply-Chain-Management-System/
                         ProductDetails.jsx
                         SearchProducts.jsx
 
-		   Profile/
-			
-			Profile.jsx
-			Address.jsx
-			PaymentMethod.jsx
+                    Profile/
+                        
+                        Profile.jsx
+                        Address.jsx
+                        PaymentMethod.jsx
 
                     Orders/
 
@@ -162,12 +162,11 @@ AI-Supply-Chain-Management-System/
                         OrderHistory.jsx
                         TrackOrder.jsx
 
-		    Others/
+                    Others/
 
-			Logout.jsx
-			Notification.jsx
-			Settings.jsx
-			Support.jsx
+                        Notification.jsx
+                        Settings.jsx
+                        Support.jsx
 
                     Cart/
 
@@ -176,10 +175,11 @@ AI-Supply-Chain-Management-System/
 
             pages/
 		
-		Dashboard.jsx
+		        Dashboard.jsx
 
                 Login.jsx
                 Register.jsx
+                Logout.jsx
 
                 Users.jsx
 

@@ -1,26 +1,36 @@
+/* =========================
+   SHOPKEEPER SIDEBAR
+========================= */
+
 .shopkeeper-sidebar {
   width: 260px;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(
     180deg,
     #06204a 0%,
     #00152f 100%
   );
-  color: white;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
+  overflow: hidden;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
+
+/* =========================
+   LOGO SECTION
+========================= */
 
 .shopkeeper-logo {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 25px 20px;
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: 22px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .shopkeeper-logo-icon {
@@ -29,54 +39,81 @@
   background: #2563eb;
   border-radius: 12px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 22px;
 }
 
 .shopkeeper-logo h2 {
-  font-size: 22px;
   margin: 0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .shopkeeper-logo p {
-  font-size: 13px;
+  margin: 4px 0 0;
+  font-size: 12px;
   color: #cbd5e1;
-  margin-top: 4px;
 }
+
+/* =========================
+   MENU SECTION
+========================= */
 
 .shopkeeper-menu {
   flex: 1;
-  padding: 15px;
   overflow-y: auto;
+  overflow-x: hidden;
+  padding: 15px;
 }
 
+/* Scrollbar */
+
+.shopkeeper-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.shopkeeper-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shopkeeper-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.shopkeeper-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* =========================
+   MENU TITLE
+========================= */
+
 .menu-title {
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   color: #94a3b8;
-  margin: 22px 10px 10px;
   letter-spacing: 1px;
+  margin: 20px 10px 10px;
+  font-weight: 600;
 }
+
+/* =========================
+   MENU LINKS
+========================= */
 
 .shopkeeper-link {
   display: flex;
   align-items: center;
   gap: 14px;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   padding: 12px 15px;
   border-radius: 10px;
-  margin-bottom: 5px;
-  transition: 0.3s;
-}
-
-.shopkeeper-link:hover {
-  background: rgba(255,255,255,0.1);
-}
-
-.shopkeeper-link.active {
-  background: #2563eb;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+  font-size: 15px;
 }
 
 .shopkeeper-link svg {
@@ -84,11 +121,71 @@
   min-width: 18px;
 }
 
+.shopkeeper-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.shopkeeper-link.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================
+   LOGOUT SECTION
+========================= */
+
 .sidebar-bottom {
   padding: 15px;
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logout-link {
-  color: #f8fafc;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.logout-link svg {
+  font-size: 18px;
+  min-width: 18px;
+}
+
+.logout-link:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .shopkeeper-sidebar {
+    width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopkeeper-sidebar {
+    width: 220px;
+  }
+
+  .shopkeeper-logo h2 {
+    font-size: 16px;
+  }
+
+  .shopkeeper-link {
+    font-size: 14px;
+  }
 }
