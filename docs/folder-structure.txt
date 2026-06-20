@@ -31,8 +31,6 @@ AI-Supply-Chain-Management-System/
 
                     users.css
                     global.css
-                    layout.css
-                    responsive.css
 
                     auth.css
 
@@ -41,8 +39,9 @@ AI-Supply-Chain-Management-System/
                     header.css
 
                     dashboard.css
-                    adminHome.css
                     shopkeeper.css
+
+                    products.css
 
                     cards.css
                     charts.css
@@ -269,6 +268,7 @@ AI-Supply-Chain-Management-System/
                 authMiddleware.js
                 roleMiddleware.js
                 errorMiddleware.js
+                uploadMiddleware.js
                 validationMiddleware.js
 
             services/

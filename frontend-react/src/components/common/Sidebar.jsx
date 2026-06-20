@@ -46,42 +46,42 @@ function Sidebar() {
           </li>
         </Link>
 
-        <Link to="/products" className="sidebar-link">
+        <Link to="/admin/products" className="sidebar-link">
           <li className={location.pathname === "/products" ? "active" : ""}>
             <FaBoxOpen className="menu-icon" />
             Products
           </li>
         </Link>
 
-        <Link to="/warehouses" className="sidebar-link">
+        <Link to="/admin/warehouses" className="sidebar-link">
           <li className={location.pathname === "/warehouses" ? "active" : ""}>
             <FaWarehouse className="menu-icon" />
             Warehouses
           </li>
         </Link>
 
-        <Link to="/orders" className="sidebar-link">
+        <Link to="/admin/orders" className="sidebar-link">
           <li className={location.pathname === "/orders" ? "active" : ""}>
             <FaShoppingCart className="menu-icon" />
             Orders
           </li>
         </Link>
 
-        <Link to="/inventory" className="sidebar-link">
+        <Link to="/admin/inventory" className="sidebar-link">
           <li className={location.pathname === "/inventory" ? "active" : ""}>
             <FaClipboardList className="menu-icon" />
             Inventory
           </li>
         </Link>
 
-        <Link to="/ai-prediction" className="sidebar-link">
+        <Link to="/admin/ai-prediction" className="sidebar-link">
           <li className={location.pathname === "/ai-prediction" ? "active" : ""}>
             <FaRobot className="menu-icon" />
             AI Predictions
           </li>
         </Link>
 
-        <Link to="/reports" className="sidebar-link">
+        <Link to="/admin/reports" className="sidebar-link">
           <li className={location.pathname === "/reports" ? "active" : ""}>
             <FaFileAlt className="menu-icon" />
             Reports
@@ -95,14 +95,14 @@ function Sidebar() {
           </li>
         </Link>
 
-        <Link to="/suppliers" className="sidebar-link">
+        <Link to="/admin/suppliers" className="sidebar-link">
           <li className={location.pathname === "/suppliers" ? "active" : ""}>
             <FaTruck className="menu-icon" />
             Suppliers
           </li>
         </Link>
 
-        <Link to="/settings" className="sidebar-link">
+        <Link to="/admin/settings" className="sidebar-link">
           <li className={location.pathname === "/settings" ? "active" : ""}>
             <FaCog className="menu-icon" />
             Settings
