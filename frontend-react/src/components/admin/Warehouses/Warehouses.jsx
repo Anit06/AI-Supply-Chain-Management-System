@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { FaPlus } from "react-icons/fa";
 
@@ -193,6 +194,25 @@ function Warehouses() {
           }
         />
       )}
+=======
+import Sidebar from "../../common/Sidebar";
+import Header from "../../common/Header";
+
+function Warehouses() {
+  return (
+    <div className="dashboard-layout">
+
+      <Sidebar />
+
+      <div className="dashboard-main">
+
+        <Header />
+
+        <h1>Warehouses Page</h1>
+
+      </div>
+
+>>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
     </div>
   );
 }
