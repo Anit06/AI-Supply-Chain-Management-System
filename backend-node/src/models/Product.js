@@ -4,26 +4,21 @@ const productSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true
-    },
-<<<<<<< HEAD
-    sku: {
-      type: String,
       required: true,
-      unique: true
+      trim: true
     },
-    category: String,
-    description: String,
-=======
 
     sku: {
       type: String,
-      required: true
+      required: true,
+      unique: true,
+      trim: true
     },
 
     category: {
       type: String,
-      required: true
+      required: true,
+      trim: true
     },
 
     description: {
@@ -33,12 +28,14 @@ const productSchema = new mongoose.Schema(
 
     price: {
       type: Number,
-      required: true
+      required: true,
+      min: 0
     },
 
     quantity: {
       type: Number,
-      default: 0
+      default: 0,
+      min: 0
     },
 
     unit: {
@@ -49,49 +46,30 @@ const productSchema = new mongoose.Schema(
 
     stock: {
       type: Number,
-      default: 0
+      default: 0,
+      min: 0
     },
 
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
+    stockStatus: {
+      type: String,
+      enum: ["In Stock", "Low Stock", "Out Of Stock"],
+      default: "In Stock"
+    },
+
     status: {
       type: String,
       enum: ["Active", "Inactive"],
       default: "Active"
-    },
-<<<<<<< HEAD
-    image: String
-=======
-
-    stockStatus: {
-      type: String,
-      enum: [
-        "In Stock",
-        "Low Stock",
-        "Out Of Stock"
-      ],
-      default: "In Stock"
     },
 
     image: {
       type: String,
       default: ""
     }
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
   },
   {
     timestamps: true
   }
 );
 
-<<<<<<< HEAD
-module.exports =
-  mongoose.model(
-    "Product",
-    productSchema
-  );
-=======
-module.exports = mongoose.model(
-  "Product",
-  productSchema
-);
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
+module.exports = mongoose.model("Product", productSchema);

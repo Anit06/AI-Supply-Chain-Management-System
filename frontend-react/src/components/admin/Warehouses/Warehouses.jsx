@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { FaPlus } from "react-icons/fa";
 
@@ -19,106 +18,65 @@ import {
 import "../../../assets/css/warehouse.css";
 
 function Warehouses() {
-  const [warehouses, setWarehouses] =
-    useState([]);
+  const [warehouses, setWarehouses] = useState([]);
+  const [search, setSearch] = useState("");
+  const [status, setStatus] = useState("");
 
-  const [search, setSearch] =
-    useState("");
-
-  const [status, setStatus] =
-    useState("");
-
-  const [showModal, setShowModal] =
-    useState(false);
-
-  const [editWarehouse, setEditWarehouse] =
-    useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [editWarehouse, setEditWarehouse] = useState(null);
 
   useEffect(() => {
     loadWarehouses();
   }, []);
 
-  const loadWarehouses =
-    async () => {
-      const data =
-        await getWarehouses();
+  const loadWarehouses = async () => {
+    const data = await getWarehouses();
 
-      if (data.success) {
-        setWarehouses(
-          data.warehouses
-        );
-      }
-    };
+    if (data.success) {
+      setWarehouses(data.warehouses);
+    }
+  };
 
-  const handleAdd =
-    async (warehouse) => {
-      const data =
-        await addWarehouse(
-          warehouse
-        );
+  const handleAdd = async (warehouse) => {
+    const data = await addWarehouse(warehouse);
 
-      if (data.success) {
-        alert(
-          "Warehouse Added"
-        );
-
-        setShowModal(false);
-
-        loadWarehouses();
-      }
-    };
-
-  const handleUpdate =
-    async () => {
-      const data =
-        await updateWarehouse(
-          editWarehouse._id,
-          editWarehouse
-        );
-
-      if (data.success) {
-        alert(
-          "Warehouse Updated"
-        );
-
-        setEditWarehouse(null);
-
-        loadWarehouses();
-      }
-    };
-
-  const handleDelete =
-    async (id) => {
-      if (
-        !window.confirm(
-          "Delete Warehouse?"
-        )
-      )
-        return;
-
-      await deleteWarehouse(id);
-
+    if (data.success) {
+      alert("Warehouse Added");
+      setShowModal(false);
       loadWarehouses();
-    };
+    }
+  };
 
-  const filtered =
-    warehouses.filter((w) => {
-      const matchSearch =
-        w.name
-          .toLowerCase()
-          .includes(
-            search.toLowerCase()
-          );
+  const handleUpdate = async () => {
+    const data = await updateWarehouse(
+      editWarehouse._id,
+      editWarehouse
+    );
 
-      const matchStatus =
-        status === "" ||
-        w.status === status;
+    if (data.success) {
+      alert("Warehouse Updated");
+      setEditWarehouse(null);
+      loadWarehouses();
+    }
+  };
 
-      return (
-        matchSearch &&
-        matchStatus
-      );
-    });
+  const handleDelete = async (id) => {
+    if (!window.confirm("Delete Warehouse?")) return;
+
+    await deleteWarehouse(id);
+    loadWarehouses();
+  };
+
+  const filtered = warehouses.filter((w) => {
+    const matchSearch = w.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    const matchStatus =
+      status === "" || w.status === status;
+
+    return matchSearch && matchStatus;
+  });
 
   return (
     <div className="warehouse-layout">
@@ -128,26 +86,19 @@ function Warehouses() {
         <div className="warehouse-header">
           <div>
             <h1>Warehouses</h1>
-
-            <p>
-              Manage all warehouses.
-            </p>
+            <p>Manage all warehouses.</p>
           </div>
 
           <button
             className="add-btn"
-            onClick={() =>
-              setShowModal(true)
-            }
+            onClick={() => setShowModal(true)}
           >
             <FaPlus />
             Add Warehouse
           </button>
         </div>
 
-        <WarehouseCards
-          warehouses={warehouses}
-        />
+        <WarehouseCards warehouses={warehouses} />
 
         <SearchFilter
           search={search}
@@ -158,61 +109,26 @@ function Warehouses() {
 
         <WarehouseList
           warehouses={filtered}
-          onEdit={
-            setEditWarehouse
-          }
-          onDelete={
-            handleDelete
-          }
+          onEdit={setEditWarehouse}
+          onDelete={handleDelete}
         />
       </div>
 
       {showModal && (
         <AddWarehouse
-          handleAdd={
-            handleAdd
-          }
-          onClose={() =>
-            setShowModal(false)
-          }
+          handleAdd={handleAdd}
+          onClose={() => setShowModal(false)}
         />
       )}
 
       {editWarehouse && (
         <EditWarehouse
-          editWarehouse={
-            editWarehouse
-          }
-          setEditWarehouse={
-            setEditWarehouse
-          }
-          handleUpdate={
-            handleUpdate
-          }
-          onClose={() =>
-            setEditWarehouse(null)
-          }
+          editWarehouse={editWarehouse}
+          setEditWarehouse={setEditWarehouse}
+          handleUpdate={handleUpdate}
+          onClose={() => setEditWarehouse(null)}
         />
       )}
-=======
-import Sidebar from "../../common/Sidebar";
-import Header from "../../common/Header";
-
-function Warehouses() {
-  return (
-    <div className="dashboard-layout">
-
-      <Sidebar />
-
-      <div className="dashboard-main">
-
-        <Header />
-
-        <h1>Warehouses Page</h1>
-
-      </div>
-
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
     </div>
   );
 }
