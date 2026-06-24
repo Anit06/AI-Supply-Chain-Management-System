@@ -1,0 +1,6 @@
+node_modules/
+backend-node/server.js
+backend-node/node_modules/
+frontend-react/node_modules/
+
+.env

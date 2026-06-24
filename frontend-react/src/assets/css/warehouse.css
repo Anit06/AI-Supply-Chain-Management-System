@@ -1,0 +1,348 @@
+.warehouse-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.warehouse-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.warehouse-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.warehouse-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.warehouse-card {
+  background: white;
+  padding: 16px 20px;
+  min-height: 95px;    
+  border-radius: 15px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.warehouse-card svg {
+  font-size: 30px;
+}
+
+.warehouse-card h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.warehouse-card p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.warehouse-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.search-box {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.warehouse-filter select {
+  width: 180px;
+  height: 50px; 
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0 15px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.warehouse-table-wrapper {
+  background: white;
+  border-radius: 15px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.warehouse-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.warehouse-table th,
+.warehouse-table td {
+  padding: 18px;
+  border-bottom:
+    1px solid #eee;
+}
+
+.status {
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+.status.active {
+  background: #dcfce7;
+  color: green;
+}
+
+.status.full {
+  background: #fee2e2;
+  color: red;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #dbeafe;
+}
+
+.delete {
+  background: #fee2e2;
+}
+
+/* ===================================
+   WAREHOUSE MODAL
+=================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.warehouse-modal {
+  width: 720px;
+  max-width: 95%;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.2);
+  animation: modalOpen 0.3s ease;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.warehouse-modal h2 {
+  margin: 0 0 28px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ===================================
+   FORM GRID
+=================================== */
+
+.warehouse-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+/* ===================================
+   LABELS
+=================================== */
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* ===================================
+   INPUTS
+=================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 80%;
+  height: 50px;
+  border: 1px solid #dbe0ea;
+  border-radius: 14px;
+  padding: 0 16px;
+  background: #f8fafc;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group textarea {
+  height: 100px;
+  padding: 14px 16px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+.modal-buttons {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+.save-btn,
+.cancel-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  border: none;
+  background: #dc2626 !important;
+  color: #fee2e2 !important;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+  .warehouse-modal {
+    width: 95%;
+    padding: 24px;
+  }
+
+  .warehouse-form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .modal-buttons {
+    grid-column: span 1;
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

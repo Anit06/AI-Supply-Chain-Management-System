@@ -1,0 +1,427 @@
+AI-Supply-Chain-Management-System/
+
+    README.md
+    .gitignore
+    docker-compose.yml
+    package.json
+
+    frontend-react/
+
+        package.json
+
+        public/
+
+            index.html
+            favicon.ico
+            manifest.json
+
+        src/
+
+            App.jsx
+            main.jsx
+            index.css
+
+            assets/
+
+                images/
+
+                icons/
+
+                css/
+
+                    users.css
+                    global.css
+
+                    auth.css
+
+                    sidebar.css
+                    shopkeeperSidebar.css
+                    header.css
+
+                    dashboard.css
+                    shopkeeper.css
+
+                    products.css
+                    warehouse.css
+
+                    cards.css
+                    charts.css
+                    table.css
+
+            layouts/
+
+                AdminLayout.jsx
+                ShopkeeperLayout.jsx
+
+            components/
+
+                common/
+
+                    Navbar.jsx
+                    Sidebar.jsx
+                    ShopkeeperSidebar.jsx
+                    Header.jsx
+                    SearchBar.jsx
+                    Footer.jsx
+                    Loader.jsx
+                    Button.jsx
+                    Table.jsx
+                    Modal.jsx
+                    ProtectedRoute.jsx
+
+                cards/
+
+                    StatsCard.jsx
+
+                charts/
+
+                    SalesChart.jsx
+                    InventoryChart.jsx
+
+                tables/
+
+                    RecentOrders.jsx
+                    PredictionTable.jsx
+                    WarehouseTable.jsx
+
+                admin/
+
+                    Dashboard/
+
+                        AdminHome.jsx
+                        Dashboard.jsx
+                        SalesChart.jsx
+                        DemandChart.jsx
+                        WarehouseStats.jsx
+
+                    Products/
+
+			            Products.jsx
+                        ProductList.jsx
+                        ProductCard.jsx
+                        AddProduct.jsx
+                        Filter.jsx
+                        EditProduct.jsx
+			            Inventory.jsx
+
+                    Warehouses/
+
+			            Warehouses.jsx
+                        WarehouseList.jsx
+                        AddWarehouse.jsx
+                        WarehouseCards.jsx
+                        EditWarehouse.jsx
+                        SearchFilter.jsx
+                        InventoryView.jsx
+                        TransferStock.jsx
+
+                    Orders/
+
+			            Suppliers.jsx
+			            Orders.jsx
+                        OrderList.jsx
+                        OrderDetails.jsx
+                        OrderStatus.jsx
+
+		            Others/
+
+                        Notification.jsx
+                        Settings.jsx
+                        Support.jsx
+
+                    Reports/
+
+                        Reports.jsx
+                        DownloadPDF.jsx
+                        ExportExcel.jsx
+
+                    AI/
+
+			            AIPrediction.jsx
+                        DemandPrediction.jsx
+                        TrendAnalysis.jsx
+                        RecommendationPanel.jsx
+
+                shopkeeper/
+
+                    Dashboard/
+
+                        ShopkeeperHome.jsx
+
+                    Products/
+
+                        ProductCatalog.jsx
+                        ProductDetails.jsx
+                        SearchProducts.jsx
+
+                    Profile/
+                        
+                        Profile.jsx
+                        Address.jsx
+                        PaymentMethod.jsx
+
+                    Orders/
+
+                        PlaceOrder.jsx
+                        OrderHistory.jsx
+                        TrackOrder.jsx
+
+                    Others/
+
+                        Notification.jsx
+                        Settings.jsx
+                        Support.jsx
+
+                    Cart/
+
+                        Cart.jsx
+                        Checkout.jsx
+
+            pages/
+		
+		        Dashboard.jsx
+
+                Login.jsx
+                Register.jsx
+                Logout.jsx
+
+                Users.jsx
+
+                Unauthorized.jsx
+                NotFound.jsx
+
+            routes/
+
+                AppRoutes.jsx
+
+            context/
+
+                AuthContext.jsx
+                CartContext.jsx
+
+            hooks/
+
+                useAuth.js
+                useFetch.js
+
+            services/
+
+                api.js
+                authService.js
+                productService.js
+                orderService.js
+                warehouseService.js
+                inventoryService.js
+                reportService.js
+                aiService.js
+
+            utils/
+
+                constants.js
+                validators.js
+                formatters.js
+                helpers.js
+
+    backend-node/
+
+        package.json
+        .env
+
+        src/
+
+            app.js
+            server.js
+
+            config/
+
+                db.js
+                serverConfig.js
+                envConfig.js
+
+            controllers/
+
+                authController.js
+                productController.js
+                warehouseController.js
+                inventoryController.js
+                orderController.js
+                reportController.js
+                aiController.js
+
+            models/
+
+                User.js
+                Product.js
+                ProductPrices.js
+                ProductHoldings.js
+                Warehouse.js
+                Inventory.js
+                Order.js
+                DemandHistory.js
+                Prediction.js
+
+            routes/
+
+                authRoutes.js
+                productRoutes.js
+                warehouseRoutes.js
+                inventoryRoutes.js
+                orderRoutes.js
+                reportRoutes.js
+                aiRoutes.js
+
+            middleware/
+
+                authMiddleware.js
+                roleMiddleware.js
+                errorMiddleware.js
+                uploadMiddleware.js
+                validationMiddleware.js
+
+            services/
+
+                javaService.js
+                pythonAIService.js
+                dotnetReportService.js
+                notificationService.js
+
+            utils/
+
+                logger.js
+                responseHandler.js
+                jwtHelper.js
+
+    java-inventory-service/
+
+        pom.xml
+
+        src/
+
+            main/
+
+                java/
+
+                    com/
+
+                        supplychain/
+
+                            controller/
+
+                                InventoryController.java
+
+                            service/
+
+                                StockAllocationService.java
+                                WarehouseSelectionService.java
+                                DemandAnalysisService.java
+                                ReorderService.java
+
+                            model/
+
+                                Product.java
+                                Warehouse.java
+                                Inventory.java
+                                Order.java
+
+                            repository/
+
+                                InventoryRepository.java
+
+                            Application.java
+
+    python-ai-service/
+
+        README.md
+        requirements.txt
+
+        app.py
+        train_model.py
+        predict.py
+        preprocess.py
+
+        models/
+
+            demand_model.pkl
+
+        dataset/
+
+            sales_data.csv
+            demand_history.csv
+
+    dotnet-report-service/
+
+        Program.cs
+        appsettings.json
+        SupplyChainReportService.csproj
+
+        Controllers/
+
+            ReportController.cs
+
+        Services/
+
+            PdfReportService.cs
+            ExcelReportService.cs
+            WarehouseAnalyticsService.cs
+            SalesAnalyticsService.cs
+
+        Models/
+
+            Report.cs
+            Analytics.cs
+
+    database/
+
+        mongodb/
+
+            collections.md
+            indexes.md
+
+            sample-data/
+
+                users.json
+                products.json
+                warehouses.json
+                inventory.json
+                orders.json
+
+        backups/
+
+    docs/
+
+        architecture-diagram.png
+        system-flowchart.png
+        api-documentation.md
+        database-design.png
+        project-report.docx
+        presentation.pptx
+        deployment-guide.md
+
+    deployment/
+
+        nginx/
+
+            nginx.conf
+
+        docker/
+
+            frontend.Dockerfile
+            backend.Dockerfile
+            java-service.Dockerfile
+            python-service.Dockerfile
+            dotnet-service.Dockerfile
+
+        kubernetes/
+
+            frontend-deployment.yaml
+            backend-deployment.yaml
+            mongo-deployment.yaml
+            services.yaml
+
+    tests/
+
+        frontend/
+        backend/
+        java-service/
+        python-ai/
+        integration/
