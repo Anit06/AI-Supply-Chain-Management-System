@@ -5,6 +5,8 @@ const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
 
+const profileRoutes = require("./routes/profileRoutes");
+
 
 const app = express();
 
@@ -42,5 +44,7 @@ app.use(
   "/api/warehouses",
   warehouseRoutes
 );
+
+app.use("/api/profile", profileRoutes);
 
 module.exports = app;
