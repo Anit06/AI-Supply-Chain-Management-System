@@ -1,0 +1,353 @@
+
+
+.address-page {
+  padding: 30px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.address-header h2 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 28px;
+}
+
+/*ADD BUTTON  */
+
+.add-address-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.add-address-btn:hover {
+  background: #1b5e20;
+}
+
+/* ADDRESS CARD */
+
+.address-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.address-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.address-card h3 {
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.address-card p {
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* CURRENT ADDRESS  */
+
+.default-badge {
+  display: inline-block;
+  margin-left: 12px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+  border-radius: 30px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+
+.address-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.address-buttons button {
+  border: none;
+  cursor: pointer;
+  padding: 9px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Edit */
+
+.edit-btn {
+  background: #1976d2;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0d47a1;
+}
+
+/* Delete */
+
+.delete-btn {
+  background: #d32f2f;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Make Current */
+
+.default-btn {
+  background: #2e7d32;
+  color: white;
+}
+
+.default-btn:hover {
+  background: #1b5e20;
+}
+
+/* NO ADDRESS */
+
+.no-address {
+  background: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  color: #777;
+  font-size: 18px;
+}
+
+/* MODAL */
+
+.address-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.address-modal {
+  background: white;
+  width: 700px;
+  max-width: 95%;
+  border-radius: 14px;
+  padding: 25px;
+  animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.address-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.address-modal-header h2 {
+  margin: 0;
+  color: #2e7d32;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* FORM */
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2e7d32;
+}
+
+/* TWO COLUMN */
+
+.address-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+/* FOOTER BUTTONS */
+
+.address-form-buttons {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: #757575;
+
+  color: white;
+
+  border: none;
+
+  padding: 11px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #616161;
+}
+
+.save-btn {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 11px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #1b5e20;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .address-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .address-row {
+    grid-template-columns: 1fr;
+  }
+
+  .address-buttons {
+    flex-direction: column;
+  }
+
+  .address-buttons button {
+    width: 100%;
+  }
+
+  .address-modal {
+    padding: 20px;
+  }
+}
+/* WAREHOUSE SECTION  */
+
+.warehouse-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.warehouse-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.warehouse-info {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
