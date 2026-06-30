@@ -42,10 +42,8 @@ AI-Supply-Chain-Management-System/
                     shopkeeper.css
 
                     products.css
-<<<<<<< HEAD
                     warehouse.css
-=======
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
+
 
                     cards.css
                     charts.css
@@ -103,10 +101,9 @@ AI-Supply-Chain-Management-System/
                         ProductList.jsx
                         ProductCard.jsx
                         AddProduct.jsx
-<<<<<<< HEAD
+
                         Filter.jsx
-=======
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
+
                         EditProduct.jsx
 			            Inventory.jsx
 
@@ -115,12 +112,9 @@ AI-Supply-Chain-Management-System/
 			            Warehouses.jsx
                         WarehouseList.jsx
                         AddWarehouse.jsx
-<<<<<<< HEAD
                         WarehouseCards.jsx
                         EditWarehouse.jsx
                         SearchFilter.jsx
-=======
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
                         InventoryView.jsx
                         TransferStock.jsx
 
@@ -261,11 +255,10 @@ AI-Supply-Chain-Management-System/
 
                 User.js
                 Product.js
-<<<<<<< HEAD
+
                 ProductPrices.js
                 ProductHoldings.js
-=======
->>>>>>> eb5a4f2783018f24536dfc00e581d7e0d4789b96
+
                 Warehouse.js
                 Inventory.js
                 Order.js
@@ -317,16 +310,23 @@ AI-Supply-Chain-Management-System/
 
                         supplychain/
 
+                            config/
+                                MongoConfig.java
+
                             controller/
 
                                 InventoryController.java
 
                             service/
-
+                                InventoryService.java
                                 StockAllocationService.java
                                 WarehouseSelectionService.java
                                 DemandAnalysisService.java
                                 ReorderService.java
+
+                            dto/
+                                InventoryRequest.java
+                                InventoryResponse.java
 
                             model/
 
@@ -336,7 +336,8 @@ AI-Supply-Chain-Management-System/
                                 Order.java
 
                             repository/
-
+                                ProductRepository.java
+                                WarehouseRepository.java
                                 InventoryRepository.java
 
                             Application.java
