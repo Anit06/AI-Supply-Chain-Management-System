@@ -34,11 +34,6 @@ const warehouseSchema =
         required: true
       },
 
-      available: {
-        type: Number,
-        required: true
-      },
-
       manager: {
         type: String,
         required: true

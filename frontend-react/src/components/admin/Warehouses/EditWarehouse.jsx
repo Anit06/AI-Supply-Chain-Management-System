@@ -111,24 +111,6 @@ function EditWarehouse({
 
           <div className="form-group">
             <label>
-              Available Space
-            </label>
-
-            <input
-              type="number"
-              name="available"
-              value={
-                editWarehouse.available ||
-                ""
-              }
-              onChange={
-                handleChange
-              }
-            />
-          </div>
-
-          <div className="form-group">
-            <label>
               Manager Name
             </label>
 

@@ -6,7 +6,6 @@ import {
   FaBoxOpen,
   FaWarehouse,
   FaShoppingCart,
-  FaClipboardList,
   FaRobot,
   FaFileAlt,
   FaUsers,
@@ -64,13 +63,6 @@ function Sidebar() {
           <li className={location.pathname === "/orders" ? "active" : ""}>
             <FaShoppingCart className="menu-icon" />
             Orders
-          </li>
-        </Link>
-
-        <Link to="/admin/inventory" className="sidebar-link">
-          <li className={location.pathname === "/inventory" ? "active" : ""}>
-            <FaClipboardList className="menu-icon" />
-            Inventory
           </li>
         </Link>
 

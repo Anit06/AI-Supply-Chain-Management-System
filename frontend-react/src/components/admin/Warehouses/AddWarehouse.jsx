@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 function AddWarehouse({
-  warehouses,
-  setWarehouses,
+  handleAdd,
   onClose
 }) {
   const [formData, setFormData] =
@@ -12,7 +11,6 @@ function AddWarehouse({
       location: "",
       city: "",
       capacity: "",
-      available: "",
       manager: "",
       phone: "",
       status: "Active"
@@ -29,17 +27,7 @@ function AddWarehouse({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newWarehouse = {
-      id: Date.now(),
-      ...formData
-    };
-
-    setWarehouses([
-      ...warehouses,
-      newWarehouse
-    ]);
-
-    onClose();
+    handleAdd(formData);
   };
 
   return (
@@ -129,24 +117,6 @@ function AddWarehouse({
               name="capacity"
               value={
                 formData.capacity
-              }
-              onChange={
-                handleChange
-              }
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label>
-              Available Space
-            </label>
-
-            <input
-              type="number"
-              name="available"
-              value={
-                formData.available
               }
               onChange={
                 handleChange

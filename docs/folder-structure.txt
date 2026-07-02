@@ -304,6 +304,9 @@ AI-Supply-Chain-Management-System/
 
             main/
 
+                resources/
+                    application.properties
+
                 java/
 
                     com/
