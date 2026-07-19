@@ -7,6 +7,8 @@ const warehouseRoutes = require("./routes/warehouseRoutes");
 const inventoryRoutes = require("./routes/inventoryRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 
+const catalogRoutes = require("./routes/catalogRoutes");
+
 const app = express();
 
 app.use(cors());
@@ -23,5 +25,6 @@ app.use("/api/products", productRoutes);
 app.use("/api/warehouses", warehouseRoutes);
 app.use("/api/inventory", inventoryRoutes);
 app.use("/api/profile", profileRoutes);
+app.use("/api/catalog", catalogRoutes);
 
 module.exports = app;

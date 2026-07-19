@@ -128,8 +128,9 @@ function Profile() {
               value={formData.shopCategory}
               onChange={handleChange}
             >
-              <option value="vegetable">Vegetable</option>
-              <option value="dairy">Dairy</option>
+              <option value="Vegetablse">Vegetable</option>
+              <option value="Dairy">Dairy</option>
+              <option value="Fruits">Fruits</option>
               <option value="both">Both</option>
             </select>
           </div>
