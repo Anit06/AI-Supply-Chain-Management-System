@@ -4,92 +4,151 @@ const Product = require("../models/Product");
 const ProductPrice = require("../models/ProductPrice");
 const javaService = require("../services/javaService");
 
-/*
-GET WAREHOUSE CATALOG
-*/
-
 exports.getWarehouseCatalog = async (req, res) => {
-  try {
-    const warehouseId = req.params.warehouseId;
+    try {
 
-    // Logged in user
-    const user = await User.findById(req.user.id);
+        const warehouseId = req.params.warehouseId;
 
+        const user = await User.findById(req.user.id);
 
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found"
+            });
+        }
 
-    if (!user) {
-      return res.status(404).json({
-        success: false,
-        message: "User not found",
-      });
-    }
+        // ==========================
+        // GET INVENTORY FROM JAVA
+        // ==========================
 
-    // Inventory from Java
-    const inventoryResponse =
-      await javaService.getInventoryByWarehouse(warehouseId);
+        const inventoryResponse =
+            await javaService.getInventoryByWarehouse(warehouseId);
 
-    const inventory =
-      inventoryResponse.data.inventory || inventoryResponse.data;
+        const inventory =
+            inventoryResponse.data.inventory ||
+            inventoryResponse.data ||
+            [];
 
-    let catalog = [];
+        let catalog = [];
 
-    for (const item of inventory) {
-      const product = await Product.findById(item.productId);
+        for (const item of inventory) {
 
-      if (!product) continue;
+            const product =
+                await Product.findById(item.productId);
 
-      const price = await ProductPrice.findOne({
-        productId: product._id,
-      });
+            if (!product) {
+                continue;
+            }
 
-      catalog.push({
-        inventoryId: item.inventoryId,
+            const productPrice =
+                await ProductPrice.findOne({
+                    productId: product._id
+                });
 
-        productId: product._id,
+            catalog.push({
 
-        warehouseId: item.warehouseId,
+                inventoryId:
+                    item.inventoryId,
 
-        warehouseName: item.warehouseName,
+                warehouseId:
+                    item.warehouseId,
 
-        name: item.productName,
+                warehouseName:
+                    item.warehouseName,
 
-        category: item.category,
+                productId:
+                    product._id,
 
-        description: product.description,
+                name:
+                    product.name,
 
-        image: product.image,
+                sku:
+                    product.sku,
 
-        price: price?.price || 0,
+                category:
+                    product.category,
 
-        stock: item.stock,
-      });
-    }
+                description:
+                    product.description,
 
+                image:
+                    product.image,
 
-    catalog = catalog.filter((product) => product.stock > 0);
+                unit:
+                    product.unit || "KG",
 
-    // Shopkeepers -> only own category
-    if (user.role === "user") {
-      const shopkeeperProfile = await ShopkeeperDetails.findOne({ userId: req.user.id });
+                stock:
+                    item.stock,
 
-      if (shopkeeperProfile?.shopCategory) {
-        catalog = catalog.filter((product) => {
-          return (
-            product.category.trim().toLowerCase() ===
-            shopkeeperProfile.shopCategory.trim().toLowerCase()
-          );
+                price:
+                    productPrice
+                        ? productPrice.price
+                        : 0
+
+            });
+        }
+
+        // ==========================
+        // REMOVE OUT OF STOCK
+        // ==========================
+
+        catalog =
+            catalog.filter(product => product.stock > 0);
+
+        // ==========================
+        // FILTER SHOP CATEGORY
+        // ==========================
+
+        if (user.role === "user") {
+
+            const shopkeeper =
+                await ShopkeeperDetails.findOne({
+                    userId: req.user.id
+                });
+
+            if (
+                shopkeeper &&
+                shopkeeper.shopCategory &&
+                shopkeeper.shopCategory.trim().toLowerCase() !== "all"
+            ) {
+
+                catalog = catalog.filter(product => {
+
+                    return (
+                        product.category.trim().toLowerCase() ===
+                        shopkeeper.shopCategory.trim().toLowerCase()
+                    );
+
+                });
+
+            }
+
+        }
+
+        return res.status(200).json({
+
+            success: true,
+
+            totalProducts: catalog.length,
+
+            products: catalog
+
         });
-      }
+
     }
 
-    res.status(200).json({
-      success: true,
-      products: catalog,
-    });
-  } catch (err) {
-    res.status(500).json({
-      success: false,
-      message: err.message,
-    });
-  }
+    catch (error) {
+
+        console.log(error);
+
+        return res.status(500).json({
+
+            success: false,
+
+            message: error.message
+
+        });
+
+    }
 };

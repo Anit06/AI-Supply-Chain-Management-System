@@ -84,7 +84,7 @@ const shopkeeperDetailsSchema = new mongoose.Schema(
         shopCategory: {
             type: String,
             trim: true,
-            default: "",
+            default: "All",
         },
         addresses: {
             type: [addressSchema],
