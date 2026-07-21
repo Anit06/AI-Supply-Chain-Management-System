@@ -5,7 +5,10 @@ function Dashboard() {
 
   const role = localStorage.getItem("role");
 
-  return role === "admin"
+  const isAdmin =
+    role === "admin" || role === "administrative_user";
+
+  return isAdmin
     ? <AdminHome />
     : <ShopkeeperHome />;
 }

@@ -92,8 +92,8 @@ const userSchema = new mongoose.Schema(
     },
     shopCategory: {
       type: String,
-      enum: ["vegetable", "dairy", "both"],
-      default: "vegetable",
+      enum: ["Vegetables", "Dairy", "Fruits", "All"],
+      default: "Vegetables",
     },
     addresses: {
       type: [addressSchema],

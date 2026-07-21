@@ -5,24 +5,20 @@ const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
 const supplierRoutes = require("./routes/supplierRoutes.js")
+const inventoryRoutes = require("./routes/inventoryRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 
+const catalogRoutes = require("./routes/catalogRoutes");
 
 const app = express();
 
 app.use(cors());
-
 app.use(express.json());
 
-app.use(
-  "/uploads",
-  express.static("uploads")
-);
+app.use("/uploads", express.static("uploads"));
 
 app.get("/", (req, res) => {
-  res.send(
-    "AI Supply Chain API Running"
-  );
+  res.send("AI Supply Chain API Running");
 });
 
 app.use(
@@ -52,6 +48,11 @@ app.use(
   warehouseRoutes
 );
 
+app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/warehouses", warehouseRoutes);
+app.use("/api/inventory", inventoryRoutes);
 app.use("/api/profile", profileRoutes);
+app.use("/api/catalog", catalogRoutes);
 
 module.exports = app;

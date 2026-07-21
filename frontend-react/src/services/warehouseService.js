@@ -11,6 +11,14 @@ export const getWarehouses =
     return res.data;
   };
 
+export const getWarehouseById =
+  async (id) => {
+    const res =
+      await axios.get(`${API}/${id}`);
+
+    return res.data;
+  };
+
 export const addWarehouse =
   async (data) => {
     const res =

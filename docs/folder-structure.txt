@@ -111,7 +111,6 @@ AI-Supply-Chain-Management-System/
                         WarehouseCards.jsx
                         EditWarehouse.jsx
                         SearchFilter.jsx
-
                         InventoryView.jsx
                         TransferStock.jsx
 
@@ -306,22 +305,32 @@ AI-Supply-Chain-Management-System/
 
             main/
 
+                resources/
+                    application.properties
+
                 java/
 
                     com/
 
                         supplychain/
 
+                            config/
+                                MongoConfig.java
+
                             controller/
 
                                 InventoryController.java
 
                             service/
-
+                                InventoryService.java
                                 StockAllocationService.java
                                 WarehouseSelectionService.java
                                 DemandAnalysisService.java
                                 ReorderService.java
+
+                            dto/
+                                InventoryRequest.java
+                                InventoryResponse.java
 
                             model/
 
@@ -331,7 +340,8 @@ AI-Supply-Chain-Management-System/
                                 Order.java
 
                             repository/
-
+                                ProductRepository.java
+                                WarehouseRepository.java
                                 InventoryRepository.java
 
                             Application.java

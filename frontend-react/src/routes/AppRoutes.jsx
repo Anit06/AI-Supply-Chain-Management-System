@@ -14,6 +14,7 @@ import Dashboard from "../pages/Dashboard";
 import Products from "../components/admin/Products/Products";
 
 import Warehouses from "../components/admin/Warehouses/Warehouses";
+import InventoryView from "../components/admin/Warehouses/InventoryView";
 import Orders from "../components/admin/Orders/Orders";
 import Inventory from "../components/admin/Products/Inventory";
 import AIPrediction from "../components/admin/AI/AIPrediction";
@@ -54,6 +55,7 @@ function AppRoutes() {
         <Route path="/admin/products" element={<Products />} />
 
         <Route path="warehouses" element={<Warehouses />} />
+        <Route path="warehouses/:warehouseId/inventory" element={<InventoryView />} />
 
         <Route path="orders" element={<Orders />} />
 
