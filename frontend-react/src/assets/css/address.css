@@ -1,173 +1,205 @@
-
+/* ===========================
+   ADDRESS PAGE
+=========================== */
 
 .address-page {
-  padding: 30px;
-  background: #f5f5f5;
   min-height: 100vh;
+  padding: 30px;
+  background: #f4f7fb;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  box-sizing: border-box;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ===========================
+   HEADER
+=========================== */
 
 .address-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .address-header h2 {
   margin: 0;
+  font-size: 26px;
   color: #2563eb;
-  font-size: 28px;
+  font-weight: 700;
 }
 
-/*ADD BUTTON  */
+/* ===========================
+   ADD BUTTONS
+=========================== */
 
-.add-address-btn {
+.add-address-btn,
+.add-warehouse-btn {
+  padding: 10px 20px;
   background: #2563eb;
-  color: white;
+  color: #ffffff;
   border: none;
-  padding: 12px 22px;
   border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.add-address-btn:hover {
-  background: #1b5e20;
+.add-address-btn:hover,
+.add-warehouse-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
 }
 
-/* ADDRESS CARD */
+/* ===========================
+   ADDRESS CARD
+=========================== */
 
 .address-card {
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
-  padding: 22px;
-  margin-bottom: 20px;
-  border: 1px solid #dddddd;
-  transition: 0.3s;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .address-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .address-card h3 {
-  margin: 0 0 10px;
-  color: #222;
+  margin: 0 0 10px 0;
+  color: #111827;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .address-card p {
-  margin: 5px 0;
-  color: #555;
+  margin: 4px 0;
+  color: #4b5563;
   line-height: 1.5;
+  font-size: 14px;
 }
 
-/* CURRENT ADDRESS  */
+/* ===========================
+   CURRENT ADDRESS BADGE
+=========================== */
 
 .default-badge {
   display: inline-block;
-  margin-left: 12px;
-  background: #e8f5e9;
-  color: #2e7d32;
-  border: 1px solid #2e7d32;
-  border-radius: 30px;
-  padding: 4px 12px;
-  font-size: 12px;
-  font-weight: bold;
+  margin-left: 8px;
+  padding: 3px 10px;
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: middle;
 }
 
-/* BUTTONS */
+/* ===========================
+   CARD BUTTONS
+=========================== */
 
 .address-buttons {
   display: flex;
   gap: 10px;
-  margin-top: 18px;
+  margin-top: 16px;
   flex-wrap: wrap;
 }
 
 .address-buttons button {
   border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #ffffff;
   cursor: pointer;
-  padding: 9px 18px;
-  border-radius: 7px;
-  font-size: 14px;
-  transition: 0.3s;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
 }
 
-/* Edit */
-
 .edit-btn {
-  background: #1976d2;
-  color: white;
+  background: #2563eb;
 }
 
 .edit-btn:hover {
-  background: #0d47a1;
+  background: #1d4ed8;
 }
 
-/* Delete */
-
 .delete-btn {
-  background: #d32f2f;
-  color: white;
+  background: #dc2626;
 }
 
 .delete-btn:hover {
-  background: #b71c1c;
+  background: #b91c1c;
 }
 
-/* Make Current */
-
 .default-btn {
-  background: #2e7d32;
-  color: white;
+  background: #16a34a;
 }
 
 .default-btn:hover {
-  background: #1b5e20;
+  background: #15803d;
 }
 
-/* NO ADDRESS */
+/* ===========================
+   NO ADDRESS / EMPTY STATE
+=========================== */
 
 .no-address {
-  background: white;
-  text-align: center;
-  padding: 40px;
+  background: #ffffff;
+  padding: 40px 20px;
   border-radius: 12px;
-  color: #777;
-  font-size: 18px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  border: 1px dashed #d1d5db;
 }
 
-/* MODAL */
+/* ===========================
+   COMPACT MODAL SYSTEM
+=========================== */
 
 .address-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(2px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 16px;
 }
 
-.address-modal {
-  background: white;
-  width: 700px;
-  max-width: 95%;
-  border-radius: 14px;
-  padding: 25px;
-  animation: popup 0.25s ease;
+/* Reduced size and padding for a compact layout */
+.address-modal,
+.warehouse-modal {
+  width: 560px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  animation: popup 0.2s ease-out;
 }
 
 @keyframes popup {
   from {
-    transform: scale(0.9);
+    transform: scale(0.96);
     opacity: 0;
   }
-
   to {
     transform: scale(1);
     opacity: 1;
@@ -178,27 +210,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f3f4f6;
 }
 
 .address-modal-header h2 {
   margin: 0;
-  color: #2e7d32;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
 }
 
 .close-btn {
-  background: none;
+  background: transparent;
   border: none;
   font-size: 22px;
+  line-height: 1;
   cursor: pointer;
+  color: #9ca3af;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
 }
 
-/* FORM */
+.close-btn:hover {
+  color: #dc2626;
+}
 
-.address-form {
+/* ===========================
+   COMPACT FORM CONTROLS
+=========================== */
+
+.address-form,
+.warehouse-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px; /* Tighter vertical spacing */
 }
 
 .form-group {
@@ -207,101 +255,186 @@
 }
 
 .form-group label {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  font-size: 13px;
   font-weight: 600;
-  color: #444;
+  color: #374151;
 }
 
 .form-group input,
-.form-group select {
-  padding: 12px;
-
-  border: 1px solid #ccc;
-
-  border-radius: 8px;
-
+.form-group select,
+.form-group textarea {
+  padding: 8px 12px; /* Reduced input height */
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: #ffffff;
   outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
 
-  font-size: 15px;
-
-  transition: 0.3s;
+.form-group textarea {
+  min-height: 70px;
+  resize: vertical;
 }
 
 .form-group input:focus,
-.form-group select:focus {
-  border-color: #2e7d32;
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-/* TWO COLUMN */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+  font-size: 13px;
+}
 
+/* Multi-column Grid Row */
 .address-row {
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
-/* FOOTER BUTTONS */
+/* Optional 3-column row for Zip/City/State */
+.address-row-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* ===========================
+   FORM BUTTONS
+=========================== */
 
 .address-form-buttons {
   display: flex;
-
   justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+}
 
-  gap: 12px;
-
-  margin-top: 20px;
+.cancel-btn,
+.save-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .cancel-btn {
-  background: #757575;
-
-  color: white;
-
-  border: none;
-
-  padding: 11px 22px;
-
-  border-radius: 8px;
-
-  cursor: pointer;
+  background: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
 }
 
 .cancel-btn:hover {
-  background: #616161;
+  background: #e5e7eb;
+  color: #1f2937;
 }
 
 .save-btn {
   background: #2563eb;
-
-  color: white;
-
-  border: none;
-
-  padding: 11px 22px;
-
-  border-radius: 8px;
-
-  cursor: pointer;
+  color: #ffffff;
 }
 
 .save-btn:hover {
-  background: #1b5e20;
+  background: #1d4ed8;
 }
 
-/* RESPONSIVE */
+/* ===========================
+   WAREHOUSE SECTION
+=========================== */
+
+.warehouse-section {
+  margin-top: 36px;
+}
+
+.warehouse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.warehouse-section h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.warehouse-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.warehouse-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.warehouse-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 17px;
+  color: #111827;
+}
+
+.warehouse-info {
+  margin: 4px 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-badge.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
 
 @media (max-width: 768px) {
-  .address-header {
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 15px;
+  .address-page {
+    padding: 16px;
   }
 
-  .address-row {
+  .address-header,
+  .warehouse-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .address-row,
+  .address-row-3 {
     grid-template-columns: 1fr;
   }
 
@@ -313,41 +446,17 @@
     width: 100%;
   }
 
-  .address-modal {
-    padding: 20px;
+  .address-modal,
+  .warehouse-modal {
+    padding: 16px;
+    width: 100%;
   }
-}
-/* WAREHOUSE SECTION  */
 
-.warehouse-section {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 2px solid #e0e0e0;
-}
+  .address-form-buttons {
+    flex-direction: column-reverse;
+  }
 
-.warehouse-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 22px;
-  margin-bottom: 20px;
-  border: 1px solid #dddddd;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-}
-
-.warehouse-info {
-  margin: 5px 0;
-  color: #555;
-  font-size: 14px;
-}
-
-.status-badge {
-  display: inline-block;
-  margin-top: 10px;
-  background: #e8f5e9;
-  color: #2e7d32;
-  border: 1px solid #2e7d32;
-  padding: 4px 12px;
-  border-radius: 30px;
-  font-size: 12px;
-  font-weight: bold;
+  .address-form-buttons button {
+    width: 100%;
+  }
 }

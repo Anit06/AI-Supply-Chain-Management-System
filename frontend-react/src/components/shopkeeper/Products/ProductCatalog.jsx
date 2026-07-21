@@ -12,6 +12,10 @@ function ProductCatalog() {
     const [products, setProducts] = useState([]);
     const [selectedQuantities, setSelectedQuantities] = useState({});
 
+    // Search & Filter
+    const [searchTerm, setSearchTerm] = useState("");
+    const [sortOrder, setSortOrder] = useState("");
+
     useEffect(() => {
         loadWarehouses();
     }, []);
@@ -45,7 +49,7 @@ function ProductCatalog() {
 
         setSelectedQuantities({
             ...selectedQuantities,
-            [product.productId]: qty + 1
+            [product.productId]: qty + 1,
         });
     };
 
@@ -56,7 +60,7 @@ function ProductCatalog() {
 
         setSelectedQuantities({
             ...selectedQuantities,
-            [productId]: qty - 1
+            [productId]: qty - 1,
         });
     };
 
@@ -70,7 +74,7 @@ function ProductCatalog() {
                 productName: product.name,
                 price: product.price,
                 quantity,
-                unit: product.unit || "KG"
+                unit: product.unit || "KG",
             });
 
             alert("Product Added To Cart");
@@ -85,11 +89,27 @@ function ProductCatalog() {
         setSelectedWarehouse(warehouseId);
         setProducts([]);
         setSelectedQuantities({});
+        setSearchTerm("");
+        setSortOrder("");
 
         if (warehouseId) {
             loadProducts(warehouseId);
         }
     };
+
+    // Search
+    let filteredProducts = products.filter((product) =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // Sort
+    if (sortOrder === "low-high") {
+        filteredProducts.sort((a, b) => a.price - b.price);
+    }
+
+    if (sortOrder === "high-low") {
+        filteredProducts.sort((a, b) => b.price - a.price);
+    }
 
     return (
         <div className="catalog-container">
@@ -104,26 +124,48 @@ function ProductCatalog() {
                 />
             </div>
 
+            {selectedWarehouse && (
+                <div className="catalog-toolbar">
+
+                    <input
+                        type="text"
+                        placeholder="🔍 Search Product..."
+                        className="catalog-search"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+
+                    <select
+                        className="catalog-filter"
+                        value={sortOrder}
+                        onChange={(e) => setSortOrder(e.target.value)}
+                    >
+                        <option value="">Sort By Price</option>
+                        <option value="low-high">Price : Low → High</option>
+                        <option value="high-low">Price : High → Low</option>
+                    </select>
+
+                </div>
+            )}
+
             {selectedWarehouse === "" ? (
                 <h3 style={{ textAlign: "center", marginTop: "60px" }}>
                     Please Select Warehouse
                 </h3>
-            ) : products.length === 0 ? (
+            ) : filteredProducts.length === 0 ? (
                 <h3 style={{ textAlign: "center", marginTop: "60px" }}>
-                    No Products Available
+                    No Products Found
                 </h3>
             ) : (
                 <div className="catalog-grid">
-                    {products.map((product) => (
+                    {filteredProducts.map((product) => (
                         <ProductCard
                             key={product.productId}
                             product={product}
                             quantity={
                                 selectedQuantities[product.productId] || 1
                             }
-                            onIncrease={() =>
-                                increaseQuantity(product)
-                            }
+                            onIncrease={() => increaseQuantity(product)}
                             onDecrease={() =>
                                 decreaseQuantity(product.productId)
                             }
@@ -134,7 +176,6 @@ function ProductCatalog() {
                     ))}
                 </div>
             )}
-
         </div>
     );
 }

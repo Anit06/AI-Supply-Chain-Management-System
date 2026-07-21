@@ -150,7 +150,7 @@ function Profile() {
             <button type="submit" className="profile-btn" disabled={loading}>
               {loading ? "Saving..." : "Save"}
             </button>
-            <button type="button" className="delete-btn" onClick={handleCancel}>
+            <button type="button" className="cancel-btn" onClick={handleCancel}>
               Cancel
             </button>
           </div>
