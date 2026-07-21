@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const orderItemSchema = new mongoose.Schema(
+const cartItemSchema = new mongoose.Schema(
     {
         productId: {
             type: mongoose.Schema.Types.ObjectId,
@@ -37,13 +37,8 @@ const orderItemSchema = new mongoose.Schema(
     }
 );
 
-const orderSchema = new mongoose.Schema(
+const cartSchema = new mongoose.Schema(
     {
-        orderNumber: {
-            type: String,
-            unique: true,
-            trim: true
-        },
         userId: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
@@ -54,15 +49,15 @@ const orderSchema = new mongoose.Schema(
             ref: "Warehouse",
             required: true
         },
-        items: [orderItemSchema],
-        grandTotal: {
+        items: [cartItemSchema],
+        cartTotal: {
             type: Number,
             default: 0
         },
         status: {
             type: String,
-            enum: ["Pending", "Confirmed", "Packed", "Shipped", "Delivered", "Cancelled"],
-            default: "Pending"
+            enum: ["Active", "Ordered", "Abandoned"],
+            default: "Active"
         }
     },
     {
@@ -70,12 +65,4 @@ const orderSchema = new mongoose.Schema(
     }
 );
 
-orderSchema.pre("save", async function (next) {
-    if (!this.orderNumber) {
-        const count = await mongoose.models.Order.countDocuments();
-        this.orderNumber = `ORD-${String(count + 1).padStart(4, "0")}`;
-    }
-    next();
-});
-
-module.exports = mongoose.model("Order", orderSchema);
+module.exports = mongoose.model("Cart", cartSchema);

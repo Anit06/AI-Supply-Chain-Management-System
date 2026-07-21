@@ -7,6 +7,9 @@ const warehouseRoutes = require("./routes/warehouseRoutes");
 const supplierRoutes = require("./routes/supplierRoutes.js")
 const inventoryRoutes = require("./routes/inventoryRoutes");
 const profileRoutes = require("./routes/profileRoutes");
+const shopkeeperRoutes = require("./routes/shopkeeperRoutes");
+const cartRoutes = require("./routes/cartRoutes");
+const orderRoutes = require("./routes/orderRoutes");
 
 const catalogRoutes = require("./routes/catalogRoutes");
 
@@ -53,6 +56,9 @@ app.use("/api/products", productRoutes);
 app.use("/api/warehouses", warehouseRoutes);
 app.use("/api/inventory", inventoryRoutes);
 app.use("/api/profile", profileRoutes);
+app.use("/api/shopkeeper", shopkeeperRoutes);
+app.use("/api/cart", cartRoutes);
+app.use("/api/orders", orderRoutes);
 app.use("/api/catalog", catalogRoutes);
 
 module.exports = app;

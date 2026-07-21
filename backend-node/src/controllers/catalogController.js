@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const ShopkeeperDetails = require("../models/ShopkeeperDetails");
 const Product = require("../models/Product");
 const ProductPrice = require("../models/ProductPrice");
 const javaService = require("../services/javaService");
@@ -14,7 +15,7 @@ exports.getWarehouseCatalog = async (req, res) => {
     // Logged in user
     const user = await User.findById(req.user.id);
 
-    
+
 
     if (!user) {
       return res.status(404).json({
@@ -65,27 +66,21 @@ exports.getWarehouseCatalog = async (req, res) => {
     }
 
 
+    catalog = catalog.filter((product) => product.stock > 0);
+
     // Shopkeepers -> only own category
-    
     if (user.role === "user") {
+      const shopkeeperProfile = await ShopkeeperDetails.findOne({ userId: req.user.id });
 
-    console.log("User Category:", user.shopCategory);
-
-    catalog = catalog.filter(product => {
-
-        console.log(
-            "Product Category:",
-            product.category
-        );
-
-        return (
+      if (shopkeeperProfile?.shopCategory) {
+        catalog = catalog.filter((product) => {
+          return (
             product.category.trim().toLowerCase() ===
-            user.shopCategory.trim().toLowerCase()
-        );
-
-    });
-
-}
+            shopkeeperProfile.shopCategory.trim().toLowerCase()
+          );
+        });
+      }
+    }
 
     res.status(200).json({
       success: true,

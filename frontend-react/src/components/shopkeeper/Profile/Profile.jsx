@@ -1,33 +1,35 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { getProfile, updateProfile } from "../../../services/shopkeeperService";
 import "../../../assets/css/profile.css";
 
 function Profile() {
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
     phone: "",
-    shopCategory: "vegetable",
+    shopCategory: "",
   });
+  const [userId, setUserId] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState({ type: "", message: "" });
 
   const fetchProfile = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const user = JSON.parse(localStorage.getItem("user") || "{}") || {};
+      if (!user.id) return;
 
-      const response = await axios.get("http://localhost:5000/api/profile", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
+      setUserId(user.id);
+      const response = await getProfile(user.id);
+      const profile = response.data.profile;
       setFormData({
-        name: response.data.user.name,
-        email: response.data.user.email,
-        phone: response.data.user.phone,
-        shopCategory: response.data.user.shopCategory,
+        fullName: profile.fullName || "",
+        email: profile.userId?.email || "",
+        phone: profile.phone || "",
+        shopCategory: profile.shopCategory || "",
       });
     } catch (error) {
       console.error("Error fetching profile:", error);
+      setFeedback({ type: "error", message: "Unable to load your profile right now." });
     }
   };
 
@@ -41,37 +43,39 @@ function Profile() {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setFeedback({ type: "", message: "" });
 
     try {
-      const token = localStorage.getItem("token");
-
-      const response = await axios.put(
-        "http://localhost:5000/api/profile",
-        formData,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
-
-      localStorage.setItem("name", formData.name);
-
-      alert(response.data.message);
-
-      await fetchProfile();
-    } catch (error) {
-      console.log(error);
-      console.log(error.response);
-
-      if (error.response) {
-        console.log(error.response.data);
+      if (!userId) {
+        throw new Error("Profile not ready");
       }
 
-      alert("Failed to update profile");
+      if (!formData.fullName || !formData.phone || !formData.shopCategory) {
+        throw new Error("Full name, phone, and shop category are required");
+      }
+
+      if (!/^\d{10}$/.test(formData.phone)) {
+        throw new Error("Phone number must be 10 digits");
+      }
+
+      const response = await updateProfile(userId, formData);
+      localStorage.setItem("name", formData.fullName || "");
+      setFeedback({ type: "success", message: response.data.message });
+      await fetchProfile();
+    } catch (error) {
+      setFeedback({ type: "error", message: error.response?.data?.message || error.message || "Failed to update profile" });
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const handleCancel = () => {
+    fetchProfile();
+    setFeedback({ type: "", message: "" });
   };
 
   return (
@@ -79,23 +83,29 @@ function Profile() {
       <div className="profile-card">
         <div className="profile-header">
           <div className="profile-avatar">
-            {formData.name ? formData.name.charAt(0).toUpperCase() : "U"}
+            {formData.fullName ? formData.fullName.charAt(0).toUpperCase() : "U"}
           </div>
           <div className="profile-titles">
             <h2>My Profile</h2>
-            <p>Manage your personal information</p>
+            <p>Manage your shopkeeper information</p>
           </div>
         </div>
 
+        {feedback.message && (
+          <div style={{ marginBottom: "12px", color: feedback.type === "success" ? "#0f9d58" : "#d93025", fontWeight: 600 }}>
+            {feedback.message}
+          </div>
+        )}
+
         <form className="profile-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Name</label>
+            <label>Full Name</label>
             <input
               type="text"
-              name="name"
-              value={formData.name}
+              name="fullName"
+              value={formData.fullName}
               onChange={handleChange}
-              placeholder="Enter your name"
+              placeholder="Enter full name"
             />
           </div>
 
@@ -105,13 +115,13 @@ function Profile() {
               type="email"
               name="email"
               value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
+              readOnly
+              placeholder="Email"
             />
           </div>
 
           <div className="form-group">
-            <label>Phone</label>
+            <label>Phone Number</label>
             <input
               type="text"
               name="phone"
@@ -128,16 +138,20 @@ function Profile() {
               value={formData.shopCategory}
               onChange={handleChange}
             >
-              <option value="Vegetablse">Vegetable</option>
+              <option value="">Select category</option>
+              <option value="Vegetables">Vegetables</option>
               <option value="Dairy">Dairy</option>
               <option value="Fruits">Fruits</option>
-              <option value="both">Both</option>
+              <option value="All">All</option>
             </select>
           </div>
 
           <div className="button-container">
-            <button type="submit" className="profile-btn">
-              Update Profile
+            <button type="submit" className="profile-btn" disabled={loading}>
+              {loading ? "Saving..." : "Save"}
+            </button>
+            <button type="button" className="delete-btn" onClick={handleCancel}>
+              Cancel
             </button>
           </div>
         </form>

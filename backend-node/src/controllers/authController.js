@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const ShopkeeperDetails = require("../models/ShopkeeperDetails");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
@@ -14,6 +15,20 @@ const register = async (req, res) => {
       password,
       phone
     } = req.body;
+
+    if (!name || !email || !password || !phone) {
+      return res.status(400).json({
+        success: false,
+        message: "Name, email, password, and phone are required"
+      });
+    }
+
+    if (password.length < 6) {
+      return res.status(400).json({
+        success: false,
+        message: "Password must be at least 6 characters"
+      });
+    }
 
     const existingUser =
       await User.findOne({ email });
@@ -34,6 +49,25 @@ const register = async (req, res) => {
       password: hashedPassword,
       phone,
       role: "user"
+    });
+
+    await ShopkeeperDetails.create({
+      userId: user._id,
+      fullName: name,
+      phone,
+      shopCategory: "",
+      address: {
+        fullName: name,
+        phone,
+        addressLine1: "",
+        addressLine2: "",
+        landmark: "",
+        city: "",
+        state: "",
+        country: "",
+        pincode: "",
+        addressType: "Home",
+      },
     });
 
     res.status(201).json({
@@ -93,7 +127,7 @@ const login = async (req, res) => {
         role: user.role
       },
       process.env.JWT_SECRET ||
-        "cdac-secret-key",
+      "cdac-secret-key",
       {
         expiresIn: "1d"
       }
@@ -231,6 +265,19 @@ const updateUser = async (
 
     await user.save();
 
+    if (user) {
+      await ShopkeeperDetails.findOneAndUpdate(
+        { userId: user._id },
+        {
+          $set: {
+            fullName: user.name || undefined,
+            phone: user.phone || undefined,
+          },
+        },
+        { upsert: true }
+      );
+    }
+
     res.status(200).json({
       success: true,
       message:
@@ -272,6 +319,8 @@ const deleteUser = async (
     await User.findByIdAndDelete(
       req.params.id
     );
+
+    await ShopkeeperDetails.deleteOne({ userId: req.params.id });
 
     res.status(200).json({
       success: true,

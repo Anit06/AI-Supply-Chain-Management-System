@@ -150,6 +150,9 @@ AI-Supply-Chain-Management-System/
                     Products/
 
                         ProductCatalog.jsx
+                        ProductCard.jsx
+                        QuantitySelector.jsx
+                        WarehouseSelector.jsx
                         ProductDetails.jsx
                         SearchProducts.jsx
 
@@ -165,16 +168,17 @@ AI-Supply-Chain-Management-System/
                         OrderHistory.jsx
                         TrackOrder.jsx
 
+                    Cart/
+
+                        Cart.jsx
+                        CartItem.jsx
+                        CartSummary.jsx
+
                     Others/
 
                         Notification.jsx
                         Settings.jsx
                         Support.jsx
-
-                    Cart/
-
-                        Cart.jsx
-                        Checkout.jsx
 
             pages/
 		
@@ -249,7 +253,7 @@ AI-Supply-Chain-Management-System/
                 reportController.js
                 aiController.js
                 supplierController.js
-
+                shopkeeperController.js
 
             models/
 
@@ -257,6 +261,26 @@ AI-Supply-Chain-Management-System/
                 Product.js
                 ProductPrices.js
                 ProductHoldings.js
+                ShopkeeperDetails.js
+
+            routes/
+
+                shopkeeperRoutes.js
+
+            services/
+
+                pythonAIService.js
+                notificationService.js
+
+    docs/
+
+        folder-structure.txt
+
+    Notes:
+        - User stores authentication-only data.
+        - Shopkeeper profile and addresses are stored in ShopkeeperDetails.
+        - Shopkeeper addresses support multiple entries with one default address.
+        - Frontend shopkeeper profile page uses profile CRUD APIs and address page uses address CRUD APIs.
 
                 Warehouse.js
                 Inventory.js

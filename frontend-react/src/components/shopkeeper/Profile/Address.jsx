@@ -1,296 +1,131 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
-import AddressForm from "./AddressForm";
+import {
+  getProfile,
+  addAddress,
+  updateAddress,
+  deleteAddress,
+  setDefaultAddress,
+} from "../../../services/shopkeeperService";
+import AddressCard from "./AddressCard";
+import AddressModal from "./AddressModal";
 import "../../../assets/css/address.css";
 
 function Address() {
+  const [profile, setProfile] = useState(null);
   const [addresses, setAddresses] = useState([]);
-
-  const [showForm, setShowForm] = useState(false);
-
+  const [showModal, setShowModal] = useState(false);
   const [editingAddress, setEditingAddress] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [userId, setUserId] = useState("");
+  const [feedback, setFeedback] = useState({ type: "", message: "" });
 
-  //warehouse
-  const [warehouses, setWarehouses] = useState([]);
-
-  // GET ADDRESSES
-
-  const fetchAddresses = async () => {
+  const fetchProfile = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const user = JSON.parse(localStorage.getItem("user") || "{}") || {};
+      if (!user.id) return;
 
-      const response = await axios.get(
-        "http://localhost:5000/api/profile/addresses",
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
-
-      setAddresses(response.data.addresses);
+      setUserId(user.id);
+      const response = await getProfile(user.id);
+      const shopProfile = response.data.profile;
+      setProfile(shopProfile);
+      setAddresses(shopProfile.addresses || []);
     } catch (error) {
-      console.log(error);
-      alert("Failed to fetch addresses");
+      setFeedback({ type: "error", message: "Failed to fetch your addresses" });
     }
   };
 
   useEffect(() => {
-    fetchAddresses();
+    fetchProfile();
   }, []);
 
-  // OPEN ADD FORM
-
-  const handleAddAddress = () => {
+  const handleOpenAdd = () => {
     setEditingAddress(null);
-    setShowForm(true);
+    setShowModal(true);
   };
-
-  // OPEN EDIT FORM
 
   const handleEdit = (address) => {
     setEditingAddress(address);
-    setShowForm(true);
+    setShowModal(true);
   };
 
-  // CLOSE FORM
+  const handleSubmit = async (formData) => {
+    setLoading(true);
+    setFeedback({ type: "", message: "" });
 
-  const handleClose = () => {
-    setShowForm(false);
-    setEditingAddress(null);
-  };
-
-  const handleSave = async (formData) => {
     try {
-      const token = localStorage.getItem("token");
+      if (!userId) throw new Error("Profile not ready");
 
-      // ADD
-
-      if (!editingAddress) {
-        const response = await axios.post(
-          "http://localhost:5000/api/profile/addresses",
-          formData,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          },
-        );
-
-        alert(response.data.message);
-      }
-
-      //  UPDATE
-      else {
-        const response = await axios.put(
-          `http://localhost:5000/api/profile/addresses/${editingAddress._id}`,
-          formData,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          },
-        );
-
-        alert(response.data.message);
-      }
-
-      setShowForm(false);
-      setEditingAddress(null);
-
-      fetchAddresses();
-    } catch (error) {
-      console.log(error);
-
-      if (error.response) {
-        alert(error.response.data.message);
+      let response;
+      if (editingAddress?._id) {
+        response = await updateAddress(userId, editingAddress._id, formData);
       } else {
-        alert("Something went wrong");
+        response = await addAddress(userId, formData);
       }
+
+      setAddresses(response.data.addresses || []);
+      setFeedback({ type: "success", message: response.data.message || "Address saved successfully" });
+      setShowModal(false);
+      setEditingAddress(null);
+    } catch (error) {
+      setFeedback({ type: "error", message: error.response?.data?.message || error.message || "Failed to save address" });
+    } finally {
+      setLoading(false);
     }
   };
 
   const handleDelete = async (addressId) => {
-    const confirmDelete = window.confirm(
-      "Are you sure you want to delete this address?",
-    );
-
-    if (!confirmDelete) return;
-
     try {
-      const token = localStorage.getItem("token");
-
-      const response = await axios.delete(
-        `http://localhost:5000/api/profile/addresses/${addressId}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
-
-      alert(response.data.message);
-
-      fetchAddresses();
+      const response = await deleteAddress(userId, addressId);
+      setAddresses(response.data.addresses || []);
+      setFeedback({ type: "success", message: response.data.message || "Address removed" });
     } catch (error) {
-      console.log(error);
-
-      if (error.response) {
-        alert(error.response.data.message);
-      }
+      setFeedback({ type: "error", message: error.response?.data?.message || error.message || "Failed to delete address" });
     }
   };
 
-  const handleMakeDefault = async (addressId) => {
+  const handleSetDefault = async (addressId) => {
     try {
-      const token = localStorage.getItem("token");
-
-      const response = await axios.put(
-        `http://localhost:5000/api/profile/addresses/${addressId}/default`,
-        {},
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        },
-      );
-
-      alert(response.data.message);
-
-      fetchAddresses();
+      const response = await setDefaultAddress(userId, addressId);
+      setAddresses(response.data.addresses || []);
+      setFeedback({ type: "success", message: response.data.message || "Default address updated" });
     } catch (error) {
-      console.log(error);
-
-      if (error.response) {
-        alert(error.response.data.message);
-      }
+      setFeedback({ type: "error", message: error.response?.data?.message || error.message || "Failed to set default address" });
     }
   };
-
-  // NEW: Fetch Warehouses
-  const fetchWarehouses = async () => {
-    try {
-      const response = await axios.get("http://localhost:5000/api/warehouses");
-      setWarehouses(response.data.warehouses);
-    } catch (error) {
-      console.log("Error fetching warehouses", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchAddresses();
-    fetchWarehouses(); // Fetch both on load
-  }, []);
 
   return (
     <div className="address-page">
       <div className="address-header">
-        <h2>My Addresses</h2>
-
-        <button className="add-address-btn" onClick={handleAddAddress}>
-          + Add Address
-        </button>
+        <h2>Shop Addresses</h2>
+        <button className="add-address-btn" onClick={handleOpenAdd}>+ Add Address</button>
       </div>
+
+      {feedback.message && (
+        <div style={{ marginBottom: "12px", color: feedback.type === "success" ? "#0f9d58" : "#d93025", fontWeight: 600 }}>
+          {feedback.message}
+        </div>
+      )}
 
       {addresses.length === 0 ? (
-        <div className="no-address">
-          <h3>No Address Found</h3>
-
-          <p>
-            Click <strong>+ Add Address</strong> to save your first address.
-          </p>
-        </div>
+        <div className="no-address">No addresses saved yet. Add your first address.</div>
       ) : (
         addresses.map((address) => (
-          <div className="address-card" key={address._id}>
-            <h3>
-              {address.fullName}
-
-              {address.isDefault && (
-                <span className="default-badge">Current Address</span>
-              )}
-            </h3>
-
-            <p>
-              <strong>Phone:</strong> {address.phone}
-            </p>
-
-            <p>{address.addressLine1}</p>
-
-            {address.addressLine2 && <p>{address.addressLine2}</p>}
-
-            {address.landmark && (
-              <p>
-                <strong>Landmark:</strong> {address.landmark}
-              </p>
-            )}
-
-            <p>
-              {address.city}, {address.state} - {address.pincode}
-            </p>
-
-            <p>
-              <strong>Type:</strong> {address.addressType}
-            </p>
-
-            <div className="address-buttons">
-              <button className="edit-btn" onClick={() => handleEdit(address)}>
-                Edit
-              </button>
-
-              <button
-                className="delete-btn"
-                onClick={() => handleDelete(address._id)}
-              >
-                Delete
-              </button>
-
-              {!address.isDefault && (
-                <button
-                  className="default-btn"
-                  onClick={() => handleMakeDefault(address._id)}
-                >
-                  Make Current
-                </button>
-              )}
-            </div>
-          </div>
-        ))
-      )}
-      <div className="address-header" style={{ marginTop: "40px" }}>
-        <h2>Warehouses</h2>
-      </div>
-
-      {warehouses.length === 0 ? (
-        <div className="no-address">
-          <h3>No Warehouses Available</h3>
-        </div>
-      ) : (
-        warehouses.map((wh) => (
-          <div className="address-card" key={wh._id}>
-            <h3>{wh.name}</h3>
-            <p>
-              <strong>Phone:</strong> {wh.phone}
-            </p>
-            <p>
-              {wh.location}, {wh.city} - {wh.country}
-            </p>
-            <p>
-              <strong>Capacity:</strong> {wh.available} / {wh.capacity}
-            </p>
-            <p>
-              <strong>Manager:</strong> {wh.manager}
-            </p>
-            <span className="default-badge">{wh.status}</span>
-          </div>
+          <AddressCard
+            key={address._id}
+            address={address}
+            onEdit={handleEdit}
+            onDelete={handleDelete}
+            onSetDefault={handleSetDefault}
+          />
         ))
       )}
 
-      <AddressForm
-        show={showForm}
-        onClose={handleClose}
-        onSave={handleSave}
+      <AddressModal
+        show={showModal}
+        onClose={() => setShowModal(false)}
+        onSubmit={handleSubmit}
         initialData={editingAddress}
+        loading={loading}
       />
     </div>
   );

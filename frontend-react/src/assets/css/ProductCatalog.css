@@ -26,7 +26,7 @@
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
 }
 
 .product-image {
@@ -36,12 +36,12 @@
     border-radius: 10px;
 }
 
-.quantity-box{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
-    margin-top:15px;
+.quantity-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .quantity-box button {
@@ -60,71 +60,79 @@
     font-weight: bold;
 }
 
-.product-total-price{
-    margin-left:20px;
-    font-size:18px;
-    font-weight:bold;
-    color:#16a34a;
+.product-total-price {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #16a34a;
 }
 
-.cart-summary{
+.cart-summary {
 
-    margin-top:40px;
+    margin-top: 40px;
 
-    background:white;
+    background: white;
 
-    border-radius:12px;
+    border-radius: 12px;
 
-    padding:25px;
+    padding: 25px;
 
-    box-shadow:0 4px 10px rgba(0,0,0,.08);
-
-}
-
-.cart-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    margin:15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
 
 }
 
-.total{
+.cart-row {
 
-    font-size:20px;
+    display: flex;
 
-    color:#2563eb;
+    justify-content: space-between;
 
-}
-
-.checkout-btn{
-
-    width:100%;
-
-    margin-top:20px;
-
-    padding:14px;
-
-    background:#2563eb;
-
-    color:white;
-
-    border:none;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    font-size:16px;
-
-    font-weight:bold;
+    margin: 15px 0;
 
 }
 
-.checkout-btn:hover{
+.total {
 
-    background:#1d4ed8;
+    font-size: 20px;
 
+    color: #2563eb;
+
+}
+
+.checkout-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background: #1d4ed8;
+}
+
+.remove-btn {
+    padding: 10px 12px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #b91c1c;
+}
+
+.product-card p {
+    margin: 6px 0;
+}
+
+.product-card .checkout-btn {
+    margin-top: 12px;
 }
