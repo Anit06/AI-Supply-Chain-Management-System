@@ -10,11 +10,10 @@ import {
   deleteSupplier,
 } from "../../../services/supplierService";
 
+
 function Suppliers() {
   const [suppliers, setSuppliers] = useState([]);
-
   const [searchTerm, setSearchTerm] = useState("");
-
   const [capacityFilter, setCapacityFilter] = useState("All");
 
   const [formData, setFormData] = useState({
@@ -235,7 +234,9 @@ function Suppliers() {
           )}
         </form>
 
+
         <br />
+
 
         <div className="supplier-toolbar">
 
@@ -259,8 +260,6 @@ function Suppliers() {
           </select>
 
         </div>
-
-        <br />
 
         <table className="users-table">
           <thead>
