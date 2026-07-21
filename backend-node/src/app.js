@@ -4,7 +4,7 @@ const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
-
+const supplierRoutes = require("./routes/supplierRoutes.js")
 const profileRoutes = require("./routes/profileRoutes");
 
 
@@ -36,9 +36,16 @@ app.use(
 );
 
 app.use(
+  "/api/suppliers",
+  supplierRoutes
+);
+
+app.use(
   "/api/warehouses",
   require("./routes/warehouseRoutes")
 );
+
+
 
 app.use(
   "/api/warehouses",
