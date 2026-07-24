@@ -1,0 +1,1971 @@
+{
+  "warehouses": {
+    "Katraj": [
+      {
+        "product": "Amul Milk",
+        "category": "Dairy"
+      }
+    ],
+    "Pashan Chowk": [
+      {
+        "product": "Potato",
+        "category": "Vegetables"
+      },
+      {
+        "product": "Tomato",
+        "category": "Vegetables"
+      }
+    ],
+    "Shivaji Bhaji Market": [
+      {
+        "product": "Amul Milk",
+        "category": "Dairy"
+      },
+      {
+        "product": "Tomato",
+        "category": "Vegetables"
+      }
+    ]
+  },
+  "history": [
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 291.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 310.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 319.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 338.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 278.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 326.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 244.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 259.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 270.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 253.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 268.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 280.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 298.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 290.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 311.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 334.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 333.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 319.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 263.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 272.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 257.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 306.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 297.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 310.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 324.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 305.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 338.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 373.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 369.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 349.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 288.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 257.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 285.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 290.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 289.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 327.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 319.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 331.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 331.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 369.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 385.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 360.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 277.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 281.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 294.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 309.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 282.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 332.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 331.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 322.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 357.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 358.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 402.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 378.0
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 7,
+      "monthlyDemand": 285.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 652.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 655.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 540.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 560.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 539.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 597.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 716.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 644.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 749.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 613.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 595.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 580.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 670.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 625.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 568.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 556.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 564.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 555.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 763.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 747.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 816.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 616.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 626.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 674.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 704.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 717.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 607.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 627.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 579.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 565.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 831.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 752.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 757.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 670.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 642.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 753.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 797.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 724.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 661.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 612.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 654.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 596.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 849.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 837.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 851.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 654.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 701.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 711.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 776.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 762.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 665.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 654.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 718.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 720.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 7,
+      "monthlyDemand": 965.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 640.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 628.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 540.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 549.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 562.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 568.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 725.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 740.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 719.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 588.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 594.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 674.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 672.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 649.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 499.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 555.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 601.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 631.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 714.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 731.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 736.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 627.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 662.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 642.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 759.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 727.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 639.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 577.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 569.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 621.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 781.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 814.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 815.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 696.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 653.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 700.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 753.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 658.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 604.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 661.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 556.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 578.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 838.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 847.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 778.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 701.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 618.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 692.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 675.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 769.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 618.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 578.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 628.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 615.0
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 7,
+      "monthlyDemand": 787.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 137.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 136.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 159.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 169.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 142.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 158.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 118.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 128.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 125.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 136.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 129.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 138.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 146.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 148.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 174.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 154.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 168.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 176.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 119.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 128.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 120.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 145.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 138.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 160.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 145.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 164.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 177.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 157.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 187.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 170.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 133.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 143.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 125.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 144.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 147.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 157.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 166.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 155.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 164.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 186.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 173.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 190.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 142.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 139.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 144.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 157.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 145.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 166.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 172.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 178.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 189.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 186.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 174.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 189.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 7,
+      "monthlyDemand": 146.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 282.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 316.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 272.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 253.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 259.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 281.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 361.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 337.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 365.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 287.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 317.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 308.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 329.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 360.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 264.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 263.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 263.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 283.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 379.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 324.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 365.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 290.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 281.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 330.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 331.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 312.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 297.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 291.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 276.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 285.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 405.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 371.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 391.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 338.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 318.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 335.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 333.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 358.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 286.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 309.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 281.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 292.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 399.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 390.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 425.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 328.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 337.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 385.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 362.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 356.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 312.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 323.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 310.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 303.0
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 7,
+      "monthlyDemand": 395.0
+    }
+  ],
+  "monthNames": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
+}

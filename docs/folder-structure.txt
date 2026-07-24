@@ -372,22 +372,15 @@ AI-Supply-Chain-Management-System/
 
     python-ai-service/
 
-        README.md
-        requirements.txt
-
         app.py
         train_model.py
-        predict.py
-        preprocess.py
+        predict_console.py
+        model_options.json
+        demand_model_monthly.pkl
 
-        models/
+        data/
 
-            demand_model.pkl
-
-        dataset/
-
-            sales_data.csv
-            demand_history.csv
+            monthly_sales_history.csv
 
     dotnet-report-service/
 

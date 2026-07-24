@@ -102,6 +102,19 @@ function Users() {
     });
   };
 
+  const handleDelete = async (userId) => {
+    if (!window.confirm("Delete this user?")) return;
+
+    try {
+      // Placeholder delete action until the API is available
+      console.log("Delete user", userId);
+      alert("Delete action is not available yet");
+    } catch (error) {
+      console.log(error);
+      alert("Delete Failed");
+    }
+  };
+
   return (
     <div className="users-layout">
 
@@ -297,14 +310,25 @@ function Users() {
 
                   ) : (
 
-                    <button
-                      className="edit-btn"
-                      onClick={() =>
-                        handleEdit(user)
-                      }
-                    >
-                      Edit
-                    </button>
+                    <div className="action-buttons">
+                      <button
+                        className="edit-btn"
+                        onClick={() =>
+                          handleEdit(user)
+                        }
+                      >
+                        Edit
+                      </button>
+
+                      <button
+                        className="delete-btn"
+                        onClick={() =>
+                          handleDelete(user._id)
+                        }
+                      >
+                        Delete
+                      </button>
+                    </div>
 
                   )}
 

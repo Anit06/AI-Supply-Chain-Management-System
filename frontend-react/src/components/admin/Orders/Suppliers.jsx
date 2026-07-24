@@ -15,6 +15,7 @@ function Suppliers() {
   const [suppliers, setSuppliers] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [capacityFilter, setCapacityFilter] = useState("All");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [formData, setFormData] = useState({
     supplierCode: "",
@@ -88,17 +89,44 @@ function Suppliers() {
     }
   };
 
-  const handleEdit = (supplier) => {
-    setEditId(supplier._id);
-
+  const resetForm = () => {
     setFormData({
-      supplierCode: supplier.supplierCode,
-      supplierName: supplier.supplierName,
-      supplierPhonenumber: supplier.supplierPhonenumber,
-      supplierAddress: supplier.supplierAddress,
-      supplierVehiclenumber: supplier.supplierVehiclenumber,
-      supplierCapacity: supplier.supplierCapacity,
+      supplierCode: "",
+      supplierName: "",
+      supplierPhonenumber: "",
+      supplierAddress: "",
+      supplierVehiclenumber: "",
+      supplierCapacity: "",
     });
+  };
+
+  const openModal = (supplier = null) => {
+    if (supplier) {
+      setEditId(supplier._id);
+      setFormData({
+        supplierCode: supplier.supplierCode,
+        supplierName: supplier.supplierName,
+        supplierPhonenumber: supplier.supplierPhonenumber,
+        supplierAddress: supplier.supplierAddress,
+        supplierVehiclenumber: supplier.supplierVehiclenumber,
+        supplierCapacity: supplier.supplierCapacity,
+      });
+    } else {
+      setEditId(null);
+      resetForm();
+    }
+
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setEditId(null);
+    resetForm();
+  };
+
+  const handleEdit = (supplier) => {
+    openModal(supplier);
   };
 
   const handleDelete = async (id) => {
@@ -118,16 +146,7 @@ function Suppliers() {
   };
 
   const handleCancel = () => {
-    setEditId(null);
-
-    setFormData({
-      supplierCode: "",
-      supplierName: "",
-      supplierPhonenumber: "",
-      supplierAddress: "",
-      supplierVehiclenumber: "",
-      supplierCapacity: "",
-    });
+    closeModal();
   };
 
 
@@ -164,82 +183,7 @@ function Suppliers() {
       <div className="users-content">
         <h1>Supplier Management</h1>
 
-        <form onSubmit={handleSubmit} className="supplier-form">
-          <input
-            type="text"
-            name="supplierCode"
-            placeholder="Supplier Code"
-            value={formData.supplierCode}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="text"
-            name="supplierName"
-            placeholder="Supplier Name"
-            value={formData.supplierName}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="text"
-            name="supplierPhonenumber"
-            placeholder="Phone Number"
-            value={formData.supplierPhonenumber}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="text"
-            name="supplierAddress"
-            placeholder="Address"
-            value={formData.supplierAddress}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="text"
-            name="supplierVehiclenumber"
-            placeholder="Vehicle Number"
-            value={formData.supplierVehiclenumber}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="text"
-            name="supplierCapacity"
-            placeholder="Capacity"
-            value={formData.supplierCapacity}
-            onChange={handleChange}
-            required
-          />
-
-          <button type="submit">
-            {editId ? "Update Supplier" : "Add Supplier"}
-          </button>
-
-          {editId && (
-            <button
-              type="button"
-              onClick={handleCancel}
-              style={{ marginLeft: "10px" }}
-            >
-              Cancel
-            </button>
-          )}
-        </form>
-
-
-        <br />
-
-
         <div className="supplier-toolbar">
-
           <input
             type="text"
             placeholder="Search by Name, Code or Phone..."
@@ -248,18 +192,96 @@ function Suppliers() {
             className="search-box"
           />
 
-          <select
-            value={capacityFilter}
-            onChange={(e) => setCapacityFilter(e.target.value)}
-            className="capacity-filter"
-          >
-            <option value="All">All Capacity</option>
-            <option value="lt20">Less than 20</option>
-            <option value="20to70">20 - 69</option>
-            <option value="gte70">70 and Above</option>
-          </select>
+          <div className="supplier-toolbar-actions">
+            <select
+              value={capacityFilter}
+              onChange={(e) => setCapacityFilter(e.target.value)}
+              className="capacity-filter"
+            >
+              <option value="All">All Capacity</option>
+              <option value="lt20">Less than 20</option>
+              <option value="20to70">20 - 69</option>
+              <option value="gte70">70 and Above</option>
+            </select>
 
+            <button className="add-supplier-btn" type="button" onClick={() => openModal()}>
+              Add Supplier
+            </button>
+          </div>
         </div>
+
+        {isModalOpen && (
+          <div className="supplier-modal-overlay" onClick={closeModal}>
+            <div className="supplier-modal" onClick={(e) => e.stopPropagation()}>
+              <h2>{editId ? "Edit Supplier" : "Add Supplier"}</h2>
+
+              <form onSubmit={handleSubmit} className="supplier-modal-form">
+                <input
+                  type="text"
+                  name="supplierCode"
+                  placeholder="Supplier Code"
+                  value={formData.supplierCode}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="supplierName"
+                  placeholder="Supplier Name"
+                  value={formData.supplierName}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="supplierPhonenumber"
+                  placeholder="Phone Number"
+                  value={formData.supplierPhonenumber}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="supplierAddress"
+                  placeholder="Address"
+                  value={formData.supplierAddress}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="supplierVehiclenumber"
+                  placeholder="Vehicle Number"
+                  value={formData.supplierVehiclenumber}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="supplierCapacity"
+                  placeholder="Capacity"
+                  value={formData.supplierCapacity}
+                  onChange={handleChange}
+                  required
+                />
+
+                <div className="modal-buttons">
+                  <button type="submit">
+                    {editId ? "Update Supplier" : "Add Supplier"}
+                  </button>
+                  <button type="button" onClick={handleCancel}>
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
 
         <table className="users-table">
           <thead>
