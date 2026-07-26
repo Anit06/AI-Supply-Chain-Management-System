@@ -1,0 +1,92 @@
+/* ===========================
+   BUTTON CONTAINER
+=========================== */
+
+.button-container {
+  grid-column: span 2;
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* ===========================
+   SAVE BUTTON
+=========================== */
+
+.profile-btn {
+  min-width: 130px;
+  height: 38px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.profile-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+}
+
+.profile-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   CANCEL BUTTON
+=========================== */
+
+.cancel-btn {
+  min-width: 130px;
+  height: 38px;
+  padding: 0 24px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.cancel-btn:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+  color: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.cancel-btn:active {
+  transform: scale(0.98);
+}
+
+.cancel-btn:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .button-container {
+    grid-column: span 1;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .profile-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}

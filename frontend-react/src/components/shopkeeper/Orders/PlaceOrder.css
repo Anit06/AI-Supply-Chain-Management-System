@@ -1,0 +1,423 @@
+.place-order {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.place-order h2 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+.order-form {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.order-form select,
+.order-form input,
+.delivery-form input,
+.delivery-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.order-form select:focus,
+.order-form input:focus,
+.delivery-form input:focus,
+.delivery-form textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,.25);
+}
+
+.order-form button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.order-form button:hover {
+    background: #1d4ed8;
+}
+
+.cart-heading {
+    margin: 25px 0 20px;
+    color: #1e293b;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.cart-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cart-details {
+    flex: 1;
+}
+
+.cart-details h3 {
+    margin: 0;
+    color: #111827;
+}
+
+.cart-details p {
+    margin: 8px 0;
+    color: #6b7280;
+}
+
+.cart-details h2 {
+    margin: 8px 0;
+    color: #2563eb;
+}
+
+.cart-details h4 {
+    margin-top: 10px;
+    color: #16a34a;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.qty-box button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.qty-box button:hover {
+    background: #1d4ed8;
+}
+
+.qty-box span {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.remove-btn {
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.remove-btn:hover {
+    background: #b00020;
+}
+
+.empty-cart {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.empty-cart img {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.empty-cart h3 {
+    margin-bottom: 10px;
+}
+
+.empty-cart p {
+    color: #6b7280;
+}
+/* ===========================
+   BILL CARD
+=========================== */
+
+.bill-card {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.bill-card h2 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.bill-row span:last-child {
+    font-weight: 600;
+}
+
+.bill-card hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+.bill-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #111827;
+}
+
+/* ===========================
+   DELIVERY FORM
+=========================== */
+
+.delivery-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.delivery-form textarea {
+    min-height: 110px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* ===========================
+   PLACE ORDER BUTTON
+=========================== */
+
+.place-btn {
+    padding: 15px;
+    background: #16a34a;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.place-btn:hover:not(:disabled) {
+    background: #15803d;
+    transform: translateY(-2px);
+}
+
+.place-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 992px) {
+
+    .cart-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .cart-details {
+        margin: 0;
+        width: 100%;
+    }
+
+    .cart-actions {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .place-order {
+        padding: 20px;
+    }
+
+    .order-form,
+    .bill-card,
+    .delivery-form {
+        padding: 20px;
+    }
+
+    .bill-total {
+        font-size: 20px;
+    }
+
+    .cart-card img {
+        height: 180px;
+    }
+
+    .qty-box {
+        gap: 10px;
+    }
+
+    .qty-box button {
+        width: 34px;
+        height: 34px;
+    }
+
+    .remove-btn {
+        padding: 9px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .place-order h2 {
+        font-size: 24px;
+    }
+
+    .cart-heading {
+        font-size: 20px;
+    }
+
+    .bill-card h2 {
+        font-size: 22px;
+    }
+
+    .bill-row,
+    .bill-total {
+        font-size: 16px;
+    }
+
+    .bill-total {
+        font-size: 18px;
+    }
+
+    .cart-card img {
+        height: 160px;
+    }
+
+    .order-form button,
+    .place-btn {
+        width: 100%;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qty-box {
+        justify-content: center;
+    }
+
+    .remove-btn {
+        width: 100%;
+    }
+}
+
+/* ===========================
+   SIMPLE ANIMATIONS
+=========================== */
+
+.cart-card,
+.bill-card,
+.order-form,
+.delivery-form {
+    animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
