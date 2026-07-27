@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
+import com.supplychain.dto.ReduceInventoryRequest;
 import com.supplychain.dto.InventoryRequest;
 import com.supplychain.dto.InventoryResponse;
 import com.supplychain.model.Inventory;
@@ -199,4 +200,117 @@ public class InventoryService {
 
         inventoryRepository.deleteById(inventoryId);
     }
+
+    // =====================================
+    // REDUCE INVENTORY AFTER ORDER
+    // =====================================
+
+    public InventoryResponse reduceInventory(
+            ReduceInventoryRequest request) {
+
+        Inventory inventory = inventoryRepository
+                .findByWarehouseAndProduct(
+                        request.getWarehouseId(),
+                        request.getProductId())
+                .orElseThrow(() ->
+                        new RuntimeException("Inventory not found"));
+
+        if (inventory.getStock() < request.getQuantity()) {
+            throw new RuntimeException("Not enough stock available");
+        }
+
+        inventory.setStock(
+                inventory.getStock() - request.getQuantity());
+
+        inventoryRepository.save(inventory);
+
+        InventoryResponse response = new InventoryResponse();
+
+        response.setInventoryId(inventory.getId());
+        response.setWarehouseId(inventory.getWarehouse());
+        response.setProductId(inventory.getProduct());
+        response.setStock(inventory.getStock());
+
+        productRepository.findById(inventory.getProduct())
+                .ifPresent(product -> {
+                    response.setProductName(product.getName());
+                    response.setCategory(product.getCategory());
+                });
+
+        warehouseRepository.findById(inventory.getWarehouse())
+                .ifPresent(warehouse -> {
+                    response.setWarehouseName(warehouse.getName());
+                });
+
+        return response;
+    }
+
+        /*
+        ==================================
+        ADD STOCK BACK TO INVENTORY
+        (AFTER ORDER CANCELLATION)
+        ==================================
+        */
+
+        public void addStock(
+
+                String warehouseId,
+
+                String productId,
+
+                int stock
+
+        ){
+
+        /*
+        ==============================
+        Find Inventory
+        ==============================
+        */
+
+        Inventory inventory = inventoryRepository
+
+                .findByWarehouseAndProduct(
+
+                        warehouseId,
+
+                        productId
+
+                )
+
+                .orElseThrow(
+
+                        () -> new RuntimeException(
+
+                                "Inventory not found"
+
+                        )
+
+                );
+
+        /*
+        ==============================
+        Increase Stock
+        ==============================
+        */
+
+        inventory.setStock(
+
+                inventory.getStock() + stock
+
+        );
+
+        /*
+        ==============================
+        Save Inventory
+        ==============================
+        */
+
+        inventoryRepository.save(
+
+                inventory
+
+        );
+
+        }
 }

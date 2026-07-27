@@ -45,7 +45,7 @@ from sklearn.metrics import mean_absolute_error
 # ---------------------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DATA_PATH = os.path.join(BASE_DIR, r'C:\Users\DELL\Desktop\2.1 AI-MAIN-Supply-Chain-Management-System\python-ai-service\data\monthly_sales_history.csv')
+DATA_PATH = os.path.join(BASE_DIR, r'D:\Project\AI-Supply-Chain-Management-System-main 4.2.7\python-ai-service\data\monthly_sales_history.csv')
 MODEL_PATH = os.path.join(BASE_DIR, "demand_model_monthly.pkl")
 OPTIONS_PATH = os.path.join(BASE_DIR, "model_options.json")
 

@@ -1,5 +1,5 @@
 import Sidebar from "../../common/Sidebar";
-import Header from "../../common/Header";
+import DemandPrediction from "./DemandPrediction";
 
 function AIPrediction() {
   return (
@@ -9,10 +9,8 @@ function AIPrediction() {
 
       <div className="dashboard-main">
 
-        <Header />
-
         <h1>AI Prediction Page</h1>
-
+<DemandPrediction />
       </div>
 
     </div>

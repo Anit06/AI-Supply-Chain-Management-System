@@ -1,8 +1,69 @@
-import API from "./api";
+import api from "./api";
 
-export const addToCart = (data) => API.post("/cart/add", data);
-export const getCart = (warehouseId) => API.get(`/cart/${warehouseId}`);
-export const updateCart = (data) => API.put("/cart/update", data);
-export const removeCartItem = (itemId, warehouseId) => API.delete(`/cart/item/${itemId}`, { data: { warehouseId } });
-export const clearCart = (warehouseId) => API.delete(`/cart/clear/${warehouseId}`);
-export const placeOrder = (warehouseId) => API.post("/cart/place-order", { warehouseId });
+/*
+===================================
+ADD PRODUCT TO CART
+===================================
+*/
+export const addToCart = async (data) => {
+    const response = await api.post("/cart", data);
+    return response.data;
+};
+
+/*
+===================================
+GET CART
+===================================
+*/
+export const getCart = async (warehouseId) => {
+    const response = await api.get(`/cart/${warehouseId}`);
+    return response.data;
+};
+
+/*
+===================================
+UPDATE CART
+===================================
+*/
+export const updateCart = async (data) => {
+    const response = await api.put("/cart", data);
+    return response.data;
+};
+
+/*
+===================================
+REMOVE ITEM
+===================================
+*/
+export const removeCartItem = async (productId, warehouseId) => {
+    const response = await api.delete(`/cart/${productId}`, {
+        data: {
+            warehouseId
+        }
+    });
+
+    return response.data;
+};
+
+/*
+===================================
+CLEAR CART
+===================================
+*/
+export const clearCart = async (warehouseId) => {
+    const response = await api.delete(`/cart/clear/${warehouseId}`);
+    return response.data;
+};
+
+/*
+===================================
+PLACE ORDER
+===================================
+*/
+export const placeOrder = async (warehouseId) => {
+    const response = await api.post("/cart/place-order", {
+        warehouseId
+    });
+
+    return response.data;
+};

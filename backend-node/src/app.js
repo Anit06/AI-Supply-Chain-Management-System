@@ -12,6 +12,7 @@ const cartRoutes = require("./routes/cartRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 
 const catalogRoutes = require("./routes/catalogRoutes");
+const aiRoutes = require("./routes/aiRoutes");
 
 const app = express();
 
@@ -45,12 +46,6 @@ app.use(
 );
 
 
-
-app.use(
-  "/api/warehouses",
-  warehouseRoutes
-);
-
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/warehouses", warehouseRoutes);
@@ -60,5 +55,7 @@ app.use("/api/shopkeeper", shopkeeperRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/catalog", catalogRoutes);
+
+app.use("/api/ai", aiRoutes);
 
 module.exports = app;

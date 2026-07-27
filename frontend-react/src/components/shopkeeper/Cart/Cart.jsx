@@ -1,99 +1,208 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCart, updateCart, removeCartItem, clearCart, placeOrder } from "../../../services/cartService";
-import CartItem from "./CartItem";
-import CartSummary from "./CartSummary";
 
-function Cart({ warehouseId, onContinueShopping }) {
+import {
+    getCart,
+    updateCart,
+    removeCartItem,
+    placeOrder
+} from "../../../services/cartService";
+
+import { getWarehouseById } from "../../../services/warehouseService";
+
+import "../../../assets/css/placeOrder.css";
+
+function Cart() {
     const navigate = useNavigate();
-    const [items, setItems] = useState([]);
-    const [loading, setLoading] = useState(false);
+
+    const [warehouse, setWarehouse] = useState(null);
+    const [cart, setCart] = useState({
+        items: [],
+        cartTotal: 0
+    });
+    const [loading, setLoading] = useState(true);
+    const [placingOrder, setPlacingOrder] = useState(false);
+
+    useEffect(() => {
+        loadCart();
+    }, []);
 
     const loadCart = async () => {
         try {
-            const response = await getCart(warehouseId);
-            setItems(response.data.cart?.items || []);
-        } catch (error) {
-            console.error(error);
-        }
-    };
+            const warehouseId = localStorage.getItem("selectedWarehouse");
 
-    useEffect(() => {
-        if (warehouseId) {
-            loadCart();
-        }
-    }, [warehouseId]);
+            if (!warehouseId) {
+                navigate("/shopkeeper/product-catalog");
+                return;
+            }
 
-    const handleIncrease = async (item) => {
-        const newQuantity = item.quantity + 1;
-        try {
-            await updateCart({ warehouseId, productId: item.productId._id || item.productId, quantity: newQuantity });
-            await loadCart();
-        } catch (error) {
-            alert(error.response?.data?.message || error.message);
-        }
-    };
+            const warehouseResponse = await getWarehouseById(warehouseId);
 
-    const handleDecrease = async (item) => {
-        if (item.quantity <= 1) {
-            return;
-        }
-        try {
-            await updateCart({ warehouseId, productId: item.productId._id || item.productId, quantity: item.quantity - 1 });
-            await loadCart();
-        } catch (error) {
-            alert(error.response?.data?.message || error.message);
-        }
-    };
+            setWarehouse(
+                warehouseResponse.warehouse || warehouseResponse
+            );
 
-    const handleRemove = async (item) => {
-        try {
-            await removeCartItem(item.productId._id || item.productId, warehouseId);
-            await loadCart();
-        } catch (error) {
-            console.error(error);
-        }
-    };
+            const cartResponse = await getCart(warehouseId);
 
-    const handleClear = async () => {
-        try {
-            await clearCart(warehouseId);
-            await loadCart();
-        } catch (error) {
-            console.error(error);
-        }
-    };
+            setCart(
+                cartResponse.cart || {
+                    items: [],
+                    cartTotal: 0
+                }
+            );
 
-    const handlePlaceOrder = async () => {
-        if (!items.length) {
-            alert("Cart is empty");
-            return;
-        }
-        setLoading(true);
-        try {
-            await placeOrder(warehouseId);
-            alert("Order placed successfully");
-            await loadCart();
-            navigate("/shopkeeper/order-history");
         } catch (error) {
-            alert(error.response?.data?.message || error.message);
+            console.log(error);
         } finally {
             setLoading(false);
         }
     };
 
+    const increaseQuantity = async (item) => {
+        await updateCart({
+            warehouseId: localStorage.getItem("selectedWarehouse"),
+            productId: item.productId,
+            quantity: item.quantity + 1
+        });
+
+        loadCart();
+    };
+
+    const decreaseQuantity = async (item) => {
+        if (item.quantity <= 1) return;
+
+        await updateCart({
+            warehouseId: localStorage.getItem("selectedWarehouse"),
+            productId: item.productId,
+            quantity: item.quantity - 1
+        });
+
+        loadCart();
+    };
+
+    const removeProduct = async (item) => {
+        await removeCartItem(
+            item.productId,
+            localStorage.getItem("selectedWarehouse")
+        );
+
+        loadCart();
+    };
+
+    const handlePlaceOrder = async () => {
+        try {
+            setPlacingOrder(true);
+
+            const response = await placeOrder(
+                localStorage.getItem("selectedWarehouse")
+            );
+
+            alert(response.message);
+
+            localStorage.removeItem("selectedWarehouse");
+
+            navigate("/shopkeeper/order-history");
+
+        } catch (error) {
+            alert(
+                error.response?.data?.message ||
+                error.message
+            );
+        } finally {
+            setPlacingOrder(false);
+        }
+    };
+
+    if (loading) {
+        return <h2>Loading...</h2>;
+    }
+
     return (
         <div className="catalog-container">
-            <div className="catalog-header">
-                <h2>Cart</h2>
-                <button type="button" className="checkout-btn" onClick={handleClear}>Clear Cart</button>
-            </div>
-            <div className="catalog-grid">
-                {items.map((item) => (
-                    <CartItem key={item._id || item.productId._id || item.productId} item={item} onIncrease={handleIncrease} onDecrease={handleDecrease} onRemove={handleRemove} />
-                ))}
-            </div>
-            <CartSummary items={items} onContinueShopping={onContinueShopping} onPlaceOrder={handlePlaceOrder} loading={loading} />
+            <h2 className="page-title">Checkout</h2>
+
+            {warehouse && (
+                <div className="warehouse-card">
+                    <h3>Warehouse</h3>
+                    <p><b>Name :</b> {warehouse.name}</p>
+                    <p><b>Location :</b> {warehouse.location}</p>
+                </div>
+            )}
+
+            {cart.items.length === 0 ? (
+                <div className="empty-cart">
+                    <h2>Your Cart is Empty</h2>
+                </div>
+            ) : (
+                <>
+                    {cart.items.map((item) => (
+                        <div className="cart-card" key={item._id}>
+                            <div className="cart-left">
+                                <img
+                                    className="cart-image"
+                                    src={
+                                        item.image
+                                            ? `http://localhost:5000/${item.image}`
+                                            : "https://placehold.co/200x200?text=No+Image"
+                                    }
+                                    alt={item.productName}
+                                />
+                                <div className="cart-info">
+                                    <h3>{item.productName}</h3>
+                                    <p>Category : {item.category}</p>
+                                    <p>SKU : {item.sku}</p>
+                                    <p>Unit : {item.unit}</p>
+                                    <p>Price : ₹{item.price}</p>
+                                    <div className="qty-box">
+                                        <button
+                                            className="qty-btn"
+                                            onClick={() => decreaseQuantity(item)}
+                                        >
+                                            -
+                                        </button>
+                                        <span>{item.quantity}</span>
+                                        <button
+                                            className="qty-btn"
+                                            onClick={() => increaseQuantity(item)}
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                    <button
+                                        className="remove-btn"
+                                        onClick={() => removeProduct(item)}
+                                    >
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="cart-right">
+                                <div className="subtotal">
+                                    ₹{item.subtotal}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+                    <div className="summary-card">
+                        <div className="summary-row">
+                            <span>Items</span>
+                            <span>{cart.items.length}</span>
+                        </div>
+                        <div className="summary-row grand-total">
+                            <span>Total</span>
+                            <span>₹{cart.cartTotal}</span>
+                        </div>
+                        <button
+                            className="checkout-btn"
+                            onClick={handlePlaceOrder}
+                            disabled={placingOrder}
+                        >
+                            {placingOrder ? "Placing Order..." : "Place Order"}
+                        </button>
+                    </div>
+                </>
+            )}
         </div>
     );
 }

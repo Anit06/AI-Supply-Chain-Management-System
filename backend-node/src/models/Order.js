@@ -1,81 +1,205 @@
 const mongoose = require("mongoose");
 
-const orderItemSchema = new mongoose.Schema(
-    {
-        productId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Product",
-            required: true
-        },
-        productName: {
-            type: String,
-            required: true,
-            trim: true
-        },
-        price: {
-            type: Number,
-            required: true,
-            default: 0
-        },
-        quantity: {
-            type: Number,
-            required: true,
-            default: 1,
-            min: 1
-        },
-        unit: {
-            type: String,
-            default: "KG"
-        },
-        subtotal: {
-            type: Number,
-            default: 0
-        }
-    },
-    {
-        timestamps: true
-    }
-);
+const orderItemSchema = new mongoose.Schema({
 
-const orderSchema = new mongoose.Schema(
-    {
-        orderNumber: {
-            type: String,
-            unique: true,
-            trim: true
-        },
-        userId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "User",
-            required: true
-        },
-        warehouseId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Warehouse",
-            required: true
-        },
-        items: [orderItemSchema],
-        grandTotal: {
-            type: Number,
-            default: 0
-        },
-        status: {
-            type: String,
-            enum: ["Pending", "Confirmed", "Packed", "Shipped", "Delivered", "Cancelled"],
-            default: "Pending"
-        }
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product"
     },
-    {
-        timestamps: true
-    }
-);
 
-orderSchema.pre("save", async function (next) {
-    if (!this.orderNumber) {
-        const count = await mongoose.models.Order.countDocuments();
-        this.orderNumber = `ORD-${String(count + 1).padStart(4, "0")}`;
+    productName: String,
+
+    category: String,
+
+    image: String,
+
+    sku: String,
+
+    description: String,
+
+    unit: String,
+
+    quantity: Number,
+
+    price: Number,
+
+    subtotal: Number
+
+});
+
+const orderStatusSchema = new mongoose.Schema({
+
+    status: {
+
+        type: String,
+
+        enum: [
+
+            "Placed",
+
+            "Confirmed",
+
+            "Packed",
+
+            "Shipped",
+
+            "Delivered",
+
+            "Cancelled"
+
+        ],
+
+        required: true
+
+    },
+
+    updatedAt: {
+
+        type: Date,
+
+        default: Date.now
+
     }
-    next();
+
+},
+{
+
+    _id: false
+
+});
+
+const orderSchema = new mongoose.Schema({
+    
+    orderNumber:{
+
+        type:String,
+
+        required:true,
+
+        unique:true
+
+    },
+
+    shopkeeperName:{
+
+        type:String,
+
+        default:""
+
+    },
+
+    shopkeeperPhone:{
+
+        type:String,
+
+        default:""
+
+    },
+
+    deliveryAddress:{
+
+        type:String,
+
+        default:""
+
+    },
+
+    userId: {
+
+        type: mongoose.Schema.Types.ObjectId,
+
+        ref: "User",
+
+        required: true
+
+    },
+
+    warehouseId: {
+
+        type: mongoose.Schema.Types.ObjectId,
+
+        ref: "Warehouse",
+
+        required: true
+
+    },
+
+    items: [orderItemSchema],
+
+    totalAmount: {
+
+        type: Number,
+
+        default: 0
+
+    },
+
+    status: {
+
+        type: String,
+
+        enum: [
+
+            "Placed",
+
+            "Confirmed",
+
+            "Packed",
+
+            "Shipped",
+
+            "Delivered",
+
+            "Cancelled"
+
+        ],
+
+        default: "Placed"
+
+    },
+
+    statusHistory: {
+
+        type: [orderStatusSchema],
+
+        default: []
+
+    },
+
+    returnedStock: {
+
+        type:Boolean,
+
+        default:false
+
+    }
+
+}, {
+
+    timestamps: true
+
+});
+
+/*
+==================================
+ADD INITIAL STATUS AUTOMATICALLY
+==================================
+*/
+
+orderSchema.pre("save", async function () {
+
+    if (this.isNew && this.statusHistory.length === 0) {
+
+        this.statusHistory.push({
+
+            status: "Placed",
+
+            updatedAt: new Date()
+
+        });
+
+    }
+
 });
 
 module.exports = mongoose.model("Order", orderSchema);

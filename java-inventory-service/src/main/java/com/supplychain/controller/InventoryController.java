@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.supplychain.dto.ReduceInventoryRequest;
 import com.supplychain.dto.InventoryRequest;
 import com.supplychain.dto.InventoryResponse;
 import com.supplychain.model.Warehouse;
@@ -64,5 +65,42 @@ public class InventoryController {
         inventoryService.removeInventory(inventoryId);
 
         return ResponseEntity.ok("Inventory deleted successfully.");
+    }
+
+    @PutMapping("/reduce")
+    public ResponseEntity<InventoryResponse> reduceInventory(
+            @RequestBody ReduceInventoryRequest request) {
+
+        return ResponseEntity.ok(
+                inventoryService.reduceInventory(request));
+    }
+
+    /*
+    ==================================
+    RETURN STOCK AFTER ORDER CANCEL
+    ==================================
+    */
+
+    @PutMapping("/add")
+    public ResponseEntity<?> addStock(
+
+            @RequestBody InventoryRequest request) {
+
+        inventoryService.addStock(
+
+                request.getWarehouseId(),
+
+                request.getProductId(),
+
+                request.getStock()
+
+        );
+
+        return ResponseEntity.ok(
+
+                "Inventory Updated Successfully"
+
+        );
+
     }
 }

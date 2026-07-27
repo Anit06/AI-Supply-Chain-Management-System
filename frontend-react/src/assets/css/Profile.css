@@ -1,92 +1,281 @@
 /* ===========================
-   BUTTON CONTAINER
+   ROOT VARIABLES & RESET
 =========================== */
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-disabled: #93c5fd;
+  --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #cbd5e1;
+  --focus-ring: rgba(37, 99, 235, 0.2);
+  --error-color: #d93025;
+  --error-bg: #fce8e6;
+  --success-color: #0f9d58;
+  --success-bg: #e6f4ea;
+  --radius-lg: 16px;
+  --radius-md: 8px;
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
 
+/* ===========================
+   PAGE CONTAINER & CARD
+=========================== */
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background: var(--bg-gradient);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: var(--text-main);
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 680px;
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 36px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* ===========================
+   HEADER & AVATAR
+=========================== */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  flex-shrink: 0;
+}
+
+.profile-titles h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.profile-titles p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ===========================
+   FEEDBACK ALERTS
+=========================== */
+.profile-card > div[style*="marginBottom"] {
+  padding: 12px 16px !important;
+  border-radius: var(--radius-md) !important;
+  font-size: 14px !important;
+  margin-bottom: 20px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Dynamic styling matching your JS inline styles */
+.profile-card > div[style*="d93025"] {
+  background-color: var(--error-bg);
+  border: 1px solid rgba(217, 48, 37, 0.2);
+}
+
+.profile-card > div[style*="0f9d58"] {
+  background-color: var(--success-bg);
+  border: 1px solid rgba(15, 157, 88, 0.2);
+}
+
+/* ===========================
+   FORM & GRID LAYOUT
+=========================== */
+.profile-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--text-main);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+/* Read-only / Disabled input styling */
+.form-group input[readOnly] {
+  background-color: #f8fafc;
+  color: #64748b;
+  border-color: #e2e8f0;
+  cursor: not-allowed;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+/* ===========================
+   BUTTON CONTAINER & BUTTONS
+=========================== */
 .button-container {
   grid-column: span 2;
   display: flex;
   gap: 14px;
-  margin-top: 20px;
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
 }
-
-/* ===========================
-   SAVE BUTTON
-=========================== */
 
 .profile-btn {
   min-width: 130px;
-  height: 38px;
+  height: 40px;
   padding: 0 24px;
   border: none;
-  border-radius: 8px;
-  background: #2563eb;
-  color: #fff;
+  border-radius: var(--radius-md);
+  background: var(--primary-color);
+  color: #ffffff;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .profile-btn:hover:not(:disabled) {
-  background: #1d4ed8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.profile-btn:active:not(:disabled) {
+  transform: translateY(0);
 }
 
 .profile-btn:disabled {
-  background: #93c5fd;
+  background: var(--primary-disabled);
   cursor: not-allowed;
 }
 
-/* ===========================
-   CANCEL BUTTON
-=========================== */
-
 .cancel-btn {
   min-width: 130px;
-  height: 38px;
+  height: 40px;
   padding: 0 24px;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
   background: #ffffff;
   color: #475569;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .cancel-btn:hover {
-  background: #f1f5f9;
+  background: #f8fafc;
   border-color: #94a3b8;
   color: #1e293b;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .cancel-btn:active {
-  transform: scale(0.98);
+  transform: translateY(0);
 }
 
 .cancel-btn:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
 /* ===========================
-   MOBILE
+   RESPONSIVE DESIGN
 =========================== */
+@media (max-width: 640px) {
+  .profile-card {
+    padding: 24px 20px;
+  }
 
-@media (max-width: 768px) {
+  .profile-form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .button-container {
     grid-column: span 1;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
   .profile-btn,
   .cancel-btn {
     width: 100%;
+  }
+
+  .profile-header {
+    gap: 14px;
+  }
+
+  .profile-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
   }
 }

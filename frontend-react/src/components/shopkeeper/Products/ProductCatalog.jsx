@@ -23,7 +23,14 @@ function ProductCatalog() {
     const loadWarehouses = async () => {
         try {
             const res = await getWarehouses();
-            setWarehouses(res.warehouses || []);
+
+            const activeWarehouses = (res.warehouses || []).filter(
+                (warehouse) =>
+                    warehouse.status &&
+                    warehouse.status.toLowerCase() === "active"
+            );
+
+            setWarehouses(activeWarehouses);
         } catch (error) {
             console.log(error);
         }
@@ -65,22 +72,57 @@ function ProductCatalog() {
     };
 
     const handleAddToCart = async (product) => {
-        const quantity = selectedQuantities[product.productId] || 1;
+
+        if (!selectedWarehouse) {
+
+            alert("Please select a warehouse");
+
+            return;
+        }
+
+        const quantity =
+            selectedQuantities[product.productId] || 1;
 
         try {
+
             await addToCart({
+
                 warehouseId: selectedWarehouse,
+
                 productId: product.productId,
+
                 productName: product.name,
-                price: product.price,
-                quantity,
+
+                category: product.category,
+
+                image: product.image,
+
+                sku: product.sku,
+
+                description: product.description,
+
                 unit: product.unit || "KG",
+
+                price: product.price,
+
+                quantity: quantity
+
             });
 
-            alert("Product Added To Cart");
-        } catch (error) {
-            alert(error.response?.data?.message || error.message);
+            alert("Added to Cart Successfully");
+
         }
+
+        catch (error) {
+
+            console.log(error);
+
+            alert(
+                error.response?.data?.message ||
+                "Unable to add product."
+            );
+        }
+
     };
 
     const handleWarehouseChange = (e) => {

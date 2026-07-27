@@ -11,4 +11,5 @@ com\supplychain\dto\InventoryResponse.class
 com\supplychain\model\Inventory.class
 com\supplychain\model\Warehouse.class
 com\supplychain\repository\WarehouseRepository.class
+com\supplychain\dto\ReduceInventoryRequest.class
 com\supplychain\repository\InventoryRepository.class

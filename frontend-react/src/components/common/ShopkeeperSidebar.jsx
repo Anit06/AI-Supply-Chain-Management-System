@@ -6,7 +6,6 @@ import {
   FaHome,
   FaShoppingCart,
   FaHistory,
-  FaTruck,
   FaBoxOpen,
   FaSearch,
   FaUser,
@@ -16,7 +15,8 @@ import {
   FaHeadset,
   FaCog,
   FaSignOutAlt,
-  FaStore
+  FaStore,
+  FaShoppingBag
 } from "react-icons/fa";
 
 function ShopkeeperSidebar() {
@@ -66,10 +66,18 @@ function ShopkeeperSidebar() {
         <h4 className="menu-title">Orders</h4>
 
         <NavLink
-          to="/shopkeeper/place-order"
+          to="/shopkeeper/cart"
           className="shopkeeper-link"
         >
           <FaShoppingCart />
+          <span>Cart</span>
+        </NavLink>
+
+        <NavLink
+          to="/shopkeeper/place-order"
+          className="shopkeeper-link"
+        >
+          <FaShoppingBag />
           <span>Place Order</span>
         </NavLink>
 
@@ -79,14 +87,6 @@ function ShopkeeperSidebar() {
         >
           <FaHistory />
           <span>Order History</span>
-        </NavLink>
-
-        <NavLink
-          to="/shopkeeper/track-order"
-          className="shopkeeper-link"
-        >
-          <FaTruck />
-          <span>Track Order</span>
         </NavLink>
 
         <h4 className="menu-title">Products</h4>

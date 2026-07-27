@@ -1,182 +1,464 @@
 const Cart = require("../models/Cart");
-const Inventory = require("../models/Inventory");
 const Order = require("../models/Order");
-const Product = require("../models/Product");
-const ProductPrice = require("../models/ProductPrice");
+const User = require("../models/User");
+const ShopkeeperDetails = require("../models/ShopkeeperDetails");
+const javaService = require("./javaService");
 
-const validateCartItemQuantity = (quantity, stock) => {
-    if (quantity <= 0) {
-        return { valid: false, message: "Quantity must be at least 1." };
-    }
+/*
+=========================================
+Calculate Cart Total
+=========================================
+*/
 
-    if (quantity > stock) {
-        return { valid: false, message: `Only ${stock} units available in stock.` };
-    }
+const calculateCartTotal = (items) => {
 
-    return { valid: true };
+    let total = 0;
+
+    items.forEach((item) => {
+
+        item.subtotal = item.price * item.quantity;
+
+        total += item.subtotal;
+
+    });
+
+    return total;
+
 };
 
-const calculateCartTotals = (items) => {
-    const cartTotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    return { cartTotal };
-};
+/*
+=========================================
+Add Product To Cart
+=========================================
+*/
 
-const getOrCreateCart = async (userId, warehouseId) => {
-    let cart = await Cart.findOne({ userId, warehouseId, status: "Active" });
+const addItemToCart = async (data) => {
+
+    let cart = await Cart.findOne({
+
+        userId: data.userId,
+        warehouseId: data.warehouseId
+
+    });
 
     if (!cart) {
-        cart = await Cart.create({ userId, warehouseId, items: [], cartTotal: 0, status: "Active" });
+
+        cart = new Cart({
+
+            userId: data.userId,
+            warehouseId: data.warehouseId,
+            items: []
+
+        });
+
     }
 
-    return cart;
-};
+    const existingItem = cart.items.find(
 
-const addItemToCart = async ({ userId, warehouseId, productId, productName, price, quantity, unit }) => {
-    const cart = await getOrCreateCart(userId, warehouseId);
+        item => item.productId.toString() === data.productId
 
-    const inventory = await Inventory.findOne({ warehouse: warehouseId, product: productId }).populate("product");
-
-    if (!inventory) {
-        throw new Error("Inventory not found for selected warehouse");
-    }
-
-    const validation = validateCartItemQuantity(quantity, inventory.stock);
-    if (!validation.valid) {
-        throw new Error(validation.message);
-    }
-
-    const existingItem = cart.items.find((item) => item.productId.toString() === productId.toString());
+    );
 
     if (existingItem) {
-        const newQuantity = existingItem.quantity + quantity;
-        const stockValidation = validateCartItemQuantity(newQuantity, inventory.stock);
-        if (!stockValidation.valid) {
-            throw new Error(stockValidation.message);
-        }
-        existingItem.quantity = newQuantity;
-        existingItem.subtotal = existingItem.quantity * existingItem.price;
-    } else {
-        cart.items.push({
-            productId,
-            productName,
-            price,
-            quantity,
-            unit,
-            subtotal: quantity * price
-        });
+
+        existingItem.quantity += data.quantity;
+
+        existingItem.subtotal =
+            existingItem.quantity * existingItem.price;
+
     }
 
-    const totals = calculateCartTotals(cart.items);
-    cart.cartTotal = totals.cartTotal;
+    else {
+
+        cart.items.push({
+
+            productId: data.productId,
+
+            productName: data.productName,
+
+            category: data.category,
+
+            image: data.image,
+
+            sku: data.sku,
+
+            description: data.description,
+
+            unit: data.unit,
+
+            price: data.price,
+
+            quantity: data.quantity,
+
+            subtotal: data.price * data.quantity
+
+        });
+
+    }
+
+    cart.cartTotal = calculateCartTotal(cart.items);
+
     await cart.save();
 
     return cart;
+
 };
 
-const updateCartItemQuantity = async ({ userId, warehouseId, productId, quantity }) => {
-    const cart = await getOrCreateCart(userId, warehouseId);
-    const item = cart.items.find((entry) => entry.productId.toString() === productId.toString());
+/*
+=========================================
+Get Cart
+=========================================
+*/
+
+const getCart = async (userId, warehouseId) => {
+
+    const cart = await Cart.findOne({
+
+        userId,
+        warehouseId
+
+    });
+
+    return cart;
+
+};
+
+/*
+=========================================
+Update Quantity
+=========================================
+*/
+
+const updateQuantity = async (
+
+    userId,
+    warehouseId,
+    productId,
+    quantity
+
+) => {
+
+    const cart = await Cart.findOne({
+
+        userId,
+        warehouseId
+
+    });
+
+    if (!cart) {
+
+        throw new Error("Cart not found");
+
+    }
+
+    const item = cart.items.find(
+
+        item => item.productId.toString() === productId
+
+    );
 
     if (!item) {
-        throw new Error("Cart item not found");
-    }
 
-    const inventory = await Inventory.findOne({ warehouse: warehouseId, product: productId });
-    if (!inventory) {
-        throw new Error("Inventory not found");
-    }
+        throw new Error("Product not found in cart");
 
-    const validation = validateCartItemQuantity(quantity, inventory.stock);
-    if (!validation.valid) {
-        throw new Error(validation.message);
     }
 
     item.quantity = quantity;
-    item.subtotal = item.price * item.quantity;
 
-    const totals = calculateCartTotals(cart.items);
-    cart.cartTotal = totals.cartTotal;
+    item.subtotal = item.quantity * item.price;
+
+    cart.cartTotal = calculateCartTotal(cart.items);
+
     await cart.save();
 
     return cart;
+
 };
 
-const removeCartItem = async ({ userId, warehouseId, productId }) => {
-    const cart = await getOrCreateCart(userId, warehouseId);
-    cart.items = cart.items.filter((item) => item.productId.toString() !== productId.toString());
+/*
+=========================================
+Remove Product
+=========================================
+*/
 
-    const totals = calculateCartTotals(cart.items);
-    cart.cartTotal = totals.cartTotal;
-    await cart.save();
+const removeItem = async (
 
-    return cart;
-};
+    userId,
+    warehouseId,
+    productId
 
-const clearCart = async ({ userId, warehouseId }) => {
-    const cart = await getOrCreateCart(userId, warehouseId);
-    cart.items = [];
-    cart.cartTotal = 0;
-    cart.status = "Abandoned";
-    await cart.save();
-    return cart;
-};
+) => {
 
-const getCart = async ({ userId, warehouseId }) => {
-    const cart = await Cart.findOne({ userId, warehouseId, status: "Active" }).populate({ path: "items.productId", model: Product });
-    if (!cart) {
-        return { items: [], cartTotal: 0, status: "Active" };
-    }
-    return cart;
-};
+    const cart = await Cart.findOne({
 
-const placeOrder = async ({ userId, warehouseId }) => {
-    const cart = await Cart.findOne({ userId, warehouseId, status: "Active" }).populate({ path: "items.productId", model: Product });
-
-    if (!cart || cart.items.length === 0) {
-        throw new Error("Cart is empty");
-    }
-
-    const orderItems = cart.items.map((item) => ({
-        productId: item.productId._id || item.productId,
-        productName: item.productName,
-        price: item.price,
-        quantity: item.quantity,
-        unit: item.unit,
-        subtotal: item.subtotal
-    }));
-
-    const order = await Order.create({
         userId,
-        warehouseId,
-        items: orderItems,
-        grandTotal: cart.cartTotal,
-        status: "Pending"
+        warehouseId
+
     });
 
-    for (const item of cart.items) {
-        const inventory = await Inventory.findOne({ warehouse: warehouseId, product: item.productId._id || item.productId });
-        if (inventory) {
-            inventory.stock = Math.max(0, inventory.stock - item.quantity);
-            await inventory.save();
-        }
+    if (!cart) {
+
+        throw new Error("Cart not found");
+
     }
 
-    cart.items = [];
-    cart.cartTotal = 0;
-    cart.status = "Ordered";
+    cart.items = cart.items.filter(
+
+        item => item.productId.toString() !== productId
+
+    );
+
+    cart.cartTotal = calculateCartTotal(cart.items);
+
     await cart.save();
 
-    return order;
+    return cart;
+
 };
 
+/*
+=========================================
+Clear Cart
+=========================================
+*/
+
+const clearCart = async (
+
+    userId,
+    warehouseId
+
+) => {
+
+    await Cart.deleteOne({
+
+        userId,
+        warehouseId
+
+    });
+
+};
+
+/*
+=========================================
+Place Order
+=========================================
+*/
+
+const placeOrder = async (userId, warehouseId) => {
+
+    const cart = await Cart.findOne({
+
+        userId,
+        warehouseId
+
+    });
+
+    if (!cart) {
+
+        throw new Error("Cart not found");
+
+    }
+
+    if (cart.items.length === 0) {
+
+        throw new Error("Cart is empty");
+
+    }
+
+    /*
+    =========================================
+    Reduce Inventory First
+    =========================================
+    */
+
+    for (const item of cart.items) {
+
+        try {
+
+            await javaService.reduceInventory({
+
+                warehouseId: cart.warehouseId.toString(),
+
+                productId: item.productId.toString(),
+
+                quantity: item.quantity
+
+            });
+
+        }
+
+        catch (error) {
+
+            console.error(
+
+                "Inventory Error :",
+
+                error.response?.data || error.message
+
+            );
+
+            throw new Error(
+
+                "Unable to place order. Product stock is not available."
+
+            );
+
+        }
+
+    }
+
+
+    /*
+    =========================================
+    Generate Order Number
+    =========================================
+    */
+
+    const orderNumber =
+        "ORD-" + Date.now();
+
+    /*
+    =========================================
+    Load User
+    =========================================
+    */
+
+    const user = await User.findById(userId);
+
+    /*
+    =========================================
+    Load Shopkeeper Profile
+    =========================================
+    */
+
+    const profile = await ShopkeeperDetails.findOne({
+
+        userId
+
+    });
+
+    /*
+    =========================================
+    Get Default Address
+    =========================================
+    */
+
+    let defaultAddress = "";
+
+    if (profile && profile.addresses.length > 0) {
+
+        const address = profile.addresses.find(
+
+            item => item.isDefault
+
+        ) || profile.addresses[0];
+
+        defaultAddress = [
+
+            address.fullName,
+
+            address.phone,
+
+            address.addressLine1,
+
+            address.addressLine2,
+
+            address.landmark,
+
+            address.city,
+
+            address.state,
+
+            address.country,
+
+            address.pincode
+
+        ]
+
+        .filter(value => value && value.trim() !== "")
+
+        .join(", ");
+
+    }
+
+    /*
+    =========================================
+    Create Order
+    =========================================
+    */
+
+    const order = await Order.create({
+
+        orderNumber,
+
+        shopkeeperName:
+
+            profile?.fullName ||
+
+            user?.fullName ||
+
+            "",
+
+        shopkeeperPhone:
+
+            profile?.phone ||
+
+            user?.phone ||
+
+            "",
+
+        deliveryAddress:
+
+            defaultAddress,
+
+        userId: cart.userId,
+
+        warehouseId: cart.warehouseId,
+
+        items: cart.items,
+
+        totalAmount: cart.cartTotal,
+
+        status: "Placed"
+
+    });
+
+    /*
+    =========================================
+    Delete Cart
+    =========================================
+    */
+
+    await Cart.deleteOne({
+
+        _id: cart._id
+
+    });
+
+    return order;
+
+};
+ 
+
+/*
+=========================================
+Exports
+=========================================
+*/
+
 module.exports = {
-    validateCartItemQuantity,
-    calculateCartTotals,
-    getOrCreateCart,
+
     addItemToCart,
-    updateCartItemQuantity,
-    removeCartItem,
-    clearCart,
+
     getCart,
-    placeOrder
+
+    updateQuantity,
+
+    removeItem,
+
+    clearCart,
+
+    placeOrder,
+
+    calculateCartTotal
 };

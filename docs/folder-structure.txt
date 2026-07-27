@@ -1,60 +1,54 @@
 AI-Supply-Chain-Management-System/
-
     README.md
     .gitignore
     docker-compose.yml
     package.json
 
     frontend-react/
-
         package.json
 
         public/
-
             index.html
             favicon.ico
             manifest.json
 
         src/
-
             App.jsx
             main.jsx
             index.css
 
             assets/
-
                 images/
-
                 icons/
-
                 css/
-
-                    users.css
-                    global.css
-                    auth.css
-
-                    sidebar.css
-                    shopkeeperSidebar.css
-                    header.css
-
-                    dashboard.css
-                    shopkeeper.css
-                    products.css
-                    warehouse.css
-                    supplier.css
+                    address.css
+                    auth.css    
                     cards.css
                     charts.css
+                    dashboard.css
+                    DemandPrediction.css
+                    global.css
+                    header.css
+                    orderDetails.css
+                    OrderHistory.css
+                    ProductCatalog.css
+                    products.css
+                    profile.css
+                    shopkeeper.css
+                    shopkeeperSidebar.css
+                    sidebar.css
+                    supplier.css
                     table.css
+                    trackOrder.css
+                    users.css
+                    warehouse.css
 
             layouts/
-
                 AdminLayout.jsx
                 ShopkeeperLayout.jsx
 
             components/
-
                 common/
-
                     Navbar.jsx
                     Sidebar.jsx
                     ShopkeeperSidebar.jsx
@@ -68,24 +62,19 @@ AI-Supply-Chain-Management-System/
                     ProtectedRoute.jsx
 
                 cards/
-
                     StatsCard.jsx
 
                 charts/
-
                     SalesChart.jsx
                     InventoryChart.jsx
 
                 tables/
-
                     RecentOrders.jsx
                     PredictionTable.jsx
                     WarehouseTable.jsx
 
                 admin/
-
                     Dashboard/
-
                         AdminHome.jsx
                         Dashboard.jsx
                         SalesChart.jsx
@@ -93,18 +82,15 @@ AI-Supply-Chain-Management-System/
                         WarehouseStats.jsx
 
                     Products/
-
 			            Products.jsx
                         ProductList.jsx
                         ProductCard.jsx
                         AddProduct.jsx
                         Filter.jsx
-
                         EditProduct.jsx
 			            Inventory.jsx
 
                     Warehouses/
-
 			            Warehouses.jsx
                         WarehouseList.jsx
                         AddWarehouse.jsx
@@ -115,7 +101,6 @@ AI-Supply-Chain-Management-System/
                         TransferStock.jsx
 
                     Orders/
-
 			            Suppliers.jsx
 			            Orders.jsx
                         OrderList.jsx
@@ -123,32 +108,26 @@ AI-Supply-Chain-Management-System/
                         OrderStatus.jsx
 
 		            Others/
-
                         Notification.jsx
                         Settings.jsx
                         Support.jsx
 
                     Reports/
-
                         Reports.jsx
                         DownloadPDF.jsx
                         ExportExcel.jsx
 
                     AI/
-
 			            AIPrediction.jsx
                         DemandPrediction.jsx
                         TrendAnalysis.jsx
                         RecommendationPanel.jsx
 
                 shopkeeper/
-
                     Dashboard/
-
                         ShopkeeperHome.jsx
 
                     Products/
-
                         ProductCatalog.jsx
                         ProductCard.jsx
                         QuantitySelector.jsx
@@ -157,118 +136,129 @@ AI-Supply-Chain-Management-System/
                         SearchProducts.jsx
 
                     Profile/
-                        
                         Profile.jsx
                         Address.jsx
                         PaymentMethod.jsx
 
                     Orders/
-
+                        OrderDetails.jsx
                         PlaceOrder.jsx
                         OrderHistory.jsx
                         TrackOrder.jsx
 
                     Cart/
-
                         Cart.jsx
                         CartItem.jsx
                         CartSummary.jsx
 
                     Others/
-
                         Notification.jsx
                         Settings.jsx
                         Support.jsx
 
             pages/
-		
 		        Dashboard.jsx
-
                 Login.jsx
                 Register.jsx
                 Logout.jsx
-
                 Users.jsx
-
                 Unauthorized.jsx
                 NotFound.jsx
 
             routes/
-
                 AppRoutes.jsx
 
             context/
-
                 AuthContext.jsx
                 CartContext.jsx
 
             hooks/
-
                 useAuth.js
                 useFetch.js
 
             services/
-
                 api.js
                 authService.js
                 productService.js
                 orderService.js
                 warehouseService.js
-                
                 inventoryService.js
                 reportService.js
                 aiService.js
 	            supplierService.js
 
             utils/
-
                 constants.js
                 validators.js
                 formatters.js
                 helpers.js
 
     backend-node/
-
         package.json
         .env
 
         src/
-
             app.js
             server.js
 
             config/
-
                 db.js
                 serverConfig.js
                 envConfig.js
 
-            controllers/
-
+            controllers/ 
+                aiController.js
                 authController.js
-                productController.js
-                warehouseController.js
+                cartController.js
+                catalogController.js
                 inventoryController.js
                 orderController.js
+                productController.js
+                profileController.js
                 reportController.js
-                aiController.js
-                supplierController.js
                 shopkeeperController.js
+                supplierController.js
+                warehouseController.js
+
+            middleware/
+                authMiddleware.js
+                errorMiddleware.js
+                roleMiddleware.js
+                uploadMiddleware.js
+                validationMiddleware.js
 
             models/
-
-                User.js
+                Cart.js
+                DemandHistory.js
+                Inventory.js
+                Order.js
+                Prediction.js
                 Product.js
-                ProductPrices.js
                 ProductHoldings.js
+                ProductPrices.js
                 ShopkeeperDetails.js
-
+                supplier.js
+                User.js
+                warehouse.js             
+                
             routes/
-
+                aiRoutes.js
+                authRoutes.js
+                cartRoutes.js
+                catelogRoutes.js
+                inventoryRoutes.js
+                orderRoutes.js
+                productRoutes.js
+                profileRoutes.js
+                reportRoutes.js
                 shopkeeperRoutes.js
+                supplierRoutes.js
+                warehouseRoutes.js
 
             services/
-
+                cartService.js
+                orderService.js 
+                javaService.js
                 pythonAIService.js
                 notificationService.js
 
