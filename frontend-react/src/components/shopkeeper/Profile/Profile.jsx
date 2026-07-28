@@ -1,17 +1,24 @@
 import { useState, useEffect } from "react";
 import { getProfile, updateProfile } from "../../../services/shopkeeperService";
 import "../../../assets/css/profile.css";
+import Select from "react-select";
 
 function Profile() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
-    shopCategory: "",
+    shopCategory: [],
   });
   const [userId, setUserId] = useState("");
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState({ type: "", message: "" });
+
+  const categoryOptions = [
+    { value: "Vegetables", label: "Vegetables" },
+    { value: "Fruits", label: "Fruits" },
+    { value: "Dairy", label: "Dairy" },
+  ];
 
   const fetchProfile = async () => {
     try {
@@ -25,11 +32,14 @@ function Profile() {
         fullName: profile.fullName || "",
         email: profile.userId?.email || "",
         phone: profile.phone || "",
-        shopCategory: profile.shopCategory || "",
+        shopCategory: profile.shopCategory || [],
       });
     } catch (error) {
       console.error("Error fetching profile:", error);
-      setFeedback({ type: "error", message: "Unable to load your profile right now." });
+      setFeedback({
+        type: "error",
+        message: "Unable to load your profile right now.",
+      });
     }
   };
 
@@ -67,7 +77,13 @@ function Profile() {
       setFeedback({ type: "success", message: response.data.message });
       await fetchProfile();
     } catch (error) {
-      setFeedback({ type: "error", message: error.response?.data?.message || error.message || "Failed to update profile" });
+      setFeedback({
+        type: "error",
+        message:
+          error.response?.data?.message ||
+          error.message ||
+          "Failed to update profile",
+      });
     } finally {
       setLoading(false);
     }
@@ -81,9 +97,12 @@ function Profile() {
   return (
     <div className="profile-page">
       <div className="profile-card">
+        {/* Header Section */}
         <div className="profile-header">
           <div className="profile-avatar">
-            {formData.fullName ? formData.fullName.charAt(0).toUpperCase() : "U"}
+            {formData.fullName
+              ? formData.fullName.charAt(0).toUpperCase()
+              : "U"}
           </div>
           <div className="profile-titles">
             <h2>My Profile</h2>
@@ -91,13 +110,22 @@ function Profile() {
           </div>
         </div>
 
-        {feedback.message && (
-          <div style={{ marginBottom: "12px", color: feedback.type === "success" ? "#0f9d58" : "#d93025", fontWeight: 600 }}>
-            {feedback.message}
-          </div>
-        )}
-
+        {/* Form Container */}
         <form className="profile-form" onSubmit={handleSubmit}>
+          {/* Feedback Banner */}
+          {feedback.message && (
+            <div
+              className="profile-message"
+              style={{
+                background: feedback.type === "success" ? "#e7f8ee" : "#fdecec",
+                color: feedback.type === "success" ? "#0f9d58" : "#d93025",
+              }}
+            >
+              {feedback.message}
+            </div>
+          )}
+
+          {/* Full Name */}
           <div className="form-group">
             <label>Full Name</label>
             <input
@@ -109,6 +137,7 @@ function Profile() {
             />
           </div>
 
+          {/* Email */}
           <div className="form-group">
             <label>Email</label>
             <input
@@ -120,6 +149,7 @@ function Profile() {
             />
           </div>
 
+          {/* Phone Number */}
           <div className="form-group">
             <label>Phone Number</label>
             <input
@@ -128,24 +158,33 @@ function Profile() {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Enter your phone number"
+              style={{ marginTop: "15px" }}
             />
           </div>
 
+          {/* Shop Category */}
           <div className="form-group">
             <label>Shop Category</label>
-            <select
-              name="shopCategory"
-              value={formData.shopCategory}
-              onChange={handleChange}
-            >
-              <option value="">Select category</option>
-              <option value="Vegetables">Vegetables</option>
-              <option value="Dairy">Dairy</option>
-              <option value="Fruits">Fruits</option>
-              <option value="All">All</option>
-            </select>
+           
+            <Select
+              isMulti
+              options={categoryOptions}
+              placeholder="Search and select categories..."
+              value={categoryOptions.filter((option) =>
+                formData.shopCategory.includes(option.value),
+              )}
+              onChange={(selectedOptions) =>
+                setFormData({
+                  ...formData,
+                  shopCategory: selectedOptions
+                    ? selectedOptions.map((option) => option.value)
+                    : [],
+                })
+              }
+            />
           </div>
 
+          {/* Action Buttons */}
           <div className="button-container">
             <button type="submit" className="profile-btn" disabled={loading}>
               {loading ? "Saving..." : "Save"}

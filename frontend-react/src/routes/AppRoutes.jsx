@@ -30,7 +30,6 @@ import OrderHistory from "../components/shopkeeper/Orders/OrderHistory";
 import OrderDetails from "../components/shopkeeper/orders/OrderDetails";
 import TrackOrder from "../components/shopkeeper/Orders/TrackOrder";
 import ProductCatalog from "../components/shopkeeper/Products/ProductCatalog";
-import SearchProducts from "../components/shopkeeper/Products/SearchProducts";
 import Profile from "../components/shopkeeper/Profile/Profile";
 import Address from "../components/shopkeeper/Profile/Address";
 import PaymentMethod from "../components/shopkeeper/Profile/PaymentMethod";
@@ -78,7 +77,6 @@ function AppRoutes() {
         <Route path="order/:id" element={<OrderDetails />}/>
         <Route path="order/:id/track" element={<TrackOrder />} />
         <Route path="product-catalog" element={<ProductCatalog />} />
-        <Route path="search-products" element={<SearchProducts />} />
         <Route path="profile" element={<Profile />} />
         <Route path="address" element={<Address />} />
         <Route path="payment-method" element={<PaymentMethod />} />
