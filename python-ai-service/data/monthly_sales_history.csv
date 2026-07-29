@@ -1,276 +1,974 @@
-warehouseId,warehouseName,productId,productName,category,year,month,monthName,season,monthlyAvgStock,monthlyDemand
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,1,January,Winter,304,291
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,2,February,Winter,329,310
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,3,March,Summer,341,319
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,4,April,Summer,361,338
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,5,May,Summer,306,278
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,6,June,Summer,339,326
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,7,July,Monsoon,270,244
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,8,August,Monsoon,275,259
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,9,September,Monsoon,297,270
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,10,October,Autumn,261,253
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,11,November,Autumn,283,268
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,12,December,Winter,294,280
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,1,January,Winter,333,298
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,2,February,Winter,309,290
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,3,March,Summer,323,311
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,4,April,Summer,349,334
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,5,May,Summer,359,333
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,6,June,Summer,343,319
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,7,July,Monsoon,279,263
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,8,August,Monsoon,298,272
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,9,September,Monsoon,283,257
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,10,October,Autumn,343,306
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,11,November,Autumn,318,297
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,12,December,Winter,328,310
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,1,January,Winter,343,324
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,2,February,Winter,326,305
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,3,March,Summer,365,338
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,4,April,Summer,389,373
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,5,May,Summer,403,369
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,6,June,Summer,369,349
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,7,July,Monsoon,308,288
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,8,August,Monsoon,288,257
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,9,September,Monsoon,297,285
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,10,October,Autumn,319,290
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,11,November,Autumn,308,289
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,12,December,Winter,357,327
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,1,January,Winter,350,319
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,2,February,Winter,354,331
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,3,March,Summer,365,331
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,4,April,Summer,382,369
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,5,May,Summer,415,385
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,6,June,Summer,399,360
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,7,July,Monsoon,309,277
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,8,August,Monsoon,306,281
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,9,September,Monsoon,328,294
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,10,October,Autumn,334,309
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,11,November,Autumn,306,282
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,12,December,Winter,341,332
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,1,January,Winter,364,331
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,2,February,Winter,329,322
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,3,March,Summer,387,357
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,4,April,Summer,397,358
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,5,May,Summer,427,402
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,6,June,Summer,404,378
-6a4aafd65d55632e1d3ac18d,Katraj,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,7,July,Monsoon,316,285
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,1,January,Winter,719,652
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,2,February,Winter,696,655
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,3,March,Summer,566,540
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,4,April,Summer,612,560
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,5,May,Summer,577,539
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,6,June,Summer,636,597
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,7,July,Monsoon,770,716
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,8,August,Monsoon,716,644
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,9,September,Monsoon,787,749
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,10,October,Autumn,662,613
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,11,November,Autumn,663,595
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2022,12,December,Winter,633,580
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,1,January,Winter,718,670
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,2,February,Winter,647,625
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,3,March,Summer,633,568
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,4,April,Summer,598,556
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,5,May,Summer,617,564
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,6,June,Summer,579,555
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,7,July,Monsoon,832,763
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,8,August,Monsoon,798,747
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,9,September,Monsoon,906,816
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,10,October,Autumn,666,616
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,11,November,Autumn,658,626
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2023,12,December,Winter,712,674
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,1,January,Winter,735,704
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,2,February,Winter,790,717
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,3,March,Summer,631,607
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,4,April,Summer,651,627
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,5,May,Summer,608,579
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,6,June,Summer,618,565
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,7,July,Monsoon,920,831
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,8,August,Monsoon,769,752
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,9,September,Monsoon,804,757
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,10,October,Autumn,729,670
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,11,November,Autumn,692,642
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2024,12,December,Winter,836,753
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,1,January,Winter,855,797
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,2,February,Winter,748,724
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,3,March,Summer,689,661
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,4,April,Summer,671,612
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,5,May,Summer,726,654
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,6,June,Summer,645,596
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,7,July,Monsoon,898,849
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,8,August,Monsoon,874,837
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,9,September,Monsoon,909,851
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,10,October,Autumn,692,654
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,11,November,Autumn,762,701
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2025,12,December,Winter,755,711
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,1,January,Winter,824,776
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,2,February,Winter,798,762
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,3,March,Summer,742,665
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,4,April,Summer,728,654
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,5,May,Summer,754,718
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,6,June,Summer,766,720
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a721a648dfdc0d8b7050,Potato,Vegetables,2026,7,July,Monsoon,1008,965
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,1,January,Winter,699,640
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,2,February,Winter,667,628
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,3,March,Summer,577,540
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,4,April,Summer,611,549
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,5,May,Summer,579,562
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,6,June,Summer,630,568
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,7,July,Monsoon,785,725
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,8,August,Monsoon,756,740
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,9,September,Monsoon,745,719
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,10,October,Autumn,644,588
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,11,November,Autumn,625,594
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,12,December,Winter,695,674
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,1,January,Winter,726,672
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,2,February,Winter,666,649
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,3,March,Summer,551,499
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,4,April,Summer,606,555
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,5,May,Summer,670,601
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,6,June,Summer,706,631
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,7,July,Monsoon,785,714
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,8,August,Monsoon,750,731
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,9,September,Monsoon,774,736
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,10,October,Autumn,644,627
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,11,November,Autumn,736,662
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,12,December,Winter,706,642
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,1,January,Winter,802,759
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,2,February,Winter,753,727
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,3,March,Summer,656,639
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,4,April,Summer,590,577
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,5,May,Summer,620,569
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,6,June,Summer,679,621
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,7,July,Monsoon,825,781
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,8,August,Monsoon,896,814
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,9,September,Monsoon,898,815
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,10,October,Autumn,755,696
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,11,November,Autumn,714,653
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,12,December,Winter,780,700
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,1,January,Winter,796,753
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,2,February,Winter,701,658
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,3,March,Summer,654,604
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,4,April,Summer,723,661
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,5,May,Summer,577,556
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,6,June,Summer,635,578
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,7,July,Monsoon,928,838
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,8,August,Monsoon,919,847
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,9,September,Monsoon,853,778
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,10,October,Autumn,739,701
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,11,November,Autumn,665,618
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,12,December,Winter,751,692
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,1,January,Winter,703,675
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,2,February,Winter,849,769
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,3,March,Summer,636,618
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,4,April,Summer,607,578
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,5,May,Summer,685,628
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,6,June,Summer,687,615
-6a46b258897e117e4ab6efc6,Pashan Chowk,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,7,July,Monsoon,855,787
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,1,January,Winter,144,137
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,2,February,Winter,149,136
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,3,March,Summer,169,159
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,4,April,Summer,175,169
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,5,May,Summer,158,142
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,6,June,Summer,177,158
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,7,July,Monsoon,122,118
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,8,August,Monsoon,138,128
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,9,September,Monsoon,139,125
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,10,October,Autumn,145,136
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,11,November,Autumn,137,129
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2022,12,December,Winter,150,138
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,1,January,Winter,155,146
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,2,February,Winter,162,148
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,3,March,Summer,185,174
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,4,April,Summer,166,154
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,5,May,Summer,175,168
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,6,June,Summer,191,176
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,7,July,Monsoon,122,119
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,8,August,Monsoon,137,128
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,9,September,Monsoon,133,120
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,10,October,Autumn,153,145
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,11,November,Autumn,144,138
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2023,12,December,Winter,177,160
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,1,January,Winter,151,145
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,2,February,Winter,178,164
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,3,March,Summer,197,177
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,4,April,Summer,169,157
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,5,May,Summer,191,187
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,6,June,Summer,180,170
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,7,July,Monsoon,137,133
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,8,August,Monsoon,154,143
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,9,September,Monsoon,133,125
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,10,October,Autumn,153,144
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,11,November,Autumn,160,147
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2024,12,December,Winter,171,157
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,1,January,Winter,181,166
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,2,February,Winter,162,155
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,3,March,Summer,175,164
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,4,April,Summer,192,186
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,5,May,Summer,183,173
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,6,June,Summer,210,190
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,7,July,Monsoon,148,142
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,8,August,Monsoon,144,139
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,9,September,Monsoon,149,144
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,10,October,Autumn,161,157
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,11,November,Autumn,151,145
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2025,12,December,Winter,173,166
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,1,January,Winter,177,172
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,2,February,Winter,182,178
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,3,March,Summer,202,189
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,4,April,Summer,192,186
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,5,May,Summer,180,174
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,6,June,Summer,194,189
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a7f8a648dfdc0d8b7053,Amul Milk,Dairy,2026,7,July,Monsoon,150,146
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,1,January,Winter,297,282
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,2,February,Winter,333,316
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,3,March,Summer,292,272
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,4,April,Summer,258,253
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,5,May,Summer,285,259
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,6,June,Summer,301,281
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,7,July,Monsoon,374,361
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,8,August,Monsoon,353,337
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,9,September,Monsoon,377,365
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,10,October,Autumn,303,287
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,11,November,Autumn,326,317
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2022,12,December,Winter,337,308
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,1,January,Winter,348,329
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,2,February,Winter,378,360
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,3,March,Summer,287,264
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,4,April,Summer,288,263
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,5,May,Summer,274,263
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,6,June,Summer,290,283
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,7,July,Monsoon,420,379
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,8,August,Monsoon,332,324
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,9,September,Monsoon,397,365
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,10,October,Autumn,300,290
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,11,November,Autumn,293,281
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2023,12,December,Winter,358,330
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,1,January,Winter,340,331
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,2,February,Winter,320,312
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,3,March,Summer,317,297
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,4,April,Summer,308,291
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,5,May,Summer,289,276
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,6,June,Summer,317,285
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,7,July,Monsoon,440,405
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,8,August,Monsoon,395,371
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,9,September,Monsoon,399,391
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,10,October,Autumn,360,338
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,11,November,Autumn,345,318
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2024,12,December,Winter,363,335
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,1,January,Winter,353,333
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,2,February,Winter,388,358
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,3,March,Summer,297,286
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,4,April,Summer,323,309
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,5,May,Summer,304,281
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,6,June,Summer,324,292
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,7,July,Monsoon,424,399
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,8,August,Monsoon,419,390
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,9,September,Monsoon,453,425
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,10,October,Autumn,358,328
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,11,November,Autumn,359,337
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2025,12,December,Winter,398,385
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,1,January,Winter,405,362
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,2,February,Winter,388,356
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,3,March,Summer,328,312
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,4,April,Summer,348,323
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,5,May,Summer,336,310
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,6,June,Summer,312,303
-6a46b292897e117e4ab6efc7,Shivaji Bhaji Market,6a37a669a648dfdc0d8b704d,Tomato,Vegetables,2026,7,July,Monsoon,421,395
+warehouseName,productName,category,year,month,monthName,season,monthlyDemand
+Katraj,Amul Milk,Dairy,2022,1,January,Winter,312
+Katraj,Amul Milk,Dairy,2022,2,February,Winter,285
+Katraj,Amul Milk,Dairy,2022,3,March,Summer,311
+Katraj,Amul Milk,Dairy,2022,4,April,Summer,385
+Katraj,Amul Milk,Dairy,2022,5,May,Summer,327
+Katraj,Amul Milk,Dairy,2022,6,June,Summer,299
+Katraj,Amul Milk,Dairy,2022,7,July,Monsoon,247
+Katraj,Amul Milk,Dairy,2022,8,August,Monsoon,264
+Katraj,Amul Milk,Dairy,2022,9,September,Monsoon,264
+Katraj,Amul Milk,Dairy,2022,10,October,Autumn,274
+Katraj,Amul Milk,Dairy,2022,11,November,Autumn,263
+Katraj,Amul Milk,Dairy,2022,12,December,Winter,272
+Katraj,Amul Milk,Dairy,2023,1,January,Winter,311
+Katraj,Amul Milk,Dairy,2023,2,February,Winter,311
+Katraj,Amul Milk,Dairy,2023,3,March,Summer,298
+Katraj,Amul Milk,Dairy,2023,4,April,Summer,318
+Katraj,Amul Milk,Dairy,2023,5,May,Summer,372
+Katraj,Amul Milk,Dairy,2023,6,June,Summer,339
+Katraj,Amul Milk,Dairy,2023,7,July,Monsoon,271
+Katraj,Amul Milk,Dairy,2023,8,August,Monsoon,265
+Katraj,Amul Milk,Dairy,2023,9,September,Monsoon,278
+Katraj,Amul Milk,Dairy,2023,10,October,Autumn,280
+Katraj,Amul Milk,Dairy,2023,11,November,Autumn,284
+Katraj,Amul Milk,Dairy,2023,12,December,Winter,297
+Katraj,Amul Milk,Dairy,2024,1,January,Winter,320
+Katraj,Amul Milk,Dairy,2024,2,February,Winter,311
+Katraj,Amul Milk,Dairy,2024,3,March,Summer,353
+Katraj,Amul Milk,Dairy,2024,4,April,Summer,350
+Katraj,Amul Milk,Dairy,2024,5,May,Summer,314
+Katraj,Amul Milk,Dairy,2024,6,June,Summer,383
+Katraj,Amul Milk,Dairy,2024,7,July,Monsoon,269
+Katraj,Amul Milk,Dairy,2024,8,August,Monsoon,267
+Katraj,Amul Milk,Dairy,2024,9,September,Monsoon,304
+Katraj,Amul Milk,Dairy,2024,10,October,Autumn,316
+Katraj,Amul Milk,Dairy,2024,11,November,Autumn,295
+Katraj,Amul Milk,Dairy,2024,12,December,Winter,308
+Katraj,Amul Milk,Dairy,2025,1,January,Winter,333
+Katraj,Amul Milk,Dairy,2025,2,February,Winter,369
+Katraj,Amul Milk,Dairy,2025,3,March,Summer,405
+Katraj,Amul Milk,Dairy,2025,4,April,Summer,366
+Katraj,Amul Milk,Dairy,2025,5,May,Summer,376
+Katraj,Amul Milk,Dairy,2025,6,June,Summer,345
+Katraj,Amul Milk,Dairy,2025,7,July,Monsoon,291
+Katraj,Amul Milk,Dairy,2025,8,August,Monsoon,333
+Katraj,Amul Milk,Dairy,2025,9,September,Monsoon,323
+Katraj,Amul Milk,Dairy,2025,10,October,Autumn,305
+Katraj,Amul Milk,Dairy,2025,11,November,Autumn,341
+Katraj,Amul Milk,Dairy,2025,12,December,Winter,361
+Katraj,Amul Milk,Dairy,2026,1,January,Winter,372
+Katraj,Amul Milk,Dairy,2026,2,February,Winter,392
+Katraj,Amul Milk,Dairy,2026,3,March,Summer,467
+Katraj,Amul Milk,Dairy,2026,4,April,Summer,386
+Katraj,Amul Milk,Dairy,2026,5,May,Summer,430
+Katraj,Amul Milk,Dairy,2026,6,June,Summer,421
+Katraj,Coriander,Vegetables,2022,1,January,Winter,114
+Katraj,Coriander,Vegetables,2022,2,February,Winter,142
+Katraj,Coriander,Vegetables,2022,3,March,Summer,129
+Katraj,Coriander,Vegetables,2022,4,April,Summer,126
+Katraj,Coriander,Vegetables,2022,5,May,Summer,107
+Katraj,Coriander,Vegetables,2022,6,June,Summer,120
+Katraj,Coriander,Vegetables,2022,7,July,Monsoon,138
+Katraj,Coriander,Vegetables,2022,8,August,Monsoon,153
+Katraj,Coriander,Vegetables,2022,9,September,Monsoon,156
+Katraj,Coriander,Vegetables,2022,10,October,Autumn,131
+Katraj,Coriander,Vegetables,2022,11,November,Autumn,128
+Katraj,Coriander,Vegetables,2022,12,December,Winter,139
+Katraj,Coriander,Vegetables,2023,1,January,Winter,141
+Katraj,Coriander,Vegetables,2023,2,February,Winter,141
+Katraj,Coriander,Vegetables,2023,3,March,Summer,122
+Katraj,Coriander,Vegetables,2023,4,April,Summer,127
+Katraj,Coriander,Vegetables,2023,5,May,Summer,116
+Katraj,Coriander,Vegetables,2023,6,June,Summer,130
+Katraj,Coriander,Vegetables,2023,7,July,Monsoon,171
+Katraj,Coriander,Vegetables,2023,8,August,Monsoon,151
+Katraj,Coriander,Vegetables,2023,9,September,Monsoon,153
+Katraj,Coriander,Vegetables,2023,10,October,Autumn,153
+Katraj,Coriander,Vegetables,2023,11,November,Autumn,121
+Katraj,Coriander,Vegetables,2023,12,December,Winter,146
+Katraj,Coriander,Vegetables,2024,1,January,Winter,150
+Katraj,Coriander,Vegetables,2024,2,February,Winter,137
+Katraj,Coriander,Vegetables,2024,3,March,Summer,151
+Katraj,Coriander,Vegetables,2024,4,April,Summer,137
+Katraj,Coriander,Vegetables,2024,5,May,Summer,135
+Katraj,Coriander,Vegetables,2024,6,June,Summer,131
+Katraj,Coriander,Vegetables,2024,7,July,Monsoon,174
+Katraj,Coriander,Vegetables,2024,8,August,Monsoon,185
+Katraj,Coriander,Vegetables,2024,9,September,Monsoon,183
+Katraj,Coriander,Vegetables,2024,10,October,Autumn,139
+Katraj,Coriander,Vegetables,2024,11,November,Autumn,149
+Katraj,Coriander,Vegetables,2024,12,December,Winter,147
+Katraj,Coriander,Vegetables,2025,1,January,Winter,175
+Katraj,Coriander,Vegetables,2025,2,February,Winter,152
+Katraj,Coriander,Vegetables,2025,3,March,Summer,131
+Katraj,Coriander,Vegetables,2025,4,April,Summer,145
+Katraj,Coriander,Vegetables,2025,5,May,Summer,143
+Katraj,Coriander,Vegetables,2025,6,June,Summer,147
+Katraj,Coriander,Vegetables,2025,7,July,Monsoon,180
+Katraj,Coriander,Vegetables,2025,8,August,Monsoon,152
+Katraj,Coriander,Vegetables,2025,9,September,Monsoon,197
+Katraj,Coriander,Vegetables,2025,10,October,Autumn,164
+Katraj,Coriander,Vegetables,2025,11,November,Autumn,163
+Katraj,Coriander,Vegetables,2025,12,December,Winter,155
+Katraj,Coriander,Vegetables,2026,1,January,Winter,180
+Katraj,Coriander,Vegetables,2026,2,February,Winter,171
+Katraj,Coriander,Vegetables,2026,3,March,Summer,147
+Katraj,Coriander,Vegetables,2026,4,April,Summer,145
+Katraj,Coriander,Vegetables,2026,5,May,Summer,147
+Katraj,Coriander,Vegetables,2026,6,June,Summer,147
+Katraj,Green Chili,Vegetables,2022,1,January,Winter,108
+Katraj,Green Chili,Vegetables,2022,2,February,Winter,99
+Katraj,Green Chili,Vegetables,2022,3,March,Summer,104
+Katraj,Green Chili,Vegetables,2022,4,April,Summer,100
+Katraj,Green Chili,Vegetables,2022,5,May,Summer,90
+Katraj,Green Chili,Vegetables,2022,6,June,Summer,99
+Katraj,Green Chili,Vegetables,2022,7,July,Monsoon,130
+Katraj,Green Chili,Vegetables,2022,8,August,Monsoon,122
+Katraj,Green Chili,Vegetables,2022,9,September,Monsoon,136
+Katraj,Green Chili,Vegetables,2022,10,October,Autumn,101
+Katraj,Green Chili,Vegetables,2022,11,November,Autumn,98
+Katraj,Green Chili,Vegetables,2022,12,December,Winter,108
+Katraj,Green Chili,Vegetables,2023,1,January,Winter,109
+Katraj,Green Chili,Vegetables,2023,2,February,Winter,99
+Katraj,Green Chili,Vegetables,2023,3,March,Summer,99
+Katraj,Green Chili,Vegetables,2023,4,April,Summer,102
+Katraj,Green Chili,Vegetables,2023,5,May,Summer,106
+Katraj,Green Chili,Vegetables,2023,6,June,Summer,99
+Katraj,Green Chili,Vegetables,2023,7,July,Monsoon,127
+Katraj,Green Chili,Vegetables,2023,8,August,Monsoon,145
+Katraj,Green Chili,Vegetables,2023,9,September,Monsoon,128
+Katraj,Green Chili,Vegetables,2023,10,October,Autumn,112
+Katraj,Green Chili,Vegetables,2023,11,November,Autumn,108
+Katraj,Green Chili,Vegetables,2023,12,December,Winter,115
+Katraj,Green Chili,Vegetables,2024,1,January,Winter,125
+Katraj,Green Chili,Vegetables,2024,2,February,Winter,121
+Katraj,Green Chili,Vegetables,2024,3,March,Summer,100
+Katraj,Green Chili,Vegetables,2024,4,April,Summer,105
+Katraj,Green Chili,Vegetables,2024,5,May,Summer,109
+Katraj,Green Chili,Vegetables,2024,6,June,Summer,119
+Katraj,Green Chili,Vegetables,2024,7,July,Monsoon,151
+Katraj,Green Chili,Vegetables,2024,8,August,Monsoon,145
+Katraj,Green Chili,Vegetables,2024,9,September,Monsoon,152
+Katraj,Green Chili,Vegetables,2024,10,October,Autumn,113
+Katraj,Green Chili,Vegetables,2024,11,November,Autumn,133
+Katraj,Green Chili,Vegetables,2024,12,December,Winter,131
+Katraj,Green Chili,Vegetables,2025,1,January,Winter,147
+Katraj,Green Chili,Vegetables,2025,2,February,Winter,140
+Katraj,Green Chili,Vegetables,2025,3,March,Summer,116
+Katraj,Green Chili,Vegetables,2025,4,April,Summer,117
+Katraj,Green Chili,Vegetables,2025,5,May,Summer,111
+Katraj,Green Chili,Vegetables,2025,6,June,Summer,114
+Katraj,Green Chili,Vegetables,2025,7,July,Monsoon,147
+Katraj,Green Chili,Vegetables,2025,8,August,Monsoon,165
+Katraj,Green Chili,Vegetables,2025,9,September,Monsoon,144
+Katraj,Green Chili,Vegetables,2025,10,October,Autumn,127
+Katraj,Green Chili,Vegetables,2025,11,November,Autumn,130
+Katraj,Green Chili,Vegetables,2025,12,December,Winter,128
+Katraj,Green Chili,Vegetables,2026,1,January,Winter,136
+Katraj,Green Chili,Vegetables,2026,2,February,Winter,146
+Katraj,Green Chili,Vegetables,2026,3,March,Summer,117
+Katraj,Green Chili,Vegetables,2026,4,April,Summer,114
+Katraj,Green Chili,Vegetables,2026,5,May,Summer,118
+Katraj,Green Chili,Vegetables,2026,6,June,Summer,121
+Katraj,Hapus Mango,Fruits,2022,1,January,Winter,18
+Katraj,Hapus Mango,Fruits,2022,2,February,Winter,18
+Katraj,Hapus Mango,Fruits,2022,3,March,Summer,505
+Katraj,Hapus Mango,Fruits,2022,4,April,Summer,536
+Katraj,Hapus Mango,Fruits,2022,5,May,Summer,480
+Katraj,Hapus Mango,Fruits,2022,6,June,Summer,505
+Katraj,Hapus Mango,Fruits,2022,7,July,Monsoon,29
+Katraj,Hapus Mango,Fruits,2022,8,August,Monsoon,27
+Katraj,Hapus Mango,Fruits,2022,9,September,Monsoon,26
+Katraj,Hapus Mango,Fruits,2022,10,October,Autumn,19
+Katraj,Hapus Mango,Fruits,2022,11,November,Autumn,19
+Katraj,Hapus Mango,Fruits,2022,12,December,Winter,16
+Katraj,Hapus Mango,Fruits,2023,1,January,Winter,18
+Katraj,Hapus Mango,Fruits,2023,2,February,Winter,20
+Katraj,Hapus Mango,Fruits,2023,3,March,Summer,598
+Katraj,Hapus Mango,Fruits,2023,4,April,Summer,571
+Katraj,Hapus Mango,Fruits,2023,5,May,Summer,576
+Katraj,Hapus Mango,Fruits,2023,6,June,Summer,604
+Katraj,Hapus Mango,Fruits,2023,7,July,Monsoon,27
+Katraj,Hapus Mango,Fruits,2023,8,August,Monsoon,29
+Katraj,Hapus Mango,Fruits,2023,9,September,Monsoon,26
+Katraj,Hapus Mango,Fruits,2023,10,October,Autumn,18
+Katraj,Hapus Mango,Fruits,2023,11,November,Autumn,18
+Katraj,Hapus Mango,Fruits,2023,12,December,Winter,20
+Katraj,Hapus Mango,Fruits,2024,1,January,Winter,21
+Katraj,Hapus Mango,Fruits,2024,2,February,Winter,20
+Katraj,Hapus Mango,Fruits,2024,3,March,Summer,628
+Katraj,Hapus Mango,Fruits,2024,4,April,Summer,534
+Katraj,Hapus Mango,Fruits,2024,5,May,Summer,539
+Katraj,Hapus Mango,Fruits,2024,6,June,Summer,581
+Katraj,Hapus Mango,Fruits,2024,7,July,Monsoon,29
+Katraj,Hapus Mango,Fruits,2024,8,August,Monsoon,28
+Katraj,Hapus Mango,Fruits,2024,9,September,Monsoon,29
+Katraj,Hapus Mango,Fruits,2024,10,October,Autumn,20
+Katraj,Hapus Mango,Fruits,2024,11,November,Autumn,20
+Katraj,Hapus Mango,Fruits,2024,12,December,Winter,20
+Katraj,Hapus Mango,Fruits,2025,1,January,Winter,20
+Katraj,Hapus Mango,Fruits,2025,2,February,Winter,21
+Katraj,Hapus Mango,Fruits,2025,3,March,Summer,656
+Katraj,Hapus Mango,Fruits,2025,4,April,Summer,670
+Katraj,Hapus Mango,Fruits,2025,5,May,Summer,643
+Katraj,Hapus Mango,Fruits,2025,6,June,Summer,544
+Katraj,Hapus Mango,Fruits,2025,7,July,Monsoon,29
+Katraj,Hapus Mango,Fruits,2025,8,August,Monsoon,31
+Katraj,Hapus Mango,Fruits,2025,9,September,Monsoon,33
+Katraj,Hapus Mango,Fruits,2025,10,October,Autumn,19
+Katraj,Hapus Mango,Fruits,2025,11,November,Autumn,19
+Katraj,Hapus Mango,Fruits,2025,12,December,Winter,19
+Katraj,Hapus Mango,Fruits,2026,1,January,Winter,23
+Katraj,Hapus Mango,Fruits,2026,2,February,Winter,24
+Katraj,Hapus Mango,Fruits,2026,3,March,Summer,672
+Katraj,Hapus Mango,Fruits,2026,4,April,Summer,685
+Katraj,Hapus Mango,Fruits,2026,5,May,Summer,656
+Katraj,Hapus Mango,Fruits,2026,6,June,Summer,652
+Katraj,Potato,Vegetables,2022,1,January,Winter,642
+Katraj,Potato,Vegetables,2022,2,February,Winter,629
+Katraj,Potato,Vegetables,2022,3,March,Summer,555
+Katraj,Potato,Vegetables,2022,4,April,Summer,567
+Katraj,Potato,Vegetables,2022,5,May,Summer,579
+Katraj,Potato,Vegetables,2022,6,June,Summer,579
+Katraj,Potato,Vegetables,2022,7,July,Monsoon,732
+Katraj,Potato,Vegetables,2022,8,August,Monsoon,653
+Katraj,Potato,Vegetables,2022,9,September,Monsoon,747
+Katraj,Potato,Vegetables,2022,10,October,Autumn,603
+Katraj,Potato,Vegetables,2022,11,November,Autumn,581
+Katraj,Potato,Vegetables,2022,12,December,Winter,685
+Katraj,Potato,Vegetables,2023,1,January,Winter,606
+Katraj,Potato,Vegetables,2023,2,February,Winter,677
+Katraj,Potato,Vegetables,2023,3,March,Summer,604
+Katraj,Potato,Vegetables,2023,4,April,Summer,615
+Katraj,Potato,Vegetables,2023,5,May,Summer,546
+Katraj,Potato,Vegetables,2023,6,June,Summer,608
+Katraj,Potato,Vegetables,2023,7,July,Monsoon,837
+Katraj,Potato,Vegetables,2023,8,August,Monsoon,725
+Katraj,Potato,Vegetables,2023,9,September,Monsoon,698
+Katraj,Potato,Vegetables,2023,10,October,Autumn,607
+Katraj,Potato,Vegetables,2023,11,November,Autumn,652
+Katraj,Potato,Vegetables,2023,12,December,Winter,624
+Katraj,Potato,Vegetables,2024,1,January,Winter,751
+Katraj,Potato,Vegetables,2024,2,February,Winter,705
+Katraj,Potato,Vegetables,2024,3,March,Summer,625
+Katraj,Potato,Vegetables,2024,4,April,Summer,622
+Katraj,Potato,Vegetables,2024,5,May,Summer,611
+Katraj,Potato,Vegetables,2024,6,June,Summer,575
+Katraj,Potato,Vegetables,2024,7,July,Monsoon,853
+Katraj,Potato,Vegetables,2024,8,August,Monsoon,843
+Katraj,Potato,Vegetables,2024,9,September,Monsoon,812
+Katraj,Potato,Vegetables,2024,10,October,Autumn,691
+Katraj,Potato,Vegetables,2024,11,November,Autumn,706
+Katraj,Potato,Vegetables,2024,12,December,Winter,770
+Katraj,Potato,Vegetables,2025,1,January,Winter,723
+Katraj,Potato,Vegetables,2025,2,February,Winter,758
+Katraj,Potato,Vegetables,2025,3,March,Summer,630
+Katraj,Potato,Vegetables,2025,4,April,Summer,635
+Katraj,Potato,Vegetables,2025,5,May,Summer,712
+Katraj,Potato,Vegetables,2025,6,June,Summer,648
+Katraj,Potato,Vegetables,2025,7,July,Monsoon,865
+Katraj,Potato,Vegetables,2025,8,August,Monsoon,987
+Katraj,Potato,Vegetables,2025,9,September,Monsoon,875
+Katraj,Potato,Vegetables,2025,10,October,Autumn,706
+Katraj,Potato,Vegetables,2025,11,November,Autumn,722
+Katraj,Potato,Vegetables,2025,12,December,Winter,752
+Katraj,Potato,Vegetables,2026,1,January,Winter,830
+Katraj,Potato,Vegetables,2026,2,February,Winter,789
+Katraj,Potato,Vegetables,2026,3,March,Summer,783
+Katraj,Potato,Vegetables,2026,4,April,Summer,737
+Katraj,Potato,Vegetables,2026,5,May,Summer,698
+Katraj,Potato,Vegetables,2026,6,June,Summer,690
+Katraj,Tomato,Vegetables,2022,1,January,Winter,703
+Katraj,Tomato,Vegetables,2022,2,February,Winter,671
+Katraj,Tomato,Vegetables,2022,3,March,Summer,635
+Katraj,Tomato,Vegetables,2022,4,April,Summer,599
+Katraj,Tomato,Vegetables,2022,5,May,Summer,626
+Katraj,Tomato,Vegetables,2022,6,June,Summer,681
+Katraj,Tomato,Vegetables,2022,7,July,Monsoon,810
+Katraj,Tomato,Vegetables,2022,8,August,Monsoon,795
+Katraj,Tomato,Vegetables,2022,9,September,Monsoon,735
+Katraj,Tomato,Vegetables,2022,10,October,Autumn,671
+Katraj,Tomato,Vegetables,2022,11,November,Autumn,705
+Katraj,Tomato,Vegetables,2022,12,December,Winter,644
+Katraj,Tomato,Vegetables,2023,1,January,Winter,713
+Katraj,Tomato,Vegetables,2023,2,February,Winter,673
+Katraj,Tomato,Vegetables,2023,3,March,Summer,645
+Katraj,Tomato,Vegetables,2023,4,April,Summer,656
+Katraj,Tomato,Vegetables,2023,5,May,Summer,608
+Katraj,Tomato,Vegetables,2023,6,June,Summer,593
+Katraj,Tomato,Vegetables,2023,7,July,Monsoon,761
+Katraj,Tomato,Vegetables,2023,8,August,Monsoon,816
+Katraj,Tomato,Vegetables,2023,9,September,Monsoon,858
+Katraj,Tomato,Vegetables,2023,10,October,Autumn,640
+Katraj,Tomato,Vegetables,2023,11,November,Autumn,665
+Katraj,Tomato,Vegetables,2023,12,December,Winter,738
+Katraj,Tomato,Vegetables,2024,1,January,Winter,771
+Katraj,Tomato,Vegetables,2024,2,February,Winter,766
+Katraj,Tomato,Vegetables,2024,3,March,Summer,647
+Katraj,Tomato,Vegetables,2024,4,April,Summer,633
+Katraj,Tomato,Vegetables,2024,5,May,Summer,689
+Katraj,Tomato,Vegetables,2024,6,June,Summer,614
+Katraj,Tomato,Vegetables,2024,7,July,Monsoon,775
+Katraj,Tomato,Vegetables,2024,8,August,Monsoon,816
+Katraj,Tomato,Vegetables,2024,9,September,Monsoon,968
+Katraj,Tomato,Vegetables,2024,10,October,Autumn,705
+Katraj,Tomato,Vegetables,2024,11,November,Autumn,678
+Katraj,Tomato,Vegetables,2024,12,December,Winter,773
+Katraj,Tomato,Vegetables,2025,1,January,Winter,859
+Katraj,Tomato,Vegetables,2025,2,February,Winter,823
+Katraj,Tomato,Vegetables,2025,3,March,Summer,651
+Katraj,Tomato,Vegetables,2025,4,April,Summer,680
+Katraj,Tomato,Vegetables,2025,5,May,Summer,669
+Katraj,Tomato,Vegetables,2025,6,June,Summer,727
+Katraj,Tomato,Vegetables,2025,7,July,Monsoon,857
+Katraj,Tomato,Vegetables,2025,8,August,Monsoon,944
+Katraj,Tomato,Vegetables,2025,9,September,Monsoon,929
+Katraj,Tomato,Vegetables,2025,10,October,Autumn,721
+Katraj,Tomato,Vegetables,2025,11,November,Autumn,773
+Katraj,Tomato,Vegetables,2025,12,December,Winter,841
+Katraj,Tomato,Vegetables,2026,1,January,Winter,863
+Katraj,Tomato,Vegetables,2026,2,February,Winter,967
+Katraj,Tomato,Vegetables,2026,3,March,Summer,789
+Katraj,Tomato,Vegetables,2026,4,April,Summer,811
+Katraj,Tomato,Vegetables,2026,5,May,Summer,782
+Katraj,Tomato,Vegetables,2026,6,June,Summer,712
+Pashan Chowk,Amul Milk,Dairy,2022,1,January,Winter,238
+Pashan Chowk,Amul Milk,Dairy,2022,2,February,Winter,240
+Pashan Chowk,Amul Milk,Dairy,2022,3,March,Summer,287
+Pashan Chowk,Amul Milk,Dairy,2022,4,April,Summer,260
+Pashan Chowk,Amul Milk,Dairy,2022,5,May,Summer,252
+Pashan Chowk,Amul Milk,Dairy,2022,6,June,Summer,264
+Pashan Chowk,Amul Milk,Dairy,2022,7,July,Monsoon,206
+Pashan Chowk,Amul Milk,Dairy,2022,8,August,Monsoon,216
+Pashan Chowk,Amul Milk,Dairy,2022,9,September,Monsoon,206
+Pashan Chowk,Amul Milk,Dairy,2022,10,October,Autumn,225
+Pashan Chowk,Amul Milk,Dairy,2022,11,November,Autumn,225
+Pashan Chowk,Amul Milk,Dairy,2022,12,December,Winter,229
+Pashan Chowk,Amul Milk,Dairy,2023,1,January,Winter,239
+Pashan Chowk,Amul Milk,Dairy,2023,2,February,Winter,278
+Pashan Chowk,Amul Milk,Dairy,2023,3,March,Summer,275
+Pashan Chowk,Amul Milk,Dairy,2023,4,April,Summer,285
+Pashan Chowk,Amul Milk,Dairy,2023,5,May,Summer,306
+Pashan Chowk,Amul Milk,Dairy,2023,6,June,Summer,284
+Pashan Chowk,Amul Milk,Dairy,2023,7,July,Monsoon,228
+Pashan Chowk,Amul Milk,Dairy,2023,8,August,Monsoon,209
+Pashan Chowk,Amul Milk,Dairy,2023,9,September,Monsoon,220
+Pashan Chowk,Amul Milk,Dairy,2023,10,October,Autumn,231
+Pashan Chowk,Amul Milk,Dairy,2023,11,November,Autumn,224
+Pashan Chowk,Amul Milk,Dairy,2023,12,December,Winter,262
+Pashan Chowk,Amul Milk,Dairy,2024,1,January,Winter,254
+Pashan Chowk,Amul Milk,Dairy,2024,2,February,Winter,247
+Pashan Chowk,Amul Milk,Dairy,2024,3,March,Summer,291
+Pashan Chowk,Amul Milk,Dairy,2024,4,April,Summer,275
+Pashan Chowk,Amul Milk,Dairy,2024,5,May,Summer,265
+Pashan Chowk,Amul Milk,Dairy,2024,6,June,Summer,275
+Pashan Chowk,Amul Milk,Dairy,2024,7,July,Monsoon,249
+Pashan Chowk,Amul Milk,Dairy,2024,8,August,Monsoon,251
+Pashan Chowk,Amul Milk,Dairy,2024,9,September,Monsoon,228
+Pashan Chowk,Amul Milk,Dairy,2024,10,October,Autumn,247
+Pashan Chowk,Amul Milk,Dairy,2024,11,November,Autumn,242
+Pashan Chowk,Amul Milk,Dairy,2024,12,December,Winter,258
+Pashan Chowk,Amul Milk,Dairy,2025,1,January,Winter,254
+Pashan Chowk,Amul Milk,Dairy,2025,2,February,Winter,263
+Pashan Chowk,Amul Milk,Dairy,2025,3,March,Summer,297
+Pashan Chowk,Amul Milk,Dairy,2025,4,April,Summer,285
+Pashan Chowk,Amul Milk,Dairy,2025,5,May,Summer,307
+Pashan Chowk,Amul Milk,Dairy,2025,6,June,Summer,297
+Pashan Chowk,Amul Milk,Dairy,2025,7,July,Monsoon,237
+Pashan Chowk,Amul Milk,Dairy,2025,8,August,Monsoon,227
+Pashan Chowk,Amul Milk,Dairy,2025,9,September,Monsoon,222
+Pashan Chowk,Amul Milk,Dairy,2025,10,October,Autumn,242
+Pashan Chowk,Amul Milk,Dairy,2025,11,November,Autumn,249
+Pashan Chowk,Amul Milk,Dairy,2025,12,December,Winter,268
+Pashan Chowk,Amul Milk,Dairy,2026,1,January,Winter,306
+Pashan Chowk,Amul Milk,Dairy,2026,2,February,Winter,292
+Pashan Chowk,Amul Milk,Dairy,2026,3,March,Summer,316
+Pashan Chowk,Amul Milk,Dairy,2026,4,April,Summer,301
+Pashan Chowk,Amul Milk,Dairy,2026,5,May,Summer,306
+Pashan Chowk,Amul Milk,Dairy,2026,6,June,Summer,311
+Pashan Chowk,Coriander,Vegetables,2022,1,January,Winter,140
+Pashan Chowk,Coriander,Vegetables,2022,2,February,Winter,136
+Pashan Chowk,Coriander,Vegetables,2022,3,March,Summer,129
+Pashan Chowk,Coriander,Vegetables,2022,4,April,Summer,125
+Pashan Chowk,Coriander,Vegetables,2022,5,May,Summer,152
+Pashan Chowk,Coriander,Vegetables,2022,6,June,Summer,142
+Pashan Chowk,Coriander,Vegetables,2022,7,July,Monsoon,162
+Pashan Chowk,Coriander,Vegetables,2022,8,August,Monsoon,170
+Pashan Chowk,Coriander,Vegetables,2022,9,September,Monsoon,172
+Pashan Chowk,Coriander,Vegetables,2022,10,October,Autumn,148
+Pashan Chowk,Coriander,Vegetables,2022,11,November,Autumn,146
+Pashan Chowk,Coriander,Vegetables,2022,12,December,Winter,142
+Pashan Chowk,Coriander,Vegetables,2023,1,January,Winter,141
+Pashan Chowk,Coriander,Vegetables,2023,2,February,Winter,156
+Pashan Chowk,Coriander,Vegetables,2023,3,March,Summer,143
+Pashan Chowk,Coriander,Vegetables,2023,4,April,Summer,138
+Pashan Chowk,Coriander,Vegetables,2023,5,May,Summer,134
+Pashan Chowk,Coriander,Vegetables,2023,6,June,Summer,145
+Pashan Chowk,Coriander,Vegetables,2023,7,July,Monsoon,197
+Pashan Chowk,Coriander,Vegetables,2023,8,August,Monsoon,184
+Pashan Chowk,Coriander,Vegetables,2023,9,September,Monsoon,177
+Pashan Chowk,Coriander,Vegetables,2023,10,October,Autumn,162
+Pashan Chowk,Coriander,Vegetables,2023,11,November,Autumn,165
+Pashan Chowk,Coriander,Vegetables,2023,12,December,Winter,173
+Pashan Chowk,Coriander,Vegetables,2024,1,January,Winter,141
+Pashan Chowk,Coriander,Vegetables,2024,2,February,Winter,173
+Pashan Chowk,Coriander,Vegetables,2024,3,March,Summer,138
+Pashan Chowk,Coriander,Vegetables,2024,4,April,Summer,137
+Pashan Chowk,Coriander,Vegetables,2024,5,May,Summer,158
+Pashan Chowk,Coriander,Vegetables,2024,6,June,Summer,140
+Pashan Chowk,Coriander,Vegetables,2024,7,July,Monsoon,182
+Pashan Chowk,Coriander,Vegetables,2024,8,August,Monsoon,190
+Pashan Chowk,Coriander,Vegetables,2024,9,September,Monsoon,194
+Pashan Chowk,Coriander,Vegetables,2024,10,October,Autumn,167
+Pashan Chowk,Coriander,Vegetables,2024,11,November,Autumn,158
+Pashan Chowk,Coriander,Vegetables,2024,12,December,Winter,161
+Pashan Chowk,Coriander,Vegetables,2025,1,January,Winter,169
+Pashan Chowk,Coriander,Vegetables,2025,2,February,Winter,170
+Pashan Chowk,Coriander,Vegetables,2025,3,March,Summer,163
+Pashan Chowk,Coriander,Vegetables,2025,4,April,Summer,154
+Pashan Chowk,Coriander,Vegetables,2025,5,May,Summer,147
+Pashan Chowk,Coriander,Vegetables,2025,6,June,Summer,144
+Pashan Chowk,Coriander,Vegetables,2025,7,July,Monsoon,198
+Pashan Chowk,Coriander,Vegetables,2025,8,August,Monsoon,208
+Pashan Chowk,Coriander,Vegetables,2025,9,September,Monsoon,202
+Pashan Chowk,Coriander,Vegetables,2025,10,October,Autumn,160
+Pashan Chowk,Coriander,Vegetables,2025,11,November,Autumn,166
+Pashan Chowk,Coriander,Vegetables,2025,12,December,Winter,184
+Pashan Chowk,Coriander,Vegetables,2026,1,January,Winter,155
+Pashan Chowk,Coriander,Vegetables,2026,2,February,Winter,194
+Pashan Chowk,Coriander,Vegetables,2026,3,March,Summer,151
+Pashan Chowk,Coriander,Vegetables,2026,4,April,Summer,154
+Pashan Chowk,Coriander,Vegetables,2026,5,May,Summer,147
+Pashan Chowk,Coriander,Vegetables,2026,6,June,Summer,157
+Pashan Chowk,Green Chili,Vegetables,2022,1,January,Winter,98
+Pashan Chowk,Green Chili,Vegetables,2022,2,February,Winter,96
+Pashan Chowk,Green Chili,Vegetables,2022,3,March,Summer,86
+Pashan Chowk,Green Chili,Vegetables,2022,4,April,Summer,84
+Pashan Chowk,Green Chili,Vegetables,2022,5,May,Summer,81
+Pashan Chowk,Green Chili,Vegetables,2022,6,June,Summer,77
+Pashan Chowk,Green Chili,Vegetables,2022,7,July,Monsoon,107
+Pashan Chowk,Green Chili,Vegetables,2022,8,August,Monsoon,99
+Pashan Chowk,Green Chili,Vegetables,2022,9,September,Monsoon,110
+Pashan Chowk,Green Chili,Vegetables,2022,10,October,Autumn,89
+Pashan Chowk,Green Chili,Vegetables,2022,11,November,Autumn,95
+Pashan Chowk,Green Chili,Vegetables,2022,12,December,Winter,95
+Pashan Chowk,Green Chili,Vegetables,2023,1,January,Winter,98
+Pashan Chowk,Green Chili,Vegetables,2023,2,February,Winter,102
+Pashan Chowk,Green Chili,Vegetables,2023,3,March,Summer,81
+Pashan Chowk,Green Chili,Vegetables,2023,4,April,Summer,90
+Pashan Chowk,Green Chili,Vegetables,2023,5,May,Summer,86
+Pashan Chowk,Green Chili,Vegetables,2023,6,June,Summer,90
+Pashan Chowk,Green Chili,Vegetables,2023,7,July,Monsoon,120
+Pashan Chowk,Green Chili,Vegetables,2023,8,August,Monsoon,115
+Pashan Chowk,Green Chili,Vegetables,2023,9,September,Monsoon,112
+Pashan Chowk,Green Chili,Vegetables,2023,10,October,Autumn,93
+Pashan Chowk,Green Chili,Vegetables,2023,11,November,Autumn,96
+Pashan Chowk,Green Chili,Vegetables,2023,12,December,Winter,110
+Pashan Chowk,Green Chili,Vegetables,2024,1,January,Winter,113
+Pashan Chowk,Green Chili,Vegetables,2024,2,February,Winter,92
+Pashan Chowk,Green Chili,Vegetables,2024,3,March,Summer,91
+Pashan Chowk,Green Chili,Vegetables,2024,4,April,Summer,95
+Pashan Chowk,Green Chili,Vegetables,2024,5,May,Summer,94
+Pashan Chowk,Green Chili,Vegetables,2024,6,June,Summer,91
+Pashan Chowk,Green Chili,Vegetables,2024,7,July,Monsoon,119
+Pashan Chowk,Green Chili,Vegetables,2024,8,August,Monsoon,114
+Pashan Chowk,Green Chili,Vegetables,2024,9,September,Monsoon,123
+Pashan Chowk,Green Chili,Vegetables,2024,10,October,Autumn,101
+Pashan Chowk,Green Chili,Vegetables,2024,11,November,Autumn,107
+Pashan Chowk,Green Chili,Vegetables,2024,12,December,Winter,107
+Pashan Chowk,Green Chili,Vegetables,2025,1,January,Winter,114
+Pashan Chowk,Green Chili,Vegetables,2025,2,February,Winter,113
+Pashan Chowk,Green Chili,Vegetables,2025,3,March,Summer,108
+Pashan Chowk,Green Chili,Vegetables,2025,4,April,Summer,107
+Pashan Chowk,Green Chili,Vegetables,2025,5,May,Summer,93
+Pashan Chowk,Green Chili,Vegetables,2025,6,June,Summer,88
+Pashan Chowk,Green Chili,Vegetables,2025,7,July,Monsoon,137
+Pashan Chowk,Green Chili,Vegetables,2025,8,August,Monsoon,135
+Pashan Chowk,Green Chili,Vegetables,2025,9,September,Monsoon,123
+Pashan Chowk,Green Chili,Vegetables,2025,10,October,Autumn,105
+Pashan Chowk,Green Chili,Vegetables,2025,11,November,Autumn,109
+Pashan Chowk,Green Chili,Vegetables,2025,12,December,Winter,119
+Pashan Chowk,Green Chili,Vegetables,2026,1,January,Winter,116
+Pashan Chowk,Green Chili,Vegetables,2026,2,February,Winter,116
+Pashan Chowk,Green Chili,Vegetables,2026,3,March,Summer,99
+Pashan Chowk,Green Chili,Vegetables,2026,4,April,Summer,98
+Pashan Chowk,Green Chili,Vegetables,2026,5,May,Summer,97
+Pashan Chowk,Green Chili,Vegetables,2026,6,June,Summer,100
+Pashan Chowk,Hapus Mango,Fruits,2022,1,January,Winter,15
+Pashan Chowk,Hapus Mango,Fruits,2022,2,February,Winter,14
+Pashan Chowk,Hapus Mango,Fruits,2022,3,March,Summer,441
+Pashan Chowk,Hapus Mango,Fruits,2022,4,April,Summer,392
+Pashan Chowk,Hapus Mango,Fruits,2022,5,May,Summer,487
+Pashan Chowk,Hapus Mango,Fruits,2022,6,June,Summer,482
+Pashan Chowk,Hapus Mango,Fruits,2022,7,July,Monsoon,22
+Pashan Chowk,Hapus Mango,Fruits,2022,8,August,Monsoon,23
+Pashan Chowk,Hapus Mango,Fruits,2022,9,September,Monsoon,23
+Pashan Chowk,Hapus Mango,Fruits,2022,10,October,Autumn,16
+Pashan Chowk,Hapus Mango,Fruits,2022,11,November,Autumn,16
+Pashan Chowk,Hapus Mango,Fruits,2022,12,December,Winter,16
+Pashan Chowk,Hapus Mango,Fruits,2023,1,January,Winter,16
+Pashan Chowk,Hapus Mango,Fruits,2023,2,February,Winter,17
+Pashan Chowk,Hapus Mango,Fruits,2023,3,March,Summer,483
+Pashan Chowk,Hapus Mango,Fruits,2023,4,April,Summer,458
+Pashan Chowk,Hapus Mango,Fruits,2023,5,May,Summer,473
+Pashan Chowk,Hapus Mango,Fruits,2023,6,June,Summer,464
+Pashan Chowk,Hapus Mango,Fruits,2023,7,July,Monsoon,24
+Pashan Chowk,Hapus Mango,Fruits,2023,8,August,Monsoon,24
+Pashan Chowk,Hapus Mango,Fruits,2023,9,September,Monsoon,25
+Pashan Chowk,Hapus Mango,Fruits,2023,10,October,Autumn,15
+Pashan Chowk,Hapus Mango,Fruits,2023,11,November,Autumn,16
+Pashan Chowk,Hapus Mango,Fruits,2023,12,December,Winter,16
+Pashan Chowk,Hapus Mango,Fruits,2024,1,January,Winter,17
+Pashan Chowk,Hapus Mango,Fruits,2024,2,February,Winter,19
+Pashan Chowk,Hapus Mango,Fruits,2024,3,March,Summer,494
+Pashan Chowk,Hapus Mango,Fruits,2024,4,April,Summer,529
+Pashan Chowk,Hapus Mango,Fruits,2024,5,May,Summer,467
+Pashan Chowk,Hapus Mango,Fruits,2024,6,June,Summer,491
+Pashan Chowk,Hapus Mango,Fruits,2024,7,July,Monsoon,22
+Pashan Chowk,Hapus Mango,Fruits,2024,8,August,Monsoon,25
+Pashan Chowk,Hapus Mango,Fruits,2024,9,September,Monsoon,27
+Pashan Chowk,Hapus Mango,Fruits,2024,10,October,Autumn,16
+Pashan Chowk,Hapus Mango,Fruits,2024,11,November,Autumn,17
+Pashan Chowk,Hapus Mango,Fruits,2024,12,December,Winter,17
+Pashan Chowk,Hapus Mango,Fruits,2025,1,January,Winter,17
+Pashan Chowk,Hapus Mango,Fruits,2025,2,February,Winter,19
+Pashan Chowk,Hapus Mango,Fruits,2025,3,March,Summer,513
+Pashan Chowk,Hapus Mango,Fruits,2025,4,April,Summer,520
+Pashan Chowk,Hapus Mango,Fruits,2025,5,May,Summer,573
+Pashan Chowk,Hapus Mango,Fruits,2025,6,June,Summer,538
+Pashan Chowk,Hapus Mango,Fruits,2025,7,July,Monsoon,27
+Pashan Chowk,Hapus Mango,Fruits,2025,8,August,Monsoon,25
+Pashan Chowk,Hapus Mango,Fruits,2025,9,September,Monsoon,28
+Pashan Chowk,Hapus Mango,Fruits,2025,10,October,Autumn,18
+Pashan Chowk,Hapus Mango,Fruits,2025,11,November,Autumn,16
+Pashan Chowk,Hapus Mango,Fruits,2025,12,December,Winter,18
+Pashan Chowk,Hapus Mango,Fruits,2026,1,January,Winter,18
+Pashan Chowk,Hapus Mango,Fruits,2026,2,February,Winter,18
+Pashan Chowk,Hapus Mango,Fruits,2026,3,March,Summer,504
+Pashan Chowk,Hapus Mango,Fruits,2026,4,April,Summer,540
+Pashan Chowk,Hapus Mango,Fruits,2026,5,May,Summer,533
+Pashan Chowk,Hapus Mango,Fruits,2026,6,June,Summer,535
+Pashan Chowk,Potato,Vegetables,2022,1,January,Winter,727
+Pashan Chowk,Potato,Vegetables,2022,2,February,Winter,712
+Pashan Chowk,Potato,Vegetables,2022,3,March,Summer,674
+Pashan Chowk,Potato,Vegetables,2022,4,April,Summer,580
+Pashan Chowk,Potato,Vegetables,2022,5,May,Summer,666
+Pashan Chowk,Potato,Vegetables,2022,6,June,Summer,724
+Pashan Chowk,Potato,Vegetables,2022,7,July,Monsoon,788
+Pashan Chowk,Potato,Vegetables,2022,8,August,Monsoon,911
+Pashan Chowk,Potato,Vegetables,2022,9,September,Monsoon,898
+Pashan Chowk,Potato,Vegetables,2022,10,October,Autumn,685
+Pashan Chowk,Potato,Vegetables,2022,11,November,Autumn,719
+Pashan Chowk,Potato,Vegetables,2022,12,December,Winter,742
+Pashan Chowk,Potato,Vegetables,2023,1,January,Winter,912
+Pashan Chowk,Potato,Vegetables,2023,2,February,Winter,795
+Pashan Chowk,Potato,Vegetables,2023,3,March,Summer,707
+Pashan Chowk,Potato,Vegetables,2023,4,April,Summer,699
+Pashan Chowk,Potato,Vegetables,2023,5,May,Summer,731
+Pashan Chowk,Potato,Vegetables,2023,6,June,Summer,608
+Pashan Chowk,Potato,Vegetables,2023,7,July,Monsoon,1011
+Pashan Chowk,Potato,Vegetables,2023,8,August,Monsoon,968
+Pashan Chowk,Potato,Vegetables,2023,9,September,Monsoon,870
+Pashan Chowk,Potato,Vegetables,2023,10,October,Autumn,860
+Pashan Chowk,Potato,Vegetables,2023,11,November,Autumn,831
+Pashan Chowk,Potato,Vegetables,2023,12,December,Winter,790
+Pashan Chowk,Potato,Vegetables,2024,1,January,Winter,873
+Pashan Chowk,Potato,Vegetables,2024,2,February,Winter,847
+Pashan Chowk,Potato,Vegetables,2024,3,March,Summer,747
+Pashan Chowk,Potato,Vegetables,2024,4,April,Summer,776
+Pashan Chowk,Potato,Vegetables,2024,5,May,Summer,724
+Pashan Chowk,Potato,Vegetables,2024,6,June,Summer,783
+Pashan Chowk,Potato,Vegetables,2024,7,July,Monsoon,1008
+Pashan Chowk,Potato,Vegetables,2024,8,August,Monsoon,983
+Pashan Chowk,Potato,Vegetables,2024,9,September,Monsoon,1049
+Pashan Chowk,Potato,Vegetables,2024,10,October,Autumn,750
+Pashan Chowk,Potato,Vegetables,2024,11,November,Autumn,775
+Pashan Chowk,Potato,Vegetables,2024,12,December,Winter,895
+Pashan Chowk,Potato,Vegetables,2025,1,January,Winter,830
+Pashan Chowk,Potato,Vegetables,2025,2,February,Winter,848
+Pashan Chowk,Potato,Vegetables,2025,3,March,Summer,776
+Pashan Chowk,Potato,Vegetables,2025,4,April,Summer,696
+Pashan Chowk,Potato,Vegetables,2025,5,May,Summer,852
+Pashan Chowk,Potato,Vegetables,2025,6,June,Summer,766
+Pashan Chowk,Potato,Vegetables,2025,7,July,Monsoon,981
+Pashan Chowk,Potato,Vegetables,2025,8,August,Monsoon,1038
+Pashan Chowk,Potato,Vegetables,2025,9,September,Monsoon,1137
+Pashan Chowk,Potato,Vegetables,2025,10,October,Autumn,863
+Pashan Chowk,Potato,Vegetables,2025,11,November,Autumn,919
+Pashan Chowk,Potato,Vegetables,2025,12,December,Winter,960
+Pashan Chowk,Potato,Vegetables,2026,1,January,Winter,1031
+Pashan Chowk,Potato,Vegetables,2026,2,February,Winter,968
+Pashan Chowk,Potato,Vegetables,2026,3,March,Summer,924
+Pashan Chowk,Potato,Vegetables,2026,4,April,Summer,913
+Pashan Chowk,Potato,Vegetables,2026,5,May,Summer,876
+Pashan Chowk,Potato,Vegetables,2026,6,June,Summer,813
+Pashan Chowk,Tomato,Vegetables,2022,1,January,Winter,787
+Pashan Chowk,Tomato,Vegetables,2022,2,February,Winter,873
+Pashan Chowk,Tomato,Vegetables,2022,3,March,Summer,692
+Pashan Chowk,Tomato,Vegetables,2022,4,April,Summer,659
+Pashan Chowk,Tomato,Vegetables,2022,5,May,Summer,693
+Pashan Chowk,Tomato,Vegetables,2022,6,June,Summer,736
+Pashan Chowk,Tomato,Vegetables,2022,7,July,Monsoon,884
+Pashan Chowk,Tomato,Vegetables,2022,8,August,Monsoon,886
+Pashan Chowk,Tomato,Vegetables,2022,9,September,Monsoon,839
+Pashan Chowk,Tomato,Vegetables,2022,10,October,Autumn,742
+Pashan Chowk,Tomato,Vegetables,2022,11,November,Autumn,812
+Pashan Chowk,Tomato,Vegetables,2022,12,December,Winter,866
+Pashan Chowk,Tomato,Vegetables,2023,1,January,Winter,860
+Pashan Chowk,Tomato,Vegetables,2023,2,February,Winter,933
+Pashan Chowk,Tomato,Vegetables,2023,3,March,Summer,807
+Pashan Chowk,Tomato,Vegetables,2023,4,April,Summer,764
+Pashan Chowk,Tomato,Vegetables,2023,5,May,Summer,719
+Pashan Chowk,Tomato,Vegetables,2023,6,June,Summer,713
+Pashan Chowk,Tomato,Vegetables,2023,7,July,Monsoon,1027
+Pashan Chowk,Tomato,Vegetables,2023,8,August,Monsoon,990
+Pashan Chowk,Tomato,Vegetables,2023,9,September,Monsoon,1016
+Pashan Chowk,Tomato,Vegetables,2023,10,October,Autumn,847
+Pashan Chowk,Tomato,Vegetables,2023,11,November,Autumn,878
+Pashan Chowk,Tomato,Vegetables,2023,12,December,Winter,863
+Pashan Chowk,Tomato,Vegetables,2024,1,January,Winter,905
+Pashan Chowk,Tomato,Vegetables,2024,2,February,Winter,922
+Pashan Chowk,Tomato,Vegetables,2024,3,March,Summer,766
+Pashan Chowk,Tomato,Vegetables,2024,4,April,Summer,705
+Pashan Chowk,Tomato,Vegetables,2024,5,May,Summer,810
+Pashan Chowk,Tomato,Vegetables,2024,6,June,Summer,735
+Pashan Chowk,Tomato,Vegetables,2024,7,July,Monsoon,1057
+Pashan Chowk,Tomato,Vegetables,2024,8,August,Monsoon,991
+Pashan Chowk,Tomato,Vegetables,2024,9,September,Monsoon,1086
+Pashan Chowk,Tomato,Vegetables,2024,10,October,Autumn,854
+Pashan Chowk,Tomato,Vegetables,2024,11,November,Autumn,903
+Pashan Chowk,Tomato,Vegetables,2024,12,December,Winter,1086
+Pashan Chowk,Tomato,Vegetables,2025,1,January,Winter,983
+Pashan Chowk,Tomato,Vegetables,2025,2,February,Winter,1034
+Pashan Chowk,Tomato,Vegetables,2025,3,March,Summer,829
+Pashan Chowk,Tomato,Vegetables,2025,4,April,Summer,786
+Pashan Chowk,Tomato,Vegetables,2025,5,May,Summer,816
+Pashan Chowk,Tomato,Vegetables,2025,6,June,Summer,793
+Pashan Chowk,Tomato,Vegetables,2025,7,July,Monsoon,1155
+Pashan Chowk,Tomato,Vegetables,2025,8,August,Monsoon,1221
+Pashan Chowk,Tomato,Vegetables,2025,9,September,Monsoon,1236
+Pashan Chowk,Tomato,Vegetables,2025,10,October,Autumn,935
+Pashan Chowk,Tomato,Vegetables,2025,11,November,Autumn,936
+Pashan Chowk,Tomato,Vegetables,2025,12,December,Winter,963
+Pashan Chowk,Tomato,Vegetables,2026,1,January,Winter,960
+Pashan Chowk,Tomato,Vegetables,2026,2,February,Winter,1018
+Pashan Chowk,Tomato,Vegetables,2026,3,March,Summer,773
+Pashan Chowk,Tomato,Vegetables,2026,4,April,Summer,886
+Pashan Chowk,Tomato,Vegetables,2026,5,May,Summer,793
+Pashan Chowk,Tomato,Vegetables,2026,6,June,Summer,947
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,1,January,Winter,217
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,2,February,Winter,218
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,3,March,Summer,271
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,4,April,Summer,223
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,5,May,Summer,228
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,6,June,Summer,246
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,7,July,Monsoon,177
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,8,August,Monsoon,173
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,9,September,Monsoon,173
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,10,October,Autumn,187
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,11,November,Autumn,196
+Shivaji Bhaji Market,Amul Milk,Dairy,2022,12,December,Winter,224
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,1,January,Winter,216
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,2,February,Winter,198
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,3,March,Summer,252
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,4,April,Summer,216
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,5,May,Summer,244
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,6,June,Summer,248
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,7,July,Monsoon,191
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,8,August,Monsoon,171
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,9,September,Monsoon,202
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,10,October,Autumn,220
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,11,November,Autumn,192
+Shivaji Bhaji Market,Amul Milk,Dairy,2023,12,December,Winter,233
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,1,January,Winter,229
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,2,February,Winter,244
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,3,March,Summer,229
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,4,April,Summer,259
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,5,May,Summer,265
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,6,June,Summer,255
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,7,July,Monsoon,223
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,8,August,Monsoon,200
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,9,September,Monsoon,202
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,10,October,Autumn,191
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,11,November,Autumn,217
+Shivaji Bhaji Market,Amul Milk,Dairy,2024,12,December,Winter,229
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,1,January,Winter,234
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,2,February,Winter,265
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,3,March,Summer,288
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,4,April,Summer,288
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,5,May,Summer,232
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,6,June,Summer,280
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,7,July,Monsoon,196
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,8,August,Monsoon,218
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,9,September,Monsoon,234
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,10,October,Autumn,233
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,11,November,Autumn,210
+Shivaji Bhaji Market,Amul Milk,Dairy,2025,12,December,Winter,210
+Shivaji Bhaji Market,Amul Milk,Dairy,2026,1,January,Winter,257
+Shivaji Bhaji Market,Amul Milk,Dairy,2026,2,February,Winter,237
+Shivaji Bhaji Market,Amul Milk,Dairy,2026,3,March,Summer,271
+Shivaji Bhaji Market,Amul Milk,Dairy,2026,4,April,Summer,251
+Shivaji Bhaji Market,Amul Milk,Dairy,2026,5,May,Summer,277
+Shivaji Bhaji Market,Amul Milk,Dairy,2026,6,June,Summer,259
+Shivaji Bhaji Market,Coriander,Vegetables,2022,1,January,Winter,91
+Shivaji Bhaji Market,Coriander,Vegetables,2022,2,February,Winter,94
+Shivaji Bhaji Market,Coriander,Vegetables,2022,3,March,Summer,79
+Shivaji Bhaji Market,Coriander,Vegetables,2022,4,April,Summer,71
+Shivaji Bhaji Market,Coriander,Vegetables,2022,5,May,Summer,88
+Shivaji Bhaji Market,Coriander,Vegetables,2022,6,June,Summer,85
+Shivaji Bhaji Market,Coriander,Vegetables,2022,7,July,Monsoon,110
+Shivaji Bhaji Market,Coriander,Vegetables,2022,8,August,Monsoon,112
+Shivaji Bhaji Market,Coriander,Vegetables,2022,9,September,Monsoon,106
+Shivaji Bhaji Market,Coriander,Vegetables,2022,10,October,Autumn,82
+Shivaji Bhaji Market,Coriander,Vegetables,2022,11,November,Autumn,78
+Shivaji Bhaji Market,Coriander,Vegetables,2022,12,December,Winter,105
+Shivaji Bhaji Market,Coriander,Vegetables,2023,1,January,Winter,89
+Shivaji Bhaji Market,Coriander,Vegetables,2023,2,February,Winter,108
+Shivaji Bhaji Market,Coriander,Vegetables,2023,3,March,Summer,78
+Shivaji Bhaji Market,Coriander,Vegetables,2023,4,April,Summer,89
+Shivaji Bhaji Market,Coriander,Vegetables,2023,5,May,Summer,77
+Shivaji Bhaji Market,Coriander,Vegetables,2023,6,June,Summer,85
+Shivaji Bhaji Market,Coriander,Vegetables,2023,7,July,Monsoon,103
+Shivaji Bhaji Market,Coriander,Vegetables,2023,8,August,Monsoon,108
+Shivaji Bhaji Market,Coriander,Vegetables,2023,9,September,Monsoon,108
+Shivaji Bhaji Market,Coriander,Vegetables,2023,10,October,Autumn,94
+Shivaji Bhaji Market,Coriander,Vegetables,2023,11,November,Autumn,100
+Shivaji Bhaji Market,Coriander,Vegetables,2023,12,December,Winter,104
+Shivaji Bhaji Market,Coriander,Vegetables,2024,1,January,Winter,118
+Shivaji Bhaji Market,Coriander,Vegetables,2024,2,February,Winter,109
+Shivaji Bhaji Market,Coriander,Vegetables,2024,3,March,Summer,91
+Shivaji Bhaji Market,Coriander,Vegetables,2024,4,April,Summer,91
+Shivaji Bhaji Market,Coriander,Vegetables,2024,5,May,Summer,91
+Shivaji Bhaji Market,Coriander,Vegetables,2024,6,June,Summer,93
+Shivaji Bhaji Market,Coriander,Vegetables,2024,7,July,Monsoon,124
+Shivaji Bhaji Market,Coriander,Vegetables,2024,8,August,Monsoon,121
+Shivaji Bhaji Market,Coriander,Vegetables,2024,9,September,Monsoon,114
+Shivaji Bhaji Market,Coriander,Vegetables,2024,10,October,Autumn,105
+Shivaji Bhaji Market,Coriander,Vegetables,2024,11,November,Autumn,101
+Shivaji Bhaji Market,Coriander,Vegetables,2024,12,December,Winter,107
+Shivaji Bhaji Market,Coriander,Vegetables,2025,1,January,Winter,92
+Shivaji Bhaji Market,Coriander,Vegetables,2025,2,February,Winter,106
+Shivaji Bhaji Market,Coriander,Vegetables,2025,3,March,Summer,98
+Shivaji Bhaji Market,Coriander,Vegetables,2025,4,April,Summer,109
+Shivaji Bhaji Market,Coriander,Vegetables,2025,5,May,Summer,99
+Shivaji Bhaji Market,Coriander,Vegetables,2025,6,June,Summer,82
+Shivaji Bhaji Market,Coriander,Vegetables,2025,7,July,Monsoon,106
+Shivaji Bhaji Market,Coriander,Vegetables,2025,8,August,Monsoon,131
+Shivaji Bhaji Market,Coriander,Vegetables,2025,9,September,Monsoon,136
+Shivaji Bhaji Market,Coriander,Vegetables,2025,10,October,Autumn,101
+Shivaji Bhaji Market,Coriander,Vegetables,2025,11,November,Autumn,106
+Shivaji Bhaji Market,Coriander,Vegetables,2025,12,December,Winter,114
+Shivaji Bhaji Market,Coriander,Vegetables,2026,1,January,Winter,106
+Shivaji Bhaji Market,Coriander,Vegetables,2026,2,February,Winter,116
+Shivaji Bhaji Market,Coriander,Vegetables,2026,3,March,Summer,108
+Shivaji Bhaji Market,Coriander,Vegetables,2026,4,April,Summer,89
+Shivaji Bhaji Market,Coriander,Vegetables,2026,5,May,Summer,91
+Shivaji Bhaji Market,Coriander,Vegetables,2026,6,June,Summer,103
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,1,January,Winter,105
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,2,February,Winter,98
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,3,March,Summer,76
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,4,April,Summer,88
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,5,May,Summer,102
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,6,June,Summer,92
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,7,July,Monsoon,122
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,8,August,Monsoon,131
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,9,September,Monsoon,109
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,10,October,Autumn,117
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,11,November,Autumn,102
+Shivaji Bhaji Market,Green Chili,Vegetables,2022,12,December,Winter,102
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,1,January,Winter,109
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,2,February,Winter,106
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,3,March,Summer,83
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,4,April,Summer,98
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,5,May,Summer,89
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,6,June,Summer,87
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,7,July,Monsoon,134
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,8,August,Monsoon,123
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,9,September,Monsoon,129
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,10,October,Autumn,103
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,11,November,Autumn,106
+Shivaji Bhaji Market,Green Chili,Vegetables,2023,12,December,Winter,104
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,1,January,Winter,103
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,2,February,Winter,128
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,3,March,Summer,98
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,4,April,Summer,101
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,5,May,Summer,89
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,6,June,Summer,101
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,7,July,Monsoon,130
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,8,August,Monsoon,127
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,9,September,Monsoon,144
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,10,October,Autumn,100
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,11,November,Autumn,121
+Shivaji Bhaji Market,Green Chili,Vegetables,2024,12,December,Winter,119
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,1,January,Winter,121
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,2,February,Winter,116
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,3,March,Summer,105
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,4,April,Summer,112
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,5,May,Summer,104
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,6,June,Summer,110
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,7,July,Monsoon,144
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,8,August,Monsoon,124
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,9,September,Monsoon,123
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,10,October,Autumn,113
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,11,November,Autumn,104
+Shivaji Bhaji Market,Green Chili,Vegetables,2025,12,December,Winter,112
+Shivaji Bhaji Market,Green Chili,Vegetables,2026,1,January,Winter,128
+Shivaji Bhaji Market,Green Chili,Vegetables,2026,2,February,Winter,122
+Shivaji Bhaji Market,Green Chili,Vegetables,2026,3,March,Summer,122
+Shivaji Bhaji Market,Green Chili,Vegetables,2026,4,April,Summer,124
+Shivaji Bhaji Market,Green Chili,Vegetables,2026,5,May,Summer,106
+Shivaji Bhaji Market,Green Chili,Vegetables,2026,6,June,Summer,118
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,1,January,Winter,14
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,2,February,Winter,14
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,3,March,Summer,438
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,4,April,Summer,448
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,5,May,Summer,402
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,6,June,Summer,465
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,7,July,Monsoon,22
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,8,August,Monsoon,23
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,9,September,Monsoon,23
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,10,October,Autumn,15
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,11,November,Autumn,15
+Shivaji Bhaji Market,Hapus Mango,Fruits,2022,12,December,Winter,14
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,1,January,Winter,14
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,2,February,Winter,17
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,3,March,Summer,471
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,4,April,Summer,443
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,5,May,Summer,497
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,6,June,Summer,432
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,7,July,Monsoon,25
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,8,August,Monsoon,22
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,9,September,Monsoon,25
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,10,October,Autumn,16
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,11,November,Autumn,15
+Shivaji Bhaji Market,Hapus Mango,Fruits,2023,12,December,Winter,16
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,1,January,Winter,16
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,2,February,Winter,17
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,3,March,Summer,511
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,4,April,Summer,513
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,5,May,Summer,494
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,6,June,Summer,478
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,7,July,Monsoon,25
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,8,August,Monsoon,27
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,9,September,Monsoon,25
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,10,October,Autumn,14
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,11,November,Autumn,18
+Shivaji Bhaji Market,Hapus Mango,Fruits,2024,12,December,Winter,19
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,1,January,Winter,17
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,2,February,Winter,17
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,3,March,Summer,567
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,4,April,Summer,526
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,5,May,Summer,516
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,6,June,Summer,534
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,7,July,Monsoon,23
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,8,August,Monsoon,27
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,9,September,Monsoon,26
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,10,October,Autumn,18
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,11,November,Autumn,16
+Shivaji Bhaji Market,Hapus Mango,Fruits,2025,12,December,Winter,18
+Shivaji Bhaji Market,Hapus Mango,Fruits,2026,1,January,Winter,20
+Shivaji Bhaji Market,Hapus Mango,Fruits,2026,2,February,Winter,17
+Shivaji Bhaji Market,Hapus Mango,Fruits,2026,3,March,Summer,549
+Shivaji Bhaji Market,Hapus Mango,Fruits,2026,4,April,Summer,597
+Shivaji Bhaji Market,Hapus Mango,Fruits,2026,5,May,Summer,654
+Shivaji Bhaji Market,Hapus Mango,Fruits,2026,6,June,Summer,567
+Shivaji Bhaji Market,Potato,Vegetables,2022,1,January,Winter,477
+Shivaji Bhaji Market,Potato,Vegetables,2022,2,February,Winter,455
+Shivaji Bhaji Market,Potato,Vegetables,2022,3,March,Summer,407
+Shivaji Bhaji Market,Potato,Vegetables,2022,4,April,Summer,395
+Shivaji Bhaji Market,Potato,Vegetables,2022,5,May,Summer,409
+Shivaji Bhaji Market,Potato,Vegetables,2022,6,June,Summer,407
+Shivaji Bhaji Market,Potato,Vegetables,2022,7,July,Monsoon,555
+Shivaji Bhaji Market,Potato,Vegetables,2022,8,August,Monsoon,529
+Shivaji Bhaji Market,Potato,Vegetables,2022,9,September,Monsoon,479
+Shivaji Bhaji Market,Potato,Vegetables,2022,10,October,Autumn,409
+Shivaji Bhaji Market,Potato,Vegetables,2022,11,November,Autumn,435
+Shivaji Bhaji Market,Potato,Vegetables,2022,12,December,Winter,486
+Shivaji Bhaji Market,Potato,Vegetables,2023,1,January,Winter,497
+Shivaji Bhaji Market,Potato,Vegetables,2023,2,February,Winter,462
+Shivaji Bhaji Market,Potato,Vegetables,2023,3,March,Summer,389
+Shivaji Bhaji Market,Potato,Vegetables,2023,4,April,Summer,416
+Shivaji Bhaji Market,Potato,Vegetables,2023,5,May,Summer,432
+Shivaji Bhaji Market,Potato,Vegetables,2023,6,June,Summer,396
+Shivaji Bhaji Market,Potato,Vegetables,2023,7,July,Monsoon,592
+Shivaji Bhaji Market,Potato,Vegetables,2023,8,August,Monsoon,603
+Shivaji Bhaji Market,Potato,Vegetables,2023,9,September,Monsoon,545
+Shivaji Bhaji Market,Potato,Vegetables,2023,10,October,Autumn,466
+Shivaji Bhaji Market,Potato,Vegetables,2023,11,November,Autumn,488
+Shivaji Bhaji Market,Potato,Vegetables,2023,12,December,Winter,524
+Shivaji Bhaji Market,Potato,Vegetables,2024,1,January,Winter,509
+Shivaji Bhaji Market,Potato,Vegetables,2024,2,February,Winter,562
+Shivaji Bhaji Market,Potato,Vegetables,2024,3,March,Summer,471
+Shivaji Bhaji Market,Potato,Vegetables,2024,4,April,Summer,465
+Shivaji Bhaji Market,Potato,Vegetables,2024,5,May,Summer,426
+Shivaji Bhaji Market,Potato,Vegetables,2024,6,June,Summer,458
+Shivaji Bhaji Market,Potato,Vegetables,2024,7,July,Monsoon,623
+Shivaji Bhaji Market,Potato,Vegetables,2024,8,August,Monsoon,659
+Shivaji Bhaji Market,Potato,Vegetables,2024,9,September,Monsoon,580
+Shivaji Bhaji Market,Potato,Vegetables,2024,10,October,Autumn,486
+Shivaji Bhaji Market,Potato,Vegetables,2024,11,November,Autumn,518
+Shivaji Bhaji Market,Potato,Vegetables,2024,12,December,Winter,526
+Shivaji Bhaji Market,Potato,Vegetables,2025,1,January,Winter,522
+Shivaji Bhaji Market,Potato,Vegetables,2025,2,February,Winter,554
+Shivaji Bhaji Market,Potato,Vegetables,2025,3,March,Summer,495
+Shivaji Bhaji Market,Potato,Vegetables,2025,4,April,Summer,408
+Shivaji Bhaji Market,Potato,Vegetables,2025,5,May,Summer,446
+Shivaji Bhaji Market,Potato,Vegetables,2025,6,June,Summer,486
+Shivaji Bhaji Market,Potato,Vegetables,2025,7,July,Monsoon,641
+Shivaji Bhaji Market,Potato,Vegetables,2025,8,August,Monsoon,641
+Shivaji Bhaji Market,Potato,Vegetables,2025,9,September,Monsoon,654
+Shivaji Bhaji Market,Potato,Vegetables,2025,10,October,Autumn,481
+Shivaji Bhaji Market,Potato,Vegetables,2025,11,November,Autumn,507
+Shivaji Bhaji Market,Potato,Vegetables,2025,12,December,Winter,484
+Shivaji Bhaji Market,Potato,Vegetables,2026,1,January,Winter,548
+Shivaji Bhaji Market,Potato,Vegetables,2026,2,February,Winter,552
+Shivaji Bhaji Market,Potato,Vegetables,2026,3,March,Summer,456
+Shivaji Bhaji Market,Potato,Vegetables,2026,4,April,Summer,454
+Shivaji Bhaji Market,Potato,Vegetables,2026,5,May,Summer,511
+Shivaji Bhaji Market,Potato,Vegetables,2026,6,June,Summer,446
+Shivaji Bhaji Market,Tomato,Vegetables,2022,1,January,Winter,711
+Shivaji Bhaji Market,Tomato,Vegetables,2022,2,February,Winter,671
+Shivaji Bhaji Market,Tomato,Vegetables,2022,3,March,Summer,660
+Shivaji Bhaji Market,Tomato,Vegetables,2022,4,April,Summer,551
+Shivaji Bhaji Market,Tomato,Vegetables,2022,5,May,Summer,612
+Shivaji Bhaji Market,Tomato,Vegetables,2022,6,June,Summer,586
+Shivaji Bhaji Market,Tomato,Vegetables,2022,7,July,Monsoon,843
+Shivaji Bhaji Market,Tomato,Vegetables,2022,8,August,Monsoon,748
+Shivaji Bhaji Market,Tomato,Vegetables,2022,9,September,Monsoon,884
+Shivaji Bhaji Market,Tomato,Vegetables,2022,10,October,Autumn,739
+Shivaji Bhaji Market,Tomato,Vegetables,2022,11,November,Autumn,684
+Shivaji Bhaji Market,Tomato,Vegetables,2022,12,December,Winter,812
+Shivaji Bhaji Market,Tomato,Vegetables,2023,1,January,Winter,765
+Shivaji Bhaji Market,Tomato,Vegetables,2023,2,February,Winter,732
+Shivaji Bhaji Market,Tomato,Vegetables,2023,3,March,Summer,645
+Shivaji Bhaji Market,Tomato,Vegetables,2023,4,April,Summer,644
+Shivaji Bhaji Market,Tomato,Vegetables,2023,5,May,Summer,610
+Shivaji Bhaji Market,Tomato,Vegetables,2023,6,June,Summer,610
+Shivaji Bhaji Market,Tomato,Vegetables,2023,7,July,Monsoon,786
+Shivaji Bhaji Market,Tomato,Vegetables,2023,8,August,Monsoon,872
+Shivaji Bhaji Market,Tomato,Vegetables,2023,9,September,Monsoon,795
+Shivaji Bhaji Market,Tomato,Vegetables,2023,10,October,Autumn,716
+Shivaji Bhaji Market,Tomato,Vegetables,2023,11,November,Autumn,706
+Shivaji Bhaji Market,Tomato,Vegetables,2023,12,December,Winter,745
+Shivaji Bhaji Market,Tomato,Vegetables,2024,1,January,Winter,740
+Shivaji Bhaji Market,Tomato,Vegetables,2024,2,February,Winter,773
+Shivaji Bhaji Market,Tomato,Vegetables,2024,3,March,Summer,657
+Shivaji Bhaji Market,Tomato,Vegetables,2024,4,April,Summer,723
+Shivaji Bhaji Market,Tomato,Vegetables,2024,5,May,Summer,725
+Shivaji Bhaji Market,Tomato,Vegetables,2024,6,June,Summer,610
+Shivaji Bhaji Market,Tomato,Vegetables,2024,7,July,Monsoon,870
+Shivaji Bhaji Market,Tomato,Vegetables,2024,8,August,Monsoon,860
+Shivaji Bhaji Market,Tomato,Vegetables,2024,9,September,Monsoon,901
+Shivaji Bhaji Market,Tomato,Vegetables,2024,10,October,Autumn,715
+Shivaji Bhaji Market,Tomato,Vegetables,2024,11,November,Autumn,809
+Shivaji Bhaji Market,Tomato,Vegetables,2024,12,December,Winter,722
+Shivaji Bhaji Market,Tomato,Vegetables,2025,1,January,Winter,749
+Shivaji Bhaji Market,Tomato,Vegetables,2025,2,February,Winter,728
+Shivaji Bhaji Market,Tomato,Vegetables,2025,3,March,Summer,683
+Shivaji Bhaji Market,Tomato,Vegetables,2025,4,April,Summer,732
+Shivaji Bhaji Market,Tomato,Vegetables,2025,5,May,Summer,704
+Shivaji Bhaji Market,Tomato,Vegetables,2025,6,June,Summer,689
+Shivaji Bhaji Market,Tomato,Vegetables,2025,7,July,Monsoon,888
+Shivaji Bhaji Market,Tomato,Vegetables,2025,8,August,Monsoon,956
+Shivaji Bhaji Market,Tomato,Vegetables,2025,9,September,Monsoon,929
+Shivaji Bhaji Market,Tomato,Vegetables,2025,10,October,Autumn,798
+Shivaji Bhaji Market,Tomato,Vegetables,2025,11,November,Autumn,713
+Shivaji Bhaji Market,Tomato,Vegetables,2025,12,December,Winter,733
+Shivaji Bhaji Market,Tomato,Vegetables,2026,1,January,Winter,846
+Shivaji Bhaji Market,Tomato,Vegetables,2026,2,February,Winter,835
+Shivaji Bhaji Market,Tomato,Vegetables,2026,3,March,Summer,696
+Shivaji Bhaji Market,Tomato,Vegetables,2026,4,April,Summer,716
+Shivaji Bhaji Market,Tomato,Vegetables,2026,5,May,Summer,684
+Shivaji Bhaji Market,Tomato,Vegetables,2026,6,June,Summer,716
+

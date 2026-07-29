@@ -1,0 +1,147 @@
+/* Shared UI foundation. Page-level class names remain unchanged for compatibility. */
+:root {
+  --ui-primary: #4f46e5;
+  --ui-primary-strong: #4338ca;
+  --ui-primary-soft: #eef2ff;
+  --ui-surface: #ffffff;
+  --ui-canvas: #f8fafc;
+  --ui-text: #1e293b;
+  --ui-muted: #64748b;
+  --ui-border: #e2e8f0;
+  --ui-success: #15803d;
+  --ui-warning: #b45309;
+  --ui-danger: #dc2626;
+  --ui-info: #2563eb;
+  --ui-radius: 14px;
+  --ui-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 10px 24px rgba(15, 23, 42, .06);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ui-text);
+  background: var(--ui-canvas);
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { min-width: 320px; background: var(--ui-canvas); }
+body { min-width: 320px; min-height: 100vh; margin: 0; color: var(--ui-text); background: var(--ui-canvas); font-family: inherit; line-height: 1.5; }
+#root { width: 100%; max-width: none; min-height: 100vh; margin: 0; border: 0; text-align: left; }
+h1, h2, h3, h4, h5, h6 { color: var(--ui-text); line-height: 1.2; }
+button, input, select, textarea { font: inherit; }
+button { transition: transform .18s ease, background-color .18s ease, border-color .18s ease, box-shadow .18s ease; }
+button:not(:disabled) { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .62; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid rgba(79, 70, 229, .28); outline-offset: 2px; }
+a { color: inherit; }
+
+/* Forms and actions shared by all administrative and shopkeeper screens. */
+input, select, textarea, .table-search, .category-filter, .search-box {
+  border-color: var(--ui-border) !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, .02);
+}
+input, select, textarea { color: var(--ui-text); background-color: var(--ui-surface); }
+input::placeholder, textarea::placeholder { color: #94a3b8; opacity: 1; }
+input:focus, select:focus, textarea:focus, .table-search:focus-within, .category-filter:focus-within, .search-box:focus-within {
+  border-color: var(--ui-primary) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, .12) !important;
+}
+.add-product-btn, .profile-btn, .view-btn, .auth-box button, .modal-buttons button:first-child,
+.submit-btn, .save-btn, .primary-btn, .add-btn, .action-button {
+  background: var(--ui-primary) !important;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, .18);
+}
+.add-product-btn:hover, .profile-btn:hover, .view-btn:hover, .auth-box button:hover, .modal-buttons button:first-child:hover,
+.submit-btn:hover, .save-btn:hover, .primary-btn:hover, .add-btn:hover, .action-button:hover {
+  background: var(--ui-primary-strong) !important;
+  transform: translateY(-1px);
+}
+
+/* A common elevated surface makes mixed legacy pages feel like one product. */
+.table-card, .chart-card, .stats-card, .dashboard-card, .dashboard-stat-card,
+.products-table-wrapper, .orders-table-card, .recent-orders, .latest-order,
+.categories-card, .quick-actions, .notifications-card, .welcome-card, .profile-card,
+.warehouse-card, .warehouse-table-card, .supplier-card, .order-card, .address-card,
+.profile-section, .cart-summary, .cart-item, .product-modal, .auth-box {
+  border: 1px solid var(--ui-border) !important;
+  box-shadow: var(--ui-shadow) !important;
+}
+.table-card, .chart-card, .stats-card, .dashboard-card, .dashboard-stat-card,
+.products-table-wrapper, .orders-table-card, .recent-orders, .latest-order,
+.categories-card, .quick-actions, .notifications-card, .welcome-card, .profile-card,
+.warehouse-card, .warehouse-table-card, .supplier-card, .order-card, .address-card,
+.profile-section, .cart-summary, .cart-item { border-radius: var(--ui-radius) !important; }
+.stats-card, .stat-card, .dashboard-stat-card, .warehouse-card, .product-card {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.stats-card:hover, .stat-card:hover, .dashboard-stat-card:hover, .warehouse-card:hover, .product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, .10) !important;
+}
+
+/* Tables retain their markup and behaviour while gaining a consistent data-grid treatment. */
+.table-responsive, .products-table-wrapper, .dashboard-table-scroll, .table-container { overflow-x: auto; scrollbar-color: #cbd5e1 transparent; }
+table { color: var(--ui-text); }
+table th, .products-table th, .orders-table th, .dashboard-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: #475569 !important;
+  background: #f8fafc !important;
+  border-bottom: 1px solid var(--ui-border) !important;
+  font-size: .75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+table td, .products-table td, .orders-table td, .dashboard-table td { border-color: #edf2f7 !important; }
+tbody tr:nth-child(even) { background: rgba(248, 250, 252, .72); }
+tbody tr:hover { background: #f1f5f9 !important; }
+.status, .stock-status, .dashboard-badge, .role-badge {
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+  letter-spacing: .01em;
+}
+
+/* Navigation is intentionally shared, but its existing route and click logic stays intact. */
+.sidebar, .shopkeeper-sidebar {
+  background: linear-gradient(180deg, #111827 0%, #172554 100%) !important;
+  box-shadow: 8px 0 28px rgba(15, 23, 42, .13) !important;
+}
+.sidebar { width: 272px; padding: 20px 14px; }
+.sidebar-logo, .shopkeeper-logo { padding: 10px 12px 22px; }
+.sidebar-logo h1, .shopkeeper-logo h2 { color: #fff; font-size: 1.05rem; }
+.sidebar-logo p, .shopkeeper-logo p { color: #cbd5e1; }
+.logo-icon, .shopkeeper-logo-icon { background: linear-gradient(135deg, #6366f1, #4f46e5) !important; box-shadow: 0 8px 18px rgba(79, 70, 229, .3); }
+.sidebar-menu li, .shopkeeper-link { border-radius: 10px; font-size: .9rem; }
+.sidebar-menu li { margin-bottom: 4px; padding: 12px 14px; }
+.sidebar-menu li:hover, .sidebar-menu li.active, .shopkeeper-link:hover { background: rgba(255, 255, 255, .10) !important; }
+.shopkeeper-link.active { background: linear-gradient(90deg, #4f46e5, #6366f1) !important; box-shadow: 0 5px 14px rgba(79, 70, 229, .26); }
+.shopkeeper-main { min-width: 0; padding: 28px; background: var(--ui-canvas); }
+
+/* Auth pages become a deliberate entry experience without changing authentication code. */
+.auth-container { min-height: 100vh; height: auto; padding: 24px; background: radial-gradient(circle at 15% 15%, #e0e7ff 0, transparent 36%), radial-gradient(circle at 88% 85%, #dbeafe 0, transparent 30%), #f8fafc; }
+.auth-box { width: min(100%, 430px); padding: 36px; border-radius: 20px; }
+.auth-box h1 { font-size: 1.875rem; letter-spacing: -.03em; }
+.auth-box input { padding: 13px 14px; border-radius: 10px; }
+.auth-box button { border-radius: 10px; font-weight: 700; }
+.auth-box span { color: var(--ui-primary) !important; }
+
+@media (max-width: 960px) {
+  .shopkeeper-sidebar { width: 232px; }
+  .shopkeeper-main { margin-left: 232px; padding: 20px; }
+  .products-content, .catalog-container { padding: 20px; }
+}
+@media (max-width: 700px) {
+  .shopkeeper-sidebar { position: static; width: 100%; height: auto; max-height: none; }
+  .shopkeeper-layout { display: block; }
+  .shopkeeper-menu { max-height: 300px; }
+  .shopkeeper-main { margin-left: 0; padding: 14px; }
+  .auth-container { padding: 16px; }
+  .auth-box { padding: 28px 22px; }
+  .products-header, .table-header, .header { align-items: flex-start; gap: 14px; }
+  .products-header, .table-header { flex-direction: column; }
+  .add-product-btn { width: 100%; justify-content: center; }
+  .products-table-wrapper, .table-card, .dashboard-card { padding: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

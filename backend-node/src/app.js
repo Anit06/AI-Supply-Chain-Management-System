@@ -13,6 +13,7 @@ const orderRoutes = require("./routes/orderRoutes");
 
 const catalogRoutes = require("./routes/catalogRoutes");
 const aiRoutes = require("./routes/aiRoutes");
+const historyRoutes = require("./routes/historyRoutes");
 
 const app = express();
 
@@ -25,26 +26,11 @@ app.get("/", (req, res) => {
   res.send("AI Supply Chain API Running");
 });
 
-app.use(
-  "/api/auth",
-  authRoutes
-);
+app.use("/api/auth",authRoutes);
+app.use("/api/products",productRoutes);
 
-app.use(
-  "/api/products",
-  productRoutes
-);
-
-app.use(
-  "/api/suppliers",
-  supplierRoutes
-);
-
-app.use(
-  "/api/warehouses",
-  require("./routes/warehouseRoutes")
-);
-
+app.use("/api/suppliers",supplierRoutes);
+app.use("/api/warehouses",require("./routes/warehouseRoutes"));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
@@ -57,5 +43,6 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/catalog", catalogRoutes);
 
 app.use("/api/ai", aiRoutes);
+app.use("/api/history", historyRoutes);
 
 module.exports = app;
