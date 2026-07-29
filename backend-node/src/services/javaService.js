@@ -42,3 +42,5 @@ RETURN STOCK AFTER CANCEL
 exports.addInventoryStock = (data)=>
 
     api.put("/add",data);
+
+exports.getAllInventory = () => api.get("");

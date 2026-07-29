@@ -33,6 +33,14 @@ public class InventoryController {
         return warehouseRepository.findAll();
     }
 
+    @GetMapping
+public ResponseEntity<List<InventoryResponse>> getAllInventory() {
+
+    return ResponseEntity.ok(
+            inventoryService.getAllInventory()
+    );
+}
+
     @GetMapping("/warehouse/{warehouseId}")
     public ResponseEntity<List<InventoryResponse>> getInventoryByWarehouse(
             @PathVariable String warehouseId) {

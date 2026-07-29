@@ -75,6 +75,38 @@ public class InventoryService {
         return responseList;
     }
 
+    public List<InventoryResponse> getAllInventory() {
+
+    List<Inventory> inventoryList = inventoryRepository.findAll();
+
+    List<InventoryResponse> responseList = new ArrayList<>();
+
+    for (Inventory inventory : inventoryList) {
+
+        InventoryResponse dto = new InventoryResponse();
+
+        dto.setInventoryId(inventory.getId());
+        dto.setWarehouseId(inventory.getWarehouse());
+        dto.setProductId(inventory.getProduct());
+        dto.setStock(inventory.getStock());
+
+        productRepository.findById(inventory.getProduct())
+                .ifPresent(product -> {
+                    dto.setProductName(product.getName());
+                    dto.setCategory(product.getCategory());
+                });
+
+        warehouseRepository.findById(inventory.getWarehouse())
+                .ifPresent(warehouse -> {
+                    dto.setWarehouseName(warehouse.getName());
+                });
+
+        responseList.add(dto);
+    }
+
+    return responseList;
+}
+
     // ==============================
     // ADD INVENTORY (USES HOLDING)
     // ==============================

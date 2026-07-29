@@ -14,6 +14,8 @@ const orderRoutes = require("./routes/orderRoutes");
 const catalogRoutes = require("./routes/catalogRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 
+const reportRoutes = require("./routes/reportRoutes");
+
 const app = express();
 
 app.use(cors());
@@ -57,5 +59,7 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/catalog", catalogRoutes);
 
 app.use("/api/ai", aiRoutes);
+
+app.use("/api/reports", reportRoutes);
 
 module.exports = app;

@@ -1,20 +1,21 @@
 import Sidebar from "../../common/Sidebar";
 import Header from "../../common/Header";
+import ReportDashboard from "./ReportDashboard";
+
+import "../../../assets/css/reports.css";
 
 function Reports() {
   return (
     <div className="dashboard-layout">
-
       <Sidebar />
 
       <div className="dashboard-main">
+        
 
-        <Header />
-
-        <h1>Reports Page</h1>
-
+        <div className="reports-container">
+          <ReportDashboard />
+        </div>
       </div>
-
     </div>
   );
 }
