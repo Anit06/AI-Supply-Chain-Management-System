@@ -27,5 +27,8 @@ const inventorySchema = new mongoose.Schema(
 
 module.exports = mongoose.model(
   "Inventory",
-  inventorySchema
+  inventorySchema,
+  // Spring Boot owns this shared collection and explicitly names it
+  // `inventory`; Mongoose would otherwise query its pluralized `inventories`.
+  "inventory"
 );

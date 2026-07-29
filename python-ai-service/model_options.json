@@ -1,1971 +1,6825 @@
 {
-  "warehouses": {
-    "Katraj": [
-      {
-        "product": "Amul Milk",
-        "category": "Dairy"
-      }
-    ],
-    "Pashan Chowk": [
-      {
-        "product": "Potato",
-        "category": "Vegetables"
-      },
-      {
-        "product": "Tomato",
-        "category": "Vegetables"
-      }
-    ],
-    "Shivaji Bhaji Market": [
-      {
-        "product": "Amul Milk",
-        "category": "Dairy"
-      },
-      {
-        "product": "Tomato",
-        "category": "Vegetables"
-      }
-    ]
-  },
+
   "history": [
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 1,
-      "monthlyDemand": 291.0
+      "monthlyDemand": 312
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 2,
-      "monthlyDemand": 310.0
+      "monthlyDemand": 285
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 3,
-      "monthlyDemand": 319.0
+      "monthlyDemand": 311
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 4,
-      "monthlyDemand": 338.0
+      "monthlyDemand": 385
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 5,
-      "monthlyDemand": 278.0
+      "monthlyDemand": 327
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 6,
-      "monthlyDemand": 326.0
+      "monthlyDemand": 299
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 7,
-      "monthlyDemand": 244.0
+      "monthlyDemand": 247
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 8,
-      "monthlyDemand": 259.0
+      "monthlyDemand": 264
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 9,
-      "monthlyDemand": 270.0
+      "monthlyDemand": 264
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 10,
-      "monthlyDemand": 253.0
+      "monthlyDemand": 274
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 11,
-      "monthlyDemand": 268.0
+      "monthlyDemand": 263
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2022,
       "month": 12,
-      "monthlyDemand": 280.0
+      "monthlyDemand": 272
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 1,
-      "monthlyDemand": 298.0
+      "monthlyDemand": 311
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 2,
-      "monthlyDemand": 290.0
+      "monthlyDemand": 311
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 3,
-      "monthlyDemand": 311.0
+      "monthlyDemand": 298
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 4,
-      "monthlyDemand": 334.0
+      "monthlyDemand": 318
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 5,
-      "monthlyDemand": 333.0
+      "monthlyDemand": 372
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 6,
-      "monthlyDemand": 319.0
+      "monthlyDemand": 339
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 7,
-      "monthlyDemand": 263.0
+      "monthlyDemand": 271
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 8,
-      "monthlyDemand": 272.0
+      "monthlyDemand": 265
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 9,
-      "monthlyDemand": 257.0
+      "monthlyDemand": 278
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 10,
-      "monthlyDemand": 306.0
+      "monthlyDemand": 280
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 11,
-      "monthlyDemand": 297.0
+      "monthlyDemand": 284
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2023,
       "month": 12,
-      "monthlyDemand": 310.0
+      "monthlyDemand": 297
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 1,
-      "monthlyDemand": 324.0
+      "monthlyDemand": 320
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 2,
-      "monthlyDemand": 305.0
+      "monthlyDemand": 311
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 3,
-      "monthlyDemand": 338.0
+      "monthlyDemand": 353
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 4,
-      "monthlyDemand": 373.0
+      "monthlyDemand": 350
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 5,
-      "monthlyDemand": 369.0
+      "monthlyDemand": 314
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 6,
-      "monthlyDemand": 349.0
+      "monthlyDemand": 383
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 7,
-      "monthlyDemand": 288.0
+      "monthlyDemand": 269
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 8,
-      "monthlyDemand": 257.0
+      "monthlyDemand": 267
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 9,
-      "monthlyDemand": 285.0
+      "monthlyDemand": 304
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 10,
-      "monthlyDemand": 290.0
+      "monthlyDemand": 316
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 11,
-      "monthlyDemand": 289.0
+      "monthlyDemand": 295
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2024,
       "month": 12,
-      "monthlyDemand": 327.0
+      "monthlyDemand": 308
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 1,
-      "monthlyDemand": 319.0
+      "monthlyDemand": 333
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 2,
-      "monthlyDemand": 331.0
+      "monthlyDemand": 369
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 3,
-      "monthlyDemand": 331.0
+      "monthlyDemand": 405
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 4,
-      "monthlyDemand": 369.0
+      "monthlyDemand": 366
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 5,
-      "monthlyDemand": 385.0
+      "monthlyDemand": 376
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 6,
-      "monthlyDemand": 360.0
+      "monthlyDemand": 345
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 7,
-      "monthlyDemand": 277.0
+      "monthlyDemand": 291
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 8,
-      "monthlyDemand": 281.0
+      "monthlyDemand": 333
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 9,
-      "monthlyDemand": 294.0
+      "monthlyDemand": 323
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 10,
-      "monthlyDemand": 309.0
+      "monthlyDemand": 305
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 11,
-      "monthlyDemand": 282.0
+      "monthlyDemand": 341
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2025,
       "month": 12,
-      "monthlyDemand": 332.0
+      "monthlyDemand": 361
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2026,
       "month": 1,
-      "monthlyDemand": 331.0
+      "monthlyDemand": 372
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2026,
       "month": 2,
-      "monthlyDemand": 322.0
+      "monthlyDemand": 392
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2026,
       "month": 3,
-      "monthlyDemand": 357.0
+      "monthlyDemand": 467
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2026,
       "month": 4,
-      "monthlyDemand": 358.0
+      "monthlyDemand": 386
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2026,
       "month": 5,
-      "monthlyDemand": 402.0
+      "monthlyDemand": 430
     },
     {
       "warehouseName": "Katraj",
       "productName": "Amul Milk",
       "year": 2026,
       "month": 6,
-      "monthlyDemand": 378.0
+      "monthlyDemand": 421
     },
     {
       "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 142
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 129
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 126
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 107
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 120
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 138
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 153
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 156
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 131
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 128
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 139
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 141
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 141
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 122
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 127
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 116
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 130
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 171
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 151
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 153
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 153
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 121
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 146
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 150
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 137
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 151
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 137
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 135
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 131
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 174
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 185
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 183
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 139
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 149
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 175
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 152
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 131
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 145
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 143
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 180
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 152
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 197
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 164
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 163
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 155
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 180
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 171
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 145
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 104
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 100
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 90
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 130
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 122
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 136
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 101
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 102
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 127
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 145
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 128
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 112
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 115
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 125
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 121
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 100
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 105
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 119
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 151
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 145
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 152
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 113
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 133
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 131
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 140
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 116
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 117
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 111
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 165
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 144
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 127
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 130
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 128
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 136
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 146
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 117
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 118
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 121
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 505
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 536
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 480
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 505
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 29
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 27
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 26
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 598
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 571
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 576
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 604
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 27
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 29
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 26
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 21
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 628
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 534
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 539
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 581
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 29
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 28
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 29
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 21
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 656
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 670
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 643
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 544
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 29
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 31
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 33
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 23
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 24
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 672
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 685
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 656
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 652
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 642
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 629
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 555
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 567
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 579
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 579
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 732
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 653
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 747
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 603
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 581
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 685
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 606
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 677
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 604
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 615
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 546
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 608
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 837
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 725
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 698
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 607
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 652
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 624
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 751
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 705
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 625
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 622
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 611
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 575
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 853
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 843
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 812
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 691
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 706
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 770
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 723
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 758
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 630
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 635
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 712
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 648
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 865
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 987
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 875
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 706
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 722
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 752
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 830
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 789
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 783
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 737
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 698
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Potato",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 690
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 703
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 671
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 635
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 599
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 626
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 681
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 810
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 795
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 735
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 671
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 705
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 644
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 713
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 673
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 645
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 656
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 608
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 593
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 761
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 816
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 858
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 640
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 665
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 738
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 771
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 766
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 647
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 633
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 689
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 614
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 775
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 816
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 968
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 705
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 678
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 773
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 859
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 823
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 651
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 680
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 669
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 727
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 857
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 944
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 929
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 721
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 773
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 841
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 863
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 967
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 789
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 811
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 782
+    },
+    {
+      "warehouseName": "Katraj",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 712
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 238
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 240
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 287
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 260
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 252
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 264
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 206
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 216
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 206
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 225
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 225
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 229
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 239
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 278
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 275
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 285
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 306
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 284
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 228
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 209
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 220
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 231
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 224
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 262
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 254
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 247
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 291
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 275
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 265
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 275
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 249
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 251
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 228
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 247
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 242
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 258
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 254
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 263
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 297
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 285
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 307
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 297
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 237
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 227
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 222
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 242
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 249
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 268
+    },
+    {
+      "warehouseName": "Pashan Chowk",
       "productName": "Amul Milk",
       "year": 2026,
+      "month": 1,
+      "monthlyDemand": 306
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 292
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 316
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 301
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 306
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 311
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 140
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 136
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 129
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 125
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 152
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 142
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
       "month": 7,
-      "monthlyDemand": 285.0
+      "monthlyDemand": 162
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 170
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 172
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 148
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 146
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 142
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 141
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 156
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 143
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 138
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 134
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 145
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 197
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 184
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 177
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 162
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 165
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 173
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 141
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 173
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 138
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 137
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 158
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 140
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 182
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 190
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 194
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 167
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 158
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 161
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 169
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 170
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 163
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 154
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 144
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 198
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 208
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 202
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 160
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 166
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 184
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 155
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 194
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 151
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 154
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 147
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 157
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 96
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 86
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 84
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 81
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 77
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 107
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 110
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 89
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 95
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 95
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 102
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 81
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 90
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 86
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 90
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 120
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 115
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 112
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 93
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 96
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 110
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 113
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 92
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 95
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 94
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 119
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 123
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 101
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 107
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 107
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 113
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 107
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 93
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 88
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 137
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 135
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 123
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 105
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 119
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 116
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 116
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 97
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 100
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 15
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 14
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 441
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 392
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 487
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 482
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 22
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 23
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 23
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 483
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 458
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 473
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 464
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 24
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 24
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 15
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 494
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 529
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 467
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 491
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 22
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 27
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 513
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 520
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 573
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 538
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 27
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 28
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 504
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 540
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 533
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 535
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 1,
-      "monthlyDemand": 652.0
+      "monthlyDemand": 727
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 2,
-      "monthlyDemand": 655.0
+      "monthlyDemand": 712
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 3,
-      "monthlyDemand": 540.0
+      "monthlyDemand": 674
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 4,
-      "monthlyDemand": 560.0
+      "monthlyDemand": 580
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 5,
-      "monthlyDemand": 539.0
+      "monthlyDemand": 666
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 6,
-      "monthlyDemand": 597.0
+      "monthlyDemand": 724
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 7,
-      "monthlyDemand": 716.0
+      "monthlyDemand": 788
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 8,
-      "monthlyDemand": 644.0
+      "monthlyDemand": 911
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 9,
-      "monthlyDemand": 749.0
+      "monthlyDemand": 898
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 10,
-      "monthlyDemand": 613.0
+      "monthlyDemand": 685
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 11,
-      "monthlyDemand": 595.0
+      "monthlyDemand": 719
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2022,
       "month": 12,
-      "monthlyDemand": 580.0
+      "monthlyDemand": 742
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 1,
-      "monthlyDemand": 670.0
+      "monthlyDemand": 912
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 2,
-      "monthlyDemand": 625.0
+      "monthlyDemand": 795
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 3,
-      "monthlyDemand": 568.0
+      "monthlyDemand": 707
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 4,
-      "monthlyDemand": 556.0
+      "monthlyDemand": 699
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 5,
-      "monthlyDemand": 564.0
+      "monthlyDemand": 731
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 6,
-      "monthlyDemand": 555.0
+      "monthlyDemand": 608
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 7,
-      "monthlyDemand": 763.0
+      "monthlyDemand": 1011
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 8,
-      "monthlyDemand": 747.0
+      "monthlyDemand": 968
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 9,
-      "monthlyDemand": 816.0
+      "monthlyDemand": 870
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 10,
-      "monthlyDemand": 616.0
+      "monthlyDemand": 860
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 11,
-      "monthlyDemand": 626.0
+      "monthlyDemand": 831
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2023,
       "month": 12,
-      "monthlyDemand": 674.0
+      "monthlyDemand": 790
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 1,
-      "monthlyDemand": 704.0
+      "monthlyDemand": 873
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 2,
-      "monthlyDemand": 717.0
+      "monthlyDemand": 847
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 3,
-      "monthlyDemand": 607.0
+      "monthlyDemand": 747
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 4,
-      "monthlyDemand": 627.0
+      "monthlyDemand": 776
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 5,
-      "monthlyDemand": 579.0
+      "monthlyDemand": 724
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 6,
-      "monthlyDemand": 565.0
+      "monthlyDemand": 783
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 7,
-      "monthlyDemand": 831.0
+      "monthlyDemand": 1008
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 8,
-      "monthlyDemand": 752.0
+      "monthlyDemand": 983
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 9,
-      "monthlyDemand": 757.0
+      "monthlyDemand": 1049
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 10,
-      "monthlyDemand": 670.0
+      "monthlyDemand": 750
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 11,
-      "monthlyDemand": 642.0
+      "monthlyDemand": 775
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2024,
       "month": 12,
-      "monthlyDemand": 753.0
+      "monthlyDemand": 895
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 1,
-      "monthlyDemand": 797.0
+      "monthlyDemand": 830
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 2,
-      "monthlyDemand": 724.0
+      "monthlyDemand": 848
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 3,
-      "monthlyDemand": 661.0
+      "monthlyDemand": 776
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 4,
-      "monthlyDemand": 612.0
+      "monthlyDemand": 696
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 5,
-      "monthlyDemand": 654.0
+      "monthlyDemand": 852
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 6,
-      "monthlyDemand": 596.0
+      "monthlyDemand": 766
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 7,
-      "monthlyDemand": 849.0
+      "monthlyDemand": 981
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 8,
-      "monthlyDemand": 837.0
+      "monthlyDemand": 1038
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 9,
-      "monthlyDemand": 851.0
+      "monthlyDemand": 1137
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 10,
-      "monthlyDemand": 654.0
+      "monthlyDemand": 863
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 11,
-      "monthlyDemand": 701.0
+      "monthlyDemand": 919
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2025,
       "month": 12,
-      "monthlyDemand": 711.0
+      "monthlyDemand": 960
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2026,
       "month": 1,
-      "monthlyDemand": 776.0
+      "monthlyDemand": 1031
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2026,
       "month": 2,
-      "monthlyDemand": 762.0
+      "monthlyDemand": 968
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2026,
       "month": 3,
-      "monthlyDemand": 665.0
+      "monthlyDemand": 924
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2026,
       "month": 4,
-      "monthlyDemand": 654.0
+      "monthlyDemand": 913
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2026,
       "month": 5,
-      "monthlyDemand": 718.0
+      "monthlyDemand": 876
     },
     {
       "warehouseName": "Pashan Chowk",
       "productName": "Potato",
       "year": 2026,
       "month": 6,
-      "monthlyDemand": 720.0
+      "monthlyDemand": 813
     },
     {
       "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 787
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 873
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 692
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 659
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 693
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 736
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 884
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 886
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 839
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 742
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 812
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 866
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 860
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 933
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 807
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 764
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 719
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 713
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 1027
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 990
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 1016
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 847
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 878
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 863
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 905
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 922
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 766
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 705
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 810
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 735
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 1057
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 991
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 1086
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 854
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 903
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 1086
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 983
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 1034
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 829
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 786
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 816
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 793
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 1155
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 1221
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 1236
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 935
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 936
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 963
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 960
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 1018
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 773
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 886
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 793
+    },
+    {
+      "warehouseName": "Pashan Chowk",
+      "productName": "Tomato",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 947
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 217
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 218
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 271
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 223
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 228
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 246
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 177
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 173
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 173
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 187
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 196
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 224
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 216
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 198
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 252
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 216
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 244
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 248
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 191
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 171
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 202
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 220
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 192
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 233
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 229
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 244
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 229
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 259
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 265
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 255
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 223
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 200
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 202
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 191
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 217
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 229
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 234
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 265
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 288
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 288
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 232
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 280
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 196
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 218
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 234
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 233
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 210
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 210
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 257
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 237
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 271
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 251
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 277
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Amul Milk",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 259
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 94
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 79
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 71
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 88
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 85
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 110
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 112
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 82
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 78
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 105
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 89
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 78
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 89
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 77
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 85
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 103
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 94
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 100
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 104
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 118
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 93
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 124
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 121
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 105
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 101
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 107
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 92
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 99
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 82
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 131
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 136
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 101
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 114
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 116
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 108
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 89
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 91
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Coriander",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 103
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 105
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 76
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 88
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 102
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 92
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 122
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 131
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 117
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 102
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 102
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 109
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 83
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 89
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 87
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 134
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 123
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 129
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 103
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 104
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 103
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 128
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 98
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 101
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 89
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 101
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 130
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 127
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 144
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 100
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 121
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 119
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 121
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 116
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 105
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 112
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 104
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 110
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 144
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 124
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 123
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 113
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 104
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 112
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 128
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 122
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 122
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 124
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 106
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Green Chili",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 118
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 14
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 14
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 438
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 448
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 402
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 465
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 22
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 23
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 23
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 15
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 15
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 14
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 14
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 471
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 443
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 497
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 432
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 22
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 15
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 511
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 513
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 494
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 478
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 27
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 25
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 14
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 19
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 567
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 526
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 516
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 534
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 23
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 27
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 26
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 16
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 18
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 1,
+      "monthlyDemand": 20
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 2,
+      "monthlyDemand": 17
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 3,
+      "monthlyDemand": 549
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 4,
+      "monthlyDemand": 597
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 5,
+      "monthlyDemand": 654
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Hapus Mango",
+      "year": 2026,
+      "month": 6,
+      "monthlyDemand": 567
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 1,
+      "monthlyDemand": 477
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 2,
+      "monthlyDemand": 455
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 3,
+      "monthlyDemand": 407
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 4,
+      "monthlyDemand": 395
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 5,
+      "monthlyDemand": 409
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 6,
+      "monthlyDemand": 407
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 7,
+      "monthlyDemand": 555
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 8,
+      "monthlyDemand": 529
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 9,
+      "monthlyDemand": 479
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 10,
+      "monthlyDemand": 409
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 11,
+      "monthlyDemand": 435
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2022,
+      "month": 12,
+      "monthlyDemand": 486
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 1,
+      "monthlyDemand": 497
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 2,
+      "monthlyDemand": 462
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 3,
+      "monthlyDemand": 389
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 4,
+      "monthlyDemand": 416
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 5,
+      "monthlyDemand": 432
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 6,
+      "monthlyDemand": 396
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 7,
+      "monthlyDemand": 592
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 8,
+      "monthlyDemand": 603
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 9,
+      "monthlyDemand": 545
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 10,
+      "monthlyDemand": 466
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 11,
+      "monthlyDemand": 488
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2023,
+      "month": 12,
+      "monthlyDemand": 524
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 1,
+      "monthlyDemand": 509
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 2,
+      "monthlyDemand": 562
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 3,
+      "monthlyDemand": 471
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 4,
+      "monthlyDemand": 465
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 5,
+      "monthlyDemand": 426
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 6,
+      "monthlyDemand": 458
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 7,
+      "monthlyDemand": 623
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 8,
+      "monthlyDemand": 659
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 9,
+      "monthlyDemand": 580
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 10,
+      "monthlyDemand": 486
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 11,
+      "monthlyDemand": 518
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2024,
+      "month": 12,
+      "monthlyDemand": 526
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 1,
+      "monthlyDemand": 522
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 2,
+      "monthlyDemand": 554
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 3,
+      "monthlyDemand": 495
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 4,
+      "monthlyDemand": 408
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 5,
+      "monthlyDemand": 446
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 6,
+      "monthlyDemand": 486
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 7,
+      "monthlyDemand": 641
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 8,
+      "monthlyDemand": 641
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 9,
+      "monthlyDemand": 654
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 10,
+      "monthlyDemand": 481
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 11,
+      "monthlyDemand": 507
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
+      "year": 2025,
+      "month": 12,
+      "monthlyDemand": 484
+    },
+    {
+      "warehouseName": "Shivaji Bhaji Market",
       "productName": "Potato",
       "year": 2026,
-      "month": 7,
-      "monthlyDemand": 965.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
       "month": 1,
-      "monthlyDemand": 640.0
+      "monthlyDemand": 548
     },
     {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 2,
-      "monthlyDemand": 628.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 3,
-      "monthlyDemand": 540.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 4,
-      "monthlyDemand": 549.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 5,
-      "monthlyDemand": 562.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 6,
-      "monthlyDemand": 568.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 7,
-      "monthlyDemand": 725.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 8,
-      "monthlyDemand": 740.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 9,
-      "monthlyDemand": 719.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 10,
-      "monthlyDemand": 588.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 11,
-      "monthlyDemand": 594.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2022,
-      "month": 12,
-      "monthlyDemand": 674.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 1,
-      "monthlyDemand": 672.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 2,
-      "monthlyDemand": 649.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 3,
-      "monthlyDemand": 499.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 4,
-      "monthlyDemand": 555.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 5,
-      "monthlyDemand": 601.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 6,
-      "monthlyDemand": 631.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 7,
-      "monthlyDemand": 714.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 8,
-      "monthlyDemand": 731.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 9,
-      "monthlyDemand": 736.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 10,
-      "monthlyDemand": 627.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 11,
-      "monthlyDemand": 662.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2023,
-      "month": 12,
-      "monthlyDemand": 642.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 1,
-      "monthlyDemand": 759.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 2,
-      "monthlyDemand": 727.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 3,
-      "monthlyDemand": 639.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 4,
-      "monthlyDemand": 577.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 5,
-      "monthlyDemand": 569.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 6,
-      "monthlyDemand": 621.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 7,
-      "monthlyDemand": 781.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 8,
-      "monthlyDemand": 814.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 9,
-      "monthlyDemand": 815.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 10,
-      "monthlyDemand": 696.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 11,
-      "monthlyDemand": 653.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2024,
-      "month": 12,
-      "monthlyDemand": 700.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 1,
-      "monthlyDemand": 753.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 2,
-      "monthlyDemand": 658.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 3,
-      "monthlyDemand": 604.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 4,
-      "monthlyDemand": 661.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 5,
-      "monthlyDemand": 556.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 6,
-      "monthlyDemand": 578.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 7,
-      "monthlyDemand": 838.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 8,
-      "monthlyDemand": 847.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 9,
-      "monthlyDemand": 778.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 10,
-      "monthlyDemand": 701.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 11,
-      "monthlyDemand": 618.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2025,
-      "month": 12,
-      "monthlyDemand": 692.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2026,
-      "month": 1,
-      "monthlyDemand": 675.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
       "year": 2026,
       "month": 2,
-      "monthlyDemand": 769.0
+      "monthlyDemand": 552
     },
     {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
       "year": 2026,
       "month": 3,
-      "monthlyDemand": 618.0
+      "monthlyDemand": 456
     },
     {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
       "year": 2026,
       "month": 4,
-      "monthlyDemand": 578.0
+      "monthlyDemand": 454
     },
     {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
       "year": 2026,
       "month": 5,
-      "monthlyDemand": 628.0
+      "monthlyDemand": 511
     },
     {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
+      "warehouseName": "Shivaji Bhaji Market",
+      "productName": "Potato",
       "year": 2026,
       "month": 6,
-      "monthlyDemand": 615.0
-    },
-    {
-      "warehouseName": "Pashan Chowk",
-      "productName": "Tomato",
-      "year": 2026,
-      "month": 7,
-      "monthlyDemand": 787.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 1,
-      "monthlyDemand": 137.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 2,
-      "monthlyDemand": 136.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 3,
-      "monthlyDemand": 159.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 4,
-      "monthlyDemand": 169.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 5,
-      "monthlyDemand": 142.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 6,
-      "monthlyDemand": 158.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 7,
-      "monthlyDemand": 118.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 8,
-      "monthlyDemand": 128.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 9,
-      "monthlyDemand": 125.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 10,
-      "monthlyDemand": 136.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 11,
-      "monthlyDemand": 129.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2022,
-      "month": 12,
-      "monthlyDemand": 138.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 1,
-      "monthlyDemand": 146.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 2,
-      "monthlyDemand": 148.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 3,
-      "monthlyDemand": 174.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 4,
-      "monthlyDemand": 154.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 5,
-      "monthlyDemand": 168.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 6,
-      "monthlyDemand": 176.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 7,
-      "monthlyDemand": 119.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 8,
-      "monthlyDemand": 128.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 9,
-      "monthlyDemand": 120.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 10,
-      "monthlyDemand": 145.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 11,
-      "monthlyDemand": 138.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2023,
-      "month": 12,
-      "monthlyDemand": 160.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 1,
-      "monthlyDemand": 145.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 2,
-      "monthlyDemand": 164.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 3,
-      "monthlyDemand": 177.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 4,
-      "monthlyDemand": 157.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 5,
-      "monthlyDemand": 187.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 6,
-      "monthlyDemand": 170.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 7,
-      "monthlyDemand": 133.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 8,
-      "monthlyDemand": 143.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 9,
-      "monthlyDemand": 125.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 10,
-      "monthlyDemand": 144.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 11,
-      "monthlyDemand": 147.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2024,
-      "month": 12,
-      "monthlyDemand": 157.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 1,
-      "monthlyDemand": 166.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 2,
-      "monthlyDemand": 155.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 3,
-      "monthlyDemand": 164.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 4,
-      "monthlyDemand": 186.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 5,
-      "monthlyDemand": 173.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 6,
-      "monthlyDemand": 190.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 7,
-      "monthlyDemand": 142.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 8,
-      "monthlyDemand": 139.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 9,
-      "monthlyDemand": 144.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 10,
-      "monthlyDemand": 157.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 11,
-      "monthlyDemand": 145.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2025,
-      "month": 12,
-      "monthlyDemand": 166.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 1,
-      "monthlyDemand": 172.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 2,
-      "monthlyDemand": 178.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 3,
-      "monthlyDemand": 189.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 4,
-      "monthlyDemand": 186.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 5,
-      "monthlyDemand": 174.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 6,
-      "monthlyDemand": 189.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Amul Milk",
-      "year": 2026,
-      "month": 7,
-      "monthlyDemand": 146.0
+      "monthlyDemand": 446
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 1,
-      "monthlyDemand": 282.0
+      "monthlyDemand": 711
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 2,
-      "monthlyDemand": 316.0
+      "monthlyDemand": 671
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 3,
-      "monthlyDemand": 272.0
+      "monthlyDemand": 660
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 4,
-      "monthlyDemand": 253.0
+      "monthlyDemand": 551
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 5,
-      "monthlyDemand": 259.0
+      "monthlyDemand": 612
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 6,
-      "monthlyDemand": 281.0
+      "monthlyDemand": 586
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 7,
-      "monthlyDemand": 361.0
+      "monthlyDemand": 843
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 8,
-      "monthlyDemand": 337.0
+      "monthlyDemand": 748
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 9,
-      "monthlyDemand": 365.0
+      "monthlyDemand": 884
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 10,
-      "monthlyDemand": 287.0
+      "monthlyDemand": 739
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 11,
-      "monthlyDemand": 317.0
+      "monthlyDemand": 684
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2022,
       "month": 12,
-      "monthlyDemand": 308.0
+      "monthlyDemand": 812
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 1,
-      "monthlyDemand": 329.0
+      "monthlyDemand": 765
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 2,
-      "monthlyDemand": 360.0
+      "monthlyDemand": 732
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 3,
-      "monthlyDemand": 264.0
+      "monthlyDemand": 645
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 4,
-      "monthlyDemand": 263.0
+      "monthlyDemand": 644
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 5,
-      "monthlyDemand": 263.0
+      "monthlyDemand": 610
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 6,
-      "monthlyDemand": 283.0
+      "monthlyDemand": 610
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 7,
-      "monthlyDemand": 379.0
+      "monthlyDemand": 786
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 8,
-      "monthlyDemand": 324.0
+      "monthlyDemand": 872
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 9,
-      "monthlyDemand": 365.0
+      "monthlyDemand": 795
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 10,
-      "monthlyDemand": 290.0
+      "monthlyDemand": 716
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 11,
-      "monthlyDemand": 281.0
+      "monthlyDemand": 706
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2023,
       "month": 12,
-      "monthlyDemand": 330.0
+      "monthlyDemand": 745
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 1,
-      "monthlyDemand": 331.0
+      "monthlyDemand": 740
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 2,
-      "monthlyDemand": 312.0
+      "monthlyDemand": 773
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 3,
-      "monthlyDemand": 297.0
+      "monthlyDemand": 657
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 4,
-      "monthlyDemand": 291.0
+      "monthlyDemand": 723
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 5,
-      "monthlyDemand": 276.0
+      "monthlyDemand": 725
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 6,
-      "monthlyDemand": 285.0
+      "monthlyDemand": 610
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 7,
-      "monthlyDemand": 405.0
+      "monthlyDemand": 870
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 8,
-      "monthlyDemand": 371.0
+      "monthlyDemand": 860
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 9,
-      "monthlyDemand": 391.0
+      "monthlyDemand": 901
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 10,
-      "monthlyDemand": 338.0
+      "monthlyDemand": 715
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 11,
-      "monthlyDemand": 318.0
+      "monthlyDemand": 809
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2024,
       "month": 12,
-      "monthlyDemand": 335.0
+      "monthlyDemand": 722
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 1,
-      "monthlyDemand": 333.0
+      "monthlyDemand": 749
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 2,
-      "monthlyDemand": 358.0
+      "monthlyDemand": 728
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 3,
-      "monthlyDemand": 286.0
+      "monthlyDemand": 683
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 4,
-      "monthlyDemand": 309.0
+      "monthlyDemand": 732
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 5,
-      "monthlyDemand": 281.0
+      "monthlyDemand": 704
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 6,
-      "monthlyDemand": 292.0
+      "monthlyDemand": 689
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 7,
-      "monthlyDemand": 399.0
+      "monthlyDemand": 888
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 8,
-      "monthlyDemand": 390.0
+      "monthlyDemand": 956
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 9,
-      "monthlyDemand": 425.0
+      "monthlyDemand": 929
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 10,
-      "monthlyDemand": 328.0
+      "monthlyDemand": 798
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 11,
-      "monthlyDemand": 337.0
+      "monthlyDemand": 713
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2025,
       "month": 12,
-      "monthlyDemand": 385.0
+      "monthlyDemand": 733
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2026,
       "month": 1,
-      "monthlyDemand": 362.0
+      "monthlyDemand": 846
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2026,
       "month": 2,
-      "monthlyDemand": 356.0
+      "monthlyDemand": 835
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2026,
       "month": 3,
-      "monthlyDemand": 312.0
+      "monthlyDemand": 696
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2026,
       "month": 4,
-      "monthlyDemand": 323.0
+      "monthlyDemand": 716
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2026,
       "month": 5,
-      "monthlyDemand": 310.0
+      "monthlyDemand": 684
     },
     {
       "warehouseName": "Shivaji Bhaji Market",
       "productName": "Tomato",
       "year": 2026,
       "month": 6,
-      "monthlyDemand": 303.0
-    },
-    {
-      "warehouseName": "Shivaji Bhaji Market",
-      "productName": "Tomato",
-      "year": 2026,
-      "month": 7,
-      "monthlyDemand": 395.0
+      "monthlyDemand": 716
     }
   ],
-  "monthNames": [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ]
+
+      "monthNames": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ]
+
 }

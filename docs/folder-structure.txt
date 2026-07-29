@@ -211,6 +211,7 @@ AI-Supply-Chain-Management-System/
                 authController.js
                 cartController.js
                 catalogController.js
+                historyController.js 
                 inventoryController.js
                 orderController.js
                 productController.js
@@ -246,6 +247,7 @@ AI-Supply-Chain-Management-System/
                 authRoutes.js
                 cartRoutes.js
                 catelogRoutes.js
+                historyRoutes.js 
                 inventoryRoutes.js
                 orderRoutes.js
                 productRoutes.js
@@ -256,10 +258,14 @@ AI-Supply-Chain-Management-System/
                 warehouseRoutes.js
 
             services/
+                aiDemandService.js
+                aiTrainingService.js
+                historyGeneratorService.js
                 cartService.js
                 orderService.js 
                 javaService.js
                 pythonAIService.js
+                predictionService.js
                 notificationService.js
 
     docs/
