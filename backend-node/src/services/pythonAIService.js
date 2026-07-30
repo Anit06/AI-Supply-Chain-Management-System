@@ -1,22 +1,5 @@
 const axios = require("axios");
 
-<<<<<<< HEAD
-const PYTHON_URL = "http://localhost:5001";
-
-const predictDemand = async (payload) => {
-
-    const response = await axios.post(
-        `${PYTHON_URL}/predict`,
-        payload
-    );
-
-    return response.data;
-
-};
-
-module.exports = {
-    predictDemand
-=======
 const PYTHON_URL = process.env.PYTHON_SERVICE_URL || "http://localhost:5001";
 
 const predictDemand = async (payload) => {
@@ -56,5 +39,4 @@ module.exports = {
     predictAllDemand,
     predictAllLive,
     reloadModel
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
 };

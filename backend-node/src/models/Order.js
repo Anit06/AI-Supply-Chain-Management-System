@@ -126,12 +126,67 @@ const orderSchema = new mongoose.Schema({
 
     items: [orderItemSchema],
 
+    subtotal: {
+
+        type: Number,
+
+        default: 0
+
+    },
+
+    discountAmount: {
+
+        type: Number,
+
+        default: 0
+
+    },
+
+    couponCode: {
+
+        type: String,
+
+        default: ""
+
+    },
+
+    finalAmount: {
+
+        type: Number,
+
+        default: 0
+
+    },
+
     totalAmount: {
 
         type: Number,
 
         default: 0
 
+    },
+
+    paymentMethod: {
+
+        type: String,
+
+        default: "Cash On Delivery"
+
+    },
+
+    paymentStatus: {
+
+        type: String,
+
+        enum: ["Pending", "Paid", "Failed"],
+
+        default: "Pending"
+
+    },
+
+    addressId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "ShopkeeperDetails"
     },
 
     status: {

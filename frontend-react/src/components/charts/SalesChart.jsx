@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-import "../../assets/css/charts.css";
-
-function SalesChart() {
-  return (
-    <div className="chart-card">
-
-      <h2>Sales Overview</h2>
-
-      <div className="chart-placeholder">
-        Sales Chart
-      </div>
-
-    </div>
-  );
-}
-
-export default SalesChart;
-=======
 import { Line } from "react-chartjs-2";
 import { CategoryScale, Chart as ChartJS, Filler, Legend, LineElement, LinearScale, PointElement, Tooltip } from "chart.js";
 
@@ -30,4 +11,3 @@ function SalesChart({ data }) {
 }
 
 export default SalesChart;
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

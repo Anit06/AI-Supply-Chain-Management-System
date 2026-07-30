@@ -30,16 +30,8 @@ import OrderHistory from "../components/shopkeeper/Orders/OrderHistory";
 import OrderDetails from "../components/shopkeeper/orders/OrderDetails";
 import TrackOrder from "../components/shopkeeper/Orders/TrackOrder";
 import ProductCatalog from "../components/shopkeeper/Products/ProductCatalog";
-<<<<<<< HEAD
-import SearchProducts from "../components/shopkeeper/Products/SearchProducts";
 import Profile from "../components/shopkeeper/Profile/Profile";
 import Address from "../components/shopkeeper/Profile/Address";
-import PaymentMethod from "../components/shopkeeper/Payment/Payment";
-=======
-import Profile from "../components/shopkeeper/Profile/Profile";
-import Address from "../components/shopkeeper/Profile/Address";
-import PaymentMethod from "../components/shopkeeper/Profile/PaymentMethod";
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
 import Notifications from "../components/shopkeeper/Others/Notifications";
 import Support from "../components/shopkeeper/Others/Support";
 
@@ -84,13 +76,8 @@ function AppRoutes() {
         <Route path="order/:id" element={<OrderDetails />}/>
         <Route path="order/:id/track" element={<TrackOrder />} />
         <Route path="product-catalog" element={<ProductCatalog />} />
-<<<<<<< HEAD
-        <Route path="search-products" element={<SearchProducts />} />
-=======
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
         <Route path="profile" element={<Profile />} />
         <Route path="address" element={<Address />} />
-        <Route path="payment-method" element={<PaymentMethod />} />
         <Route path="notifications" element={<Notifications />} />
         <Route path="support" element={<Support />} />
         <Route path="settings" element={<Settings />} />

@@ -1,21 +1,5 @@
-<<<<<<< HEAD
-import "../../assets/css/tables.css";
-
-function WarehouseTable() {
-  return (
-    <div className="table-card">
-
-      <h2>Warehouse Overview</h2>
-
-    </div>
-  );
-}
-
-export default WarehouseTable;
-=======
 function WarehouseTable({ warehouses }) {
   return <section className="dashboard-card dashboard-table-card"><div className="dashboard-card__heading"><div><p>Network health</p><h2>Warehouse Overview</h2></div><a href="/admin/warehouses">View all</a></div>{warehouses.length ? <div className="dashboard-table-scroll"><table className="dashboard-table"><thead><tr><th>Warehouse</th><th>Location</th><th>Utilisation</th><th>Status</th></tr></thead><tbody>{warehouses.slice(0, 6).map((warehouse) => { const utilisation = Math.min(100, Number(warehouse.utilisation ?? warehouse.utilization ?? 0)); const state = warehouse.status === "Under Maintenance" ? "Maintenance" : warehouse.status; return <tr key={warehouse._id}><td><strong>{warehouse.name}</strong><small>{warehouse.code}</small></td><td>{warehouse.city || warehouse.location}</td><td><div className="dashboard-progress"><span style={{ width: `${utilisation}%` }} /></div><small>{utilisation}% used</small></td><td><span className={`dashboard-badge dashboard-warehouse--${state?.toLowerCase().replaceAll(" ", "-")}`}>{state}</span></td></tr>; })}</tbody></table></div> : <div className="dashboard-empty-state">No warehouses have been added yet.</div>}</section>;
 }
 
 export default WarehouseTable;
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

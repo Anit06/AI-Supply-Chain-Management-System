@@ -2,17 +2,6 @@ const express = require("express");
 
 const router = express.Router();
 
-<<<<<<< HEAD
-const aiController =
-require("../controllers/aiController");
-
-router.post(
-    "/predict",
-    aiController.predictDemand
-);
-
-module.exports = router;
-=======
 const aiController = require("../controllers/aiController");
 
 const authMiddleware = require("../middleware/authMiddleware");
@@ -76,4 +65,3 @@ router.get(
 );
 
 module.exports = router;
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

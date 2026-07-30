@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {
     getCart,
     updateCart,
-    removeCartItem,
-    placeOrder
+    removeCartItem
 } from "../../../services/cartService";
 
 import { getWarehouseById } from "../../../services/warehouseService";
@@ -22,10 +21,6 @@ function Cart() {
     });
     const [loading, setLoading] = useState(true);
     const [placingOrder, setPlacingOrder] = useState(false);
-
-    useEffect(() => {
-        loadCart();
-    }, []);
 
     const loadCart = async () => {
         try {
@@ -58,6 +53,10 @@ function Cart() {
         }
     };
 
+    useEffect(() => {
+        loadCart();
+    }, []);
+
     const increaseQuantity = async (item) => {
         await updateCart({
             warehouseId: localStorage.getItem("selectedWarehouse"),
@@ -89,28 +88,8 @@ function Cart() {
         loadCart();
     };
 
-    const handlePlaceOrder = async () => {
-        try {
-            setPlacingOrder(true);
-
-            const response = await placeOrder(
-                localStorage.getItem("selectedWarehouse")
-            );
-
-            alert(response.message);
-
-            localStorage.removeItem("selectedWarehouse");
-
-            navigate("/shopkeeper/order-history");
-
-        } catch (error) {
-            alert(
-                error.response?.data?.message ||
-                error.message
-            );
-        } finally {
-            setPlacingOrder(false);
-        }
+    const handlePlaceOrder = () => {
+        navigate("/shopkeeper/place-order");
     };
 
     if (loading) {

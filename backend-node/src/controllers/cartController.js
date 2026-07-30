@@ -243,7 +243,7 @@ exports.placeOrder = async (req, res) => {
 
             req.user.id,
 
-            req.body.warehouseId
+            req.body
 
         );
 

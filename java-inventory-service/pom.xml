@@ -33,11 +33,7 @@
         <java.version>21</java.version>
 
     </properties>
-<<<<<<< HEAD
-                                    
-=======
 
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
     <dependencies>
 
         <!-- Spring Boot Web -->

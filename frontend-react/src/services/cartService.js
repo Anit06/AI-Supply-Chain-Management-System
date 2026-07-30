@@ -60,10 +60,8 @@ export const clearCart = async (warehouseId) => {
 PLACE ORDER
 ===================================
 */
-export const placeOrder = async (warehouseId) => {
-    const response = await api.post("/cart/place-order", {
-        warehouseId
-    });
+export const placeOrder = async (orderData) => {
+    const response = await api.post("/cart/place-order", orderData);
 
     return response.data;
 };

@@ -138,7 +138,9 @@ AI-Supply-Chain-Management-System/
                     Profile/
                         Profile.jsx
                         Address.jsx
-                        PaymentMethod.jsx
+
+                    Payment/
+                        Payment.jsx
 
                     Orders/
                         OrderDetails.jsx

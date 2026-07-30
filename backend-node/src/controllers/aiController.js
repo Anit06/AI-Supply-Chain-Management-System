@@ -1,27 +1,4 @@
 const pythonService = require("../services/pythonAIService");
-<<<<<<< HEAD
-
-exports.predictDemand = async(req,res)=>{
-
-    try{
-
-        const prediction =
-            await pythonService.predictDemand(req.body);
-
-        res.status(200).json(prediction);
-
-    }
-
-    catch(err){
-
-        res.status(500).json({
-            message:"Prediction Failed"
-        });
-
-    }
-
-}
-=======
 const aiDemandService = require("../services/aiDemandService");
 const predictionService = require("../services/predictionService");
 const aiTrainingService = require("../services/aiTrainingService");
@@ -143,4 +120,3 @@ exports.getPredictions = async (req, res) => {
         return res.status(500).json({ success: false, message: error.message });
     }
 };
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

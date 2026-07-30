@@ -1,43 +1,20 @@
-<<<<<<< HEAD
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\Application.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\config\MongoConfig.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\controller\InventoryController.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\dto\InventoryRequest.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\dto\InventoryResponse.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\dto\ReduceInventoryRequest.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Inventory.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Order.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Product.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\ProductHolding.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Warehouse.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\InventoryRepository.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\ProductHoldingRepository.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\ProductRepository.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\WarehouseRepository.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\DemandAnalysisService.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\InventoryService.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\ReorderService.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\StockAllocationService.java
-C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main (1)\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\WarehouseSelectionService.java
-=======
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\Application.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\config\MongoConfig.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\controller\InventoryController.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\dto\InventoryRequest.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\dto\InventoryResponse.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\dto\ReduceInventoryRequest.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\model\Inventory.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\model\Order.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\model\Product.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\model\ProductHolding.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\model\Warehouse.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\repository\InventoryRepository.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\repository\ProductHoldingRepository.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\repository\ProductRepository.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\repository\WarehouseRepository.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\service\DemandAnalysisService.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\service\InventoryService.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\service\ReorderService.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\service\StockAllocationService.java
-D:\AI-Supply-Chain-Management-System\java-inventory-service\src\main\java\com\supplychain\service\WarehouseSelectionService.java
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\Application.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\config\MongoConfig.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\controller\InventoryController.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\dto\InventoryRequest.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\dto\InventoryResponse.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\dto\ReduceInventoryRequest.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Inventory.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Order.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Product.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\ProductHolding.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\model\Warehouse.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\InventoryRepository.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\ProductHoldingRepository.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\ProductRepository.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\repository\WarehouseRepository.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\DemandAnalysisService.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\InventoryService.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\ReorderService.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\StockAllocationService.java
+C:\Users\Akash Prasad\Downloads\AI-Supply-Chain-Management-System-main 3\AI-Supply-Chain-Management-System-main\java-inventory-service\src\main\java\com\supplychain\service\WarehouseSelectionService.java

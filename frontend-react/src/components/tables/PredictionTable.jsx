@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import "../../assets/css/tables.css";
-
-function PredictionTable() {
-  return (
-    <div className="table-card">
-
-      <h2>AI Demand Prediction</h2>
-
-    </div>
-  );
-}
-
-export default PredictionTable;
-=======
 function PredictionTable({ predictions, products }) {
   const productsByName = new Map(products.map((product) => [product.name, product]));
   const predictionStatus = (prediction) => { const stock = Number(productsByName.get(prediction.productName)?.stock || 0); const demand = Number(prediction.predictedDemand || 0); if (demand > stock) return "High Demand"; if (demand > stock * 0.65) return "Medium Demand"; return "Low Demand"; };
@@ -20,4 +5,3 @@ function PredictionTable({ predictions, products }) {
 }
 
 export default PredictionTable;
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

@@ -16,12 +16,8 @@
     "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.2.6",
     "react-icons": "^5.6.0",
-<<<<<<< HEAD
-    "react-router-dom": "^7.15.1"
-=======
     "react-router-dom": "^7.15.1",
     "react-select": "^5.10.2"
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

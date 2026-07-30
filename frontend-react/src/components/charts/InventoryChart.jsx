@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-import "../../assets/css/charts.css";
-
-function InventoryChart() {
-  return (
-    <div className="chart-card">
-
-      <h2>Inventory Status</h2>
-
-      <div className="chart-placeholder">
-        Pie Chart
-      </div>
-
-    </div>
-  );
-}
-
-export default InventoryChart;
-=======
 import { Doughnut } from "react-chartjs-2";
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 
@@ -30,4 +11,3 @@ function InventoryChart({ status, total }) {
 }
 
 export default InventoryChart;
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

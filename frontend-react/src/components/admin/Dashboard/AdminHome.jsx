@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import "../../../assets/css/dashboard.css";
-
-import Sidebar from "../../common/Sidebar";
-import Header from "../../common/Header";
-
-import StatsCard from "../../cards/StatsCard";
-import SalesChart from "../../charts/SalesChart";
-import InventoryChart from "../../charts/InventoryChart";
-
-=======
 import { useEffect, useMemo, useState } from "react";
 import {
   FaBoxOpen,
@@ -22,55 +11,10 @@ import DashboardHeader from "./DashboardHeader";
 import StatsCard from "../../cards/StatsCard";
 import SalesChart from "../../charts/SalesChart";
 import InventoryChart from "../../charts/InventoryChart";
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
 import RecentOrders from "../../tables/RecentOrders";
 import PredictionTable from "../../tables/PredictionTable";
 import WarehouseTable from "../../tables/WarehouseTable";
 
-<<<<<<< HEAD
-function AdminHome() {
-  return (
-    <div className="dashboard-layout">
-
-      <Sidebar />
-
-      <div className="dashboard-main">
-
-        <Header />
-
-        {/* Statistics Cards */}
-        <div className="stats-grid">
-
-          <StatsCard />
-          <StatsCard />
-          <StatsCard />
-          <StatsCard />
-
-        </div>
-
-        {/* Charts */}
-        <div className="chart-section">
-
-          <SalesChart />
-
-          <InventoryChart />
-
-          <RecentOrders />
-
-        </div>
-
-        {/* Tables */}
-        <div className="table-section">
-
-          <PredictionTable />
-
-          <WarehouseTable />
-
-        </div>
-
-      </div>
-
-=======
 import { getProducts } from "../../../services/productService";
 import { getAllOrders } from "../../../services/orderService";
 import { getWarehouses } from "../../../services/warehouseService";
@@ -94,10 +38,10 @@ function AdminHome() {
       getStoredPredictions(),
     ]).then((results) => {
       if (!active) return;
-      const value = (index, key) =>
-        results[index].status === "fulfilled"
-          ? results[index].value?.[key] || []
-          : [];
+      const value = (index, key) => {
+        const response = results[index].status === "fulfilled" ? results[index].value : null;
+        return Array.isArray(response) ? response : response?.[key] || [];
+      };
       setDashboard({
         products: value(0, "products"),
         orders: value(1, "orders"),
@@ -164,8 +108,7 @@ function AdminHome() {
   }, [dashboard]);
 
   return (
-    <div className="dashboard-layout">
-      <div className="dashboard-main">
+    <div className="dashboard-page">
         <DashboardHeader />
 
         {loading && (
@@ -221,8 +164,6 @@ function AdminHome() {
           />
           <WarehouseTable warehouses={dashboard.warehouses} />
         </div>
-      </div>
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
     </div>
   );
 }

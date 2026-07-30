@@ -10,7 +10,6 @@ import {
   FaSearch,
   FaUser,
   FaMapMarkerAlt,
-  FaCreditCard,
   FaBell,
   FaHeadset,
   FaCog,
@@ -99,17 +98,7 @@ function ShopkeeperSidebar() {
           <span>Product Catalog</span>
         </NavLink>
 
-<<<<<<< HEAD
-        <NavLink
-          to="/shopkeeper/search-products"
-          className="shopkeeper-link"
-        >
-          <FaSearch />
-          <span>Search Products</span>
-        </NavLink>
-=======
     
->>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
 
         <h4 className="menu-title">Profile & Account</h4>
 
@@ -127,14 +116,6 @@ function ShopkeeperSidebar() {
         >
           <FaMapMarkerAlt />
           <span>Addresses</span>
-        </NavLink>
-
-        <NavLink
-          to="/shopkeeper/payment-method"
-          className="shopkeeper-link"
-        >
-          <FaCreditCard />
-          <span>Payment Methods</span>
         </NavLink>
 
         <h4 className="menu-title">Others</h4>
