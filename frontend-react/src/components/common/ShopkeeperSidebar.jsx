@@ -99,6 +99,7 @@ function ShopkeeperSidebar() {
           <span>Product Catalog</span>
         </NavLink>
 
+<<<<<<< HEAD
         <NavLink
           to="/shopkeeper/search-products"
           className="shopkeeper-link"
@@ -106,6 +107,9 @@ function ShopkeeperSidebar() {
           <FaSearch />
           <span>Search Products</span>
         </NavLink>
+=======
+    
+>>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
 
         <h4 className="menu-title">Profile & Account</h4>
 

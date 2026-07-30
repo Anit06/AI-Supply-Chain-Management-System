@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -257,3 +258,10 @@ const Payment = () => {
 };
 
 export default Payment;
+=======
+function PaymentMethod() {
+  return <h1>Payment Method Page</h1>;
+}
+
+export default PaymentMethod;
+>>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78

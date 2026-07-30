@@ -211,6 +211,10 @@ AI-Supply-Chain-Management-System/
                 authController.js
                 cartController.js
                 catalogController.js
+<<<<<<< HEAD
+=======
+                historyController.js 
+>>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
                 inventoryController.js
                 orderController.js
                 productController.js
@@ -246,6 +250,10 @@ AI-Supply-Chain-Management-System/
                 authRoutes.js
                 cartRoutes.js
                 catelogRoutes.js
+<<<<<<< HEAD
+=======
+                historyRoutes.js 
+>>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
                 inventoryRoutes.js
                 orderRoutes.js
                 productRoutes.js
@@ -256,10 +264,20 @@ AI-Supply-Chain-Management-System/
                 warehouseRoutes.js
 
             services/
+<<<<<<< HEAD
+=======
+                aiDemandService.js
+                aiTrainingService.js
+                historyGeneratorService.js
+>>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
                 cartService.js
                 orderService.js 
                 javaService.js
                 pythonAIService.js
+<<<<<<< HEAD
+=======
+                predictionService.js
+>>>>>>> 8ebc819e3df109c552f8e25d6c537d085fc18a78
                 notificationService.js
 
     docs/
