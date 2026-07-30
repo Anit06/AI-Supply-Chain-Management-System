@@ -4,13 +4,12 @@ const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
-const supplierRoutes = require("./routes/supplierRoutes.js")
+const supplierRoutes = require("./routes/supplierRoutes");
 const inventoryRoutes = require("./routes/inventoryRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 const shopkeeperRoutes = require("./routes/shopkeeperRoutes");
 const cartRoutes = require("./routes/cartRoutes");
 const orderRoutes = require("./routes/orderRoutes");
-
 const catalogRoutes = require("./routes/catalogRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 const historyRoutes = require("./routes/historyRoutes");
@@ -28,12 +27,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
-
 app.use("/api/suppliers", supplierRoutes);
-app.use("/api/warehouses", require("./routes/warehouseRoutes"));
-
-app.use("/api/auth", authRoutes);
-app.use("/api/products", productRoutes);
 app.use("/api/warehouses", warehouseRoutes);
 app.use("/api/inventory", inventoryRoutes);
 app.use("/api/profile", profileRoutes);
@@ -41,7 +35,6 @@ app.use("/api/shopkeeper", shopkeeperRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/catalog", catalogRoutes);
-
 app.use("/api/ai", aiRoutes);
 app.use("/api/history", historyRoutes);
 
