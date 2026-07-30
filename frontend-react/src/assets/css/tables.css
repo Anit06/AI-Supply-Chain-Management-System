@@ -1,0 +1,60 @@
+.table-card{
+  background:white;
+  border-radius:22px;
+  padding:24px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.06);
+}
+
+.table-card h2{
+  font-size:26px;
+  margin-bottom:20px;
+  color:#111827;
+}
+
+/* Table */
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+table th{
+  text-align:left;
+  padding:15px;
+  background:#f9fafb;
+  color:#374151;
+  font-size:16px;
+}
+
+table td{
+  padding:15px;
+  border-bottom:1px solid #e5e7eb;
+  font-size:16px;
+}
+
+/* Status */
+
+.high{
+  color:red;
+  font-weight:bold;
+}
+
+.medium{
+  color:orange;
+  font-weight:bold;
+}
+
+.low{
+  color:green;
+  font-weight:bold;
+}
+
+.active-status{
+  color:green;
+  font-weight:bold;
+}
+
+.busy-status{
+  color:orange;
+  font-weight:bold;
+}

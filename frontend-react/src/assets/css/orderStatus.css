@@ -1,0 +1,121 @@
+.status-wrapper{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.status-label{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.status-select{
+
+    width:260px;
+
+    padding:12px 15px;
+
+    border-radius:8px;
+
+    border:2px solid #ddd;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    outline:none;
+
+}
+
+.status-select:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Status Colours */
+
+.status-select.placed{
+
+    background:#64748b;
+
+    color:#fff;
+
+    border-color:#64748b;
+
+}
+
+.status-select.confirmed{
+
+    background:#0ea5e9;
+
+    color:#fff;
+
+    border-color:#0ea5e9;
+
+}
+
+.status-select.packed{
+
+    background:#f59e0b;
+
+    color:#fff;
+
+    border-color:#f59e0b;
+
+}
+
+.status-select.shipped{
+
+    background:#7c3aed;
+
+    color:#fff;
+
+    border-color:#7c3aed;
+
+}
+
+.status-select.delivered{
+
+    background:#16a34a;
+
+    color:#fff;
+
+    border-color:#16a34a;
+
+}
+
+.status-select.cancelled{
+
+    background:#dc2626;
+
+    color:#fff;
+
+    border-color:#dc2626;
+
+}
+
+@media(max-width:768px){
+
+    .status-select{
+
+        width:100%;
+
+    }
+
+}

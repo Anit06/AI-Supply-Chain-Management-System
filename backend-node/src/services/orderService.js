@@ -1,0 +1,441 @@
+const Order = require("../models/Order");
+const javaService = require("./javaService");
+
+/*
+==================================
+GET SHOPKEEPER ORDERS
+==================================
+*/
+
+const getOrdersByUser = async (userId) => {
+
+    const orders = await Order.find({
+
+        userId
+
+    })
+
+    .populate(
+
+        "warehouseId",
+
+        "name location"
+
+    )
+
+    .sort({
+
+        createdAt: -1
+
+    });
+
+    return orders;
+
+};
+
+/*
+==================================
+GET ORDER DETAILS
+==================================
+*/
+
+const getOrderById = async (
+
+    userId,
+
+    orderId
+
+) => {
+
+    const query = userId
+
+        ? {
+
+            _id: orderId,
+
+            userId
+
+        }
+
+        : {
+
+            _id: orderId
+
+        };
+
+    const order = await Order.findOne(query)
+
+        .populate(
+
+            "userId",
+
+            "name email phone"
+
+        )
+
+        .populate(
+
+            "warehouseId",
+
+            "name location"
+
+        );
+
+    if (!order) {
+
+        throw new Error(
+
+            "Order not found"
+
+        );
+
+    }
+
+    return order;
+
+};
+
+/*
+==================================
+ADMIN GET ALL ORDERS
+==================================
+*/
+
+const getAllOrders = async () => {
+
+    const orders = await Order.find()
+
+        .populate(
+
+            "userId",
+
+            "name email"
+
+        )
+
+        .populate(
+
+            "warehouseId",
+
+            "name location"
+
+        )
+
+        .sort({
+
+            createdAt: -1
+
+        });
+
+    return orders;
+
+};
+
+/*
+==================================
+UPDATE ORDER STATUS
+==================================
+*/
+
+const updateOrderStatus = async (
+
+    orderId,
+
+    status
+
+) => {
+
+    const order = await Order.findById(orderId);
+
+    if (!order) {
+
+        throw new Error("Order not found");
+
+    }
+
+    /*
+    =====================================
+    Do nothing if status is same
+    =====================================
+    */
+
+    if (order.status === status) {
+
+        return order;
+
+    }
+
+    /*
+    =====================================
+    Save Status History
+    =====================================
+    */
+
+    order.statusHistory.push({
+
+        status,
+
+        updatedAt: new Date()
+
+    });
+
+    /*
+    =====================================
+    Cancel Order
+    Return Inventory Only Once
+    =====================================
+    */
+
+    if (
+
+        status === "Cancelled" &&
+
+        !order.returnedStock
+
+    ) {
+
+        for (const item of order.items) {
+
+            await javaService.addInventoryStock({
+
+                warehouseId: order.warehouseId.toString(),
+
+                productId: item.productId.toString(),
+
+                stock: item.quantity
+
+            });
+
+        }
+
+        order.returnedStock = true;
+
+    }
+
+    /*
+    =====================================
+    If Cancelled -> Another Status
+    Don't return inventory again
+    =====================================
+    */
+
+    if (
+
+        status !== "Cancelled" &&
+
+        order.status === "Cancelled"
+
+    ) {
+
+        order.returnedStock = true;
+
+    }
+
+    /*
+    =====================================
+    Update Current Status
+    =====================================
+    */
+
+    order.status = status;
+
+    await order.save();
+
+    return order;
+
+};
+
+/*
+==================================
+ORDER ANALYTICS
+==================================
+*/
+
+const getOrderAnalytics = async () => {
+
+    const orders = await Order.find();
+
+    let totalRevenue = 0;
+
+    let placed = 0;
+    let confirmed = 0;
+    let packed = 0;
+    let shipped = 0;
+    let delivered = 0;
+    let cancelled = 0;
+
+    const productMap = {};
+
+    orders.forEach(order => {
+
+        /*
+        ==========================
+        STATUS COUNT
+        ==========================
+        */
+
+        switch (order.status) {
+
+            case "Placed":
+                placed++;
+                break;
+
+            case "Confirmed":
+                confirmed++;
+                break;
+
+            case "Packed":
+                packed++;
+                break;
+
+            case "Shipped":
+                shipped++;
+                break;
+
+            case "Delivered":
+                delivered++;
+                break;
+
+            case "Cancelled":
+                cancelled++;
+                break;
+
+        }
+
+        /*
+        ==========================
+        IGNORE CANCELLED ORDERS
+        ==========================
+        */
+
+        if (order.status === "Cancelled") {
+
+            return;
+
+        }
+
+        /*
+        ==========================
+        TOTAL REVENUE
+        ==========================
+        */
+
+        totalRevenue += order.totalAmount;
+
+        /*
+        ==========================
+        TOP PRODUCTS
+        ==========================
+        */
+
+        order.items.forEach(item => {
+
+            if (!productMap[item.productName]) {
+
+                productMap[item.productName] = 0;
+
+            }
+
+            productMap[item.productName] += item.quantity;
+
+        });
+
+    });
+
+    /*
+    ==========================
+    TOP PRODUCTS
+    ==========================
+    */
+
+    const topProducts = Object.entries(productMap)
+
+        .map(([name, quantity]) => ({
+
+            name,
+
+            quantity
+
+        }))
+
+        .sort((a, b) => b.quantity - a.quantity)
+
+        .slice(0, 5);
+
+    /*
+    ==========================
+    RECENT ORDERS
+    ==========================
+    */
+
+    const recentOrders = await Order.find()
+
+        .sort({
+
+            createdAt: -1
+
+        })
+
+        .limit(5)
+
+        .populate(
+
+            "userId",
+
+            "fullName"
+
+        )
+
+        .populate(
+
+            "warehouseId",
+
+            "name"
+
+        );
+
+    return {
+
+        totalOrders: orders.length,
+
+        totalRevenue,
+
+        placed,
+
+        confirmed,
+
+        packed,
+
+        shipped,
+
+        delivered,
+
+        cancelled,
+
+        recentOrders,
+
+        topProducts
+
+    };
+
+};
+
+/*
+==================================
+EXPORT SERVICES
+==================================
+*/
+
+module.exports = {
+
+    getOrdersByUser,
+
+    getOrderById,
+
+    getAllOrders,
+
+    updateOrderStatus,
+
+    getOrderAnalytics
+
+};

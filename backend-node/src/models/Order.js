@@ -1,0 +1,205 @@
+const mongoose = require("mongoose");
+
+const orderItemSchema = new mongoose.Schema({
+
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product"
+    },
+
+    productName: String,
+
+    category: String,
+
+    image: String,
+
+    sku: String,
+
+    description: String,
+
+    unit: String,
+
+    quantity: Number,
+
+    price: Number,
+
+    subtotal: Number
+
+});
+
+const orderStatusSchema = new mongoose.Schema({
+
+    status: {
+
+        type: String,
+
+        enum: [
+
+            "Placed",
+
+            "Confirmed",
+
+            "Packed",
+
+            "Shipped",
+
+            "Delivered",
+
+            "Cancelled"
+
+        ],
+
+        required: true
+
+    },
+
+    updatedAt: {
+
+        type: Date,
+
+        default: Date.now
+
+    }
+
+},
+{
+
+    _id: false
+
+});
+
+const orderSchema = new mongoose.Schema({
+    
+    orderNumber:{
+
+        type:String,
+
+        required:true,
+
+        unique:true
+
+    },
+
+    shopkeeperName:{
+
+        type:String,
+
+        default:""
+
+    },
+
+    shopkeeperPhone:{
+
+        type:String,
+
+        default:""
+
+    },
+
+    deliveryAddress:{
+
+        type:String,
+
+        default:""
+
+    },
+
+    userId: {
+
+        type: mongoose.Schema.Types.ObjectId,
+
+        ref: "User",
+
+        required: true
+
+    },
+
+    warehouseId: {
+
+        type: mongoose.Schema.Types.ObjectId,
+
+        ref: "Warehouse",
+
+        required: true
+
+    },
+
+    items: [orderItemSchema],
+
+    totalAmount: {
+
+        type: Number,
+
+        default: 0
+
+    },
+
+    status: {
+
+        type: String,
+
+        enum: [
+
+            "Placed",
+
+            "Confirmed",
+
+            "Packed",
+
+            "Shipped",
+
+            "Delivered",
+
+            "Cancelled"
+
+        ],
+
+        default: "Placed"
+
+    },
+
+    statusHistory: {
+
+        type: [orderStatusSchema],
+
+        default: []
+
+    },
+
+    returnedStock: {
+
+        type:Boolean,
+
+        default:false
+
+    }
+
+}, {
+
+    timestamps: true
+
+});
+
+/*
+==================================
+ADD INITIAL STATUS AUTOMATICALLY
+==================================
+*/
+
+orderSchema.pre("save", async function () {
+
+    if (this.isNew && this.statusHistory.length === 0) {
+
+        this.statusHistory.push({
+
+            status: "Placed",
+
+            updatedAt: new Date()
+
+        });
+
+    }
+
+});
+
+module.exports = mongoose.model("Order", orderSchema);
