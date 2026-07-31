@@ -1,5 +1,23 @@
-node_modules/
-backend-node/node_modules/
-frontend-react/node_modules/
-
+# Environment
 .env
+*.env
+
+# Node
+node_modules/
+
+# React
+frontend-react/node_modules/
+frontend-react/build/
+frontend-react/dist/
+
+# Java / Maven
+java-inventory-service/target/
+
+# Backend uploads
+backend-node/uploads/
+
+# IDE
+.vscode/
+
+# Java crash logs
+hs_err_pid*.log

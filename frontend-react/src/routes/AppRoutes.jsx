@@ -32,7 +32,6 @@ import TrackOrder from "../components/shopkeeper/Orders/TrackOrder";
 import ProductCatalog from "../components/shopkeeper/Products/ProductCatalog";
 import Profile from "../components/shopkeeper/Profile/Profile";
 import Address from "../components/shopkeeper/Profile/Address";
-import PaymentMethod from "../components/shopkeeper/Profile/PaymentMethod";
 import Notifications from "../components/shopkeeper/Others/Notifications";
 import Support from "../components/shopkeeper/Others/Support";
 
@@ -79,7 +78,6 @@ function AppRoutes() {
         <Route path="product-catalog" element={<ProductCatalog />} />
         <Route path="profile" element={<Profile />} />
         <Route path="address" element={<Address />} />
-        <Route path="payment-method" element={<PaymentMethod />} />
         <Route path="notifications" element={<Notifications />} />
         <Route path="support" element={<Support />} />
         <Route path="settings" element={<Settings />} />

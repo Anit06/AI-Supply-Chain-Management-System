@@ -38,10 +38,10 @@ function AdminHome() {
       getStoredPredictions(),
     ]).then((results) => {
       if (!active) return;
-      const value = (index, key) =>
-        results[index].status === "fulfilled"
-          ? results[index].value?.[key] || []
-          : [];
+      const value = (index, key) => {
+        const response = results[index].status === "fulfilled" ? results[index].value : null;
+        return Array.isArray(response) ? response : response?.[key] || [];
+      };
       setDashboard({
         products: value(0, "products"),
         orders: value(1, "orders"),
@@ -108,8 +108,7 @@ function AdminHome() {
   }, [dashboard]);
 
   return (
-    <div className="dashboard-layout">
-      <div className="dashboard-main">
+    <div className="dashboard-page">
         <DashboardHeader />
 
         {loading && (
@@ -165,7 +164,6 @@ function AdminHome() {
           />
           <WarehouseTable warehouses={dashboard.warehouses} />
         </div>
-      </div>
     </div>
   );
 }

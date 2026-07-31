@@ -244,7 +244,9 @@ Place Order
 =========================================
 */
 
-const placeOrder = async (userId, warehouseId) => {
+const placeOrder = async (userId, orderData) => {
+
+    const warehouseId = orderData.warehouseId;
 
     const cart = await Cart.findOne({
 
@@ -339,45 +341,48 @@ const placeOrder = async (userId, warehouseId) => {
 
     /*
     =========================================
-    Get Default Address
+    Get Delivery Address
     =========================================
     */
 
-    let defaultAddress = "";
+    let selectedAddress = null;
+    let deliveryAddress = "";
 
     if (profile && profile.addresses.length > 0) {
 
-        const address = profile.addresses.find(
+        selectedAddress = profile.addresses.id(orderData.addressId) || profile.addresses.find(
 
             item => item.isDefault
 
         ) || profile.addresses[0];
 
-        defaultAddress = [
+        if (selectedAddress) {
+            deliveryAddress = [
 
-            address.fullName,
+                selectedAddress.fullName,
 
-            address.phone,
+                selectedAddress.phone,
 
-            address.addressLine1,
+                selectedAddress.addressLine1,
 
-            address.addressLine2,
+                selectedAddress.addressLine2,
 
-            address.landmark,
+                selectedAddress.landmark,
 
-            address.city,
+                selectedAddress.city,
 
-            address.state,
+                selectedAddress.state,
 
-            address.country,
+                selectedAddress.country,
 
-            address.pincode
+                selectedAddress.pincode
 
-        ]
+            ]
 
-        .filter(value => value && value.trim() !== "")
+            .filter(value => value && value.trim() !== "")
 
-        .join(", ");
+            .join(", ");
+        }
 
     }
 
@@ -407,9 +412,7 @@ const placeOrder = async (userId, warehouseId) => {
 
             "",
 
-        deliveryAddress:
-
-            defaultAddress,
+        deliveryAddress: deliveryAddress,
 
         userId: cart.userId,
 
@@ -417,34 +420,30 @@ const placeOrder = async (userId, warehouseId) => {
 
         items: cart.items,
 
-        totalAmount: cart.cartTotal,
+        subtotal: cart.cartTotal,
 
-        status: "Placed"
+        discountAmount: typeof orderData.discountAmount === "number" ? orderData.discountAmount : 0,
 
+        couponCode: orderData.couponCode || "",
+
+        finalAmount: typeof orderData.finalAmount === "number" ? orderData.finalAmount : cart.cartTotal,
+
+        totalAmount: typeof orderData.finalAmount === "number" ? orderData.finalAmount : cart.cartTotal,
+
+        paymentMethod: orderData.paymentMethod || "Cash On Delivery",
+
+        paymentStatus: "Pending",
+
+        addressId: orderData.addressId || null
     });
 
-    /*
-    =========================================
-    Delete Cart
-    =========================================
-    */
-
     await Cart.deleteOne({
-
-        _id: cart._id
-
+        userId,
+        warehouseId
     });
 
     return order;
-
 };
- 
-
-/*
-=========================================
-Exports
-=========================================
-*/
 
 module.exports = {
 

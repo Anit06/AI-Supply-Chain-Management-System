@@ -10,7 +10,6 @@ import {
   FaSearch,
   FaUser,
   FaMapMarkerAlt,
-  FaCreditCard,
   FaBell,
   FaHeadset,
   FaCog,
@@ -117,14 +116,6 @@ function ShopkeeperSidebar() {
         >
           <FaMapMarkerAlt />
           <span>Addresses</span>
-        </NavLink>
-
-        <NavLink
-          to="/shopkeeper/payment-method"
-          className="shopkeeper-link"
-        >
-          <FaCreditCard />
-          <span>Payment Methods</span>
         </NavLink>
 
         <h4 className="menu-title">Others</h4>
