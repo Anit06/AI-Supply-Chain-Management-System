@@ -44,7 +44,7 @@ function ReportDashboard() {
 
   const [openWarehouse, setOpenWarehouse] = useState("");
   const [pdfLoading, setPdfLoading] = useState(false);
-const [excelLoading, setExcelLoading] = useState(false);
+  const [excelLoading, setExcelLoading] = useState(false);
 
   useEffect(() => {
     loadReports();
@@ -76,62 +76,37 @@ const [excelLoading, setExcelLoading] = useState(false);
       setLoading(false);
     }
   };
+  //DOWNLOAD PDF
 
-  /*
-====================================
-DOWNLOAD PDF
-====================================
-*/
+  const handlePDF = async () => {
+    try {
+      setPdfLoading(true);
 
-const handlePDF = async () => {
+      await downloadInventoryPDF();
+    } catch (error) {
+      console.error(error);
 
-  try {
+      alert("Failed to generate PDF.");
+    } finally {
+      setPdfLoading(false);
+    }
+  };
 
-    setPdfLoading(true);
+  //DOWNLOAD EXCEL
 
-    await downloadInventoryPDF();
+  const handleExcel = async () => {
+    try {
+      setExcelLoading(true);
 
-  } catch (error) {
+      await downloadInventoryExcel();
+    } catch (error) {
+      console.error(error);
 
-    console.error(error);
-
-    alert("Failed to generate PDF.");
-
-  } finally {
-
-    setPdfLoading(false);
-
-  }
-
-};
-
-/*
-====================================
-DOWNLOAD EXCEL
-====================================
-*/
-
-const handleExcel = async () => {
-
-  try {
-
-    setExcelLoading(true);
-
-    await downloadInventoryExcel();
-
-  } catch (error) {
-
-    console.error(error);
-
-    alert("Failed to export Excel.");
-
-  } finally {
-
-    setExcelLoading(false);
-
-  }
-
-};
+      alert("Failed to export Excel.");
+    } finally {
+      setExcelLoading(false);
+    }
+  };
 
   const groupedInventory = useMemo(() => {
     const grouped = {};
@@ -153,7 +128,7 @@ const handleExcel = async () => {
 
   return (
     <div className="reports-dashboard">
-      <div className="report-header">
+      {/* <div className="report-header">
         <div>
           <h2>Warehouse Reports</h2>
 
@@ -167,7 +142,7 @@ const handleExcel = async () => {
           <FaWarehouse />
           Warehouse Inventory Report
         </span>
-      </div>
+      </div> */}
 
       {/* Summary */}
       <div className="report-summary">
@@ -338,32 +313,18 @@ const handleExcel = async () => {
         </div>
 
         <div className="report-buttons">
+          <button className="pdf-btn" onClick={handlePDF} disabled={pdfLoading}>
+            {pdfLoading ? "Generating..." : "Generate PDF"}
+          </button>
 
-  <button
-    className="pdf-btn"
-    onClick={handlePDF}
-    disabled={pdfLoading}
-  >
-
-    {pdfLoading
-      ? "Generating..."
-      : "Generate PDF"}
-
-  </button>
-
-  <button
-    className="excel-btn"
-    onClick={handleExcel}
-    disabled={excelLoading}
-  >
-
-    {excelLoading
-      ? "Exporting..."
-      : "Export Excel"}
-
-  </button>
-
-</div>
+          <button
+            className="excel-btn"
+            onClick={handleExcel}
+            disabled={excelLoading}
+          >
+            {excelLoading ? "Exporting..." : "Export Excel"}
+          </button>
+        </div>
       </div>
     </div>
   );

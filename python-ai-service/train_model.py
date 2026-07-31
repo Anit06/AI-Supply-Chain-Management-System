@@ -100,7 +100,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DATA_PATH = os.path.join(
     BASE_DIR,
-    r'D:\Project\AI-Supply-Chain-Management-System-main 5.1.2\python-ai-service\data\monthly_sales_history.csv'
+    r'D:\Project\AI-Supply-Chain-Management-System-main\python-ai-service\data\monthly_sales_history.csv'
 )
 MODEL_PATH = os.path.join(BASE_DIR, "demand_model_monthly.pkl")
 OPTIONS_PATH = os.path.join(BASE_DIR, "model_options.json")

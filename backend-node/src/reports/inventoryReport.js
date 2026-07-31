@@ -1,11 +1,7 @@
 const PDFDocument = require("pdfkit");
 const ExcelJS = require("exceljs");
 
-/*
-=========================================
-GENERATE INVENTORY PDF
-=========================================
-*/
+//GENERATE INVENTORY PDF
 
 exports.generateInventoryPDF = (
     res,
@@ -33,10 +29,7 @@ exports.generateInventoryPDF = (
 
     doc.pipe(res);
 
-    // ===========================
     // TITLE
-    // ===========================
-
     doc
         .fontSize(22)
         .fillColor("#1e40af")
@@ -52,10 +45,7 @@ exports.generateInventoryPDF = (
         .text(`Generated : ${new Date().toLocaleString()}`);
 
     doc.moveDown();
-
-    // ===========================
     // SUMMARY
-    // ===========================
 
     doc
         .fontSize(16)
@@ -75,11 +65,9 @@ exports.generateInventoryPDF = (
 
     doc.moveDown(1);
 
-    // ===========================
+    
     // WAREHOUSE SECTIONS
-    // ===========================
-
-    warehouseCapacity.forEach((warehouse) => {
+warehouseCapacity.forEach((warehouse) => {
 
         const products = inventory.filter(
 
@@ -157,11 +145,8 @@ exports.generateInventoryPDF = (
     doc.end();
 
 };
-/*
-=========================================
-GENERATE INVENTORY EXCEL
-=========================================
-*/
+
+//GENERATE INVENTORY EXCEL
 
 exports.generateInventoryExcel = async (
     res,
@@ -178,11 +163,10 @@ exports.generateInventoryExcel = async (
         "Warehouse Inventory Report"
     );
 
-    /*
-    =========================================
-    TITLE
-    =========================================
-    */
+    
+    //TITLE
+  
+    
 
     worksheet.mergeCells("A1:H1");
 
@@ -198,12 +182,7 @@ exports.generateInventoryExcel = async (
         horizontal: "center"
     };
 
-    /*
-    =========================================
-    HEADERS
-    =========================================
-    */
-
+    //HEADERS
     worksheet.columns = [
 
         {
@@ -256,11 +235,8 @@ exports.generateInventoryExcel = async (
 
     ];
 
-    /*
-    =========================================
-    HEADER STYLE
-    =========================================
-    */
+    
+  // HEADER STYLE
 
     const headerRow = worksheet.getRow(2);
 
@@ -296,11 +272,7 @@ exports.generateInventoryExcel = async (
 
     };
 
-    /*
-    =========================================
-    DATA
-    =========================================
-    */
+    //DATA
 
     warehouseCapacity.forEach((warehouse) => {
 
@@ -356,12 +328,7 @@ exports.generateInventoryExcel = async (
 
     });
 
-    /*
-    =========================================
-    CENTER ALIGNMENT
-    =========================================
-    */
-
+//CENTER ALIGNMENT
     worksheet.eachRow((row) => {
 
         row.eachCell((cell) => {
@@ -377,12 +344,9 @@ exports.generateInventoryExcel = async (
         });
 
     });
-
-    /*
-    =========================================
-    LOW STOCK COLOR
-    =========================================
-    */
+  
+   // LOW STOCK COLOR
+   
 
     worksheet.eachRow((row, rowNumber) => {
 
@@ -408,11 +372,8 @@ exports.generateInventoryExcel = async (
 
     });
 
-    /*
-    =========================================
-    DOWNLOAD
-    =========================================
-    */
+    
+    //DOWNLOAD
 
     res.setHeader(
 

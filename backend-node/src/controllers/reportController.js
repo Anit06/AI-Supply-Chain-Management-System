@@ -1,12 +1,9 @@
 const reportService = require("../services/reportService");
 const inventoryReport = require("../reports/inventoryReport");
 
-/*
-====================================
-Inventory Report
-====================================
-*/
+const salesReport = require("../reports/salesReport");
 
+//Inventory Report
 exports.getInventoryReport = async (req, res) => {
   try {
     const inventory = await reportService.getInventoryReport();
@@ -29,11 +26,7 @@ exports.getInventoryReport = async (req, res) => {
   }
 };
 
-/*
-====================================
-Summary Report
-====================================
-*/
+//Summary Report
 
 exports.getSummaryReport = async (req, res) => {
   try {
@@ -55,11 +48,8 @@ exports.getSummaryReport = async (req, res) => {
   }
 };
 
-/*
-====================================
-Low Stock Report
-====================================
-*/
+
+//Low Stock Report
 
 exports.getLowStockReport = async (req, res) => {
   try {
@@ -83,11 +73,8 @@ exports.getLowStockReport = async (req, res) => {
   }
 };
 
-/*
-====================================
-EXPORT PDF
-====================================
-*/
+
+//EXPORT PDF
 
 exports.exportInventoryPDF = async (req, res) => {
   try {
@@ -116,11 +103,9 @@ exports.exportInventoryPDF = async (req, res) => {
   }
 };
 
-/*
-====================================
-EXPORT EXCEL
-====================================
-*/
+
+//EXPORT EXCEL
+
 
 exports.exportInventoryExcel = async (req, res) => {
   try {
@@ -143,4 +128,211 @@ exports.exportInventoryExcel = async (req, res) => {
       message: "Failed to export Excel",
     });
   }
+};
+
+/*
+====================================
+MONTHLY SALES REPORT
+====================================
+*/
+
+exports.getMonthlySalesReport = async (req, res) => {
+    try {
+        const { warehouseId, month, year } = req.query;
+
+        const report = await reportService.getMonthlySalesReport(
+            warehouseId,
+            Number(month),
+            Number(year)
+        );
+
+        res.status(200).json({
+            success: true,
+            report
+        });
+
+    } catch (error) {
+        console.error(error);
+
+        res.status(500).json({
+            success: false,
+            message: "Failed to fetch monthly sales report"
+        });
+    }
+};
+
+exports.exportMonthlySalesPDF = async (req, res) => {
+    console.log("PDF API HIT");
+
+    try {
+        const { warehouseId, month, year } = req.query;
+
+        const report = await reportService.getMonthlySalesReport(
+            warehouseId,
+            Number(month),
+            Number(year)
+        );
+
+        salesReport.generateMonthlySalesPDF(res, report);
+
+    } catch (error) {
+        console.error(error);
+
+        res.status(500).json({
+            success: false,
+            message: "Failed to export PDF"
+        });
+    }
+};
+
+exports.exportMonthlySalesExcel = async (req, res) => {
+
+    try {
+
+        const { warehouseId, month, year } = req.query;
+
+        const report = await reportService.getMonthlySalesReport(
+            warehouseId,
+            Number(month),
+            Number(year)
+        );
+
+        await salesReport.generateMonthlySalesExcel(
+            res,
+            report
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+            success: false,
+            message: "Failed to export Excel"
+        });
+
+    }
+
+};
+
+/*
+====================================
+YEARLY SALES REPORT
+====================================
+*/
+
+exports.getYearlySalesReport = async (req, res) => {
+
+    try {
+
+        const { warehouseId, year } = req.query;
+
+        if (!warehouseId || !year) {
+
+            return res.status(400).json({
+
+                success: false,
+
+                message: "warehouseId and year are required"
+
+            });
+
+        }
+
+        const report = await reportService.getYearlySalesReport(
+
+            warehouseId,
+
+            Number(year)
+
+        );
+
+        res.status(200).json({
+
+            success: true,
+
+            report
+
+        });
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+
+            success: false,
+
+            message: "Failed to fetch yearly sales report"
+
+        });
+
+    }
+
+};
+
+/*
+====================================
+EXPORT YEARLY SALES PDF
+====================================
+*/
+
+exports.exportYearlySalesPDF = async (req, res) => {
+
+    try {
+
+        const { warehouseId, year } = req.query;
+
+        const report = await reportService.getYearlySalesReport(
+            warehouseId,
+            Number(year)
+        );
+
+        salesReport.generateYearlySalesPDF(
+            res,
+            report
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+            success: false,
+            message: "Failed to export yearly PDF"
+        });
+
+    }
+
+};
+
+exports.exportYearlySalesExcel = async (req, res) => {
+
+    try {
+
+        const { warehouseId, year } = req.query;
+
+        const report = await reportService.getYearlySalesReport(
+            warehouseId,
+            Number(year)
+        );
+
+        await salesReport.generateYearlySalesExcel(
+            res,
+            report
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+            success: false,
+            message: "Failed to export yearly Excel"
+        });
+
+    }
+
 };
