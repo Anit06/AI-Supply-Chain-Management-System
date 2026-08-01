@@ -1,17 +1,25 @@
+/* ===================================
+   WAREHOUSE MAIN LAYOUT
+=================================== */
+
 .warehouse-layout {
   display: flex;
   min-height: 100vh;
   background: #f5f7fb;
+  width: 100%;
 }
 
 .warehouse-content {
   flex: 1;
   padding: 30px;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .warehouse-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -23,11 +31,22 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 600;
   height: 45px;
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: all 0.2s ease;
 }
+
+.add-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* ===================================
+   METRIC CARDS
+=================================== */
 
 .warehouse-cards {
   display: grid;
@@ -45,6 +64,7 @@
   gap: 16px;
   align-items: center;
   box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
 .warehouse-card svg {
@@ -58,19 +78,26 @@
 
 .warehouse-card p {
   margin-top: 6px;
+  margin-bottom: 0;
   font-size: 14px;
   color: #64748b;
 }
+
+/* ===================================
+   FILTERS & SEARCH
+=================================== */
 
 .warehouse-filter {
   display: flex;
   gap: 15px;
   margin-bottom: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .search-box {
   width: 500px;
+  max-width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -79,6 +106,7 @@
   padding: 0 16px;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
+  box-sizing: border-box;
 }
 
 .search-box input {
@@ -97,13 +125,19 @@
   background: white;
   font-size: 14px;
   cursor: pointer;
+  outline: none;
 }
+
+/* ===================================
+   TABLE & ACTION BUTTONS
+=================================== */
 
 .warehouse-table-wrapper {
   background: white;
   border-radius: 15px;
-  overflow: auto;
+  overflow-x: auto;
   padding: 5px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
 .warehouse-table {
@@ -111,62 +145,107 @@
   border-collapse: collapse;
 }
 
-.warehouse-table th,
-.warehouse-table td {
-  padding: 18px;
-  border-bottom:
-    1px solid #eee;
+.warehouse-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
 }
 
+.warehouse-table th,
+.warehouse-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+/* Status Badges */
 .status {
   padding: 6px 15px;
   border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
 }
 
-.status.active {
-  background: #dcfce7;
-  color: green;
-}
-
-.status.full {
-  background: #fee2e2;
-  color: red;
-}
-
+.status.active,
 .status.in-stock {
   background: #dcfce7;
-  color: #16a34a;
+  color: #15803d;
+}
+
+.status.full,
+.status.out-of-stock {
+  background: #fee2e2;
+  color: #b91c1c;
 }
 
 .status.low-stock {
   background: #fff7ed;
-  color: #f97316;
+  color: #c2410c;
 }
 
-.status.out-of-stock {
+/* Side-by-Side Action Buttons */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* View (Eye) Icon */
+.action-btn:not(.edit):not(.delete) {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.action-btn:not(.edit):not(.delete):hover {
+  background: #0284c7;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Edit Icon */
+.action-btn.edit {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.action-btn.edit:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Delete Icon */
+.action-btn.delete {
   background: #fee2e2;
   color: #dc2626;
 }
 
-.action-buttons {
-  display: flex;
-  gap: 8px;
-}
-
-.action-btn {
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.edit {
-  background: #dbeafe;
-}
-
-.delete {
-  background: #fee2e2;
+.action-btn.delete:hover {
+  background: #dc2626;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 /* ===================================
@@ -301,25 +380,28 @@
   height: 38px;
   border-radius: 999px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.available-stock-box{
-    margin:15px 0;
-    padding:12px;
-    background:#eef7ff;
-    border:1px solid #9ecbff;
-    border-radius:8px;
-    font-size:14px;
+.available-stock-box {
+  margin: 15px 0;
+  padding: 12px;
+  background: #eef7ff;
+  border: 1px solid #9ecbff;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-.form-error{
-    margin-top:15px;
-    padding:10px;
-    background:#ffe6e6;
-    color:#b00020;
-    border:1px solid #ffb3b3;
-    border-radius:6px;
-    font-weight:500;
+.form-error {
+  margin-top: 15px;
+  padding: 10px;
+  background: #ffe6e6;
+  color: #b00020;
+  border: 1px solid #ffb3b3;
+  border-radius: 6px;
+  font-weight: 500;
 }
 
 .inventory-toast {
@@ -365,6 +447,7 @@
   padding: 32px;
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.2);
   animation: modalOpen 0.3s ease;
+  box-sizing: border-box;
 }
 
 @keyframes modalOpen {
@@ -372,7 +455,6 @@
     opacity: 0;
     transform: translateY(-25px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -405,10 +487,6 @@
   grid-column: span 2;
 }
 
-/* ===================================
-   LABELS
-=================================== */
-
 .form-group label {
   margin-bottom: 8px;
   font-size: 14px;
@@ -416,14 +494,10 @@
   color: #475569;
 }
 
-/* ===================================
-   INPUTS
-=================================== */
-
 .form-group input,
 .form-group select,
 .form-group textarea {
-  width: 80%;
+  width: 100%;
   height: 50px;
   border: 1px solid #dbe0ea;
   border-radius: 14px;
@@ -433,6 +507,7 @@
   color: #0f172a;
   outline: none;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .form-group textarea {
@@ -455,7 +530,7 @@
 }
 
 /* ===================================
-   BUTTONS
+   MODAL BUTTONS
 =================================== */
 
 .modal-buttons {
@@ -500,7 +575,7 @@
 }
 
 .cancel-btn:hover {
-  background: #b91c1c;
+  background: #b91c1c !important;
   transform: translateY(-2px);
 }
 
@@ -508,7 +583,31 @@
    RESPONSIVE
 =================================== */
 
+@media (max-width: 1024px) {
+  .warehouse-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  .warehouse-content {
+    padding: 15px;
+  }
+
+  .warehouse-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .warehouse-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
   .warehouse-modal {
     width: 95%;
     padding: 24px;

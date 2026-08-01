@@ -22,7 +22,6 @@ import AIPrediction from "../components/admin/AI/AIPrediction";
 import Reports from "../components/admin/Reports/Reports";
 import Users from "../pages/Users";
 import Suppliers from "../components/admin/Orders/Suppliers";
-import Settings from "../components/shopkeeper/Others/Settings";
 
 import Cart from "../components/shopkeeper/Cart/Cart";
 import PlaceOrder from "../components/shopkeeper/Orders/PlaceOrder";
@@ -61,7 +60,6 @@ function AppRoutes() {
         <Route path="reports" element={<Reports />} />
         <Route path="/admin/users" element={<Users />} />
         <Route path="suppliers" element={<Suppliers />} />
-        <Route path="settings" element={<Settings />} />
 
       </Route>
 
@@ -80,8 +78,7 @@ function AppRoutes() {
         <Route path="address" element={<Address />} />
         <Route path="notifications" element={<Notifications />} />
         <Route path="support" element={<Support />} />
-        <Route path="settings" element={<Settings />} />
-
+        
       </Route>
 
     </Routes>

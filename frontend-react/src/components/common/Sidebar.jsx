@@ -1,6 +1,5 @@
 import "../../assets/css/sidebar.css";
-import { Link, useLocation } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import {
   FaTachometerAlt,
   FaBoxOpen,
@@ -10,120 +9,99 @@ import {
   FaFileAlt,
   FaUsers,
   FaTruck,
-  FaCog,
   FaSignOutAlt
 } from "react-icons/fa";
 
 function Sidebar() {
-
-  const location = useLocation();
-
   return (
-    <div className="sidebar">
-
-      {/* Logo */}
-      <div className="sidebar-logo">
-
-        <div className="logo-icon">
-          📦
+    <aside className="sidebar">
+      {/* Top Container: Logo + Menu */}
+      <div className="sidebar-top">
+        {/* Logo */}
+        <div className="sidebar-logo">
+          <div className="logo-icon">📦</div>
+          <div className="logo-text">
+            <h1>AI Supply Chain</h1>
+            <p>Management System</p>
+          </div>
         </div>
 
-        <div>
-          <h1>AI Supply Chain</h1>
-          <p>Management System</p>
-        </div>
-
-      </div>
-
-      {/* Menu */}
-      <ul className="sidebar-menu">
-
-        <Link to="/admin/dashboard" className="sidebar-link">
-          <li className={location.pathname === "/admin/dashboard" ? "active" : ""}>
-            <FaTachometerAlt className="menu-icon" />
-            Dashboard
-          </li>
-        </Link>
-
-        <Link to="/admin/products" className="sidebar-link">
-          <li className={location.pathname === "/products" ? "active" : ""}>
-            <FaBoxOpen className="menu-icon" />
-            Products
-          </li>
-        </Link>
-
-        <Link to="/admin/warehouses" className="sidebar-link">
-          <li className={location.pathname === "/warehouses" ? "active" : ""}>
-            <FaWarehouse className="menu-icon" />
-            Warehouses
-          </li>
-        </Link>
-
-        <Link to="/admin/orders" className="sidebar-link">
-          <li className={location.pathname === "/orders" ? "active" : ""}>
-            <FaShoppingCart className="menu-icon" />
-            Orders
-          </li>
-        </Link>
-
-        <Link to="/admin/ai-prediction" className="sidebar-link">
-          <li className={location.pathname === "/ai-prediction" ? "active" : ""}>
-            <FaRobot className="menu-icon" />
-            AI Predictions
-          </li>
-        </Link>
-
-        <Link to="/admin/reports" className="sidebar-link">
-          <li className={location.pathname === "/reports" ? "active" : ""}>
-            <FaFileAlt className="menu-icon" />
-            Reports
-          </li>
-        </Link>
-
-        <Link to="/admin/users" className="sidebar-link">
-          <li className={location.pathname === "/admin/users" ? "active" : ""}>
-            <FaUsers className="menu-icon" />
-            Users
-          </li>
-        </Link>
-
-        <Link to="/admin/suppliers" className="sidebar-link">
-          <li className={location.pathname === "/suppliers" ? "active" : ""}>
-            <FaTruck className="menu-icon" />
-            Suppliers
-          </li>
-        </Link>
-
-        <Link to="/admin/settings" className="sidebar-link">
-          <li className={location.pathname === "/settings" ? "active" : ""}>
-            <FaCog className="menu-icon" />
-            Settings
-          </li>
-        </Link>
-
-        <Link to="/logout" className="sidebar-link">
+        {/* Menu */}
+        <ul className="sidebar-menu">
           <li>
-            <FaSignOutAlt className="menu-icon" />
-            <span>Logout</span>
+            <NavLink to="/admin/dashboard" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaTachometerAlt className="menu-icon" />
+              <span>Dashboard</span>
+            </NavLink>
           </li>
-        </Link>
-      </ul>
+
+          <li>
+            <NavLink to="/admin/products" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaBoxOpen className="menu-icon" />
+              <span>Products</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/admin/warehouses" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaWarehouse className="menu-icon" />
+              <span>Warehouses</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/admin/orders" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaShoppingCart className="menu-icon" />
+              <span>Orders</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/admin/ai-prediction" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaRobot className="menu-icon" />
+              <span>AI Predictions</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/admin/reports" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaFileAlt className="menu-icon" />
+              <span>Reports</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/admin/users" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaUsers className="menu-icon" />
+              <span>Users</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/admin/suppliers" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
+              <FaTruck className="menu-icon" />
+              <span>Suppliers</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/logout" className="sidebar-link">
+              <FaSignOutAlt className="menu-icon" />
+              <span>Logout</span>
+            </NavLink>
+          </li>
+        </ul>
+      </div>
 
       {/* Profile */}
       <div className="sidebar-profile">
-
-        <div className="profile-image">
-          👨
-        </div>
-
+        <div className="profile-image">👨</div>
         <div>
           <h3>Admin</h3>
           <p>Super Admin</p>
         </div>
-
       </div>
-
-    </div>
+    </aside>
   );
 }
 

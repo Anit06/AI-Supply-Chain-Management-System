@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -56,14 +54,24 @@ function PlaceOrder() {
     const [couponMessage, setCouponMessage] = useState("");
     const [discountAmount, setDiscountAmount] = useState(0);
     const [originalTotal, setOriginalTotal] = useState(0);
+    const [gstAmount, setGstAmount] = useState(0);
     const [finalAmount, setFinalAmount] = useState(0);
     const [loading, setLoading] = useState(true);
     const [placingOrder, setPlacingOrder] = useState(false);
 
     useEffect(() => {
-        const amount = cart.cartTotal || 0;
-        setOriginalTotal(amount);
-        setFinalAmount(Math.max(amount - discountAmount, 0));
+        const subtotal = cart.cartTotal || 0;
+        setOriginalTotal(subtotal);
+
+        // Calculate taxable amount after discount
+        const taxableAmount = Math.max(subtotal - discountAmount, 0);
+
+        // Calculate 18% GST
+        const calculatedGst = Math.round(taxableAmount * 0.18);
+        setGstAmount(calculatedGst);
+
+        // Calculate Final Total: Subtotal - Discount + 18% GST
+        setFinalAmount(taxableAmount + calculatedGst);
     }, [cart.cartTotal, discountAmount]);
 
     useEffect(() => {
@@ -194,6 +202,7 @@ function PlaceOrder() {
                 couponCode: appliedCoupon?.code || "",
                 discountAmount,
                 subtotal: cart.cartTotal,
+                taxAmount: gstAmount,
                 finalAmount,
                 addressId: currentAddress._id
             });
@@ -361,7 +370,11 @@ function PlaceOrder() {
                             </div>
                             <div>
                                 <span>Discount</span>
-                                <strong>₹{discountAmount}</strong>
+                                <strong>-₹{discountAmount}</strong>
+                            </div>
+                            <div>
+                                <span>GST (18%)</span>
+                                <strong>+₹{gstAmount}</strong>
                             </div>
                             <div className="final-row">
                                 <span>Final Amount</span>

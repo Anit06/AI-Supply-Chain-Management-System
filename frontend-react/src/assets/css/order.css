@@ -1,317 +1,256 @@
-.order-layout{
-    display:flex;
-    min-height:100vh;
-    background:#f4f7fc;
+/* ==========================================
+   1. Main Layout & Container Setup
+   ========================================== */
+.order-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fc;
+  width: 100%;
 }
 
-.catalog-container{
-    flex:1;
-    padding:30px;
-    margin-left:15px;
+.catalog-container {
+  flex: 1;
+  padding: 30px;
+  margin-left: 15px;
+  width: 100%;
+  min-width: 0; /* Prevents flex child overflow & forces 100% width scaling */
+  box-sizing: border-box;
 }
 
 /* Dashboard Title */
-
-.catalog-container h2{
-
-    margin-bottom:25px;
-
-    font-size:30px;
-
-    color:#1e293b;
-
+.catalog-container h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #1e293b;
 }
 
-/* Card */
-
-.orders-table-card{
-
-    background:#fff;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
+/* ==========================================
+   2. Analytics Cards Layout (100% Width Fix)
+   ========================================== */
+/* Apply this class to the outer wrapper inside AnalyticsCards component */
+.analytics-cards-container,
+.analytics-grid,
+.analytics-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
-/* Header */
-
-.table-header{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 25px;
-
-    border-bottom:1px solid #ececec;
-
-    background:#ffffff;
-
+/* Individual Analytics Card Styling */
+.analytics-card {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.table-header h3{
-
-    margin:0;
-
-    font-size:24px;
-
+.analytics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-.table-header span{
-
-    background:#2563eb;
-
-    color:#fff;
-
-    padding:8px 15px;
-
-    border-radius:30px;
-
-    font-weight:600;
-
+.analytics-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-/* Table */
-
-.table-responsive{
-
-    overflow-x:auto;
-
+.analytics-card .value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
 }
 
-.orders-table{
-
-    width:100%;
-
-    border-collapse:collapse;
-
+/* ==========================================
+   3. Table Card & Header
+   ========================================== */
+.orders-table-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.orders-table thead{
-
-    background:#2563eb;
-
-    color:#fff;
-
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ececec;
+  background: #ffffff;
 }
 
-.orders-table th{
-
-    padding:18px;
-
-    text-align:left;
-
-    font-size:15px;
-
-    white-space:nowrap;
-
+.table-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #1e293b;
 }
 
-.orders-table td{
-
-    padding:18px;
-
-    border-bottom:1px solid #ededed;
-
-    vertical-align:top;
-
-    font-size:14px;
-
+.table-header span {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.orders-table tbody tr{
-
-    transition:.3s;
-
+/* ==========================================
+   4. Orders Table
+   ========================================== */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
 }
 
-.orders-table tbody tr:hover{
-
-    background:#f7faff;
-
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-/* Order Number */
-
-.order-number{
-
-    font-weight:bold;
-
-    color:#2563eb;
-
+.orders-table thead {
+  background: #2563eb;
+  color: #ffffff;
 }
 
-/* Address */
-
-.address{
-
-    max-width:250px;
-
-    line-height:1.5;
-
-    color:#555;
-
+.orders-table th {
+  padding: 18px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-/* Status */
-
-.status{
-
-    color:#fff;
-
-    padding:7px 14px;
-
-    border-radius:30px;
-
-    font-size:13px;
-
-    font-weight:600;
-
+.orders-table td {
+  padding: 18px;
+  border-bottom: 1px solid #ededed;
+  vertical-align: top;
+  font-size: 14px;
 }
 
-.placed{
-
-    background:#64748b;
-
+.orders-table tbody tr {
+  transition: background 0.3s ease;
 }
 
-.confirmed{
-
-    background:#0ea5e9;
-
+.orders-table tbody tr:hover {
+  background: #f7faff;
 }
 
-.packed{
-
-    background:#f59e0b;
-
+/* Specific Field Utilities */
+.order-number {
+  font-weight: bold;
+  color: #2563eb;
 }
 
-.shipped{
-
-    background:#7c3aed;
-
+.address {
+  max-width: 250px;
+  line-height: 1.5;
+  color: #555555;
 }
 
-.delivered{
-
-    background:#16a34a;
-
+/* Status Badges */
+.status {
+  color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
 }
 
-.cancelled{
+.placed { background: #64748b; }
+.confirmed { background: #0ea5e9; }
+.packed { background: #f59e0b; }
+.shipped { background: #7c3aed; }
+.delivered { background: #16a34a; }
+.cancelled { background: #dc2626; }
 
-    background:#dc2626;
-
+/* Action Button */
+.view-btn {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
 }
 
-/* Button */
-
-.view-btn{
-
-    border:none;
-
-    background:#2563eb;
-
-    color:white;
-
-    padding:10px 18px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    font-weight:600;
-
+.view-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
 }
 
-.view-btn:hover{
-
-    background:#1d4ed8;
-
-    transform:translateY(-2px);
-
+/* ==========================================
+   5. Empty State
+   ========================================== */
+.empty-orders {
+  background: #ffffff;
+  padding: 80px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Empty */
-
-.empty-orders{
-
-    background:white;
-
-    padding:80px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-
+.empty-orders h2 {
+  color: #334155;
+  margin-bottom: 10px;
 }
 
-.empty-orders h2{
-
-    color:#334155;
-
+.empty-orders p {
+  color: #64748b;
+  margin: 0;
 }
 
-.empty-orders p{
-
-    color:#64748b;
-
+/* ==========================================
+   6. Responsive Layout
+   ========================================== */
+@media (max-width: 1200px) {
+  .address {
+    min-width: 220px;
+  }
 }
 
-/* Responsive */
+@media (max-width: 768px) {
+  .catalog-container {
+    padding: 15px;
+    margin-left: 0;
+  }
 
-@media(max-width:1200px){
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
 
-.address{
+  .orders-table th,
+  .orders-table td {
+    padding: 12px;
+    font-size: 13px;
+  }
 
-    min-width:220px;
+  .view-btn {
+    width: 100%;
+  }
 
-}
-
-}
-
-@media(max-width:768px){
-
-.catalog-container{
-
-    padding:15px;
-
-    margin-left:0;
-
-}
-
-.table-header{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-.orders-table th,
-
-.orders-table td{
-
-    padding:12px;
-
-    font-size:13px;
-
-}
-
-.view-btn{
-
-    width:100%;
-
-}
-
+  .analytics-cards-container,
+  .analytics-grid,
+  .analytics-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

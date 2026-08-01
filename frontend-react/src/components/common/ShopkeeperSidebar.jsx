@@ -12,7 +12,6 @@ import {
   FaMapMarkerAlt,
   FaBell,
   FaHeadset,
-  FaCog,
   FaSignOutAlt,
   FaStore,
   FaShoppingBag
@@ -134,14 +133,6 @@ function ShopkeeperSidebar() {
         >
           <FaHeadset />
           <span>Support</span>
-        </NavLink>
-
-        <NavLink
-          to="/shopkeeper/settings"
-          className="shopkeeper-link"
-        >
-          <FaCog />
-          <span>Settings</span>
         </NavLink>
 
         <button

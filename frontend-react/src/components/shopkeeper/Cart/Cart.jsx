@@ -169,7 +169,7 @@ function Cart() {
                             <span>{cart.items.length}</span>
                         </div>
                         <div className="summary-row grand-total">
-                            <span>Total</span>
+                            <span>Product Total</span>
                             <span>₹{cart.cartTotal}</span>
                         </div>
                         <button
