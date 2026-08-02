@@ -3,12 +3,17 @@ const User = require("../models/User");
 const Product = require("../models/Product");
 const ProductPrice = require("../models/ProductPrice");
 const javaService = require("../services/javaService");
+const ShopkeeperDetails = require("../models/ShopkeeperDetails");
 
 exports.getWarehouseCatalog = async (req, res) => {
   try {
     const warehouseId = req.params.warehouseId;
 
     const user = await User.findById(req.user.id);
+
+    const shopkeeper = await ShopkeeperDetails.findOne({
+      userId: req.user.id,
+    });
 
     if (!user) {
       return res.status(404).json({
@@ -72,20 +77,33 @@ exports.getWarehouseCatalog = async (req, res) => {
     // FILTER SHOP CATEGORY
 
     if (user.role === "user") {
-      const categories = user.shopCategory || [];
-
-      if (categories.length > 0) {
-        catalog = catalog.filter((product) =>
-          categories.includes(product.category),
-        );
+      if (!shopkeeper) {
+        return res.status(404).json({
+          success: false,
+          message: "Shopkeeper details not found",
+        });
       }
+
+      const categories = (shopkeeper.shopCategory || []).map((category) =>
+        category.trim().toLowerCase(),
+      );
+
+      console.log("Shopkeeper Categories:", categories);
+
+      catalog = catalog.filter((product) => {
+        const match = categories.includes(
+          product.category.trim().toLowerCase(),
+        );
+
+        console.log(product.name, product.category, match);
+
+        return match;
+      });
     }
 
     return res.status(200).json({
       success: true,
-
       totalProducts: catalog.length,
-
       products: catalog,
     });
   } catch (error) {
