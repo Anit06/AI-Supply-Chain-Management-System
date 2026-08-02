@@ -21,3 +21,5 @@ backend-node/uploads/
 
 # Java crash logs
 hs_err_pid*.log
+
+.env
