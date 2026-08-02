@@ -88,14 +88,14 @@ exports.getWarehouseCatalog = async (req, res) => {
         category.trim().toLowerCase(),
       );
 
-      console.log("Shopkeeper Categories:", categories);
+      
 
       catalog = catalog.filter((product) => {
         const match = categories.includes(
           product.category.trim().toLowerCase(),
         );
 
-        console.log(product.name, product.category, match);
+        
 
         return match;
       });
