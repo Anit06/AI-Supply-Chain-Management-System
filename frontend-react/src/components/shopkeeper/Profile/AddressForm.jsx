@@ -15,7 +15,13 @@ const initialFormData = {
   isDefault: false,
 };
 
-function AddressForm({ show, onClose, onSave, initialData }) {
+ function AddressForm({
+  show,
+  onClose,
+  onSave,
+  initialData,
+  hasDefaultAddress,
+}) {
   const [formData, setFormData] = useState(initialFormData);
 
   useEffect(() => {
@@ -165,11 +171,20 @@ function AddressForm({ show, onClose, onSave, initialData }) {
         </div>
       </div>
 
-      <div className="form-group" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-        <input type="checkbox" name="isDefault" checked={formData.isDefault} onChange={handleChange} />
-        <label style={{ marginBottom: 0 }}>Set as Default</label>
-      </div>
+     
+    <div className="default-address-container">
+  <input
+    type="checkbox"
+    name="isDefault"
+    checked={formData.isDefault}
+    onChange={handleChange}
+    className="default-address-checkbox"
+  />
 
+  <label className="default-address-label">
+    Set as Default
+  </label>
+</div>
       <div className="address-form-buttons">
         <button type="button" className="cancel-btn" onClick={onClose}>Cancel</button>
         <button type="submit" className="save-btn">{initialData ? "Update Address" : "Save Address"}</button>

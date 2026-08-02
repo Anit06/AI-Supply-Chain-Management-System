@@ -131,11 +131,21 @@ const addAddress = async (req, res) => {
         }
 
         const normalizedAddress = normalizeAddress(addressData);
-        if (profile.addresses.length === 0) {
-            normalizedAddress.isDefault = true;
-        }
 
-        profile.addresses.push(normalizedAddress);
+// First address is always default
+if (profile.addresses.length === 0) {
+    normalizedAddress.isDefault = true;
+}
+
+// If the new address is marked as default,
+// remove the default flag from all existing addresses
+if (normalizedAddress.isDefault) {
+    profile.addresses.forEach((address) => {
+        address.isDefault = false;
+    });
+}
+
+profile.addresses.push(normalizedAddress);
         await profile.save();
 
         res.status(201).json({ success: true, message: "Address added successfully", addresses: profile.addresses });
@@ -182,7 +192,18 @@ const updateAddress = async (req, res) => {
             return res.status(404).json({ success: false, message: "Address not found" });
         }
 
-        Object.assign(address, normalizeAddress(addressData));
+      //  Object.assign(address, normalizeAddress(addressData));
+      const updatedAddress = normalizeAddress(addressData);
+
+// If this address is being made default,
+// remove default from every other address
+if (updatedAddress.isDefault) {
+    profile.addresses.forEach((item) => {
+        item.isDefault = false;
+    });
+}
+
+Object.assign(address, updatedAddress);
         await profile.save();
 
         res.status(200).json({ success: true, message: "Address updated successfully", addresses: profile.addresses });
