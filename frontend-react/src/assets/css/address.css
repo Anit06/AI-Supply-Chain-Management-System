@@ -1,22 +1,29 @@
-/* ===========================
+/*
    ADDRESS PAGE
-=========================== */
+*/
 
 .address-page {
   min-height: 100vh;
   padding: 30px;
   background: #f4f7fb;
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    sans-serif;
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/* ===========================
+/*
    HEADER
-=========================== */
+*/
 
 .address-header {
   display: flex;
@@ -32,9 +39,9 @@
   font-weight: 700;
 }
 
-/* ===========================
+/*
    ADD BUTTONS
-=========================== */
+*/
 
 .add-address-btn,
 .add-warehouse-btn {
@@ -46,7 +53,9 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .add-address-btn:hover,
@@ -55,9 +64,9 @@
   transform: translateY(-1px);
 }
 
-/* ===========================
+/*
    ADDRESS CARD
-=========================== */
+*/
 
 .address-card {
   background: #ffffff;
@@ -66,7 +75,9 @@
   margin-bottom: 16px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .address-card:hover {
@@ -88,9 +99,9 @@
   font-size: 14px;
 }
 
-/* ===========================
+/*
    CURRENT ADDRESS BADGE
-=========================== */
+*/
 
 .default-badge {
   display: inline-block;
@@ -105,9 +116,8 @@
   vertical-align: middle;
 }
 
-/* ===========================
-   CARD BUTTONS
-=========================== */
+/*
+   CARD BUTTONS */
 
 .address-buttons {
   display: flex;
@@ -151,9 +161,8 @@
   background: #15803d;
 }
 
-/* ===========================
-   NO ADDRESS / EMPTY STATE
-=========================== */
+/*
+   NO ADDRESS / EMPTY STATE*/
 
 .no-address {
   background: #ffffff;
@@ -165,9 +174,8 @@
   border: 1px dashed #d1d5db;
 }
 
-/* ===========================
-   COMPACT MODAL SYSTEM
-=========================== */
+/*
+   COMPACT MODAL SYSTEM*/
 
 .address-modal-overlay {
   position: fixed;
@@ -191,7 +199,9 @@
   background: #ffffff;
   border-radius: 12px;
   padding: 20px 24px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   animation: popup 0.2s ease-out;
 }
 
@@ -238,9 +248,8 @@
   color: #dc2626;
 }
 
-/* ===========================
-   COMPACT FORM CONTROLS
-=========================== */
+/*
+   COMPACT FORM CONTROLS*/
 
 .address-form,
 .warehouse-form {
@@ -271,7 +280,9 @@
   color: #1f2937;
   background-color: #ffffff;
   outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .form-group textarea {
@@ -306,26 +317,28 @@
   gap: 12px;
 }
 
-/* ===========================
-   FORM BUTTONS
-=========================== */
+/*
+   FORM BUTTONS */
 
 .address-form-buttons {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 8px;
-  padding-top: 12px;
-  border-top: 1px solid #f3f4f6;
+  align-items: center;   /* Vertically aligns both buttons */
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .cancel-btn,
 .save-btn {
-  padding: 8px 16px;
+  flex: 1;
+  height: 42px;
+  padding: 0 16px;       /* Same vertical padding */
+  margin: 0;             /* Remove any default margin */
   border: none;
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
+  line-height: 42px;     /* Center text vertically */
+  box-sizing: border-box;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -350,9 +363,8 @@
   background: #1d4ed8;
 }
 
-/* ===========================
-   WAREHOUSE SECTION
-=========================== */
+/*
+   WAREHOUSE SECTION*/
 
 .warehouse-section {
   margin-top: 36px;
@@ -379,7 +391,9 @@
   margin-bottom: 14px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .warehouse-card:hover {
@@ -417,9 +431,8 @@
   border-color: #fecaca;
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-=========================== */
+/*
+   RESPONSIVE DESIGN*/
 
 @media (max-width: 768px) {
   .address-page {
@@ -459,4 +472,32 @@
   .address-form-buttons button {
     width: 100%;
   }
+}
+
+.address-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.edit-btn,
+.delete-btn,
+.profile-btn {
+  padding: 10px 18px;
+  min-width: 110px;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Prevent Set Default from stretching */
+.profile-btn {
+  width: auto !important;
+  flex: 0 0 auto !important;
+  margin-bottom: 10px;
 }
