@@ -501,3 +501,29 @@
   flex: 0 0 auto !important;
   margin-bottom: 10px;
 }
+
+
+/*For the default address badge*/
+/* Default Address */
+.default-address-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0 20px;
+}
+
+.default-address-checkbox {
+    width: 16px !important;
+    height: 16px !important;
+    cursor: pointer;
+    margin: 0;
+    accent-color: #5b4cf0;
+}
+
+.default-address-label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+}
