@@ -111,15 +111,11 @@
   color: #6b7280;
 }
 
-
-
 .button-container {
-  grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  margin-top: 10px;
-  padding-top: 22px;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
   border-top: 1px solid #e5e7eb;
 }
 
@@ -133,6 +129,9 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.25s;
+}
+.cancel-btn {
+  width: 50px;
 }
 
 /* Save Button */

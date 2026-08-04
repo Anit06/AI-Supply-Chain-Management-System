@@ -93,3 +93,73 @@ select{
     margin:5px 0;
 
 }
+
+.feedback-message{
+
+    margin-top:12px;
+
+    padding:10px 12px;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+}
+
+.feedback-message.success{
+
+    background:#ecfdf3;
+
+    color:#047857;
+
+}
+
+.feedback-message.error{
+
+    background:#fef2f2;
+
+    color:#b91c1c;
+
+}
+
+.supplier-allocation-panel{
+
+    margin-top:16px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    max-width:360px;
+
+}
+
+.supplier-allocation-label{
+
+    font-weight:700;
+
+    color:#374151;
+
+}
+
+.supplier-select{
+
+    padding:10px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:6px;
+
+}
+
+.supplier-allocation-note{
+
+    margin:0;
+
+    color:#6b7280;
+
+    font-size:0.95rem;
+
+}

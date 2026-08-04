@@ -1,5 +1,61 @@
 const Order = require("../models/Order");
+const Supplier = require("../models/Supplier");
 const javaService = require("./javaService");
+const {
+
+    calculateOrderWeight,
+
+    validateOrderStatusTransition
+
+} = require("./orderWorkflowService");
+
+const parseCapacityToKg = (value) => {
+
+    if (value === null || value === undefined || value === "") {
+
+        return 0;
+
+    }
+
+    if (typeof value === "number") {
+
+        return value;
+
+    }
+
+    const numericValue = parseFloat(String(value).replace(/[^\d.]/g, ""));
+
+    return Number.isFinite(numericValue) ? numericValue : 0;
+
+};
+
+const releaseSupplierCapacity = async (order) => {
+
+    if (!order.allocatedSupplier || !order.assignedWeight) {
+
+        return;
+
+    }
+
+    const supplier = await Supplier.findById(order.allocatedSupplier);
+
+    if (!supplier) {
+
+        return;
+
+    }
+
+    supplier.currentAssignedWeight = Math.max(
+
+        0,
+
+        Number(supplier.currentAssignedWeight || 0) - Number(order.assignedWeight || 0)
+
+    );
+
+    await supplier.save();
+
+};
 
 /*
 ==================================
@@ -79,6 +135,14 @@ const getOrderById = async (
 
             "name location"
 
+        )
+
+        .populate(
+
+            "allocatedSupplier",
+
+            "supplierName supplierVehiclenumber supplierCapacity currentAssignedWeight"
+
         );
 
     if (!order) {
@@ -121,6 +185,14 @@ const getAllOrders = async () => {
 
         )
 
+        .populate(
+
+            "allocatedSupplier",
+
+            "supplierName supplierVehiclenumber supplierCapacity currentAssignedWeight"
+
+        )
+
         .sort({
 
             createdAt: -1
@@ -141,11 +213,21 @@ const updateOrderStatus = async (
 
     orderId,
 
-    status
+    status,
+
+    supplierId = null
 
 ) => {
 
-    const order = await Order.findById(orderId);
+    const order = await Order.findById(orderId)
+
+        .populate(
+
+            "allocatedSupplier",
+
+            "supplierName supplierVehiclenumber supplierCapacity currentAssignedWeight"
+
+        );
 
     if (!order) {
 
@@ -162,6 +244,77 @@ const updateOrderStatus = async (
     if (order.status === status) {
 
         return order;
+
+    }
+
+    const validation = validateOrderStatusTransition({
+
+        currentStatus: order.status,
+
+        nextStatus: status,
+
+        order,
+
+        supplierId
+
+    });
+
+    if (!validation.isValid) {
+
+        throw new Error(validation.message);
+
+    }
+
+    const orderWeight = calculateOrderWeight(order.items || []);
+
+    if (status === "Shipped") {
+
+        const selectedSupplier = await Supplier.findById(supplierId || order.allocatedSupplier);
+
+        if (!selectedSupplier) {
+
+            throw new Error("Supplier not found.");
+
+        }
+
+        if (order.allocatedSupplier && order.allocatedSupplier.toString() !== selectedSupplier._id.toString()) {
+
+            throw new Error("Supplier is already allocated for this order.");
+
+        }
+
+        const currentAssignedWeight = Number(selectedSupplier.currentAssignedWeight || 0);
+
+        const supplierCapacity = parseCapacityToKg(selectedSupplier.supplierCapacity);
+
+        if (currentAssignedWeight + orderWeight > supplierCapacity) {
+
+            throw new Error("Supplier Capacity Full");
+
+        }
+
+        order.allocatedSupplier = selectedSupplier._id;
+
+        order.assignedWeight = orderWeight;
+
+        order.allocatedAt = new Date();
+
+        selectedSupplier.currentAssignedWeight = currentAssignedWeight + orderWeight;
+
+        await selectedSupplier.save();
+
+    }
+
+    if (status === "Delivered" || status === "Cancelled") {
+
+        /*
+        =====================================
+        Release supplier capacity once the order reaches a terminal state.
+        This keeps the supplier capacity usage aligned with completed shipping.
+        =====================================
+        */
+
+        await releaseSupplierCapacity(order);
 
     }
 

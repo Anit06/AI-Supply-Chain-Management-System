@@ -1,7 +1,67 @@
 function PredictionTable({ predictions, products }) {
   const productsByName = new Map(products.map((product) => [product.name, product]));
-  const predictionStatus = (prediction) => { const stock = Number(productsByName.get(prediction.productName)?.stock || 0); const demand = Number(prediction.predictedDemand || 0); if (demand > stock) return "High Demand"; if (demand > stock * 0.65) return "Medium Demand"; return "Low Demand"; };
-  return <section className="dashboard-card dashboard-table-card"><div className="dashboard-card__heading"><div><p>AI insights</p><h2>Demand Prediction</h2></div><a href="/admin/ai-prediction">Open AI predictions</a></div>{predictions.length ? <div className="dashboard-table-scroll"><table className="dashboard-table"><thead><tr><th>Product</th><th>Current stock</th><th>Predicted demand</th><th>Status</th><th>Action</th></tr></thead><tbody>{predictions.slice(0, 6).map((prediction) => { const status = predictionStatus(prediction); const stock = productsByName.get(prediction.productName)?.stock ?? "—"; return <tr key={prediction._id}><td><strong>{prediction.productName}</strong><small>{prediction.category}</small></td><td>{stock}</td><td>{Number(prediction.predictedDemand || 0).toLocaleString()} {prediction.unit || "Units"}</td><td><span className={`dashboard-badge dashboard-demand--${status.split(" ")[0].toLowerCase()}`}>{status}</span></td><td><a className="dashboard-text-button" href="/admin/products">{status === "High Demand" ? "Reorder" : status === "Medium Demand" ? "Monitor" : "View"}</a></td></tr>; })}</tbody></table></div> : <div className="dashboard-empty-state">Run AI predictions to see demand recommendations here.</div>}</section>;
+
+  const predictionStatus = (prediction) => {
+    const stock = Number(productsByName.get(prediction.productName)?.quantity ?? productsByName.get(prediction.productName)?.stock ?? 0);
+    const demand = Number(prediction.predictedDemand || 0);
+    if (demand > stock) return "High Demand";
+    if (demand > stock * 0.65) return "Medium Demand";
+    return "Low Demand";
+  };
+
+  return (
+    <section className="dashboard-card dashboard-table-card">
+      <div className="dashboard-card__heading">
+        <div>
+          <p>AI insights</p>
+          <h2>AI Prediction Summary</h2>
+        </div>
+        <a href="/admin/ai-prediction">Open AI predictions</a>
+      </div>
+
+      {predictions.length ? (
+        <div className="dashboard-table-scroll">
+          <table className="dashboard-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Warehouse</th>
+                <th>Current stock</th>
+                <th>Predicted demand</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {predictions.map((prediction) => {
+                const status = predictionStatus(prediction);
+                const stock = productsByName.get(prediction.productName)?.quantity ?? productsByName.get(prediction.productName)?.stock ?? "—";
+                return (
+                  <tr key={prediction._id || `${prediction.productName}-${prediction.warehouseName}`}>
+                    <td>
+                      <strong>{prediction.productName}</strong>
+                      <small>{prediction.category || "Demand signal"}</small>
+                    </td>
+                    <td>{prediction.warehouseName || "—"}</td>
+                    <td>{stock}</td>
+                    <td>{Number(prediction.predictedDemand || 0).toLocaleString()} {prediction.unit || "Units"}</td>
+                    <td>
+                      <span className={`dashboard-badge dashboard-demand--${status.split(" ")[0].toLowerCase()}`}>{status}</span>
+                    </td>
+                    <td>
+                      <a className="dashboard-text-button" href="/admin/products">{status === "High Demand" ? "Reorder" : status === "Medium Demand" ? "Monitor" : "View"}</a>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <div className="dashboard-empty-state">Run AI predictions to see demand recommendations here.</div>
+      )}
+    </section>
+  );
 }
 
 export default PredictionTable;

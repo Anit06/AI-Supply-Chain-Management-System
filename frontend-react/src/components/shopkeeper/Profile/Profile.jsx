@@ -165,7 +165,7 @@ function Profile() {
           {/* Shop Category */}
           <div className="form-group">
             <label>Shop Category</label>
-           
+
             <Select
               isMulti
               options={categoryOptions}

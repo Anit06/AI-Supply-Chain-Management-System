@@ -1,4 +1,3 @@
-import "../../assets/css/sidebar.css";
 import { NavLink } from "react-router-dom";
 import {
   FaTachometerAlt,
@@ -9,15 +8,25 @@ import {
   FaFileAlt,
   FaUsers,
   FaTruck,
-  FaSignOutAlt
 } from "react-icons/fa";
+
+import "../../assets/css/sidebar.css";
+
+const navItems = [
+  { to: "/admin/dashboard", label: "Dashboard", icon: FaTachometerAlt },
+  { to: "/admin/products", label: "Products", icon: FaBoxOpen },
+  { to: "/admin/warehouses", label: "Warehouses", icon: FaWarehouse },
+  { to: "/admin/orders", label: "Orders", icon: FaShoppingCart },
+  { to: "/admin/ai-prediction", label: "AI Predictions", icon: FaRobot },
+  { to: "/admin/reports", label: "Reports", icon: FaFileAlt },
+  { to: "/admin/users", label: "Users", icon: FaUsers },
+  { to: "/admin/suppliers", label: "Suppliers", icon: FaTruck },
+];
 
 function Sidebar() {
   return (
     <aside className="sidebar">
-      {/* Top Container: Logo + Menu */}
       <div className="sidebar-top">
-        {/* Logo */}
         <div className="sidebar-logo">
           <div className="logo-icon">📦</div>
           <div className="logo-text">
@@ -26,74 +35,26 @@ function Sidebar() {
           </div>
         </div>
 
-        {/* Menu */}
         <ul className="sidebar-menu">
-          <li>
-            <NavLink to="/admin/dashboard" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaTachometerAlt className="menu-icon" />
-              <span>Dashboard</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/products" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaBoxOpen className="menu-icon" />
-              <span>Products</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/warehouses" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaWarehouse className="menu-icon" />
-              <span>Warehouses</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/orders" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaShoppingCart className="menu-icon" />
-              <span>Orders</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/ai-prediction" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaRobot className="menu-icon" />
-              <span>AI Predictions</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/reports" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaFileAlt className="menu-icon" />
-              <span>Reports</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/users" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaUsers className="menu-icon" />
-              <span>Users</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/admin/suppliers" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link"}>
-              <FaTruck className="menu-icon" />
-              <span>Suppliers</span>
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/logout" className="sidebar-link">
-              <FaSignOutAlt className="menu-icon" />
-              <span>Logout</span>
-            </NavLink>
-          </li>
+          {navItems.map((item) => {
+            const Icon = item.icon;
+            return (
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) =>
+                    isActive ? "sidebar-link active" : "sidebar-link"
+                  }
+                >
+                  <Icon className="menu-icon" />
+                  <span>{item.label}</span>
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
-      {/* Profile */}
       <div className="sidebar-profile">
         <div className="profile-image">👨</div>
         <div>

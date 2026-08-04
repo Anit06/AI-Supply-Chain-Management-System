@@ -1,6 +1,6 @@
 import "../../../assets/css/orderStatus.css";
 
-function OrderStatus({ status, onChange }) {
+function OrderStatus({ status, onChange, availableStatuses = [], loading = false }) {
 
     const handleChange = (e) => {
 
@@ -24,6 +24,28 @@ function OrderStatus({ status, onChange }) {
 
     };
 
+    const statusOptions = availableStatuses.length > 0
+
+        ? [status, ...availableStatuses.filter((option) => option !== status)]
+
+        : ["Placed", "Confirmed", "Packed", "Shipped", "Delivered", "Cancelled"];
+
+    const statusLabels = {
+
+        Placed: "📝 Placed",
+
+        Confirmed: "✔ Confirmed",
+
+        Packed: "📦 Packed",
+
+        Shipped: "🚚 Shipped",
+
+        Delivered: "✅ Delivered",
+
+        Cancelled: "❌ Cancelled"
+
+    };
+
     return (
 
         <div className="status-wrapper">
@@ -42,43 +64,19 @@ function OrderStatus({ status, onChange }) {
 
                 onChange={handleChange}
 
+                disabled={loading}
+
             >
 
-                <option value="Placed">
+                {statusOptions.map((option) => (
 
-                    📝 Placed
+                    <option key={option} value={option}>
 
-                </option>
+                        {statusLabels[option] || option}
 
-                <option value="Confirmed">
+                    </option>
 
-                    ✔ Confirmed
-
-                </option>
-
-                <option value="Packed">
-
-                    📦 Packed
-
-                </option>
-
-                <option value="Shipped">
-
-                    🚚 Shipped
-
-                </option>
-
-                <option value="Delivered">
-
-                    ✅ Delivered
-
-                </option>
-
-                <option value="Cancelled">
-
-                    ❌ Cancelled
-
-                </option>
+                ))}
 
             </select>
 

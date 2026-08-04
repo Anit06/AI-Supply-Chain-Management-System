@@ -213,6 +213,32 @@ const orderSchema = new mongoose.Schema({
 
     },
 
+    allocatedSupplier: {
+
+        type: mongoose.Schema.Types.ObjectId,
+
+        ref: "Supplier",
+
+        default: null
+
+    },
+
+    assignedWeight: {
+
+        type: Number,
+
+        default: 0
+
+    },
+
+    allocatedAt: {
+
+        type: Date,
+
+        default: null
+
+    },
+
     statusHistory: {
 
         type: [orderStatusSchema],

@@ -1,40 +1,38 @@
 .sidebar {
   width: 260px;
-  background: #021437;
+  background: linear-gradient(180deg, #021437 0%, #031d4f 100%);
   color: white;
   padding: 18px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  /* Fix vertical alignment jumping across pages */
   position: sticky;
   top: 0;
   height: 100vh;
   box-sizing: border-box;
   overflow-y: auto;
   flex-shrink: 0;
+  z-index: 30;
 }
 
-/* Group Logo + Navigation together at top */
 .sidebar-top {
   display: flex;
   flex-direction: column;
 }
 
-/* Logo Section */
 .sidebar-logo {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+  min-height: 48px;
 }
 
 .logo-icon {
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,14 +53,13 @@
   margin: 2px 0 0 0;
 }
 
-/* Menu List */
 .sidebar-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px; /* Reduced spacing between items */
+  gap: 4px;
 }
 
 .sidebar-menu li {
@@ -70,16 +67,15 @@
   padding: 0;
 }
 
-/* Links */
 .sidebar-link {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 14px; /* Reduced vertical padding */
+  padding: 8px 14px;
   border-radius: 10px;
   cursor: pointer;
-  transition: background 0.2s ease;
-  font-size: 14px; /* Reduced font size from 19px */
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-size: 14px;
   font-weight: 500;
   color: #e5e7eb;
   text-decoration: none;
@@ -87,16 +83,16 @@
 
 .sidebar-link:hover,
 .sidebar-link.active {
-  background: #0b57d0;
+  background: linear-gradient(135deg, #0b57d0, #2563eb);
   color: #ffffff;
+  transform: translateX(2px);
 }
 
 .menu-icon {
-  font-size: 17px; /* Reduced icon size from 23px */
+  font-size: 17px;
   flex-shrink: 0;
 }
 
-/* Profile Section */
 .sidebar-profile {
   display: flex;
   align-items: center;
@@ -104,7 +100,7 @@
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  margin-top: 5cqb;
+  margin-top: 5px;
 }
 
 .profile-image {

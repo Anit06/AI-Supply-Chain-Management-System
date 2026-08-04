@@ -10,9 +10,33 @@ import {
 
 } from "../../../services/orderService";
 
+import { getSuppliers } from "../../../services/supplierService";
+
 import OrderStatus from "./OrderStatus";
 
 import "../../../assets/css/orderDetails.css";
+
+const getAllowedNextStatuses = (currentStatus) => {
+
+    const transitions = {
+
+        Placed: ["Confirmed", "Cancelled"],
+
+        Confirmed: ["Packed"],
+
+        Packed: ["Shipped"],
+
+        Shipped: ["Delivered"],
+
+        Delivered: [],
+
+        Cancelled: []
+
+    };
+
+    return transitions[currentStatus] || [];
+
+};
 
 function OrderDetails(){
 
@@ -24,9 +48,19 @@ function OrderDetails(){
 
     const [loading,setLoading]=useState(true);
 
+    const [statusLoading,setStatusLoading]=useState(false);
+
+    const [suppliers,setSuppliers]=useState([]);
+
+    const [selectedSupplierId,setSelectedSupplierId]=useState("");
+
+    const [feedback,setFeedback]=useState({type:"",message:""});
+
     useEffect(()=>{
 
         loadOrder();
+
+        loadSuppliers();
 
     },[]);
 
@@ -36,23 +70,91 @@ function OrderDetails(){
 
         setOrder(response.order);
 
+        setSelectedSupplierId(response.order?.allocatedSupplier?._id || response.order?.allocatedSupplier || "");
+
         setLoading(false);
+
+    };
+
+    const loadSuppliers=async()=>{
+
+        try{
+
+            const response=await getSuppliers();
+
+            setSuppliers(response.supplier || []);
+
+        }
+
+        catch(error){
+
+            console.error(error);
+
+        }
 
     };
 
     const changeStatus=async(status)=>{
 
-        await updateOrderStatus(
+        if (status === "Shipped" && !selectedSupplierId) {
 
-            order._id,
+            setFeedback({
 
-            status
+                type:"error",
 
-        );
+                message:"Please allocate a supplier before shipping the order."
 
-        loadOrder();
+            });
 
-        alert("Status Updated");
+            return;
+
+        }
+
+        setStatusLoading(true);
+
+        setFeedback({type:"",message:""});
+
+        try{
+
+            await updateOrderStatus(
+
+                order._id,
+
+                status,
+
+                status === "Shipped" ? selectedSupplierId : null
+
+            );
+
+            await loadOrder();
+
+            setFeedback({
+
+                type:"success",
+
+                message:"Status Updated"
+
+            });
+
+        }
+
+        catch(error){
+
+            setFeedback({
+
+                type:"error",
+
+                message:error.response?.data?.message || error.message || "Unable to update order status"
+
+            });
+
+        }
+
+        finally{
+
+            setStatusLoading(false);
+
+        }
 
     };
 
@@ -124,7 +226,81 @@ function OrderDetails(){
 
                     onChange={changeStatus}
 
+                    availableStatuses={getAllowedNextStatuses(order.status)}
+
+                    loading={statusLoading}
+
                 />
+
+                {feedback.message ? (
+
+                    <p className={`feedback-message ${feedback.type}`}>
+
+                        {feedback.message}
+
+                    </p>
+
+                ) : null}
+
+                {order.status === "Packed" ? (
+
+                    <div className="supplier-allocation-panel">
+
+                        <label className="supplier-allocation-label">
+
+                            Allocate Supplier
+
+                        </label>
+
+                        <select
+
+                            className="supplier-select"
+
+                            value={selectedSupplierId}
+
+                            onChange={(e) => setSelectedSupplierId(e.target.value)}
+
+                        >
+
+                            <option value="">
+
+                                Select a supplier
+
+                            </option>
+
+                            {suppliers.map((supplier) => {
+
+                                const capacity = Number(supplier.currentAssignedWeight || 0);
+
+                                const maxCapacity = Number(supplier.supplierCapacity || 0);
+
+                                const remaining = maxCapacity - capacity;
+
+                                const isFull = remaining <= 0;
+
+                                return (
+
+                                    <option key={supplier._id} value={supplier._id} disabled={isFull}>
+
+                                        {supplier.supplierName} - {supplier.supplierVehiclenumber} - Remaining {remaining} KG{isFull ? " (Full)" : ""}
+
+                                    </option>
+
+                                );
+
+                            })}
+
+                        </select>
+
+                        <p className="supplier-allocation-note">
+
+                            Select a supplier before changing this order to Shipped.
+
+                        </p>
+
+                    </div>
+
+                ) : null}
 
             </div>
 

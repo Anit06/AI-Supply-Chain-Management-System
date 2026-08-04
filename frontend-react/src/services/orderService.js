@@ -50,17 +50,21 @@ export const updateOrderStatus = async(
 
     id,
 
-    status
+    status,
+
+    supplierId = null
 
 )=>{
 
-    const response = await api.put(
+    const response = await api.put( 
 
         `/orders/${id}/status`,
 
         {
 
-            status
+            status,
+
+            supplierId
 
         }
 

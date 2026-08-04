@@ -28,6 +28,10 @@ const supplierSchema =
             supplierCapacity: {
                 type: String,
                 required: true
+            },
+            currentAssignedWeight: {
+                type: Number,
+                default: 0
             }
 
         },

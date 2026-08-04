@@ -17,3 +17,10 @@ backend-node/uploads/
 
 # Java crash logs
 hs_err_pid*.log
+
+# Python Virtual Environments
+venv/
+*.venv
+python-ai-service/venv/
+__pycache__/
+*.pyc
