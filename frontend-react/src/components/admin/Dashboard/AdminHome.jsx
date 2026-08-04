@@ -22,6 +22,7 @@ import { getProducts } from "../../../services/productService";
 import { getAllOrders } from "../../../services/orderService";
 import { getWarehouses } from "../../../services/warehouseService";
 import { getStoredPredictions } from "../../../services/aiService";
+import { getInventory } from "../../../services/inventoryService";
 
 const currencyFormatter = new Intl.NumberFormat("en-IN", {
   style: "currency",
@@ -35,30 +36,55 @@ function AdminHome() {
     orders: [],
     warehouses: [],
     predictions: [],
+    inventory: [],
   });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
-    Promise.allSettled([
-      getProducts(),
-      getAllOrders(),
-      getWarehouses(),
-      getStoredPredictions(),
-    ]).then((results) => {
+
+    const loadDashboard = async () => {
+      const results = await Promise.allSettled([
+        getProducts(),
+        getAllOrders(),
+        getWarehouses(),
+        getStoredPredictions(),
+      ]);
+
       if (!active) return;
+
       const value = (index, key) => {
         const response = results[index].status === "fulfilled" ? results[index].value : null;
         return Array.isArray(response) ? response : response?.[key] || [];
       };
+
+      const products = value(0, "products");
+      const warehouses = value(2, "warehouses");
+
+      let inventory = [];
+      if (warehouses.length) {
+        const inventoryResults = await Promise.allSettled(
+          warehouses.map((warehouse) => getInventory(warehouse._id || warehouse.id))
+        );
+
+        inventory = inventoryResults.flatMap((result) => {
+          const response = result.status === "fulfilled" ? result.value : null;
+          const rows = Array.isArray(response) ? response : response?.data || [];
+          return Array.isArray(rows) ? rows : [];
+        });
+      }
+
       setDashboard({
-        products: value(0, "products"),
+        products,
         orders: value(1, "orders"),
-        warehouses: value(2, "warehouses"),
+        warehouses,
         predictions: value(3, "predictions"),
+        inventory,
       });
       setLoading(false);
-    });
+    };
+
+    loadDashboard();
 
     return () => {
       active = false;
@@ -66,20 +92,45 @@ function AdminHome() {
   }, []);
 
   const computed = useMemo(() => {
-    const { products, orders, warehouses } = dashboard;
+    const { products, orders, warehouses, inventory } = dashboard;
 
-    const totalStock = products.reduce(
-      (sum, product) => sum + Number(product.quantity ?? product.stock ?? 0),
-      0
+    const productMap = new Map(
+      products.map((product) => [String(product._id || product.id), product])
     );
 
-    const inventoryValue = products.reduce(
+    const toKg = (quantity, unit) => {
+      const amount = Number(quantity || 0);
+      const normalized = String(unit || "KG").trim().toUpperCase();
+
+      if (!Number.isFinite(amount)) return 0;
+      if (normalized === "G" || normalized === "GRAM") return amount / 1000;
+      if (normalized === "ML" || normalized === "LITER" || normalized === "LITRE") return amount / 1000;
+      return amount;
+    };
+
+    const holdingValue = products.reduce(
       (sum, product) =>
-        sum + Number(product.quantity ?? product.stock ?? 0) * Number(product.price || 0),
+        sum + Number(product.stock ?? product.quantity ?? 0) * Number(product.price || 0),
       0
     );
 
-    const inventory = products.reduce(
+    const warehouseInventoryValue = inventory.reduce((sum, item) => {
+      const product = productMap.get(String(item.productId || item.product || ""));
+      const price = Number(product?.price || 0);
+      const stock = Number(item.stock || 0);
+      return sum + stock * price;
+    }, 0);
+
+    const totalStock =
+      products.reduce(
+        (sum, product) => sum + Number(product.stock ?? product.quantity ?? 0),
+        0
+      ) +
+      inventory.reduce((sum, item) => sum + Number(item.stock || 0), 0);
+
+    const inventoryValue = holdingValue + warehouseInventoryValue;
+
+    const inventoryStatus = products.reduce(
       (totals, product) => {
         const stock = Number(product.quantity ?? product.stock ?? 0);
         if (stock === 0) totals.outOfStock += 1;
@@ -130,15 +181,22 @@ function AdminHome() {
     const maxWarehouseOrders = Math.max(1, ...Object.values(warehouseOrderCounts));
 
     const warehouseSummary = warehouses.map((warehouse) => {
-      const warehouseId = warehouse._id || warehouse.id;
-      const usageCount = warehouseId ? warehouseOrderCounts[warehouseId] || 0 : 0;
-      const utilization = Math.min(
-        100,
-        Math.max(12, Math.round((usageCount / maxWarehouseOrders) * 100))
+      const warehouseId = String(warehouse._id || warehouse.id || "");
+      const warehouseInventory = inventory.filter(
+        (item) => String(item.warehouseId || item.warehouse || "") === warehouseId
       );
+      const usedStock = warehouseInventory.reduce((sum, item) => {
+        const product = productMap.get(String(item.productId || item.product || ""));
+        const stock = Number(item.stock || 0);
+        return sum + toKg(stock, product?.unit || item.unit || "KG");
+      }, 0);
+      const capacity = Number(warehouse.capacity || 0);
+      const utilization = capacity ? (usedStock / capacity) * 100 : 0;
+
       return {
         ...warehouse,
-        utilization,
+        totalStock: usedStock,
+        utilization: Number.isFinite(utilization) ? Number(utilization.toFixed(2)) : 0,
       };
     });
 
@@ -192,7 +250,7 @@ function AdminHome() {
     return {
       totalStock,
       inventoryValue,
-      inventory,
+      inventoryStatus,
       months,
       latestOrders,
       warehouseSummary,
@@ -289,7 +347,7 @@ function AdminHome() {
           <div className="chart-section">
             <SalesChart data={computed.months} />
             <InventoryChart
-              status={computed.inventory}
+              status={computed.inventoryStatus}
               total={computed.totalStock}
             />
             <RecentOrders
