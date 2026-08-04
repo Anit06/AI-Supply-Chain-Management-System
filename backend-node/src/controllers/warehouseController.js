@@ -1,11 +1,29 @@
-const Warehouse =
-  require("../models/Warehouse");
-
+const Warehouse = require("../models/Warehouse");
+const {
+  validateRequestBody,
+  validateWarehouseCapacity,
+  validateObjectId
+} = require("../middleware/validationMiddleware");
 
 // CREATE
 const addWarehouse =
   async (req, res) => {
     try {
+      const requiredErrors = validateRequestBody(req, ["code", "name", "location", "city", "capacity", "manager", "phone"], {
+        trimFields: ["code", "name", "location", "city", "manager", "phone"]
+      });
+
+      const capacityErrors = validateWarehouseCapacity(req.body.capacity, "capacity");
+      const errors = [...requiredErrors, ...capacityErrors];
+
+      if (errors.length > 0) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation failed",
+          errors
+        });
+      }
+
       const warehouse =
         await Warehouse.create(
           req.body
@@ -19,8 +37,8 @@ const addWarehouse =
     catch (error) {
       res.status(500).json({
         success: false,
-        message:
-          error.message
+        message: error.message,
+        errors: []
       });
     }
   };
@@ -52,10 +70,27 @@ const getWarehouses =
 const getWarehouse =
   async (req, res) => {
     try {
+      const idErrors = validateObjectId(req.params.id, "id");
+      if (idErrors.length > 0) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation failed",
+          errors: idErrors
+        });
+      }
+
       const warehouse =
         await Warehouse.findById(
           req.params.id
         );
+
+      if (!warehouse) {
+        return res.status(404).json({
+          success: false,
+          message: "Warehouse not found",
+          errors: []
+        });
+      }
 
       res.json({
         success: true,
@@ -65,8 +100,8 @@ const getWarehouse =
     catch (error) {
       res.status(500).json({
         success: false,
-        message:
-          error.message
+        message: error.message,
+        errors: []
       });
     }
   };
@@ -76,12 +111,29 @@ const getWarehouse =
 const updateWarehouse =
   async (req, res) => {
     try {
+      const idErrors = validateObjectId(req.params.id, "id");
+      if (idErrors.length > 0) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation failed",
+          errors: idErrors
+        });
+      }
+
       const warehouse =
         await Warehouse.findByIdAndUpdate(
           req.params.id,
           req.body,
           { new: true }
         );
+
+      if (!warehouse) {
+        return res.status(404).json({
+          success: false,
+          message: "Warehouse not found",
+          errors: []
+        });
+      }
 
       res.json({
         success: true,
@@ -91,8 +143,8 @@ const updateWarehouse =
     catch (error) {
       res.status(500).json({
         success: false,
-        message:
-          error.message
+        message: error.message,
+        errors: []
       });
     }
   };
@@ -102,6 +154,24 @@ const updateWarehouse =
 const deleteWarehouse =
   async (req, res) => {
     try {
+      const idErrors = validateObjectId(req.params.id, "id");
+      if (idErrors.length > 0) {
+        return res.status(400).json({
+          success: false,
+          message: "Validation failed",
+          errors: idErrors
+        });
+      }
+
+      const warehouse = await Warehouse.findById(req.params.id);
+      if (!warehouse) {
+        return res.status(404).json({
+          success: false,
+          message: "Warehouse not found",
+          errors: []
+        });
+      }
+
       await Warehouse.findByIdAndDelete(
         req.params.id
       );
@@ -115,8 +185,8 @@ const deleteWarehouse =
     catch (error) {
       res.status(500).json({
         success: false,
-        message:
-          error.message
+        message: error.message,
+        errors: []
       });
     }
   };

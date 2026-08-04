@@ -61,3 +61,25 @@ export const updateRole =
 
     return response.json();
   };
+
+export const deleteUser =
+  async (userId) => {
+    const token =
+      localStorage.getItem("token");
+
+    const response =
+      await fetch(
+        `${API_URL}/users/${userId}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type":
+              "application/json",
+            Authorization:
+              token ? `Bearer ${token}` : ""
+          }
+        }
+      );
+
+    return response.json();
+  };

@@ -13,8 +13,8 @@ const orderRoutes = require("./routes/orderRoutes");
 const catalogRoutes = require("./routes/catalogRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 const historyRoutes = require("./routes/historyRoutes");
-
 const reportRoutes = require("./routes/reportRoutes");
+const errorMiddleware = require("./middleware/errorMiddleware");
 
 const app = express();
 
@@ -39,7 +39,16 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/catalog", catalogRoutes);
 app.use("/api/ai", aiRoutes);
 app.use("/api/history", historyRoutes);
-
 app.use("/api/reports", reportRoutes);
+
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: "Route not found",
+    errors: []
+  });
+});
+
+app.use(errorMiddleware);
 
 module.exports = app;

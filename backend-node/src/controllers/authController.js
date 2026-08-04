@@ -2,6 +2,7 @@ const User = require("../models/User");
 const ShopkeeperDetails = require("../models/ShopkeeperDetails");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const { validateObjectId } = require("../middleware/validationMiddleware");
 
 
 // REGISTER
@@ -303,6 +304,15 @@ const deleteUser = async (
   res
 ) => {
   try {
+    const objectIdErrors = validateObjectId(req.params.id, "id");
+
+    if (objectIdErrors.length > 0) {
+      return res.status(400).json({
+        success: false,
+        message: "Validation failed",
+        errors: objectIdErrors
+      });
+    }
 
     const user =
       await User.findById(
@@ -332,7 +342,8 @@ const deleteUser = async (
 
     res.status(500).json({
       success: false,
-      message: error.message
+      message: error.message,
+      errors: []
     });
 
   }

@@ -6,7 +6,8 @@ import "../assets/css/users.css";
 
 import {
   getUsers,
-  updateRole
+  updateRole,
+  deleteUser
 } from "../services/authService";
 
 function Users() {
@@ -106,9 +107,15 @@ function Users() {
     if (!window.confirm("Delete this user?")) return;
 
     try {
-      // Placeholder delete action until the API is available
-      console.log("Delete user", userId);
-      alert("Delete action is not available yet");
+      const response = await deleteUser(userId);
+
+      if (response.success) {
+        alert("User Deleted Successfully");
+        await loadUsers();
+        return;
+      }
+
+      alert(response.message || "Delete Failed");
     } catch (error) {
       console.log(error);
       alert("Delete Failed");
