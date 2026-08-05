@@ -13,7 +13,8 @@
   padding: 30px;
   margin-left: 15px;
   width: 100%;
-  min-width: 0; /* Prevents flex child overflow & forces 100% width scaling */
+  min-width: 0;
+  /* Prevents flex child overflow & forces 100% width scaling */
   box-sizing: border-box;
 }
 
@@ -28,7 +29,6 @@
 /* ==========================================
    2. Analytics Cards Layout (100% Width Fix)
    ========================================== */
-/* Apply this class to the outer wrapper inside AnalyticsCards component */
 .analytics-cards-container,
 .analytics-grid,
 .analytics-wrapper {
@@ -172,12 +172,29 @@
   text-align: center;
 }
 
-.placed { background: #64748b; }
-.confirmed { background: #0ea5e9; }
-.packed { background: #f59e0b; }
-.shipped { background: #7c3aed; }
-.delivered { background: #16a34a; }
-.cancelled { background: #dc2626; }
+.placed {
+  background: #64748b;
+}
+
+.confirmed {
+  background: #0ea5e9;
+}
+
+.packed {
+  background: #f59e0b;
+}
+
+.shipped {
+  background: #7c3aed;
+}
+
+.delivered {
+  background: #16a34a;
+}
+
+.cancelled {
+  background: #dc2626;
+}
 
 /* Action Button */
 .view-btn {
@@ -253,4 +270,52 @@
   .analytics-wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================
+   7. Pagination Controls Styling
+   ========================================== */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 10px 0;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 6px;
+}
+
+.pagination-btn,
+.pagination-number {
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #334155;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled),
+.pagination-number:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.pagination-number.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f8fafc;
 }
