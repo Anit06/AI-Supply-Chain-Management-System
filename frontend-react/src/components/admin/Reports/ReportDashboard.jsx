@@ -128,22 +128,6 @@ function ReportDashboard() {
 
   return (
     <div className="reports-dashboard">
-      {/* <div className="report-header">
-        <div>
-          <h2>Warehouse Reports</h2>
-
-          <p>
-            Monitor inventory across all warehouses, identify low stock products
-            and export reports.
-          </p>
-        </div>
-
-        <span className="warehouse-badge">
-          <FaWarehouse />
-          Warehouse Inventory Report
-        </span>
-      </div> */}
-
       {/* Summary */}
       <div className="report-summary">
         <div className="summary-card">
@@ -205,12 +189,12 @@ function ReportDashboard() {
             >
               <div className="warehouse-title">
                 {openWarehouse === warehouse ? (
-                  <FaChevronDown />
+                  <FaChevronDown style={{ marginRight: "6px" }} />
                 ) : (
-                  <FaChevronRight />
+                  <FaChevronRight style={{ marginRight: "6px" }} />
                 )}
 
-                <FaWarehouse />
+                <FaWarehouse style={{ marginRight: "10px" }} />
 
                 <strong>{warehouse}</strong>
               </div>

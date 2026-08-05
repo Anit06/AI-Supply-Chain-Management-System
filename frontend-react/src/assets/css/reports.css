@@ -1,13 +1,9 @@
-/* ========================================
-   REPORTS DASHBOARD
-======================================== */
+/*REPORTS DASHBOARD*/
 
 .reports-dashboard {
   margin-top: 25px;
 }
-/* ========================================
-   SUMMARY CARDS
-======================================== */
+/*SUMMARY CARDS*/
 
 .report-summary {
   display: grid;
@@ -67,9 +63,7 @@
   color: #111827;
 }
 
-/* ========================================
-   REPORT SECTIONS
-======================================== */
+/*REPORT SECTIONS*/
 
 .report-section {
   background: white;
@@ -89,9 +83,7 @@
   color: #1f2937;
 }
 
-/* ========================================
-   WAREHOUSE CARD
-======================================== */
+/*WAREHOUSE CARD*/
 
 .warehouse-card {
   margin-top: 30px;
@@ -119,9 +111,7 @@
   gap: 10px;
 }
 
-/* ========================================
-   TABLE
-======================================== */
+/*TABLE*/
 
 .report-table {
   width: 100%;
@@ -151,9 +141,7 @@
   background: #f8fafc;
 }
 
-/* ========================================
-   STATUS BADGES
-======================================== */
+/*STATUS BADGES*/
 
 .status {
   padding: 6px 12px;
@@ -183,9 +171,7 @@
   color: #b91c1c;
 }
 
-/* ========================================
-   EXPORT CARD
-======================================== */
+/*EXPORT CARD*/
 
 .report-export-card {
   background: white;
@@ -264,9 +250,7 @@
   background: #166534;
 }
 
-/* ========================================
-   RESPONSIVE
-======================================== */
+/*RESPONSIVE*/
 
 @media (max-width: 992px) {
   .report-export-card {
@@ -438,4 +422,7 @@
 
 .view-btn:hover {
   background: #1d4ed8;
+}
+.report-header {
+  margin-left: 20px;
 }
