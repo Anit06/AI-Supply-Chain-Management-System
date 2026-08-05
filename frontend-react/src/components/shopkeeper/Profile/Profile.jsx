@@ -127,7 +127,7 @@ function Profile() {
 
           {/* Full Name */}
           <div className="form-group">
-            <label>Full Name</label>
+            <label>Full Name*</label>
             <input
               type="text"
               name="fullName"
@@ -151,7 +151,7 @@ function Profile() {
 
           {/* Phone Number */}
           <div className="form-group">
-            <label>Phone Number</label>
+            <label>Phone Number*</label>
             <input
               type="text"
               name="phone"
@@ -164,7 +164,7 @@ function Profile() {
 
           {/* Shop Category */}
           <div className="form-group">
-            <label>Shop Category</label>
+            <label>Shop Category*</label>
 
             <Select
               isMulti
