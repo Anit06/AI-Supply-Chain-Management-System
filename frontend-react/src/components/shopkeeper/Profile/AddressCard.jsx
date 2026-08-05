@@ -61,7 +61,7 @@ function AddressCard({ address, onEdit, onDelete, onSetDefault }) {
 
         {!address.isDefault && (
           <button
-            className="profile-btn"
+            className="address-profile-btn"
             onClick={() => onSetDefault(address._id)}
           >
             Set Default
