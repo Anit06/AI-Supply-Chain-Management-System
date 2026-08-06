@@ -67,7 +67,7 @@ const Payment = () => {
 
             });
 
-        },1500);
+        }, 1500);
 
     };
 
@@ -120,7 +120,7 @@ const Payment = () => {
 
                     }
 
-                    <hr/>
+                    <hr />
 
                     <div className="grand-total">
 
@@ -150,9 +150,9 @@ const Payment = () => {
 
                             type="radio"
 
-                            checked={paymentMethod==="razorpay"}
+                            checked={paymentMethod === "razorpay"}
 
-                            onChange={()=>
+                            onChange={() =>
 
                                 setPaymentMethod("razorpay")
 
@@ -170,9 +170,9 @@ const Payment = () => {
 
                             type="radio"
 
-                            checked={paymentMethod==="upi"}
+                            checked={paymentMethod === "upi"}
 
-                            onChange={()=>
+                            onChange={() =>
 
                                 setPaymentMethod("upi")
 
@@ -190,9 +190,9 @@ const Payment = () => {
 
                             type="radio"
 
-                            checked={paymentMethod==="cod"}
+                            checked={paymentMethod === "cod"}
 
-                            onChange={()=>
+                            onChange={() =>
 
                                 setPaymentMethod("cod")
 
@@ -220,13 +220,13 @@ const Payment = () => {
 
                         loading
 
-                        ?
+                            ?
 
-                        "Processing..."
+                            "Processing..."
 
-                        :
+                            :
 
-                        `Pay ₹${total}`
+                            `Pay ₹${total}`
 
                     }
 

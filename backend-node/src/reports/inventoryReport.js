@@ -65,9 +65,9 @@ exports.generateInventoryPDF = (
 
     doc.moveDown(1);
 
-    
+
     // WAREHOUSE SECTIONS
-warehouseCapacity.forEach((warehouse) => {
+    warehouseCapacity.forEach((warehouse) => {
 
         const products = inventory.filter(
 
@@ -163,10 +163,10 @@ exports.generateInventoryExcel = async (
         "Warehouse Inventory Report"
     );
 
-    
+
     //TITLE
-  
-    
+
+
 
     worksheet.mergeCells("A1:H1");
 
@@ -235,8 +235,8 @@ exports.generateInventoryExcel = async (
 
     ];
 
-    
-  // HEADER STYLE
+
+    // HEADER STYLE
 
     const headerRow = worksheet.getRow(2);
 
@@ -328,7 +328,7 @@ exports.generateInventoryExcel = async (
 
     });
 
-//CENTER ALIGNMENT
+    //CENTER ALIGNMENT
     worksheet.eachRow((row) => {
 
         row.eachCell((cell) => {
@@ -344,9 +344,9 @@ exports.generateInventoryExcel = async (
         });
 
     });
-  
-   // LOW STOCK COLOR
-   
+
+    // LOW STOCK COLOR
+
 
     worksheet.eachRow((row, rowNumber) => {
 
@@ -372,7 +372,7 @@ exports.generateInventoryExcel = async (
 
     });
 
-    
+
     //DOWNLOAD
 
     res.setHeader(

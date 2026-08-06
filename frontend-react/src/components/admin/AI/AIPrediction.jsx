@@ -10,7 +10,7 @@ function AIPrediction() {
       <div className="dashboard-main">
 
         <h1>AI Prediction Page</h1>
-<DemandPrediction />
+        <DemandPrediction />
       </div>
 
     </div>

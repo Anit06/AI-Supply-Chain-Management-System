@@ -35,8 +35,8 @@ const statusClass = (status = "") => `shopkeeper-dashboard__status--${status.toL
 const formatAddress = (address) =>
   address
     ? [address.addressLine1, address.addressLine2, address.city, address.state, address.pincode]
-        .filter(Boolean)
-        .join(", ") || "—"
+      .filter(Boolean)
+      .join(", ") || "—"
     : "—";
 
 function ShopkeeperHome() {

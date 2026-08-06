@@ -210,6 +210,7 @@
     transform: scale(0.96);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -255,7 +256,8 @@
 .warehouse-form {
   display: flex;
   flex-direction: column;
-  gap: 12px; /* Tighter vertical spacing */
+  gap: 12px;
+  /* Tighter vertical spacing */
 }
 
 .form-group {
@@ -273,7 +275,8 @@
 .form-group input,
 .form-group select,
 .form-group textarea {
-  padding: 8px 12px; /* Reduced input height */
+  padding: 8px 12px;
+  /* Reduced input height */
   border: 1px solid #d1d5db;
   border-radius: 6px;
   font-size: 14px;
@@ -322,7 +325,8 @@
 
 .address-form-buttons {
   display: flex;
-  align-items: center; /* Vertically aligns both buttons */
+  align-items: center;
+  /* Vertically aligns both buttons */
   gap: 12px;
   margin-top: 20px;
 }
@@ -331,13 +335,16 @@
 .save-btn {
   flex: 1;
   height: 42px;
-  padding: 0 16px; /* Same vertical padding */
-  margin: 0; /* Remove any default margin */
+  padding: 0 16px;
+  /* Same vertical padding */
+  margin: 0;
+  /* Remove any default margin */
   border: none;
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
-  line-height: 42px; /* Center text vertically */
+  line-height: 42px;
+  /* Center text vertically */
   box-sizing: border-box;
   cursor: pointer;
   transition: background-color 0.2s ease;

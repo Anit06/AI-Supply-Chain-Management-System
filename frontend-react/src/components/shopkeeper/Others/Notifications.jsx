@@ -10,10 +10,13 @@ import {
   FaCheckCircle,
   FaArrowLeft,
   FaTrashAlt,
-  FaFilter
+  FaChevronLeft,
+  FaChevronRight
 } from "react-icons/fa";
 import { getOrders } from "../../../services/orderService";
 import "../../../assets/css/notifications.css";
+
+const PAGE_SIZE = 10;
 
 const formatDate = (date) => {
   if (!date) return "—";
@@ -50,6 +53,7 @@ function Notifications() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [filter, setFilter] = useState("all"); // 'all' | 'unread' | 'delivered'
+  const [currentPage, setCurrentPage] = useState(1);
   const [readIds, setReadIds] = useState(() => {
     const saved = localStorage.getItem("read_notifications");
     return saved ? JSON.parse(saved) : [];
@@ -77,6 +81,11 @@ function Notifications() {
   useEffect(() => {
     localStorage.setItem("read_notifications", JSON.stringify(readIds));
   }, [readIds]);
+
+  // Reset to page 1 whenever filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
 
   // Expand status history of all orders into individual notification items
   const notificationsList = useMemo(() => {
@@ -123,6 +132,14 @@ function Notifications() {
     });
   }, [notificationsList, filter, readIds]);
 
+  // Calculate pagination boundaries
+  const totalPages = Math.ceil(filteredNotifications.length / PAGE_SIZE) || 1;
+
+  const paginatedNotifications = useMemo(() => {
+    const startIndex = (currentPage - 1) * PAGE_SIZE;
+    return filteredNotifications.slice(startIndex, startIndex + PAGE_SIZE);
+  }, [filteredNotifications, currentPage]);
+
   const markAllAsRead = () => {
     const allIds = notificationsList.map((n) => n.id);
     setReadIds(allIds);
@@ -145,6 +162,13 @@ function Notifications() {
   const clearAllNotifications = () => {
     if (window.confirm("Are you sure you want to mark all notifications as cleared?")) {
       markAllAsRead();
+    }
+  };
+
+  const handlePageChange = (newPage) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -221,48 +245,91 @@ function Notifications() {
           <p>When there are updates regarding your orders, they will appear here.</p>
         </div>
       ) : (
-        <div className="notifications-list">
-          {filteredNotifications.map((item) => {
-            const isRead = readIds.includes(item.id);
-            return (
-              <div
-                key={item.id}
-                className={`notification-card ${isRead ? "read" : "unread"}`}
-                onClick={() => handleNotificationClick(item)}
+        <>
+          <div className="notifications-list">
+            {paginatedNotifications.map((item) => {
+              const isRead = readIds.includes(item.id);
+              return (
+                <div
+                  key={item.id}
+                  className={`notification-card ${isRead ? "read" : "unread"}`}
+                  onClick={() => handleNotificationClick(item)}
+                >
+                  <div className="notification-icon-wrap">
+                    {getNotificationIcon(item.status)}
+                  </div>
+
+                  <div className="notification-content">
+                    <div className="notification-top">
+                      <h4>{item.message}</h4>
+                      <span className="timestamp">{formatDate(item.timestamp)}</span>
+                    </div>
+                    <div className="notification-meta">
+                      <span className={`status-badge status-${item.status?.toLowerCase()}`}>
+                        {item.status}
+                      </span>
+                      {item.totalAmount && (
+                        <span className="amount-badge">₹{item.totalAmount}</span>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="notification-actions" onClick={(e) => e.stopPropagation()}>
+                    <button
+                      className={`mark-read-dot ${isRead ? "is-read" : ""}`}
+                      type="button"
+                      title={isRead ? "Mark as unread" : "Mark as read"}
+                      onClick={(e) => toggleRead(item.id, e)}
+                    >
+                      <span className="dot" />
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="pagination-container">
+              <button
+                className="pagination-btn"
+                type="button"
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                aria-label="Previous Page"
               >
-                <div className="notification-icon-wrap">
-                  {getNotificationIcon(item.status)}
-                </div>
+                <FaChevronLeft /> Prev
+              </button>
 
-                <div className="notification-content">
-                  <div className="notification-top">
-                    <h4>{item.message}</h4>
-                    <span className="timestamp">{formatDate(item.timestamp)}</span>
-                  </div>
-                  <div className="notification-meta">
-                    <span className={`status-badge status-${item.status?.toLowerCase()}`}>
-                      {item.status}
-                    </span>
-                    {item.totalAmount && (
-                      <span className="amount-badge">₹{item.totalAmount}</span>
-                    )}
-                  </div>
-                </div>
-
-                <div className="notification-actions" onClick={(e) => e.stopPropagation()}>
-                  <button
-                    className={`mark-read-dot ${isRead ? "is-read" : ""}`}
-                    type="button"
-                    title={isRead ? "Mark as unread" : "Mark as read"}
-                    onClick={(e) => toggleRead(item.id, e)}
-                  >
-                    <span className="dot" />
-                  </button>
-                </div>
+              <div className="pagination-numbers">
+                {Array.from({ length: totalPages }, (_, index) => {
+                  const pageNum = index + 1;
+                  return (
+                    <button
+                      key={pageNum}
+                      type="button"
+                      className={`page-num ${currentPage === pageNum ? "active" : ""}`}
+                      onClick={() => handlePageChange(pageNum)}
+                    >
+                      {pageNum}
+                    </button>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
+
+              <button
+                className="pagination-btn"
+                type="button"
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                aria-label="Next Page"
+              >
+                Next <FaChevronRight />
+              </button>
+            </div>
+          )}
+        </>
       )}
     </div>
   );

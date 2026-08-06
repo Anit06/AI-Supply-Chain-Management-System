@@ -54,7 +54,7 @@ function AppRoutes() {
         <Route path="warehouses" element={<Warehouses />} />
         <Route path="warehouses/:warehouseId/inventory" element={<InventoryView />} />
         <Route path="orders" element={<Orders />} />
-        <Route path="orders/:id" element={<AdminOrderDetails />}/>
+        <Route path="orders/:id" element={<AdminOrderDetails />} />
         <Route path="inventory" element={<Inventory />} />
         <Route path="ai-prediction" element={<AIPrediction />} />
         <Route path="reports" element={<Reports />} />
@@ -71,14 +71,14 @@ function AppRoutes() {
         <Route path="place-order" element={<PlaceOrder />} />
         <Route path="cart" element={<Cart />} />
         <Route path="order-history" element={<OrderHistory />} />
-        <Route path="order/:id" element={<OrderDetails />}/>
+        <Route path="order/:id" element={<OrderDetails />} />
         <Route path="order/:id/track" element={<TrackOrder />} />
         <Route path="product-catalog" element={<ProductCatalog />} />
         <Route path="profile" element={<Profile />} />
         <Route path="address" element={<Address />} />
         <Route path="notifications" element={<Notifications />} />
         <Route path="support" element={<Support />} />
-        
+
       </Route>
 
     </Routes>
