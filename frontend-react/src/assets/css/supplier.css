@@ -331,3 +331,41 @@
         white-space: nowrap;
     }
 }
+
+.action-column{
+    width:100px;
+    text-align:center;
+}
+.action-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+}
+
+.action-buttons button{
+    width:68px;
+    height:32px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+}
+
+.view-btn{
+    background:#dff2ff;
+    color:#0d8bff;
+}
+
+.edit-btn{
+    background:#dce9ff;
+    color:#2962ff;
+}
+
+.delete-btn{
+    background:#ffdede;
+    color:#e53935;
+}

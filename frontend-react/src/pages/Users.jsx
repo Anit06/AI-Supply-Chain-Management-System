@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import Sidebar from "../components/common/Sidebar";
 import "../assets/css/users.css";
 import {
@@ -214,7 +215,7 @@ function Users() {
                   </td>
 
                   {/* Action */}
-                  <td>
+                 <td className="action-column">
   {editUserId === user._id ? (
     <div className="action-buttons">
       <button
@@ -235,16 +236,18 @@ function Users() {
     <div className="action-buttons">
       <button
         className="edit-btn"
+        title="Edit"
         onClick={() => handleEdit(user)}
       >
-        Edit
+        <FaEdit />
       </button>
 
       <button
         className="delete-btn"
+        title="Delete"
         onClick={() => handleDelete(user._id)}
       >
-        Delete
+        <FaTrash />
       </button>
     </div>
   )}
