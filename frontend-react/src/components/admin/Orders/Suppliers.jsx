@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Sidebar from "../../common/Sidebar";
 import Header from "../../common/Header";
 import "../../../assets/css/supplier.css";
-
+import {  FaEdit, FaTrash } from "react-icons/fa";
 import {
   getSuppliers,
   addSupplier,
@@ -319,20 +319,27 @@ function Suppliers() {
                     ).toLocaleDateString()}
                   </td>
 
-                  <td>
-                    <button
-                      onClick={() => handleEdit(supplier)}
-                    >
-                      Edit
-                    </button>
+                <td className="action-column">
+  <div className="action-buttons">
+   
 
-                    <button
-                      onClick={() => handleDelete(supplier._id)}
-                      style={{ marginLeft: "10px" }}
-                    >
-                      Delete
-                    </button>
-                  </td>
+    <button
+      className="edit-btn"
+      title="Edit"
+      onClick={() => handleEdit(supplier)}
+    >
+      <FaEdit />
+    </button>
+
+    <button
+      className="delete-btn"
+      title="Delete"
+      onClick={() => handleDelete(supplier._id)}
+    >
+      <FaTrash />
+    </button>
+  </div>
+</td>
                 </tr>
               ))
             )}
