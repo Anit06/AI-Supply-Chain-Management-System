@@ -46,6 +46,9 @@ const setDefaultAddress = async (userId, addressId) => {
 const deleteProfile = async (userId) => {
     return axios.delete(`${API_URL}/${userId}`, getAuthHeaders());
 };
+export const getProductCategories = () => {
+  return axios.get("http://localhost:5000/api/products/categories");
+};
 
 export {
     createProfile,

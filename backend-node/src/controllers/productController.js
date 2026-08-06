@@ -231,9 +231,33 @@ const deleteProduct = async (req, res) => {
   }
 };
 
+// ======================
+// GET ALL PRODUCT CATEGORIES
+// ======================
+const getCategories = async (req, res) => {
+  try {
+
+    const categories = await Product.distinct("category");
+
+    return res.status(200).json({
+      success: true,
+      categories
+    });
+
+  } catch (error) {
+
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+
+  }
+};
+
 module.exports = {
   addProduct,
   getProducts,
+  getCategories,
   updateProduct,
   deleteProduct
 };
