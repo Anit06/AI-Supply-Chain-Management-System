@@ -215,38 +215,40 @@ function Users() {
 
                   {/* Action */}
                   <td>
-                    {editUserId === user._id ? (
-                      <>
-                        <button
-                          className="update-btn"
-                          onClick={handleUpdate}
-                        >
-                          Update
-                        </button>
-                        <button
-                          className="cancel-btn"
-                          onClick={handleCancel}
-                        >
-                          Cancel
-                        </button>
-                      </>
-                    ) : (
-                      <div className="action-buttons">
-                        <button
-                          className="edit-btn"
-                          onClick={() => handleEdit(user)}
-                        >
-                          Edit
-                        </button>
-                        <button
-                          className="delete-btn"
-                          onClick={() => handleDelete(user._id)}
-                        >
-                          Delete
-                        </button>
-                      </div>
-                    )}
-                  </td>
+  {editUserId === user._id ? (
+    <div className="action-buttons">
+      <button
+        className="update-btn"
+        onClick={handleUpdate}
+      >
+        Update
+      </button>
+
+      <button
+        className="cancel-btn"
+        onClick={handleCancel}
+      >
+        Cancel
+      </button>
+    </div>
+  ) : (
+    <div className="action-buttons">
+      <button
+        className="edit-btn"
+        onClick={() => handleEdit(user)}
+      >
+        Edit
+      </button>
+
+      <button
+        className="delete-btn"
+        onClick={() => handleDelete(user._id)}
+      >
+        Delete
+      </button>
+    </div>
+  )}
+</td>
                 </tr>
               ))
             ) : (
