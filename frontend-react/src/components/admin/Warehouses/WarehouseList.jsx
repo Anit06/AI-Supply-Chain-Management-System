@@ -138,7 +138,7 @@ function WarehouseList({
           {loading && (
             <tr>
               <td colSpan={9} style={{ textAlign: "center" }}>
-                Loading inventory...
+                Loading...
               </td>
             </tr>
           )}

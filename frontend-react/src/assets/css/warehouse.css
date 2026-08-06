@@ -1,6 +1,4 @@
-/* ===================================
-   WAREHOUSE MAIN LAYOUT
-=================================== */
+/*WAREHOUSE MAIN LAYOUT*/
 
 .warehouse-layout {
   display: flex;
@@ -44,9 +42,7 @@
   transform: translateY(-1px);
 }
 
-/* ===================================
-   METRIC CARDS
-=================================== */
+/*METRIC CARDS*/
 
 .warehouse-cards {
   display: grid;
@@ -58,12 +54,12 @@
 .warehouse-card {
   background: white;
   padding: 16px 20px;
-  min-height: 95px;    
+  min-height: 95px;
   border-radius: 15px;
   display: flex;
   gap: 16px;
   align-items: center;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
 }
 
@@ -83,9 +79,7 @@
   color: #64748b;
 }
 
-/* ===================================
-   FILTERS & SEARCH
-=================================== */
+/*FILTERS & SEARCH*/
 
 .warehouse-filter {
   display: flex;
@@ -118,7 +112,7 @@
 
 .warehouse-filter select {
   width: 180px;
-  height: 50px; 
+  height: 50px;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 0 15px;
@@ -128,16 +122,14 @@
   outline: none;
 }
 
-/* ===================================
-   TABLE & ACTION BUTTONS
-=================================== */
+/*TABLE & ACTION BUTTONS*/
 
 .warehouse-table-wrapper {
   background: white;
   border-radius: 15px;
   overflow-x: auto;
   padding: 5px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
 }
 
 .warehouse-table {
@@ -196,10 +188,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   white-space: nowrap;
+  width: 75px;
 }
 
 .action-btn {
-  width: 36px;
+  width: 20px;
   height: 36px;
   border: none;
   border-radius: 8px;
@@ -248,9 +241,7 @@
   transform: translateY(-2px);
 }
 
-/* ===================================
-   INVENTORY VIEW
-=================================== */
+/*INVENTORY VIEW*/
 
 .inventory-hero-card {
   display: flex;
@@ -424,9 +415,7 @@
   background: #dc2626;
 }
 
-/* ===================================
-   WAREHOUSE MODAL
-=================================== */
+/*WAREHOUSE MODAL*/
 
 .modal-overlay {
   position: fixed;
@@ -468,9 +457,7 @@
   color: #0f172a;
 }
 
-/* ===================================
-   FORM GRID
-=================================== */
+/*FORM GRID*/
 
 .warehouse-form {
   display: grid;
@@ -529,29 +516,33 @@
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
 }
 
-/* ===================================
-   MODAL BUTTONS
-=================================== */
+/* MODAL BUTTONS*/
 
 .modal-buttons {
   grid-column: span 2;
   display: flex;
-  justify-content: flex-end;
+  justify-content:center;
   gap: 14px;
   margin-top: 15px;
+  padding-bottom: 10px;
 }
 
 .save-btn,
 .cancel-btn {
+  flex: 1;
+  height: 42px;
   border: none;
   border-radius: 12px;
-  padding: 13px 24px;
+
+  display: flex;
+  justify-content: center;   /* Horizontal center */
+  align-items: center;       /* Vertical center */
+
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .save-btn {
   background: #2563eb;
   color: white;
@@ -579,9 +570,7 @@
   transform: translateY(-2px);
 }
 
-/* ===================================
-   RESPONSIVE
-=================================== */
+/*RESPONSIVE*/
 
 @media (max-width: 1024px) {
   .warehouse-cards {
