@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getProfile, updateProfile } from "../../../services/shopkeeperService";
+import { getProfile, updateProfile, getProductCategories, } from "../../../services/shopkeeperService";
 import "../../../assets/css/profile.css";
 import Select from "react-select";
 
@@ -14,11 +14,7 @@ function Profile() {
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState({ type: "", message: "" });
 
-  const categoryOptions = [
-    { value: "Vegetables", label: "Vegetables" },
-    { value: "Fruits", label: "Fruits" },
-    { value: "Dairy", label: "Dairy" },
-  ];
+  const [categoryOptions, setCategoryOptions] = useState([]);
 
   const fetchProfile = async () => {
     try {
@@ -42,9 +38,24 @@ function Profile() {
       });
     }
   };
+  const fetchCategories = async () => {
+  try {
+    const response = await getProductCategories();
+
+    const options = response.data.categories.map((category) => ({
+      value: category,
+      label: category,
+    }));
+
+    setCategoryOptions(options);
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+  }
+};
 
   useEffect(() => {
     fetchProfile();
+     fetchCategories();
   }, []);
 
   const handleChange = (e) => {
@@ -64,8 +75,8 @@ function Profile() {
         throw new Error("Profile not ready");
       }
 
-      if (!formData.fullName || !formData.phone || !formData.shopCategory) {
-        throw new Error("Full name, phone, and shop category are required");
+      if (!formData.fullName || !formData.phone || formData.shopCategory.length === 0) {
+        throw new Error("Full name, phone, and at least shop category are required");
       }
 
       if (!/^\d{10}$/.test(formData.phone)) {
